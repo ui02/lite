@@ -10,12 +10,12 @@ title = "iolite"
   rtl = false
   dateFormat = "2006/01/02"
   description = ""
-  # logo = "img/logo.png"
-  # secondaryLogo = "img/secondary-logo.png"
-  # copyright = "Copy, _right?_ :thinking_face:"
+   logo = "img/logo.png"
+   secondaryLogo = "img/secondary-logo.png"
+   copyright = "Copy, _right?_ :thinking_face:"
 
 [params.author]
-  name = "ym"
+# name = "ym"
   image = "img/blowfish_logo.png"
 #  headline = "旅行・写真・雑記"
 #  bio = "自分用の記録帳"
