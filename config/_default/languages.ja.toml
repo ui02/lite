@@ -19,9 +19,7 @@ title = "iolite"
   image = "img/blowfish_logo.png"
 #  headline = "旅行・写真・雑記"
 #  bio = "自分用の記録帳"
-#  links = [
-  { twitter = "https://twitter.com/username" }
-  ]
+#  links = [ { twitter = "https://twitter.com/username" } ]
 # [params.author]
 #   name = "Your name here"
 #   email = "youremail@example.com"
