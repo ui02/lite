@@ -10,9 +10,9 @@ title = "iolite"
   rtl = false
   dateFormat = "2006/01/02"
   description = ""
-   logo = "img/logo.png"
-   secondaryLogo = "img/secondary-logo.png"
-   copyright = "Copy, _right?_ :thinking_face:"
+  logo = "img/logo.png"
+# secondaryLogo = "img/secondary-logo.png"
+# copyright = "Copy, _right?_ :thinking_face:"
 
 [params.author]
 # name = "ym"
