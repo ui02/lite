@@ -1,5 +1,5 @@
 ---
-title: "2012"
+title: "homepage design"
 
 date: 2012-01-01
 
@@ -112,8 +112,6 @@ draft: false
 {{< badge >}}homepage design{{< /badge >}} 
 
 {{< /timelineItem >}}
-
-
 
 
 {{< /timeline >}}
