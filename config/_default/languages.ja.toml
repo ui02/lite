@@ -10,9 +10,9 @@ title = "iolite"
   rtl = false
   dateFormat = "2006/01/02"
   description = ""
-  logo = "img/logo.png"
-# secondaryLogo = "img/secondary-logo.png"
-# copyright = "© 2026 iolite"
+# logo = "img/logo.png"
+  secondaryLogo = "img/secondary-logo.png"
+  copyright = "© 2026 iolite"
 
 [params.author]
 # name = "ym"
@@ -27,7 +27,7 @@ title = "iolite"
 #   imageQuality = 96
 #   headline = "I'm only human"
 #   bio = "A little bit about you"
-   links = [
+#  links = [
 #     { email = "mailto:hello@your_domain.com" },
 #     { link = "https://link-to-some-website.com/" },
 #     { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
@@ -72,7 +72,7 @@ title = "iolite"
 #     { telegram = "https://t.me/username" },
 #     { threads = "https://www.threads.net/@username" },
 #     { tiktok = "https://tiktok.com/@username" },
-     { tumblr = "https://yurilom.tumblr.com/" },
+#     { tumblr = "https://yurilom.tumblr.com/" },
 #     { twitch = "https://twitch.tv/username" },
 #     { untappd = "https://untappd.com/user/username" },
 #     { twitter = "https://twitter.com/username" },
@@ -82,4 +82,4 @@ title = "iolite"
 #     { ko-fi = "https://ko-fi.com/username" },
 #     { codeberg = "https://codeberg.org/username"},
 #     { printables = "https://www.printables.com/@username"},
-   ]
+#   ]
