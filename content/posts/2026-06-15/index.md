@@ -110,7 +110,8 @@ draft: false
 ファンの声が届いて唯一叶った今回のメディア露出、人気歌謡の動画でも貼っておく。
 カメラマン気合入ってんね！（カメラワークにうるさい女）
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/BaHf6hiyRAs?si=qGfwl-Y_dl75mQ2N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+{{< youtubeLite id="BaHf6hiyRAs" label="샤이니 'Atmos'│@SBS Inkigayo 260614" >}}
 
 もうずっとソロ活動ばかりを追ってるような状態だったけど、やっぱり皆そろうとグループでしか見せない顔があって、、、幸せしかなかった、、もっとグループ活動してほしいのが本音だけど…無理もしてほしくなくて。いろんなこと考えたら年イチのライブとペンミでも……それすら贅沢？
 
