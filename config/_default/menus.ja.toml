@@ -20,11 +20,6 @@
   pageRef = "mur"
   weight = 10
 
-[[main]]
-  name = "STAN"
-  pageRef = "stan"
-  weight = 10
-
 #[[main]]
 #  name = "Parent"
 #  weight = 20
