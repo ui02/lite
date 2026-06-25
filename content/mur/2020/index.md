@@ -8,72 +8,11 @@ draft: false
 
 {{< timeline >}}
 
-{{< timelineItem icon="twitter" subheader="2020/03/05" >}}
-{{< gallery >}}
-<img src="/iolite/murmur/751731229432446976_0.jpg" class="grid-w50">
-<img src="/iolite/murmur/751731229432446976_1.jpg" class="grid-w50">
-{{< /gallery >}}
-
-桜ゼリーもらった🌸 弾力あるゼリー😊🌸 おいしい🌸🌸
-
-{{< badge >}}what i ate today{{< /badge >}} 
-
-{{< /timelineItem >}}
-
-{{< timelineItem icon="twitter" subheader="2020/05/04" >}}
-{{< gallery >}}
-<img src="/iolite/murmur/752371625248292864_0.jpg" class="grid-w50">
-<img src="/iolite/murmur/752371625248292864_1.jpg" class="grid-w50">
-<img src="/iolite/murmur/752371625248292864_2.jpg" class="grid-w50">
-<img src="/iolite/murmur/752371625248292864_3.jpg" class="grid-w50">
-{{< /gallery >}}
-
-ちゃちゃまるワールド
-
-{{< badge >}}どうぶつの森{{< /badge >}} {{< badge >}}AnimalCrossing{{< /badge >}} {{< badge >}}ACNH{{< /badge >}} {{< badge >}}NintendoSwitch{{< /badge >}} {{< badge >}}tweets{{< /badge >}} 
-
-{{< /timelineItem >}}
-
 {{< timelineItem icon="twitter" subheader="2020/05/08" >}}
 松山ケンイチと一緒にいたところを老婆の骸骨から追われる…っていう、最高で最悪な夢を見ました！！！😪
 松ケンひさしぶり…！老婆は怖かったし、最後には何故か蛇で格闘したけど噛まれて微妙に痛かった！
 
 {{< badge >}}dream{{< /badge >}} {{< badge >}}text{{< /badge >}} 
-
-{{< /timelineItem >}}
-
-{{< timelineItem icon="twitter" subheader="2020/05/14" >}}
-{{< gallery >}}
-<img src="/iolite/murmur/751732144218537984_0.jpg" class="grid-w50">
-<img src="/iolite/murmur/751732144218537984_1.jpg" class="grid-w50">
-<img src="/iolite/murmur/751732144218537984_2.jpg" class="grid-w50">
-<img src="/iolite/murmur/751732144218537984_3.jpg" class="grid-w50">
-<img src="/iolite/murmur/751732144218537984_4.jpg" class="grid-w50">
-<img src="/iolite/murmur/751732144218537984_5.jpg" class="grid-w50">
-<img src="/iolite/murmur/751732144218537984_6.jpg" class="grid-w50">
-<img src="/iolite/murmur/751732144218537984_7.jpg" class="grid-w50">
-<img src="/iolite/murmur/751732144218537984_8.jpg" class="grid-w50">
-<img src="/iolite/murmur/751732144218537984_9.jpg" class="grid-w50">
-<img src="/iolite/murmur/751732144218537984_10.jpg" class="grid-w50">
-<img src="/iolite/murmur/751732144218537984_11.jpg" class="grid-w50">
-<img src="/iolite/murmur/751732144218537984_12.jpg" class="grid-w50">
-<img src="/iolite/murmur/751732144218537984_13.jpg" class="grid-w50">
-<img src="/iolite/murmur/751732144218537984_14.jpg" class="grid-w50">
-<img src="/iolite/murmur/751732144218537984_15.jpg" class="grid-w50">
-<img src="/iolite/murmur/751732144218537984_16.jpg" class="grid-w50">
-<img src="/iolite/murmur/751732144218537984_17.jpg" class="grid-w50">
-<img src="/iolite/murmur/751732144218537984_18.jpg" class="grid-w50">
-<img src="/iolite/murmur/751732144218537984_19.jpg" class="grid-w50">
-{{< /gallery >}}
-
-昨日、２年に渡るおおいた暮らしに終止符を打ちました！！😭 もともと転々として暮らすはずが、こんなにも長居したのは、この土地の魅力と住む人たちの暖かさが大きな理由だったと思う。 またコロナが落ち着いたら遊びに行くからねぇ😭♥️ #大分 #oita
-オシャレで美味しいカフェもたくさんあるよ🤤♥️載せきれないけど、この２年で大好きなお店がたくさんできた。すでに恋しい…！
-ここに来るまで、大分県がどんなところなのか全然知らなかった。春夏秋冬、それぞれ見どころが沢山あって飽きない場所だった。（地元の人は「何もない」と言うけど😂） 多くの人に大分の魅力を知ってほしいし、いつか観光に来たときには、是非レンタカーを借りていろんな所を回ってみてほしいな。
-佐賀関、真玉海岸、別府湾 佐賀関の透明度には本当に驚いたし、別府湾の淡いグラデーションにはため息しか出なかった（無加工）
-朝焼け、星空、夕暮れ
-大分滞在の２年間は好奇心の塊だっし、何もかもが新鮮でちょっとしたことに感動してたので、スマホがパンクするほど写真と動画を撮り溜めてます！また放出します！
-
-{{< badge >}}放浪中{{< /badge >}} {{< badge >}}oita{{< /badge >}} {{< badge >}}感想文{{< /badge >}} 
 
 {{< /timelineItem >}}
 
