@@ -14,7 +14,6 @@ tags: ["dailylife", "放浪中"]
 draft: false
 ---
 
-{{< timelineItem icon="twitter" subheader="2020/11/03" >}}
 {{< gallery >}}
 <img src="751732423177420800_0.jpg" class="grid-w100 md:grid-w50 xl:grid-w33">
 <img src="751732423177420800_1.jpg" class="grid-w100 md:grid-w50 xl:grid-w33">
