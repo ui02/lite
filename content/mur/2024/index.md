@@ -183,32 +183,6 @@ draft: false
 
 {{< /timelineItem >}}
 
-{{< timelineItem icon="twitter" subheader="2024/02/24" >}}
-{{< gallery >}}
-<img src="/iolite/murmur/752179046835765248_0.jpg" class="grid-w50">
-<img src="/iolite/murmur/752179046835765248_1.jpg" class="grid-w50">
-<img src="/iolite/murmur/752179046835765248_2.jpg" class="grid-w50">
-<img src="/iolite/murmur/752179046835765248_3.jpg" class="grid-w50">
-{{< /gallery >}}
-
-御徒町でユメカワ豚活し、散歩がてら湯島天神参拝し、ぷらぷら春日から東新宿で激混みの新大久保で心折れつつやーっとｱﾝｼのﾁｰｸﾌﾞﾗｼとｳﾇはんぐごかどぅゲトしてカペでおやつ食べて今からライブー！！！ｷﾝﾁｮｼﾃｷﾀ‥
-
-{{< badge >}}what i ate today{{< /badge >}} {{< badge >}}lifework{{< /badge >}} 
-
-{{< /timelineItem >}}
-
-{{< timelineItem icon="twitter" subheader="2024/02/24" >}}
-{{< gallery >}}
-<img src="/iolite/murmur/752357668539269120_0.jpg" class="grid-w50">
-<img src="/iolite/murmur/752357668539269120_1.jpg" class="grid-w50">
-{{< /gallery >}}
-
-心臓痛い‥今日TMYNやる感じですか‥？みんなしんでしまう‥‥ てかふかふかシートドリンクホルダー付きで見やすいときたここはなかなかの良席‥
-
-{{< badge >}}lifework{{< /badge >}} {{< badge >}}shinee{{< /badge >}} 
-
-{{< /timelineItem >}}
-
 {{< timelineItem icon="twitter" subheader="2024/02/28" >}}
 {{< gallery >}}
 <img src="/iolite/murmur/752178953599516672_0.jpg" class="grid-w50">
@@ -341,29 +315,6 @@ Springroove、昔一度だけ行ったけど、出演者やばい豪華でめっ
 ジョンハンお見送りしてきた（＝SVTの揺れない映画あったから最終日の最終回で観てきた!!!）ハニへ〜〜👼💞
 
 {{< badge >}}推し活{{< /badge >}} {{< badge >}}日常{{< /badge >}} {{< badge >}}lifework{{< /badge >}} 
-
-{{< /timelineItem >}}
-
-{{< timelineItem icon="twitter" subheader="2024/09/28" >}}
-{{< gallery >}}
-<img src="/iolite/murmur/762860109698301952_0.jpg" class="grid-w50">
-{{< /gallery >}}
-
-ついた〜〜ペンラ売り切れとか〜〜〜😔
-
-{{< badge >}}推し活{{< /badge >}} {{< badge >}}lifework{{< /badge >}} {{< badge >}}shinee{{< /badge >}} 
-
-{{< /timelineItem >}}
-
-{{< timelineItem icon="twitter" subheader="2024/09/28" >}}
-{{< gallery >}}
-<img src="/iolite/murmur/762860235444600832_0.jpg" class="grid-w50">
-{{< /gallery >}}
-
-センステに面したブロックでなかなか近かった〜〜〜たのしかった〜〜〜😭❤️テミンこんな近いの久しぶりな感じする…
-なんか冬も会えるっぽくて‥しゃいにだよね？！？！？！そうだといって
-
-{{< badge >}}推し活{{< /badge >}} {{< badge >}}lifework{{< /badge >}} {{< badge >}}shinee{{< /badge >}} 
 
 {{< /timelineItem >}}
 

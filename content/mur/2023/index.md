@@ -234,42 +234,6 @@ iolite36 :
 
 {{< /timelineItem >}}
 
-{{< timelineItem icon="twitter" subheader="2023/03/13" >}}
-{{< gallery >}}
-<img src="/iolite/murmur/751824581903384576_0.jpg" class="grid-w50">
-<img src="/iolite/murmur/751824581903384576_1.jpg" class="grid-w50">
-<img src="/iolite/murmur/751824581903384576_2.jpg" class="grid-w50">
-<img src="/iolite/murmur/751824581903384576_3.jpg" class="grid-w50">
-{{< /gallery >}}
-
-大阪！めちゃめちゃ楽しくてあっという間だった！ホテル良かった！！！夜にふらふら食べ歩いた230円のかけうどんが地味に美味しかった！！！たこ焼き、思いがけず頂いたベビーカステラ、ホットク、豚まん、全て美味しかった！！しかしまたしても体調不良…🥲ハードスケジュールすぎたな！！！
-
-{{< badge >}}osaka{{< /badge >}} {{< badge >}}trip{{< /badge >}} {{< badge >}}lifework{{< /badge >}} {{< badge >}}shinee{{< /badge >}} 
-
-{{< /timelineItem >}}
-
-{{< timelineItem icon="twitter" subheader="2023/03/15" >}}
-{{< gallery >}}
-<img src="/iolite/murmur/751824612772478976_0.jpg" class="grid-w50">
-{{< /gallery >}}
-
-今からこれです
-
-{{< badge >}}lifework{{< /badge >}} 
-
-{{< /timelineItem >}}
-
-{{< timelineItem icon="twitter" subheader="2023/03/15" >}}
-{{< gallery >}}
-<img src="/iolite/murmur/751824654438629376_0.jpg" class="grid-w50">
-{{< /gallery >}}
-
-んぉおおおおお😭😭😭❤️❤️❤️❤️❤️❤️❤️
-
-{{< badge >}}lifework{{< /badge >}} {{< badge >}}shinee{{< /badge >}} 
-
-{{< /timelineItem >}}
-
 {{< timelineItem icon="twitter" subheader="2023/03/17" >}}
 {{< gallery >}}
 <img src="/iolite/murmur/751824701820731392_0.jpg" class="grid-w50">
@@ -993,20 +957,6 @@ My bird is freed
 
 {{< /timelineItem >}}
 
-{{< timelineItem icon="twitter" subheader="2023/10/01" >}}
-{{< gallery >}}
-<img src="/iolite/murmur/751826454095986688_0.jpg" class="grid-w50">
-<img src="/iolite/murmur/751826454095986688_1.jpg" class="grid-w50">
-<img src="/iolite/murmur/751826454095986688_2.jpg" class="grid-w50">
-<img src="/iolite/murmur/751826454095986688_3.jpg" class="grid-w50">
-{{< /gallery >}}
-
-５年ぶりのイルコンは、本国のをベースに懐かしの日本の曲を盛り込んでくれて、最高の神セトリだった😭😭😭そしてまさか思わずジョンの名前を叫ぶことになるとは。たくさんの思い出が蘇ってきた…🥲３人だけどわちゃわちゃトークも見れてホント久しぶりが沢山🥹今日はこの幸せのまま眠りにつく🥹🥹🥹
-
-{{< badge >}}lifework{{< /badge >}} {{< badge >}}shinee{{< /badge >}} 
-
-{{< /timelineItem >}}
-
 {{< timelineItem icon="twitter" subheader="2023/10/04" >}}
 {{< gallery >}}
 <img src="/iolite/murmur/751826486499180544_0.jpg" class="grid-w50">
@@ -1017,59 +967,6 @@ My bird is freed
 その後
 
 {{< badge >}}cat{{< /badge >}} 
-
-{{< /timelineItem >}}
-
-{{< timelineItem icon="twitter" subheader="2023/10/06" >}}
-{{< gallery >}}
-<img src="/iolite/murmur/751826519768350720_0.jpg" class="grid-w50">
-{{< /gallery >}}
-
-青すぎてびっくりしちゃった
-
-{{< badge >}}lifework{{< /badge >}} {{< badge >}}shinee{{< /badge >}} 
-
-{{< /timelineItem >}}
-
-{{< timelineItem icon="twitter" subheader="2023/10/07" >}}
-{{< gallery >}}
-<img src="/iolite/murmur/751826593057521664_0.jpg" class="grid-w50">
-<img src="/iolite/murmur/751826593057521664_1.jpg" class="grid-w50">
-<img src="/iolite/murmur/751826593057521664_2.jpg" class="grid-w50">
-<img src="/iolite/murmur/751826593057521664_3.jpg" class="grid-w50">
-{{< /gallery >}}
-
-２万歩も歩いたんだよォー!!!
-
-{{< badge >}}osaka{{< /badge >}} {{< badge >}}what i ate today{{< /badge >}} {{< badge >}}lifework{{< /badge >}} 
-
-{{< /timelineItem >}}
-
-{{< timelineItem icon="twitter" subheader="2023/10/07" >}}
-{{< gallery >}}
-<img src="/iolite/murmur/752181070397636608_0.jpg" class="grid-w50">
-<img src="/iolite/murmur/752181070397636608_1.jpg" class="grid-w50">
-{{< /gallery >}}
-
-鶴橋の看板かわいーね
-
-{{< badge >}}trip{{< /badge >}} {{< badge >}}osaka{{< /badge >}} 
-
-{{< /timelineItem >}}
-
-{{< timelineItem icon="twitter" subheader="2023/10/07" >}}
-{{< gallery >}}
-<img src="/iolite/murmur/752181182362484736_0.jpg" class="grid-w50">
-<img src="/iolite/murmur/752181182362484736_1.jpg" class="grid-w50">
-<img src="/iolite/murmur/752181182362484736_2.jpg" class="grid-w50">
-<img src="/iolite/murmur/752181182362484736_3.jpg" class="grid-w50">
-{{< /gallery >}}
-
-おぉさか
-さすが
-かわいいです！！
-
-{{< badge >}}trip{{< /badge >}} {{< badge >}}lifework{{< /badge >}} {{< badge >}}osaka{{< /badge >}} {{< badge >}}shinee{{< /badge >}} 
 
 {{< /timelineItem >}}
 
