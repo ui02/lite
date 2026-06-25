@@ -1,5 +1,5 @@
 ---
-title: "murmur"
+title: "Murmur"
 
 date: 2025-01-01
 
@@ -14,6 +14,10 @@ showCards: true
 showSummary: false
 
 cardView: true
+
+showDate: false
+
+showDateUpdated: true
 
 ---
 
