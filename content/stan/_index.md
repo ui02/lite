@@ -2,12 +2,12 @@
 title: "Stan"
 
 cascade:
-  showDate: false
+  showDate: true
   showAuthor: false
   invertPagination: true
-  showLikes: false
+  showLikes: true
   showCards: true
-  showSummary: false
+  showSummary: true
   cardView: true
   showDateUpdated: true
 ---

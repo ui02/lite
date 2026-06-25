@@ -1,19 +1,17 @@
 ---
 title: "初ベルーナドーム"
 
-summary: "6/5(金)、SHINeeのライブ「- The Trilogy I - 2026 SHINee WORLD VIII : [THE INVERT]」に行ってきた！
-4人そろっての日本公演はなんと8年ぶり・・・"
-
-showSummary: true
+summary: "- The Trilogy I - 2026 SHINee WORLD VIII : [THE INVERT]＠ベルーナドーム（2026/06/05）"
 
 date: 2026-06-15
 
-categories: [""]
+categories: ["stan"]
 
-tags: ["dailylife", "SHINee"]
+tags: ["SHINee"]
 
 draft: false
 ---
+
 6/5(金)、SHINeeのライブ「- The Trilogy I - 2026 SHINee WORLD VIII : [THE INVERT]」に行ってきた！
 4人そろっての日本公演はなんと8年ぶり・・・
 
@@ -39,17 +37,17 @@ draft: false
 会場限定ガチャだけ回したんだけど、なかなかの神引き…！ボンボンシールが想像以上に可愛くてビックリした！！（このあとチェミノの缶バッジはボクシリのチャームに交換していただき、無事コンプ）
 
 {{< gallery >}}
-  <img src="20260616-Screenshot_2026-06-05-11-46-22-513_com.smentertainment.shineestore.jpg" class="grid-w50" />
-  <img src="20260616-IMG_20260605_122246.jpg" class="grid-w50" />
-  <img src="20260616-IMG_20260605_122327.jpg" class="grid-w50" />
-  <img src="20260616-IMG_20260605_122344.jpg" class="grid-w50" />
+  <img src="20260616-Screenshot_2026-06-05-11-46-22-513_com.smentertainment.shineestore.jpg" class="grid-w100 md:grid-w50 xl:grid-w33">
+  <img src="20260616-IMG_20260605_122246.jpg" class="grid-w100 md:grid-w50 xl:grid-w33">
+  <img src="20260616-IMG_20260605_122327.jpg" class="grid-w100 md:grid-w50 xl:grid-w33">
+  <img src="20260616-IMG_20260605_122344.jpg" class="grid-w100 md:grid-w50 xl:grid-w33">
 {{< /gallery >}}
 
 グッズ購入後はレストランでご飯食べた！ちゃんと美味しくてコーヒーたっぷりなのうれしかった！何よりも、ずっとSHINeeのMV流れてて最高の空間だった～。
 
 {{< gallery >}}
-  <img src="20260616-IMG_20260605_140530.jpg" class="grid-w50" />
-  <img src="20260616-IMG_20260605_140554.jpg" class="grid-w50" />
+  <img src="20260616-IMG_20260605_140530.jpg" class="grid-w100 md:grid-w50 xl:grid-w33">
+  <img src="20260616-IMG_20260605_140554.jpg" class="grid-w100 md:grid-w50 xl:grid-w33">
 {{< /gallery >}}
 
 なお、レストランでゆっくりしたあとは開場時間まで車でお昼寝してた。（これができるから会場近くの駐車場に停められてめちゃくちゃよかった…）

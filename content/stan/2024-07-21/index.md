@@ -1,11 +1,13 @@
 ---
-title: "2024 推し活まとめ"
+title: "2024"
+
+summary: "まとめ"
 
 date: 2024-07-21
 
-categories: [""]
+categories: ["stan"]
 
-tags: ["stan", "SHINee"]
+tags: ["SHINee"]
 
 draft: false
 ---

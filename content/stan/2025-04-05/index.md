@@ -1,11 +1,13 @@
 ---
-title: "2025 推し活まとめ"
+title: "2025"
+
+summary: "TAEMIN Ephemeral Gaze ＠有明アリーナ"
 
 date: 2025-04-05
 
-categories: [""]
+categories: ["stan"]
 
-tags: ["stan", "SHINee"]
+tags: ["SHINee"]
 
 draft: false
 ---

@@ -1,19 +1,13 @@
 ---
 title: "MEAN:on sight"
 
-summary: "ちぇみのの写真展にいってきた！
-
-お昼頃まで風が強く雨も降ったり止んだりだったので、DEAN&DELUCAでゆっくりしてから向かった。
-
-そこで食べたクランベリーパウンドが美味すぎて。帰ってレシート見てから松之助のだと知った。また食べに行こう。"
-
-showSummary: true
+summary: "MINHO PHOTO EXIBITION "MEAN:on sight" ＠メンズパルコ渋谷（2025/08/10）"
 
 date: 2025-08-10
 
-categories: [""]
+categories: ["stan"]
 
-tags: ["dailylife", "SHINee"]
+tags: ["SHINee"]
 
 draft: false
 ---
@@ -25,8 +19,8 @@ draft: false
 そこで食べたクランベリーパウンドが美味すぎて。帰ってレシート見てから松之助のだと知った。また食べに行こう。
 
 {{< gallery >}}
-  <img src="IMG_20250810_115418.jpg" class="grid-w50" />
-  <img src="IMG_20250810_115251.jpg" class="grid-w50" />
+  <img src="IMG_20250810_115418.jpg" class="grid-w100 md:grid-w50 xl:grid-w33">
+  <img src="IMG_20250810_115251.jpg" class="grid-w100 md:grid-w50 xl:grid-w33">
 {{< /gallery >}}
 
 そのあと東京から丸の内線に乗り、久しぶりの新宿三丁目。はじめてのマルイメン。
@@ -35,7 +29,7 @@ draft: false
 
 写真はサンディエゴで撮影したものらしい。どれも穏やかな空気をまとっているのが、彼のあたたかいところが滲み出てるようだった。
 
-  <img src="IMG_20250810_142550.jpg" class="grid-w100" />
+  <img src="IMG_20250810_142550.jpg" class="grid-w100 md:grid-w50 xl:grid-w33">
 
 夕陽に照らされる横顔が美しすぎた‥
 
@@ -44,10 +38,10 @@ draft: false
 入場の際、その日本語訳をいただけたので家でもまたゆっくり楽しもうと思う。ありがとう。最高です。
 
 {{< gallery >}}
-  <img src="IMG_20250810_141103.jpg" class="grid-w50" />
- <img src="IMG_20250810_142717.jpg" class="grid-w50" />
-  <img src="IMG_20250810_140530.jpg" class="grid-w50" />
-  <img src="IMG_20250810_142608.jpg" class="grid-w50" />
+  <img src="IMG_20250810_141103.jpg" class="grid-w100 md:grid-w50 xl:grid-w33">
+ <img src="IMG_20250810_142717.jpg" class="grid-w100 md:grid-w50 xl:grid-w33">
+  <img src="IMG_20250810_140530.jpg" class="grid-w100 md:grid-w50 xl:grid-w33">
+  <img src="IMG_20250810_142608.jpg" class="grid-w100 md:grid-w50 xl:grid-w33">
 {{< /gallery >}}
 
 私もまたカメラやろうかなぁとか思ったりして。
