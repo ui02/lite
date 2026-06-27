@@ -27,7 +27,9 @@ draft: false
 
 写真はサンディエゴで撮影したものらしい。どれも穏やかな空気をまとっているのが、彼のあたたかいところが滲み出てるようだった。
 
-  <img src="IMG_20250810_142550.jpg" class="grid-w100 md:grid-w50 xl:grid-w33">
+![](IMG_20250810_142550.jpg)
+
+![](IMG_20250810_140530.jpg)
 
 夕陽に照らされる横顔が美しすぎた‥
 
@@ -37,9 +39,12 @@ draft: false
 
 {{< gallery >}}
   <img src="IMG_20250810_141103.jpg" class="grid-w100 md:grid-w50 xl:grid-w33">
- <img src="IMG_20250810_142717.jpg" class="grid-w100 md:grid-w50 xl:grid-w33">
-  <img src="IMG_20250810_140530.jpg" class="grid-w100 md:grid-w50 xl:grid-w33">
-  <img src="IMG_20250810_142608.jpg" class="grid-w100 md:grid-w50 xl:grid-w33">
+  <img src="IMG_20250810_142717.jpg" class="grid-w100 md:grid-w50 xl:grid-w33">
+  <img src="IMG_20250810_142536.jpg" class="grid-w100 md:grid-w50 xl:grid-w33">
 {{< /gallery >}}
 
 私もまたカメラやろうかなぁとか思ったりして。
+
+![](IMG_20250810_142608.jpg)
+
+![](IMG_20250810_142904.jpg)

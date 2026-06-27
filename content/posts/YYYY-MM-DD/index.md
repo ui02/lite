@@ -1,5 +1,5 @@
 ---
-title: "うみ"
+title: ""
 
 summary: ""
 
