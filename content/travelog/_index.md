@@ -5,7 +5,7 @@ cascade:
   showDate: true
   showAuthor: false
   invertPagination: true
-  showLikes: true
+  showLikes: 
   showCards: true
   showSummary: false
   cardView: true
