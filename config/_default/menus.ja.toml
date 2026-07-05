@@ -21,11 +21,6 @@
   weight = 10
 
 [[main]]
-  name = "STAN"
-  pageRef = "stan"
-  weight = 20
-
-[[main]]
   name = "JOURNEY"
   pageRef = "travelog"
   weight = 20
