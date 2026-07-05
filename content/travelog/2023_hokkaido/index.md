@@ -5,6 +5,9 @@ date: 2023-06-28
 
 draft: false
 
+cascade:
+  showLikes: false
+
 ---
 
 モモンガと日帰りさっぽろ旅行💙 曇のち雨なんて嘘でした！
