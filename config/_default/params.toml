@@ -64,7 +64,7 @@ layout = "fixed" # valid options: basic, fixed
   showRecentItems = 5
   showMoreLink = true
   showMoreLinkDest = "/iolite/posts/"
-  cardView = true
+  cardView = false
   cardViewScreenWidth = false
   layoutBackgroundBlur = false # only used when layout equals background
   disableHeroImageFilter = false # only used when layout equals hero
@@ -117,7 +117,7 @@ layout = "fixed" # valid options: basic, fixed
   showCards = true
   orderByWeight = false
   groupByYear = false
-  cardView = false
+  cardView = true
   cardViewScreenWidth = false
   constrainItemsWidth = false
 
