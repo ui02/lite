@@ -72,7 +72,7 @@ layout = "fixed" # valid options: basic, fixed
 [article]
   showDate = true
   showViews = false
-  showLikes = false
+  showLikes = true
   showDateOnlyInArticle = false
   showDateUpdated = true
   showAuthor = false
@@ -132,7 +132,7 @@ layout = "fixed" # valid options: basic, fixed
   layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
   showBreadcrumbs = false
   showViews = false
-  showLikes = true
+  showLikes = false
   showTableOfContents = true
   cardView = false
 
