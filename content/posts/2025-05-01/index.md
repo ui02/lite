@@ -10,7 +10,7 @@ date: 2025-05-01
 
 categories: [""]
 
-tags: ["dailylife", "SHINee"]
+tags: ["dailylife"]
 
 draft: false
 ---
