@@ -103,6 +103,7 @@ layout = "fixed" # valid options: basic, fixed
   # sharingLinks = [ "linkedin", "twitter", "bluesky", "mastodon", "reddit", "pinterest", "facebook", "email", "whatsapp", "telegram", "line"]
   showZenMode = true
   # externalLinkForceNewTab = false # disable to allow external links in the same tab (defaults to true)
+  showComments = true
 
 [list]
   showHero = false

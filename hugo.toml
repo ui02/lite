@@ -1,3 +1,6 @@
-baseURL = 'https://example.org/'
-locale = 'en-us'
-title = 'My New Hugo Project'
+baseURL = "https://ui02.github.io/lite/"
+languageCode = "ja"
+title = "..."
+theme = "blowfish"
+
+disqusShortname = "i0lite"
