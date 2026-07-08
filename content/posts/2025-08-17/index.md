@@ -13,11 +13,9 @@ summary: "祖父が好きな食事屋に行こうってことで
 意外と人が泳いでたり波乗りしたりしてて  
 お盆とか気にしない人も結構いるんだなと。"
 
-showSummary: true
-
 date: 2025-08-17
 
-categories: [""]
+id: "2025-08-17"
 
 tags: ["dailylife"]
 

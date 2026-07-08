@@ -5,6 +5,8 @@ summary: "MINHO PHOTO EXIBITION 「MEAN:on sight」 ＠メンズパルコ渋谷�
 
 date: 2025-08-10
 
+id: "2025-08-10"
+
 tags: ["SHINee"]
 
 draft: false

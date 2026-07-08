@@ -5,6 +5,8 @@ summary: "POP-UP STORE「Love Blossom」with GGUNG DAENG ＠TOWER RECORDS 渋谷
 
 date: 2025-05-04
 
+id: "2025-05-04"
+
 tags: ["SHINee"]
 
 draft: false

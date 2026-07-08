@@ -5,6 +5,8 @@ summary: "- The Trilogy I - 2026 SHINee WORLD VIII : [THE INVERT]＠ベルーナ
 
 date: 2026-06-15
 
+id: "2026-06-15"
+
 tags: ["SHINee"]
 
 draft: false

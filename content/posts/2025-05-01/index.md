@@ -4,11 +4,9 @@ title: "GW 2025"
 summary: "今年のGWは短い連休だった分、しっかり出かけてしっかり遊んだ。
 友達と喋ったり遊んだり めちゃうまイタリアン食べたり、雨でラッキーだったり。"
 
-showSummary: true
-
 date: 2025-05-01
 
-categories: [""]
+id: "2025-05-01"
 
 tags: ["dailylife"]
 

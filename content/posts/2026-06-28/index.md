@@ -3,11 +3,9 @@ title: "ヌン"
 
 summary: "先週末、友達と初アフターヌーンティーしてきた～！"
 
-showSummary: true
-
 date: 2026-06-28
 
-categories: [""]
+id: "2026-06-28"
 
 tags: ["dailylife"]
 
