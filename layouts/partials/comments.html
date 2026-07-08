@@ -6,3 +6,57 @@
 ></div>
 
 <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+
+
+<script is:inline>
+	const cusdisThread = document.getElementById("cusdis_thread");
+	const observedDocuments = new WeakSet();
+
+	const observeCusdisFrame = (iframe) => {
+		const contentDocument = iframe.contentDocument;
+
+		if (!contentDocument?.body || observedDocuments.has(contentDocument)) {
+			return;
+		}
+
+	const syncHeight = () => {
+			const contentHeight = Math.max(
+				contentDocument.documentElement.scrollHeight,
+				contentDocument.body.scrollHeight,
+			);
+
+			if (iframe.clientHeight !== contentHeight) {
+				iframe.style.height = `${contentHeight}px`;
+		}
+	};
+
+	// Cusdis標準の高さ通知で取りこぼすレイアウト変化も反映するため、内容領域を直接監視する。
+	const resizeObserver = new ResizeObserver(syncHeight);
+		resizeObserver.observe(contentDocument.documentElement);
+		resizeObserver.observe(contentDocument.body);
+		observedDocuments.add(contentDocument);
+		syncHeight();
+	};
+
+	const observeCusdisIframe = () => {
+		const iframe = cusdisThread?.querySelector("iframe");
+
+		if (!iframe) {
+			return false;
+		}
+
+		iframe.addEventListener("load", () => observeCusdisFrame(iframe));
+		observeCusdisFrame(iframe);
+		return true;
+	};
+
+	const mutationObserver = new MutationObserver(() => {
+		if (observeCusdisIframe()) {
+			mutationObserver.disconnect();
+		}
+	});
+
+	if (!observeCusdisIframe() && cusdisThread) {
+		mutationObserver.observe(cusdisThread, { childList: true });
+	}
+</script>
