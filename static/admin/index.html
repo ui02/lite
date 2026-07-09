@@ -1,14 +1,51 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>iolite CMS</title>
+<meta charset="UTF-8">
+<title>iolite CMS</title>
+
+<style>
+body{
+    max-width:700px;
+    margin:40px auto;
+    font-family:sans-serif;
+}
+
+input, textarea{
+    width:100%;
+    box-sizing:border-box;
+    margin-top:8px;
+    margin-bottom:20px;
+    padding:10px;
+}
+
+textarea{
+    height:250px;
+}
+
+button{
+    padding:10px 30px;
+    font-size:16px;
+}
+</style>
+
 </head>
+
 <body>
 
 <h1>iolite CMS</h1>
 
-<p>ここから投稿します。</p>
+<h2>新規投稿</h2>
+
+<label>タイトル</label>
+<input id="title">
+
+<label>本文</label>
+<textarea id="content"></textarea>
+
+<button id="postButton">
+投稿する
+</button>
 
 </body>
 </html>
