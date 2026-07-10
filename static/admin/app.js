@@ -1,5 +1,3 @@
-<script>
-
 const image = document.getElementById("image");
 
 const button = document.getElementById("postButton");
@@ -36,5 +34,3 @@ button.addEventListener("click", () => {
     }
 
 });
-
-</script>
