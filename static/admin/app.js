@@ -53,4 +53,18 @@ button.addEventListener("click", () => {
 
     }
 
+    const markdown = createMarkdown(post);
+
+    console.log(markdown);
+
 });
+
+function createMarkdown(post) {
+
+    return `---
+title: "${post.title}"
+date: ${new Date().toISOString()}
+---
+
+${post.content}`;
+}
