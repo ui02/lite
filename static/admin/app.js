@@ -2,6 +2,12 @@ const image = document.getElementById("image");
 
 const button = document.getElementById("postButton");
 
+image.addEventListener("change", () => {
+
+    // 画像が選ばれた時の処理
+
+});
+
 button.addEventListener("click", () => {
 
     const title = document.getElementById("title").value;
