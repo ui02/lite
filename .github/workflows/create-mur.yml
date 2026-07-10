@@ -27,14 +27,14 @@ jobs:
       - name: Create test file
         run: |
           mkdir -p content/posts
-          echo "# テスト投稿" > content/posts/test.md
+          echo "# テスト投稿" > content/mur/test.md
 
       - name: Commit test file
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
 
-          git add content/posts/test.md
+          git add content/mur/test.md
 
           git commit -m "test: create markdown file" || echo "No changes"
 
