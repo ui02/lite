@@ -4,14 +4,20 @@ const button = document.getElementById("postButton");
 
 image.addEventListener("change", () => {
 
-    const file = image.files[0];
+    preview.innerHTML = "";
 
-    if (file) {
-        preview.src = URL.createObjectURL(file);
-        preview.style.display = "block";
-    } else {
-        preview.src = "";
-        preview.style.display = "none";
+    for (const file of image.files) {
+
+        const img = document.createElement("img");
+
+        img.src = URL.createObjectURL(file);
+
+        img.style.maxWidth = "200px";
+        img.style.margin = "10px";
+        img.style.borderRadius = "8px";
+
+        preview.appendChild(img);
+
     }
 
 });
