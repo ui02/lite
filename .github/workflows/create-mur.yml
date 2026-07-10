@@ -27,7 +27,24 @@ jobs:
       - name: Create test file
         run: |
           mkdir -p content/posts
-          echo "# テスト投稿" > content/mur/test.md
+          TITLE="${{ github.event.issue.title }}"
+          TITLE="${TITLE#post: }"
+
+          BODY="${{ github.event.issue.body }}"
+
+          FILE="content/mur/test.md"
+
+          cat > "$FILE" <<EOF
+          ---
+          title: "$TITLE"
+          date: $(TZ=Asia/Tokyo date +"%Y-%m-%dT%H:%M:%S%:z")
+          type: mur
+          draft: false
+          images: []
+          ---
+
+          $BODY
+          EOF
 
       - name: Commit test file
         run: |
