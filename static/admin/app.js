@@ -1,10 +1,18 @@
 const image = document.getElementById("image");
-
+const preview = document.getElementById("preview");
 const button = document.getElementById("postButton");
 
 image.addEventListener("change", () => {
 
-    // 画像が選ばれた時の処理
+    const file = image.files[0];
+
+    if (file) {
+        preview.src = URL.createObjectURL(file);
+        preview.style.display = "block";
+    } else {
+        preview.src = "";
+        preview.style.display = "none";
+    }
 
 });
 
