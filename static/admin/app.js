@@ -24,24 +24,30 @@ button.addEventListener("click", () => {
 
     const selectedImage = image.files[0];
 
-    if (selectedImage) {
+    const post = {
+        title: title,
+        content: content,
+        image: selectedImage
+    };
+
+    if (post.Image) {
 
         alert(
             "タイトル\n" +
-            title +
+            post.title +
             "\n\n本文\n" +
-            content +
+            post.content +
             "\n\n画像\n" +
-            selectedImage.name
+            post.image.name
         );
 
     } else {
 
         alert(
             "タイトル\n" +
-            title +
+            post.title +
             "\n\n本文\n" +
-            content +
+            post.content +
             "\n\n画像なし"
         );
 
