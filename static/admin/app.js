@@ -22,15 +22,13 @@ button.addEventListener("click", () => {
 
     const content = document.getElementById("content").value;
 
-    const selectedImage = image.files[0];
-
     const post = {
         title: title,
         content: content,
         images: Array.from(image.files)
     };
 
-    if (post.Image) {
+    if (post.images.length > 0) {
 
         alert(
             "タイトル\n" +
