@@ -1,5 +1,7 @@
 <script>
 
+const image = document.getElementById("image");
+
 const button = document.getElementById("postButton");
 
 button.addEventListener("click", () => {
@@ -8,12 +10,30 @@ button.addEventListener("click", () => {
 
     const content = document.getElementById("content").value;
 
-    alert(
-        "タイトル\n" +
-        title +
-        "\n\n本文\n" +
-        content
-    );
+    const selectedImage = image.files[0];
+
+    if (selectedImage) {
+
+        alert(
+            "タイトル\n" +
+            title +
+            "\n\n本文\n" +
+            content +
+            "\n\n画像\n" +
+            selectedImage.name
+        );
+
+    } else {
+
+        alert(
+            "タイトル\n" +
+            title +
+            "\n\n本文\n" +
+            content +
+            "\n\n画像なし"
+        );
+
+    }
 
 });
 
