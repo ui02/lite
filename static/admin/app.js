@@ -27,7 +27,7 @@ button.addEventListener("click", () => {
     const post = {
         title: title,
         content: content,
-        image: selectedImage
+        images: Array.from(image.files)
     };
 
     if (post.Image) {
@@ -38,7 +38,7 @@ button.addEventListener("click", () => {
             "\n\n本文\n" +
             post.content +
             "\n\n画像\n" +
-            post.image.name
+            post.images.length
         );
 
     } else {
