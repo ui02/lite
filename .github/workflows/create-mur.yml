@@ -24,20 +24,21 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Create test file
+      - name: Generate markdown
         run: |
-          mkdir -p content/posts
+          mkdir -p content/mur
+
           TITLE="${{ github.event.issue.title }}"
           TITLE="${TITLE#post: }"
 
           BODY="${{ github.event.issue.body }}"
 
-          FILE="content/mur/test.md"
+          DATE=$(TZ=Asia/Tokyo date +"%Y-%m-%dT%H:%M:%S%:z")
 
-          cat > "$FILE" <<EOF
+          cat > content/mur/test.md <<EOF
           ---
           title: "$TITLE"
-          date: $(TZ=Asia/Tokyo date +"%Y-%m-%dT%H:%M:%S%:z")
+          date: $DATE
           type: mur
           draft: false
           images: []
