@@ -4,6 +4,10 @@ on:
   issues:
     types: [opened]
 
+permissions:
+  contents: write
+  issues: read
+
 jobs:
   test:
     if: startsWith(github.event.issue.title, 'post:')
@@ -16,3 +20,22 @@ jobs:
           echo "Title: ${{ github.event.issue.title }}"
           echo "Body:"
           echo "${{ github.event.issue.body }}"
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Create test file
+        run: |
+          mkdir -p content/posts
+          echo "# テスト投稿" > content/posts/test.md
+
+      - name: Commit test file
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          git add content/posts/test.md
+
+          git commit -m "test: create markdown file" || echo "No changes"
+
+          git push
