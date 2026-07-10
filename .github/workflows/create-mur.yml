@@ -35,7 +35,11 @@ jobs:
 
           DATE=$(TZ=Asia/Tokyo date +"%Y-%m-%dT%H:%M:%S%:z")
 
-          cat > content/mur/test.md <<EOF
+          FILENAME=$(TZ=Asia/Tokyo date +"%Y%m%d%H%M%S")
+
+          FILE="content/mur/${FILENAME}.md"
+
+          cat > "$FILE" <<EOF
           ---
           title: "$TITLE"
           date: $DATE
@@ -47,13 +51,13 @@ jobs:
           $BODY
           EOF
 
-      - name: Commit test file
+      - name: Commit mur post
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
 
-          git add content/mur/test.md
+          git add content/mur/
 
-          git commit -m "test: create markdown file" || echo "No changes"
+          git commit -m "feat: add mur post" || echo "No changes"
 
           git push
