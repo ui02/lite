@@ -30,7 +30,7 @@ jobs:
 
           BODY="${{ github.event.issue.body }}"
 
-          IMAGES=$(echo "$BODY" | sed -n '/<!-- IMAGES -->/,/<!-- IMAGES -->/p' | grep "static/images")
+          IMAGES=$(echo "$BODY" | sed -n '/<!-- IMAGES -->/,/<!-- IMAGES -->/p' | grep "static/images" || true)
 
           DATE=$(TZ=Asia/Tokyo date +"%Y-%m-%dT%H:%M:%S%:z")
 
@@ -38,17 +38,17 @@ jobs:
 
           FILE="content/mur/${FILENAME}.md"
 
-          cat > "$FILE" <<EOF
----
-date: $DATE
-type: mur
-draft: false
-images:
-$(echo "$IMAGES" | sed 's#static#  - /#')
----
-
-$(echo "$BODY" | sed '/<!-- IMAGES -->/,$d')
-EOF
+          {
+            echo "---"
+            echo "date: $DATE"
+            echo "type: mur"
+            echo "draft: false"
+            echo "images:"
+            echo "$IMAGES" | sed 's#static#  - /#'
+            echo "---"
+            echo
+            echo "$BODY" | sed '/<!-- IMAGES -->/,$d'
+          } > "$FILE"
 
       - name: Commit mur post
         run: |
@@ -60,7 +60,6 @@ EOF
           git commit -m "feat: add mur post" || echo "No changes"
 
           git push
-
 
       - name: Close issue
         uses: actions/github-script@v7
