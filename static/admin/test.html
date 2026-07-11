@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button id="test">
+Issue作成テスト
+</button>
+
+<script>
+
+document.getElementById("test").onclick = async () => {
+
+  const res = await fetch(
+    "https://iolite-cms.ylpyz1989.workers.dev/",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        content:
+        "Cloudflare Workerからのテスト投稿です"
+      })
+    }
+  );
+
+  const data = await res.json();
+
+  alert(JSON.stringify(data));
+
+};
+
+</script>
+
+</body>
+</html>
