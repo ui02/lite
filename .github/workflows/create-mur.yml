@@ -30,6 +30,8 @@ jobs:
 
           BODY="${{ github.event.issue.body }}"
 
+          IMAGES=$(echo "$BODY" | sed -n '/<!-- IMAGES -->/,/<!-- IMAGES -->/p' | grep "static/images")
+
           DATE=$(TZ=Asia/Tokyo date +"%Y-%m-%dT%H:%M:%S%:z")
 
           FILENAME=$(TZ=Asia/Tokyo date +"%Y%m%d%H%M%S")
@@ -37,15 +39,16 @@ jobs:
           FILE="content/mur/${FILENAME}.md"
 
           cat > "$FILE" <<EOF
-          ---
-          date: $DATE
-          type: mur
-          draft: false
-          images: []
-          ---
+---
+date: $DATE
+type: mur
+draft: false
+images:
+$(echo "$IMAGES" | sed 's#static#  - /#')
+---
 
-          $BODY
-          EOF
+$(echo "$BODY" | sed '/<!-- IMAGES -->/,$d')
+EOF
 
       - name: Commit mur post
         run: |
