@@ -1,6 +1,9 @@
+const WORKER_URL = "https://iolite-cms.ylpyz1989.workers.dev/";
+
 const image = document.getElementById("image");
 const preview = document.getElementById("preview");
 const button = document.getElementById("postButton");
+
 
 image.addEventListener("change", () => {
 
@@ -22,7 +25,9 @@ image.addEventListener("change", () => {
 
 });
 
-button.addEventListener("click", () => {
+
+button.addEventListener("click", async () => {
+
 
     const content = document.getElementById("content").value;
 
@@ -31,37 +36,28 @@ button.addEventListener("click", () => {
         images: Array.from(image.files)
     };
 
-    if (post.images.length > 0) {
 
-        alert(
-            "本文\n" +
-            post.content +
-            "\n\n画像\n" +
-            post.images.length
-        );
+    const response = await fetch(
+        WORKER_URL,
+        {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                content: post.content
+            })
+        }
+    );
 
+
+    const result = await response.json();
+
+
+    if (result.success) {
+        alert("投稿しました！");
     } else {
-
-        alert(
-            "本文\n" +
-            post.content +
-            "\n\n画像なし"
-        );
-
+        alert("投稿に失敗しました");
     }
 
-    const markdown = createMarkdown(post);
-
-    console.log(markdown);
-
 });
-
-function createMarkdown(post) {
-
-    return `---
-title: "${post.title}"
-date: ${new Date().toISOString()}
----
-
-${post.content}`;
-}
