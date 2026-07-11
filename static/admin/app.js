@@ -24,12 +24,9 @@ image.addEventListener("change", () => {
 
 button.addEventListener("click", () => {
 
-    const title = document.getElementById("title").value;
-
     const content = document.getElementById("content").value;
 
     const post = {
-        title: title,
         content: content,
         images: Array.from(image.files)
     };
@@ -37,9 +34,7 @@ button.addEventListener("click", () => {
     if (post.images.length > 0) {
 
         alert(
-            "タイトル\n" +
-            post.title +
-            "\n\n本文\n" +
+            "本文\n" +
             post.content +
             "\n\n画像\n" +
             post.images.length
@@ -48,9 +43,7 @@ button.addEventListener("click", () => {
     } else {
 
         alert(
-            "タイトル\n" +
-            post.title +
-            "\n\n本文\n" +
+            "本文\n" +
             post.content +
             "\n\n画像なし"
         );

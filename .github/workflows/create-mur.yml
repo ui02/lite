@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   test:
-    if: startsWith(github.event.issue.title, 'post:')
+    if: startsWith(github.event.issue.title, 'mur:')
     runs-on: ubuntu-latest
 
     steps:
@@ -28,9 +28,6 @@ jobs:
         run: |
           mkdir -p content/mur
 
-          TITLE="${{ github.event.issue.title }}"
-          TITLE="${TITLE#post: }"
-
           BODY="${{ github.event.issue.body }}"
 
           DATE=$(TZ=Asia/Tokyo date +"%Y-%m-%dT%H:%M:%S%:z")
@@ -41,7 +38,6 @@ jobs:
 
           cat > "$FILE" <<EOF
           ---
-          title: "$TITLE"
           date: $DATE
           type: mur
           draft: false
