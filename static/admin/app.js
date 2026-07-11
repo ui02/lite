@@ -28,7 +28,6 @@ image.addEventListener("change", () => {
 
 button.addEventListener("click", async () => {
 
-
     const content = document.getElementById("content").value;
 
     const post = {
@@ -36,8 +35,6 @@ button.addEventListener("click", async () => {
         images: Array.from(image.files)
     };
 
-
-    const response = await fetch(
     const formData = new FormData();
 
     formData.append("content", post.content);
@@ -46,9 +43,15 @@ button.addEventListener("click", async () => {
         formData.append("images", image);
     }
 
+    const response = await fetch(
+        WORKER_URL,
+        {
+            method: "POST",
+            body: formData
+        }
+    );
 
     const result = await response.json();
-
 
     if (result.success) {
         alert("投稿しました！");
