@@ -38,17 +38,13 @@ button.addEventListener("click", async () => {
 
 
     const response = await fetch(
-        WORKER_URL,
-        {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
-                content: post.content
-            })
-        }
-    );
+    const formData = new FormData();
+
+    formData.append("content", post.content);
+
+    for (const image of post.images) {
+        formData.append("images", image);
+    }
 
 
     const result = await response.json();
