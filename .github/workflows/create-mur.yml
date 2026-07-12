@@ -44,12 +44,23 @@ jobs:
             echo "type: mur"
             echo "draft: false"
             echo "images:"
-            while IFS= read -r image; do
+
+            echo "$IMAGES" | while read image; do
               echo "  - ${image#static}"
-            done <<< "$IMAGES"
+            done
+
             echo "---"
             echo
+
             echo "$BODY" | sed '/<!-- IMAGES -->/,$d'
+
+            echo
+
+            echo "$IMAGES" | while read image; do
+              echo "![](${image#static})"
+              echo
+            done
+
           } > "$FILE"
 
       - name: Commit mur post
