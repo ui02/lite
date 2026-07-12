@@ -44,7 +44,9 @@ jobs:
             echo "type: mur"
             echo "draft: false"
             echo "images:"
-            echo "$IMAGES" | sed 's#static#  - /#'
+            while IFS= read -r image; do
+              echo "  - ${image#static}"
+            done <<< "$IMAGES"
             echo "---"
             echo
             echo "$BODY" | sed '/<!-- IMAGES -->/,$d'
