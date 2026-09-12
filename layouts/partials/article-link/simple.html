@@ -1,8 +1,64 @@
 {{/* Used by
-  1. list.html and term.html (when the cardView option is not enabled)
-  2. Recent articles template (when the cardView option is not enabled)
+  1. list.html and term.html
+  2. Recent articles template
   3. Shortcode list.html
 */}}
+
+{{/* =========================================================
+   mur
+   ========================================================= */}}
+
+{{ if eq .Type "mur" }}
+
+<article class="w-full max-w-2xl mx-auto mb-10 border-b border-neutral-200 dark:border-neutral-700 pb-8">
+
+  {{/* 投稿日時 */}}
+  <div class="text-sm text-neutral-500 dark:text-neutral-400 mb-3">
+    {{ .Date.Format "2006/01/02 15:04" }}
+  </div>
+
+  {{/* 本文 */}}
+  {{ with .Content }}
+    <div class="prose dark:prose-invert max-w-none mb-4">
+      {{ . }}
+    </div>
+  {{ end }}
+
+  {{/* 画像 */}}
+  {{ with .Params.images }}
+
+    <div class="grid gap-2
+      {{ if eq (len .) 1 }}
+        grid-cols-1
+      {{ else }}
+        grid-cols-2
+      {{ end }}
+    ">
+
+      {{ range . }}
+
+        <img
+          src="{{ . | absURL }}"
+          loading="lazy"
+          decoding="async"
+          class="w-full rounded-lg object-cover"
+          alt="">
+
+      {{ end }}
+
+    </div>
+
+  {{ end }}
+
+</article>
+
+
+{{/* =========================================================
+   通常の記事
+   ========================================================= */}}
+
+{{ else }}
+
 {{ $constrainItemsWidth := site.Params.list.constrainItemsWidth | default false }}
 {{ $disableImageOptimization := site.Store.Get "disableImageOptimization" }}
 
@@ -27,65 +83,97 @@
 {{ $page := .Page }}
 {{ $featured := "" }}
 {{ $featuredURL := "" }}
+
 {{ if not .Params.hideFeatureImage }}
-  {{/* frontmatter */}}
+
   {{ with $page }}
+
     {{ with .Params.featureimage }}
+
       {{ if or (strings.HasPrefix . "http:") (strings.HasPrefix . "https:") }}
+
         {{ if site.Params.hotlinkFeatureImage }}
           {{ $featuredURL = . }}
         {{ else }}
           {{ $featured = resources.GetRemote . }}
         {{ end }}
+
       {{ else }}
         {{ $featured = resources.Get . }}
       {{ end }}
+
     {{ end }}
 
     {{/* page resources */}}
     {{ if not (or $featured $featuredURL) }}
+
       {{ $images := .Resources.ByType "image" }}
+
       {{ range slice "*feature*" "*cover*" "*thumbnail*" }}
-        {{ if not $featured }}{{ $featured = $images.GetMatch . }}{{ end }}
+
+        {{ if not $featured }}
+          {{ $featured = $images.GetMatch . }}
+        {{ end }}
+
       {{ end }}
+
     {{ end }}
 
     {{/* fallback to default */}}
     {{ if not (or $featured $featuredURL) }}
+
       {{ $default := site.Store.Get "defaultFeaturedImage" }}
+
       {{ if $default.url }}
         {{ $featuredURL = $default.url }}
       {{ else if $default.obj }}
         {{ $featured = $default.obj }}
       {{ end }}
+
     {{ end }}
 
-    {{/* generate image URL if not hotlink */}}
+    {{/* generate image URL */}}
     {{ if not $featuredURL }}
+
       {{ with $featured }}
+
         {{ $featuredURL = .RelPermalink }}
+
         {{ if not (or $disableImageOptimization (eq .MediaType.SubType "svg")) }}
           {{ $featuredURL = (.Resize "600x").RelPermalink }}
         {{ end }}
+
       {{ end }}
+
     {{ end }}
+
   {{ end }}
+
 {{ end }}
 
 
 <article class="article-link--simple {{ $cardClasses }}">
+
   {{ with $featuredURL }}
+
     <div class="flex-none relative overflow-hidden {{ $imgWrapperClasses }} thumbnail">
+
       <img
         src="{{ . }}"
         role="presentation"
         loading="lazy"
         decoding="async"
         class="not-prose absolute inset-0 w-full h-full object-cover">
+
     </div>
+
   {{ end }}
+
+
   <div class="{{ $cardContentClasses }}">
+
     <header class="items-center text-start text-xl font-semibold">
+
       <a
         {{ with $page.Params.externalUrl }}
           href="{{ . }}" target="_blank" rel="external"
@@ -93,31 +181,67 @@
           href="{{ $page.RelPermalink }}"
         {{ end }}
         class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2">
+
         <h2>
+
           {{ .Title | emojify }}
+
           {{ if .Params.externalUrl }}
+
             <span class="cursor-default align-top text-xs text-neutral-400 dark:text-neutral-500">
+
               <span class="rtl:hidden">&#8599;</span>
               <span class="ltr:hidden">&#8598;</span>
+
             </span>
+
           {{ end }}
+
         </h2>
+
       </a>
+
+
       {{ if and .Draft .Site.Params.article.showDraftLabel }}
-        <div class="ms-2">{{ partial "badge.html" (i18n "article.draft" | emojify) }}</div>
+
+        <div class="ms-2">
+          {{ partial "badge.html" (i18n "article.draft" | emojify) }}
+        </div>
+
       {{ end }}
+
+
       {{ if templates.Exists "partials/extend-article-link.html" }}
+
         {{ partial "extend-article-link.html" . }}
+
       {{ end }}
+
     </header>
+
+
     <div class="text-sm text-neutral-500 dark:text-neutral-400">
+
       {{ partial "article-meta/basic.html" . }}
+
     </div>
+
+
     {{ if .Params.showSummary | default (site.Params.list.showSummary | default false) }}
+
       <div class="article-link__summary prose dark:prose-invert max-w-fit mt-1 line-clamp-3">
+
         {{ .Summary | plainify }}
+
       </div>
+
     {{ end }}
+
   </div>
+
+
   <div class="px-6 pt-4 pb-2"></div>
+
 </article>
+
+{{ end }}
