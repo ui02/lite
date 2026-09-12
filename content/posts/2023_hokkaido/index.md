@@ -1,7 +1,13 @@
 ---
 title: "2023 北海道"
 
+summary: "弾丸 日帰り北海道"
+
 date: 2023-06-28
+
+id: "2025-hokkaido"
+
+tags: ["travelog"]
 
 draft: false
 
