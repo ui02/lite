@@ -9,59 +9,259 @@ permissions:
   issues: write
 
 jobs:
-  test:
+  create-post:
     if: startsWith(github.event.issue.title, 'mur:')
     runs-on: ubuntu-latest
 
     steps:
-      - name: Show issue information
-        run: |
-          echo "New post detected!"
-          echo "Title: ${{ github.event.issue.title }}"
-          echo "Body:"
-          echo "${{ github.event.issue.body }}"
-
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Generate markdown
+      - name: Create mur post
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
         run: |
-          mkdir -p content/mur
+          python3 <<'PY'
+          import os
+          import re
+          from pathlib import Path
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
 
-          BODY="${{ github.event.issue.body }}"
+          # ----------------------------------------
+          # Issue本文
+          # ----------------------------------------
 
-          IMAGES=$(echo "$BODY" | sed -n '/<!-- IMAGES -->/,/<!-- IMAGES -->/p' | grep "static/images" || true)
+          body = os.environ.get("ISSUE_BODY", "")
 
-          DATE=$(TZ=Asia/Tokyo date +"%Y-%m-%dT%H:%M:%S%:z")
+          # 画像部分を取得
+          image_match = re.search(
+              r"<!-- IMAGES -->\s*(.*?)\s*<!-- IMAGES -->",
+              body,
+              re.DOTALL
+          )
 
-          FILENAME=$(TZ=Asia/Tokyo date +"%Y%m%d%H%M%S")
+          image_block = image_match.group(1) if image_match else ""
 
-          FILE="content/mur/${FILENAME}.md"
+          images = [
+              line.strip()
+              for line in image_block.splitlines()
+              if line.strip().startswith("static/images/mur/")
+          ]
 
-          {
-            echo "---"
-            echo "date: $DATE"
-            echo "type: mur"
-            echo "draft: false"
-            echo "images:"
+          # 画像部分より前を本文として取得
+          content = re.split(
+              r"\s*<!-- IMAGES -->",
+              body,
+              maxsplit=1
+          )[0].strip()
 
-            echo "$IMAGES" | while read image; do
-              echo "  - ${image#static}"
-            done
+          # ----------------------------------------
+          # 日本時間
+          # ----------------------------------------
 
-            echo "---"
-            echo
+          now = datetime.now(ZoneInfo("Asia/Tokyo"))
 
-            echo "$BODY" | sed '/<!-- IMAGES -->/,$d'
+          year = now.strftime("%Y")
+          month = now.month
+          date = now.strftime("%Y/%m/%d")
 
-            echo
+          # ----------------------------------------
+          # Markdownファイル
+          # ----------------------------------------
 
-            echo "$IMAGES" | while read image; do
-              echo "![](${image#static})"
-              echo
-            done
+          content_dir = Path("content/mur")
+          content_dir.mkdir(parents=True, exist_ok=True)
 
-          } > "$FILE"
+          file_path = content_dir / f"{year}.md"
+
+          # ----------------------------------------
+          # 画像URLを作る
+          # ----------------------------------------
+
+          image_urls = []
+
+          for image in images:
+              # static/ を取り除く
+              path = image[len("static/"):]
+
+              # GitHub Pagesの /lite/ を付ける
+              url = f"/lite/{path}"
+
+              image_urls.append(url)
+
+          # ----------------------------------------
+          # gallery
+          # ----------------------------------------
+
+          gallery = ""
+
+          if image_urls:
+              gallery_lines = []
+
+              count = len(image_urls)
+
+              if count == 1:
+                  class_name = "grid-w100"
+              elif count == 2:
+                  class_name = "grid-w50"
+              elif count == 3:
+                  class_name = "grid-w33"
+              else:
+                  class_name = "grid-w50"
+
+              for url in image_urls:
+                  gallery_lines.append(
+                      f'  <img src="{url}" class="{class_name}">'
+                  )
+
+              gallery = (
+                  "{{< gallery >}}\n"
+                  + "\n".join(gallery_lines)
+                  + "\n{{< /gallery >}}\n"
+              )
+
+          # ----------------------------------------
+          # timelineItem
+          # ----------------------------------------
+
+          post = (
+              f'{{{{< timelineItem icon="twitter" header="" subheader="{date}" >}}}}\n'
+              f'{gallery}'
+              f'{content}\n'
+              f'{{{{< /timelineItem >}}}}\n'
+          )
+
+          # ----------------------------------------
+          # 年ファイルがない場合
+          # ----------------------------------------
+
+          if not file_path.exists():
+
+              month_heading = f"## {month}月"
+
+              new_file = (
+                  "---\n"
+                  f'title: "{year}"\n'
+                  f"date: {year}-01-01\n"
+                  "draft: false\n"
+                  "---\n"
+                  "\n"
+                  f"{month_heading}\n"
+                  "\n"
+                  "{{< timeline >}}\n"
+                  "\n"
+                  f"{post}\n"
+                  "{{< /timeline >}}\n"
+              )
+
+              file_path.write_text(
+                  new_file,
+                  encoding="utf-8"
+              )
+
+          # ----------------------------------------
+          # 既存の年ファイルを更新
+          # ----------------------------------------
+
+          else:
+
+              text = file_path.read_text(encoding="utf-8")
+
+              month_heading = f"## {month}月"
+
+              # ------------------------------------
+              # その月が既に存在する場合
+              # ------------------------------------
+
+              if re.search(
+                  rf"^## {month}月\s*$",
+                  text,
+                  re.MULTILINE
+              ):
+
+                  # その月の範囲を取得
+                  pattern = (
+                      rf"(^## {month}月\s*$)"
+                      rf"(.*?)(?=^## \d+月\s*$|\Z)"
+                  )
+
+                  match = re.search(
+                      pattern,
+                      text,
+                      re.MULTILINE | re.DOTALL
+                  )
+
+                  if match:
+
+                      month_section = match.group(0)
+
+                      # timelineの開始直後に新しい投稿を追加
+                      timeline_start = "{{< timeline >}}"
+
+                      if timeline_start in month_section:
+
+                          month_section = month_section.replace(
+                              timeline_start,
+                              timeline_start + "\n\n" + post,
+                              1
+                          )
+
+                          text = (
+                              text[:match.start()]
+                              + month_section
+                              + text[match.end():]
+                          )
+
+                          file_path.write_text(
+                              text,
+                              encoding="utf-8"
+                          )
+
+              # ------------------------------------
+              # その月が存在しない場合
+              # ------------------------------------
+
+              else:
+
+                  new_month = (
+                      f"{month_heading}\n"
+                      "\n"
+                      "{{< timeline >}}\n"
+                      "\n"
+                      f"{post}\n"
+                      "{{< /timeline >}}\n"
+                      "\n"
+                  )
+
+                  # frontmatterの直後に追加
+                  frontmatter_end = text.find("---", 3)
+
+                  if frontmatter_end != -1:
+
+                      insert_position = frontmatter_end + 3
+
+                      text = (
+                          text[:insert_position]
+                          + "\n\n"
+                          + new_month
+                          + text[insert_position:]
+                      )
+
+                      file_path.write_text(
+                          text,
+                          encoding="utf-8"
+                      )
+
+          print(f"Created/updated: {file_path}")
+
+          print("Images:")
+          for image in image_urls:
+              print(f"  {image}")
+
+          print("Content:")
+          print(content)
+          PY
 
       - name: Commit mur post
         run: |
