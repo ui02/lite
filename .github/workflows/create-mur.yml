@@ -28,13 +28,16 @@ jobs:
           from datetime import datetime
           from zoneinfo import ZoneInfo
 
-          # ----------------------------------------
+          # ========================================
           # Issue本文
-          # ----------------------------------------
+          # ========================================
 
           body = os.environ.get("ISSUE_BODY", "")
 
+          # ----------------------------------------
           # 画像部分を取得
+          # ----------------------------------------
+
           image_match = re.search(
               r"<!-- IMAGES -->\s*(.*?)\s*<!-- IMAGES -->",
               body,
@@ -49,16 +52,19 @@ jobs:
               if line.strip().startswith("static/images/mur/")
           ]
 
+          # ----------------------------------------
           # 画像部分より前を本文として取得
+          # ----------------------------------------
+
           content = re.split(
               r"\s*<!-- IMAGES -->",
               body,
               maxsplit=1
           )[0].strip()
 
-          # ----------------------------------------
+          # ========================================
           # 日本時間
-          # ----------------------------------------
+          # ========================================
 
           now = datetime.now(ZoneInfo("Asia/Tokyo"))
 
@@ -66,22 +72,23 @@ jobs:
           month = now.month
           date = now.strftime("%Y/%m/%d")
 
-          # ----------------------------------------
+          # ========================================
           # Markdownファイル
-          # ----------------------------------------
+          # ========================================
 
           content_dir = Path("content/mur")
           content_dir.mkdir(parents=True, exist_ok=True)
 
           file_path = content_dir / f"{year}.md"
 
-          # ----------------------------------------
+          # ========================================
           # 画像URLを作る
-          # ----------------------------------------
+          # ========================================
 
           image_urls = []
 
           for image in images:
+
               # static/ を取り除く
               path = image[len("static/"):]
 
@@ -90,30 +97,32 @@ jobs:
 
               image_urls.append(url)
 
-          # ----------------------------------------
-          # gallery
-          # ----------------------------------------
+          # ========================================
+          # galleryを作る
+          # ========================================
 
           gallery = ""
 
           if image_urls:
-              gallery_lines = []
 
               count = len(image_urls)
 
               if count == 1:
                   class_name = "grid-w100"
+
               elif count == 2:
                   class_name = "grid-w50"
+
               elif count == 3:
                   class_name = "grid-w33"
+
               else:
                   class_name = "grid-w50"
 
-              for url in image_urls:
-                  gallery_lines.append(
-                      f'  <img src="{url}" class="{class_name}">'
-                  )
+              gallery_lines = [
+                  f'  <img src="{url}" class="{class_name}">'
+                  for url in image_urls
+              ]
 
               gallery = (
                   "{{< gallery >}}\n"
@@ -121,9 +130,9 @@ jobs:
                   + "\n{{< /gallery >}}\n"
               )
 
-          # ----------------------------------------
-          # timelineItem
-          # ----------------------------------------
+          # ========================================
+          # timelineItemを作る
+          # ========================================
 
           post = (
               f'{{{{< timelineItem icon="twitter" header="" subheader="{date}" >}}}}\n'
@@ -132,9 +141,9 @@ jobs:
               f'{{{{< /timelineItem >}}}}\n'
           )
 
-          # ----------------------------------------
-          # 年ファイルがない場合
-          # ----------------------------------------
+          # ========================================
+          # 年ファイルが存在しない場合
+          # ========================================
 
           if not file_path.exists():
 
@@ -160,9 +169,9 @@ jobs:
                   encoding="utf-8"
               )
 
-          # ----------------------------------------
-          # 既存の年ファイルを更新
-          # ----------------------------------------
+          # ========================================
+          # 年ファイルが存在する場合
+          # ========================================
 
           else:
 
@@ -170,17 +179,22 @@ jobs:
 
               month_heading = f"## {month}月"
 
-              # ------------------------------------
+              # ====================================
               # その月が既に存在する場合
-              # ------------------------------------
+              # ====================================
+
+              month_pattern = rf"^## {month}月\s*$"
 
               if re.search(
-                  rf"^## {month}月\s*$",
+                  month_pattern,
                   text,
                   re.MULTILINE
               ):
 
-                  # その月の範囲を取得
+                  # --------------------------------
+                  # その月のセクションを取得
+                  # --------------------------------
+
                   pattern = (
                       rf"(^## {month}月\s*$)"
                       rf"(.*?)(?=^## \d+月\s*$|\Z)"
@@ -196,7 +210,10 @@ jobs:
 
                       month_section = match.group(0)
 
-                      # timelineの開始直後に新しい投稿を追加
+                      # --------------------------------
+                      # timelineの開始直後に追加
+                      # --------------------------------
+
                       timeline_start = "{{< timeline >}}"
 
                       if timeline_start in month_section:
@@ -218,9 +235,9 @@ jobs:
                               encoding="utf-8"
                           )
 
-              # ------------------------------------
+              # ====================================
               # その月が存在しない場合
-              # ------------------------------------
+              # ====================================
 
               else:
 
@@ -231,36 +248,111 @@ jobs:
                       "\n"
                       f"{post}\n"
                       "{{< /timeline >}}\n"
-                      "\n"
                   )
 
-                  # frontmatterの直後に追加
-                  frontmatter_end = text.find("---", 3)
+                  # --------------------------------
+                  # 既存の月セクションを取得
+                  # --------------------------------
 
-                  if frontmatter_end != -1:
+                  sections = re.findall(
+                      r"(?ms)^## (\d+)月\s*$.*?(?=^## \d+月\s*$|\Z)",
+                      text
+                  )
 
-                      insert_position = frontmatter_end + 3
+                  # --------------------------------
+                  # 新しい月の挿入位置を決める
+                  # --------------------------------
 
-                      text = (
-                          text[:insert_position]
-                          + "\n\n"
-                          + new_month
-                          + text[insert_position:]
+                  inserted = False
+
+                  for existing_month in sorted(
+                      [int(m) for m in re.findall(r"^## (\d+)月\s*$", text, re.MULTILINE)],
+                      reverse=True
+                  ):
+
+                      if month > existing_month:
+
+                          existing_heading = f"## {existing_month}月"
+
+                          position = text.find(existing_heading)
+
+                          if position != -1:
+
+                              text = (
+                                  text[:position]
+                                  + new_month
+                                  + "\n"
+                                  + text[position:]
+                              )
+
+                              inserted = True
+                              break
+
+                  # --------------------------------
+                  # 一番古い月よりさらに古い場合
+                  # --------------------------------
+
+                  if not inserted:
+
+                      headings = list(
+                          re.finditer(
+                              r"^## \d+月\s*$",
+                              text,
+                              re.MULTILINE
+                          )
                       )
 
-                      file_path.write_text(
-                          text,
-                          encoding="utf-8"
-                      )
+                      if headings:
+
+                          position = headings[-1].start()
+
+                          text = (
+                              text[:position]
+                              + new_month
+                              + "\n"
+                              + text[position:]
+                          )
+
+                          inserted = True
+
+                  # --------------------------------
+                  # 月セクションがまだ1つもない場合
+                  # --------------------------------
+
+                  if not inserted:
+
+                      frontmatter_end = text.find("---", 3)
+
+                      if frontmatter_end != -1:
+
+                          insert_position = frontmatter_end + 3
+
+                          text = (
+                              text[:insert_position]
+                              + "\n\n"
+                              + new_month
+                              + text[insert_position:]
+                          )
+
+                  file_path.write_text(
+                      text,
+                      encoding="utf-8"
+                  )
+
+          # ========================================
+          # 完了ログ
+          # ========================================
 
           print(f"Created/updated: {file_path}")
 
           print("Images:")
+
           for image in image_urls:
               print(f"  {image}")
 
           print("Content:")
           print(content)
+
           PY
 
       - name: Commit mur post
