@@ -11,7 +11,6 @@ draft: false
 
 {{< timeline >}}
 
-{{< timelineItem >}}
 {{< timelineItem icon="twitter" subheader="2025/04/05" >}}
 {{< gallery >}}
 <img src="/lite/mur/2025/779995631650537472_1.jpg" class="grid-w100">
