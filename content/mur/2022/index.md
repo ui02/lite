@@ -267,6 +267,9 @@ The Last Jalapeño -2022-
 {{< gallery >}}
 <img src="/lite/mur/2022/751734160640688128_2.jpg" class="grid-w50">
 {{< /gallery >}}
+<video controls preload="metadata" width="100%">
+  <source src="/lite/mur/2022/751734160640688128_0.mp4" type="video/mp4">
+</video>
 ほう
 {{< badge >}}cat{{< /badge >}} {{< badge >}}video{{< /badge >}} 
 {{< /timelineItem >}}
@@ -371,12 +374,18 @@ The Last Jalapeño -2022-
 {{< /timelineItem >}}
 
 {{< timelineItem icon="twitter" subheader="2022/09/06" >}}
+<video controls preload="metadata" width="100%">
+  <source src="/lite/mur/2022/751733656938217472_0.mp4" type="video/mp4">
+</video>
 ごろちゅぱ
 {{< badge >}}cat{{< /badge >}} {{< badge >}}video{{< /badge >}} 
 {{< /timelineItem >}}
 
 {{< timelineItem icon="twitter" subheader="2022/09/07" >}}
 毛根からやっつけるタイプの猫
+<video controls preload="metadata" width="100%">
+  <source src="/lite/mur/2022/752448111492890625_0.mp4" type="video/mp4">
+</video>
 {{< badge >}}cat{{< /badge >}} {{< badge >}}video{{< /badge >}} 
 {{< /timelineItem >}}
 
@@ -391,6 +400,9 @@ The Last Jalapeño -2022-
 
 {{< timelineItem icon="twitter" subheader="2022/09/11" >}}
 興味があるけど 嫌な存在 コロコロ
+<video controls preload="metadata" width="100%">
+  <source src="/lite/mur/2022/752447979402690560_0.mp4" type="video/mp4">
+</video>
 {{< badge >}}cat{{< /badge >}} {{< badge >}}video{{< /badge >}} 
 {{< /timelineItem >}}
 
@@ -494,6 +506,9 @@ The Last Jalapeño -2022-
 
 {{< timelineItem icon="twitter" subheader="2022/08/07" >}}
 歯が痒いのか度が過ぎるのでカミカミおもちゃにすり替え作戦✊
+<video controls preload="metadata" width="100%">
+  <source src="/lite/mur/2022/751733245859741696_0.mp4" type="video/mp4">
+</video>
 {{< badge >}}cat{{< /badge >}} {{< badge >}}video{{< /badge >}} 
 {{< /timelineItem >}}
 
