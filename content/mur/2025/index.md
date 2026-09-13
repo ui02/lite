@@ -9,6 +9,9 @@ draft: false
 
 ## 4月
 
+{{< timeline >}}
+
+{{< timelineItem >}}
 {{< timelineItem icon="twitter" subheader="2025/04/05" >}}
 {{< gallery >}}
 <img src="/lite/mur/2025/779995631650537472_1.jpg" class="grid-w100">
@@ -20,8 +23,12 @@ draft: false
 {{< /gallery >}}
 {{< /timelineItem >}}
 
+{{< /timeline >}}
+
 
 ## 3月
+
+{{< timeline >}}
 
 {{< timelineItem icon="twitter" header="最後の川村記念美術館" subheader="2025/03/31" >}}
 {{< gallery >}}
@@ -36,8 +43,12 @@ draft: false
 {{< badge >}}日常{{< /badge >}} 
 {{< /timelineItem >}}
 
+{{< /timeline >}}
+
 
 ## 2月
+
+{{< timeline >}}
 
 {{< timelineItem icon="twitter" subheader="2025/02/24" >}}
 {{< gallery >}}
@@ -57,6 +68,8 @@ draft: false
 {{< badge >}}2024.09{{< /badge >}} {{< badge >}}cafe{{< /badge >}} 
 {{< /timelineItem >}}
 
+{{< /timeline >}}
+
 
 ## 1月
 
@@ -69,6 +82,5 @@ draft: false
 こういう休日が幸せすぎる
 {{< badge >}}日常{{< /badge >}} 
 {{< /timelineItem >}}
-
 
 {{< /timeline >}}
