@@ -7,9 +7,9 @@ date: 2020-11-03
 
 id: "2020-11-03"
 
-tags: ["dailylife", "放浪中"]
+tags: ["放浪中"]
 
-draft: false
+draft: true
 ---
 
 {{< gallery >}}
