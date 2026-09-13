@@ -18,7 +18,7 @@ draft: false
 {{< /gallery >}}
 #見た人も何か無言で橋をあげる
 {{< /timelineItem >}}
-
+{{< /timeline >}}
 
 ## 6月
 
