@@ -118,7 +118,7 @@ layout = "fixed" # valid options: basic, fixed
   showCards = true
   orderByWeight = false
   groupByYear = false
-  cardView = true
+  cardView = false
   cardViewScreenWidth = false
   constrainItemsWidth = false
 

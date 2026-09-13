@@ -20,6 +20,11 @@
   pageRef = "mur"
   weight = 10
 
+[[main]]
+  name = "HUSHTAGS"
+  pageRef = "tags"
+  weight = 10
+
 #[[main]]
 #  name = "Parent"
 #  weight = 20
@@ -63,10 +68,10 @@
 # the copyright notice. Configure as per the main menu above.
 
 
- [[footer]]
-   name = "Tags"
-   pageRef = "tags"
-   weight = 10
+# [[footer]]
+#   name = "Tags"
+#   pageRef = "tags"
+#   weight = 10
 
 # [[footer]]
 #   name = "Categories"
