@@ -16,14 +16,14 @@
   weight = 10
 
 [[main]]
-  name = "MURMUR"
-  pageRef = "mur"
+  name = "TAGS"
+  pageRef = "tags"
   weight = 10
 
 [[main]]
-  name = "HUSHTAGS"
-  pageRef = "tags"
-  weight = 10
+  name = "MUR."
+  pageRef = "mur"
+  weight = 20
 
 #[[main]]
 #  name = "Parent"
