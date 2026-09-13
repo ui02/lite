@@ -9,7 +9,7 @@ id: "2022-09-04"
 
 tags: ["dailylife"]
 
-draft: false
+draft: true
 ---
 
 
