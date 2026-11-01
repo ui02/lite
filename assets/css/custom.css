@@ -60,6 +60,7 @@ body {
    #E8E1D3 : ライトサンドベージュ（補助背景・ボーダー）
 */
 
+
 /* 基本の文字色・背景 */
 html,
 body,
@@ -71,11 +72,27 @@ body,
   color: #8E8B82; /* グレー寄りのカーキ */
 }
 
+
 /* 基本のリンク色 */
 a,
 a:visited,
 a:active {
   color: #6B8F71 !important; /* セージグリーン */
+}
+
+/* フッターのリンク色 */
+.page__footer a,
+.page__footer a:visited,
+.page__footer a:active {
+  color: #6B8F71 !important; /* セージグリーン */
+  font-weight: normal;
+}
+
+/* ヘッダー・ナビゲーションのリンク */
+.masthead a,
+.greedy-nav a,
+.greedy-nav a:visited {
+  color: #8E8B82; /* グレー寄りのカーキ */
 }
 
 /* リンクのホバー */
@@ -97,12 +114,28 @@ a:hover,
   text-decoration-skip-ink: none;
 }
 
+
+/* ナビゲーションのホバー装飾を無効化 */
+.masthead__menu-item a::before,
+.masthead__menu-item a::after {
+  display: none !important;
+  content: none !important;
+}
+
+.masthead__menu-item a:hover {
+  text-decoration: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+
+
 /* サイトタイトル・見出し */
 .site-title,
 .site-title:visited,
 .page__title,
 .archive__item-title {
-  color: #4B5148; /* チャコール */
+  color: #4B5148 !important; /* チャコール */
 }
 
 /* ヘッダー・ナビゲーション */
@@ -118,41 +151,6 @@ a:hover,
 .fa-search {
   color: #8E8B82; /* グレー寄りのカーキ */
 }
-
-/* フッター */
-.page__footer {
-  background-color: #FFFFFF; /* ホワイト */
-  color: #8E8B82; /* グレー寄りのカーキ */
-}
-
-/* フッターのリンク */
-.page__footer a,
-.page__footer a:visited,
-.page__footer a:active {
-  color: #6B8F71 !important; /* セージグリーン */
-  font-weight: normal;
-}
-
-/* ヘッダー・ナビゲーションのリンク */
-.masthead a,
-.greedy-nav a,
-.greedy-nav a:visited {
-  color: #8E8B82; /* グレー寄りのカーキ */
-}
-
-/* ナビゲーションのホバー装飾を無効化
-.masthead__menu-item a::before,
-.masthead__menu-item a::after {
-  display: none !important;
-  content: none !important;
-}
-
-.masthead__menu-item a:hover {
-  text-decoration: none !important;
-  border-bottom: none !important;
-  box-shadow: none !important;
-}
- */
 
 /* スマホのみヘッダーを固定 */
 @media screen and (max-width: 767px) {
@@ -271,7 +269,6 @@ figure.highlight {
   color: #8E8B82; /* グレー寄りのカーキ */
   font-weight: normal;
 }
-
 
 
 /* プロフィール画像のホバー */
