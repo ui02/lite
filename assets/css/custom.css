@@ -79,13 +79,17 @@ a:active {
 }
 
 /* リンクのホバー */
-a:hover {
+a:hover,
+.greedy-nav a:hover,
+.u-url:hover,
+.u-url a:hover,
+.page__content a:not(.btn):hover {
   color: #6B8F71 !important; /* セージグリーン */
   background-color: #FFFFFF !important; /* ホワイト */
   text-decoration: underline;
   text-decoration-color: #E8E1D3; /* ライトサンドベージュ */
-  text-decoration-thickness: 0.2em;
-  text-underline-offset: -0.3em;
+  text-decoration-thickness: 0.5em;
+  text-underline-offset: -0.2em;
   text-decoration-skip-ink: none;
 }
 
@@ -132,18 +136,7 @@ a:hover {
   color: #8E8B82; /* グレー寄りのカーキ */
 }
 
-/* ナビゲーションのホバー */
-.greedy-nav a:hover {
-  color: #6B8F71 !important; /* セージグリーン */
-  background-color: #FFFFFF !important; /* ホワイト */
-  text-decoration: underline;
-  text-decoration-color: #E8E1D3; /* ライトサンドベージュ */
-  text-decoration-thickness: 0.2em;
-  text-underline-offset: -0.3em;
-  text-decoration-skip-ink: none;
-}
-
-/* ナビゲーションのホバー装飾を無効化 */
+/* ナビゲーションのホバー装飾を無効化
 .masthead__menu-item a::before,
 .masthead__menu-item a::after {
   display: none !important;
@@ -155,6 +148,7 @@ a:hover {
   border-bottom: none !important;
   box-shadow: none !important;
 }
+ */
 
 /* スマホのみヘッダーを固定 */
 @media screen and (max-width: 767px) {
@@ -172,17 +166,6 @@ a:hover {
   text-decoration: none !important;
 }
 
-/* 記事やページへのリンクのホバー */
-.u-url:hover,
-.u-url a:hover {
-  color: #6B8F71 !important; /* セージグリーン */
-  background-color: #FFFFFF !important; /* ホワイト */
-  text-decoration: underline;
-  text-decoration-color: #E8E1D3; /* ライトサンドベージュ */
-  text-decoration-thickness: 0.2em;
-  text-underline-offset: -0.3em;
-  text-decoration-skip-ink: none;
-}
 
 /* サイドバー */
 .sidebar {
@@ -297,11 +280,7 @@ figure.highlight {
   font-weight: normal;
 }
 
-/* 記事本文内のリンクのホバー */
-.page__content a:not(.btn):hover {
-  text-decoration: underline;
-  text-decoration-color: #6B8F71; /* セージグリーン */
-}
+
 
 /* プロフィール画像のホバー */
 .author__avatar a:hover {
