@@ -53,9 +53,11 @@ body {
 /*
    基本カラー
    #FFFFFF : ホワイト（背景）
+   #4B5148 : チャコール（サイトタイトル）
    #8E8B82 : グレー寄りのカーキ（文字）
    #6B8F71 : セージグリーン（リンク・アクセント）
    #E5E8DF : ペールグリーン（補助背景・ボーダー）
+   #E8E1D3 : ライトサンドベージュ（補助背景・ボーダー）
 */
 
 /* 基本の文字色・背景 */
@@ -81,9 +83,9 @@ a:hover {
   color: #6B8F71 !important; /* セージグリーン */
   background-color: #FFFFFF !important; /* ホワイト */
   text-decoration: underline;
+  text-decoration-color: #E8E1D3; /* ライトサンドベージュ */
   text-decoration-thickness: 0.2em;
-  text-decoration-color: #6B8F71; /* セージグリーン */
-  text-underline-offset: -0.5em;
+  text-underline-offset: -0.3em;
   text-decoration-skip-ink: none;
 }
 
@@ -92,7 +94,7 @@ a:hover {
 .site-title:visited,
 .page__title,
 .archive__item-title {
-  color: #8E8B82; /* グレー寄りのカーキ */
+  color: #4B5148; /* チャコール */
 }
 
 /* ヘッダー・ナビゲーション */
@@ -127,17 +129,17 @@ a:hover {
 .masthead a,
 .greedy-nav a,
 .greedy-nav a:visited {
-  color: #6B8F71; /* セージグリーン */
+  color: #8E8B82; /* グレー寄りのカーキ */
 }
 
 /* ナビゲーションのホバー */
 .greedy-nav a:hover {
-  color: #6B8F71; /* セージグリーン */
+  color: #6B8F71 !important; /* セージグリーン */
   background-color: #FFFFFF !important; /* ホワイト */
   text-decoration: underline;
+  text-decoration-color: #E8E1D3; /* ライトサンドベージュ */
   text-decoration-thickness: 0.2em;
-  text-decoration-color: #6B8F71; /* セージグリーン */
-  text-underline-offset: -0.5em;
+  text-underline-offset: -0.3em;
   text-decoration-skip-ink: none;
 }
 
@@ -173,12 +175,12 @@ a:hover {
 /* 記事やページへのリンクのホバー */
 .u-url:hover,
 .u-url a:hover {
-  color: #6B8F71; /* セージグリーン */
+  color: #6B8F71 !important; /* セージグリーン */
   background-color: #FFFFFF !important; /* ホワイト */
   text-decoration: underline;
+  text-decoration-color: #E8E1D3; /* ライトサンドベージュ */
   text-decoration-thickness: 0.2em;
-  text-decoration-color: #6B8F71; /* セージグリーン */
-  text-underline-offset: -0.5em;
+  text-underline-offset: -0.3em;
   text-decoration-skip-ink: none;
 }
 
