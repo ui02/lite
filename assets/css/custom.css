@@ -92,11 +92,12 @@ a:active {
 .masthead a,
 .greedy-nav a,
 .greedy-nav a:visited {
-  color: #8E8B82; /* グレー寄りのカーキ */
+  color: #8E8B82 !important; /* グレー寄りのカーキ */
 }
 
 /* リンクのホバー */
 a:hover,
+.masthead a:hover,
 .greedy-nav a:hover,
 .u-url:hover,
 .u-url a:hover,
@@ -133,6 +134,7 @@ a:hover,
 /* サイトタイトル・見出し */
 .site-title,
 .site-title:visited,
+.masthead__menu-item,
 .page__title,
 .archive__item-title {
   color: #4B5148 !important; /* チャコール */
