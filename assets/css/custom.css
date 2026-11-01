@@ -83,7 +83,11 @@ a:hover,
 .greedy-nav a:hover,
 .u-url:hover,
 .u-url a:hover,
-.page__content a:not(.btn):hover {
+.nav__list a:hover,
+.nav__sub-title a:hover,
+.nav__items a:hover,
+.page__content a:not(.btn):hover,
+.page__taxonomy-item {
   color: #6B8F71 !important; /* セージグリーン */
   background-color: #FFFFFF !important; /* ホワイト */
   text-decoration: underline;
@@ -245,18 +249,6 @@ figure.highlight {
   background-color: #E5E8DF; /* ペールグリーン */
   color: #8E8B82; /* グレー寄りのカーキ */
   font-style: normal;
-}
-
-/* ナビゲーションのホバー */
-.nav__list a:hover {
-  text-decoration: none;
-  text-decoration-color: #8E8B82; /* グレー寄りのカーキ */
-  color: #8E8B82; /* グレー寄りのカーキ */
-}
-
-.nav__sub-title a:hover,
-.nav__items a:hover {
-  background-color: #E5E8DF; /* ペールグリーン */
 }
 
 /* 目次 */
