@@ -1,3 +1,4 @@
+
 ---
 ---
 @charset "utf-8";
@@ -6,13 +7,13 @@
    フォントサイズ
    ================================= */
 
-/* 記事本文のフォントサイズ：スマホ・通常 */
+/* 記事本文：スマホ・通常 */
 .page__content,
 .archive-timeline__item {
   font-size: 14px;
 }
 
-/* 記事本文のフォントサイズ：PC */
+/* 記事本文：PC */
 @media (min-width: 768px) {
   .page__content,
   .archive-timeline__item {
@@ -29,13 +30,12 @@ body {
 .page__title,
 .archive__item-title,
 .taxonomy__index,
-.archive__subtitle,
-.archive__item-title {
+.archive__subtitle {
   font-family: "Caveat", "Yomogi", "Gaegu display", sans-serif;
   font-weight: 400;
 }
 
-/* 画像キャプションのフォント */
+/* 画像キャプション */
 .page__content figure figcaption {
   font-family: "Yomogi", "Caveat", "Gaegu display", sans-serif !important;
 }
@@ -47,82 +47,101 @@ body {
 
 
 /* =================================
-   配色：Natural Beige & Sage
+   配色：Natural Sage
    ================================= */
 
-/* 背景・基本の文字色 */
+/*
+   基本カラー
+   #FFFFFF : ホワイト（背景）
+   #8E8B82 : グレー寄りのカーキ（文字）
+   #6B8F71 : セージグリーン（リンク・アクセント）
+   #E5E8DF : ペールグリーン（補助背景・ボーダー）
+*/
+
+/* 基本の文字色・背景 */
 html,
 body,
 #main,
 .masthead,
 .sidebar,
 .page__footer {
-  background-color: #FFFFFF !important;
-  color: #8e8b82;　/* グレー寄りのカーキ */
+  background-color: #FFFFFF !important; /* ホワイト */
+  color: #8E8B82; /* グレー寄りのカーキ */
 }
 
-/* サイトタイトル・見出しの文字色 */
+/* 基本のリンク色 */
+a,
+a:visited,
+a:active {
+  color: #6B8F71 !important; /* セージグリーン */
+}
+
+/* リンクのホバー */
+a:hover {
+  color: #6B8F71 !important; /* セージグリーン */
+  background-color: #FFFFFF !important; /* ホワイト */
+  text-decoration: underline;
+  text-decoration-thickness: 0.2em;
+  text-decoration-color: #6B8F71; /* セージグリーン */
+  text-underline-offset: -0.5em;
+  text-decoration-skip-ink: none;
+}
+
+/* サイトタイトル・見出し */
 .site-title,
 .site-title:visited,
 .page__title,
 .archive__item-title {
-  color: #8e8b82;　/* グレー寄りのカーキ */
+  color: #8E8B82; /* グレー寄りのカーキ */
 }
 
-/* ヘッダー・ナビゲーションの文字色 */
+/* ヘッダー・ナビゲーション */
 .masthead,
 .masthead__menu,
 .masthead__inner-wrap,
 .greedy-nav {
-  background-color: #FFFFFF !important;
-  border-bottom: 0px solid #E5E1D7;
+  background-color: #FFFFFF !important; /* ホワイト */
+  border-bottom: none;
 }
 
-.fas fa-search, {
-  color:  #6B8F71;  /* 彩度の低いダークライムグリーン */
+/* 検索アイコン */
+.fa-search {
+  color: #8E8B82; /* グレー寄りのカーキ */
 }
 
-/* フッターの文字色 */
+/* フッター */
 .page__footer {
-  background-color: #FFFFFF;
-  color: #8e8b82;　/* グレー寄りのカーキ
-}
-   
-/* 基本のリンク */
-a,
-a:visited,
-a:active {
-  color: #6B8F71 !important;　/* 彩度の低いダークライムグリーン */
+  background-color: #FFFFFF; /* ホワイト */
+  color: #8E8B82; /* グレー寄りのカーキ */
 }
 
-a:hover {
-  color: #6B8F71 !important;　/* 彩度の低いダークライムグリーン */
-  background-color: #FFFFFF !important;
-  text-decoration: underline;
-  text-decoration-thickness: 0.2em;
-  text-decoration-color: #e9dcbe;　/* サンドカラー */
-  text-underline-offset: -0.5em; /* 線の位置。テキストに重なるようにやや上部にする */
-  text-decoration-skip-ink: none; /* 下線と文字列が重なる部分でも下線が省略されない（線が途切れない） */
+/* フッターのリンク */
+.page__footer a,
+.page__footer a:visited,
+.page__footer a:active {
+  color: #6B8F71 !important; /* セージグリーン */
+  font-weight: normal;
 }
 
-/* ヘッダー・ナビゲーションのリンク色 */
+/* ヘッダー・ナビゲーションのリンク */
 .masthead a,
 .greedy-nav a,
 .greedy-nav a:visited {
-  color: #6B8F71;  /* 彩度の低いダークライムグリーン */
+  color: #6B8F71; /* セージグリーン */
 }
 
+/* ナビゲーションのホバー */
 .greedy-nav a:hover {
-  color: #6B8F71;  /* 彩度の低いダークライムグリーン */
-  background-color: #FFFFFF !important;
+  color: #6B8F71; /* セージグリーン */
+  background-color: #FFFFFF !important; /* ホワイト */
   text-decoration: underline;
   text-decoration-thickness: 0.2em;
-  text-decoration-color: #e9dcbe;　/* サンドカラー */
-  text-underline-offset: -0.5em; /* 線の位置。テキストに重なるようにやや上部にする */
-  text-decoration-skip-ink: none; /* 下線と文字列が重なる部分でも下線が省略されない（線が途切れない） */
+  text-decoration-color: #6B8F71; /* セージグリーン */
+  text-underline-offset: -0.5em;
+  text-decoration-skip-ink: none;
 }
 
-/* ナビゲーションのホバー下線を消す */
+/* ナビゲーションのホバー装飾を無効化 */
 .masthead__menu-item a::before,
 .masthead__menu-item a::after {
   display: none !important;
@@ -135,7 +154,6 @@ a:hover {
   box-shadow: none !important;
 }
 
-
 /* スマホのみヘッダーを固定 */
 @media screen and (max-width: 767px) {
   .masthead {
@@ -147,164 +165,160 @@ a:hover {
 
 /* 記事やページへのリンク */
 .u-url {
-  color: #6B8F71;  /* 彩度の低いダークライムグリーン */
-  background-color: #FFFFFF !important;
-  text-decoration: none  !important;
+  color: #6B8F71; /* セージグリーン */
+  background-color: #FFFFFF !important; /* ホワイト */
+  text-decoration: none !important;
 }
+
+/* 記事やページへのリンクのホバー */
+.u-url:hover,
 .u-url a:hover {
-  color: #6B8F71;  /* 彩度の低いダークライムグリーン */
-  background-color: #FFFFFF !important;
+  color: #6B8F71; /* セージグリーン */
+  background-color: #FFFFFF !important; /* ホワイト */
   text-decoration: underline;
   text-decoration-thickness: 0.2em;
-  text-decoration-color: #e9dcbe;　/* サンドカラー（ #6B8F71;  /* 彩度の低いダークライムグリーン */）*/
-  text-underline-offset: -0.5em; /* 線の位置。テキストに重なるようにやや上部にする */
-  text-decoration-skip-ink: none; /* 下線と文字列が重なる部分でも下線が省略されない（線が途切れない） */
+  text-decoration-color: #6B8F71; /* セージグリーン */
+  text-underline-offset: -0.5em;
+  text-decoration-skip-ink: none;
 }
 
 /* サイドバー */
 .sidebar {
-  background-color: #FFFFFF;
+  background-color: #FFFFFF; /* ホワイト */
 }
 
 /* ボタン */
 .btn {
-  background-color: #FFFFFF;
-  color:  #6B8F71;  /* 彩度の低いダークライムグリーン */
+  background-color: #FFFFFF; /* ホワイト */
+  color: #6B8F71; /* セージグリーン */
 }
 
 .btn:hover {
-  background-color:  #6B8F71;  /* 彩度の低いダークライムグリーン */
-  color: #FFFFFF;
+  background-color: #6B8F71; /* セージグリーン */
+  color: #FFFFFF; /* ホワイト */
 }
 
-/* 記事最下部のタグ類 */
+/* 記事最下部のタグ */
 .page__taxonomy-item {
   display: inline-block;
-  margin-inline-end: 0px;margin-bottom: 0px;
-  padding: 0px 0px;
+  margin-inline-end: 0;
+  margin-bottom: 0;
+  padding: 0;
   text-decoration: none;
-  border: 0px solid #afa58f;
-  border-radius: 0px
-}
-
-/* フッターのリンク色 */
-.page__footer a {
-  color:  #6B8F71;  /* 彩度の低いダークライムグリーン */
-  font-weight: normal;
+  border: none;
+  border-radius: 0;
 }
 
 /* コードブロック */
 .highlight,
 div.highlighter-rouge,
 figure.highlight {
-  background-color: #F7F5F0; /* サイド低めのクリーム色 */
+  background-color: #E5E8DF; /* ペールグリーン */
 }
 
-/* いろいろ */
-.pagination li a.current,.pagination li a.current.disabled {
-    color: #fff;
-    background: #E5E8DF;　/* 薄い灰色がかった緑色 */
+/* ページネーション */
+.pagination li a.current,
+.pagination li a.current.disabled {
+  color: #FFFFFF; /* ホワイト */
+  background: #E5E8DF; /* ペールグリーン */
 }
+
 .pagination--pager:hover {
-    background-color:  #6B8F71;  /* 彩度の低いダークライムグリーン */
-    color: #fff;
+  background-color: #6B8F71; /* セージグリーン */
+  color: #FFFFFF; /* ホワイト */
 }
 
+/* 検索ボタン */
 .search__toggle {
-    margin-inline:1rem;height: 2rem;
-    border: 0;
-    outline: none;
-    color:  #6B8F71;  /* 彩度の低いダークライムグリーン */
+  margin-inline: 1rem;
+  height: 2rem;
+  border: 0;
+  outline: none;
+  color: #6B8F71; /* セージグリーン */
 }
+
 .search__toggle:hover {
-    color:  #6B8F71;  /* 彩度の低いダークライムグリーン */
+  color: #6B8F71; /* セージグリーン */
 }
 
+/* 検索結果のハイライト */
 .archive__item-title .ais-Highlight {
-    color:  #6B8F71;  /* 彩度の低いダークライムグリーン */
-    font-style: normal;
-    text-decoration: underline;
-    text-decoration-color:  #6B8F71;  /* 彩度の低いダークライムグリーン */
+  color: #6B8F71; /* セージグリーン */
+  font-style: normal;
+  text-decoration: underline;
+  text-decoration-color: #6B8F71; /* セージグリーン */
 }
+
 .archive__item-excerpt .ais-Highlight {
-    color:  #6B8F71;  /* 彩度の低いダークライムグリーン */
-    font-style: normal;
-    font-weight: bold;
+  color: #6B8F71; /* セージグリーン */
+  font-style: normal;
+  font-weight: bold;
 }
 
-
-/* ナビバー？ */
+/* ナビゲーション・サイドバーの見出し */
 .nav__title {
-    background-color: #E5E8DF;　/* 薄い灰色がかった緑色 */
-    color: #8e8b82;　/* グレー寄りのカーキ
-    font-style: normal;
+  background-color: #E5E8DF; /* ペールグリーン */
+  color: #8E8B82; /* グレー寄りのカーキ */
+  font-style: normal;
 }
+
+/* ナビゲーションのホバー */
 .nav__list a:hover {
-    text-decoration: none;
-    text-decoration-color: #8e8b82;　/* グレー寄りのカーキ
-    color: #8e8b82;　/* グレー寄りのカーキ
-}
-.nav__sub-title a:hover {
-  background-color: #E5E8DF;　/* 薄い灰色がかった緑色 */
+  text-decoration: none;
+  text-decoration-color: #8E8B82; /* グレー寄りのカーキ */
+  color: #8E8B82; /* グレー寄りのカーキ */
 }
 
+.nav__sub-title a:hover,
 .nav__items a:hover {
-  background-color: #E5E8DF;　/* 薄い灰色がかった緑色 */
+  background-color: #E5E8DF; /* ペールグリーン */
 }
 
+/* 目次 */
 .toc .active a {
-    background-color: #F7F5F0; /* サイド低めのクリーム色 */
-    color: #8e8b82;　/* グレー寄りのカーキ
+  background-color: #E5E8DF; /* ペールグリーン */
+  color: #8E8B82; /* グレー寄りのカーキ */
 }
+
 .toc .nav__title {
-    color: #8e8b82;　/* グレー寄りのカーキ
-    background-color: #E5E8DF;　/* 薄い灰色がかった緑色 */
+  color: #8E8B82; /* グレー寄りのカーキ */
+  background-color: #E5E8DF; /* ペールグリーン */
 }
+
 .toc {
-    background-color: #fff;
-    border: 1px solid #E5E8DF;　/* 薄い灰色がかった緑色 */
+  background-color: #FFFFFF; /* ホワイト */
+  border: 1px solid #E5E8DF; /* ペールグリーン */
 }
 
 .toc__menu a {
-    color: #8e8b82;　/* グレー寄りのカーキ */
-    font-weight: normal;
+  color: #8E8B82; /* グレー寄りのカーキ */
+  font-weight: normal;
 }
 
-.archive__item-title .ais-Highlight {
-    color:  #6B8F71;  /* 彩度の低いダークライムグリーン */
-    font-style: normal;
-    text-decoration: underline;
-    text-decoration-color:  #6B8F71;  /* 彩度の低いダークライムグリーン */
-}
-.archive__item-title .ais-Highlight {
-    color:  #6B8F71;  /* 彩度の低いダークライムグリーン */
-    font-style: normal;
-    text-decoration: underline;
-    text-decoration-color:  #6B8F71;  /* 彩度の低いダークライムグリーン */
-}
-.archive__item-excerpt .ais-Highlight {
-    color:  #6B8F71;  /* 彩度の低いダークライムグリーン */
-    font-style: normal;
-    font-weight: bold;
-}
+/* 記事本文内のリンクのホバー */
 .page__content a:not(.btn):hover {
-    text-decoration: underline;
-    text-decoration-color:  #6B8F71;  /* 彩度の低いダークライムグリーン */
+  text-decoration: underline;
+  text-decoration-color: #6B8F71; /* セージグリーン */
 }
 
+/* プロフィール画像のホバー */
 .author__avatar a:hover {
-    background-color: #fff;
+  background-color: #FFFFFF; /* ホワイト */
 }
 
+/* Murmurカード */
 .murmur-card a:hover {
-  background-color: #fff;
+  background-color: #FFFFFF; /* ホワイト */
 }
+
 .murmur-card span {
   font-weight: normal;
 }
+
 .murmur-card {
   font-family: "Caveat", "Yomogi", "Gaegu display", sans-serif;
 }
+
 
 /* =================================
    indexページのランダム画像
@@ -342,6 +356,7 @@ figure.highlight {
   }
 }
 
+
 /* =================================
    アーカイブページ
    ================================= */
@@ -350,4 +365,3 @@ figure.highlight {
 body.layout--home .archive__subtitle {
   display: none;
 }
-
