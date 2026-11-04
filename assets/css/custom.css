@@ -580,14 +580,6 @@ body.layout--home .archive__subtitle {
    記事ページ
 ======================================== */
 
-/* 記事全体の幅 */
-.layout--single .page__inner-wrap {
-  width: 100%;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 /* 記事タイトル */
 .layout--single .page__title {
   text-align: center;
