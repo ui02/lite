@@ -128,7 +128,7 @@ a:active {
 
 /* 
 .site-title a:hover,
-.masthead a:hover,
+.masthead__menu-item a:hover,
 .greedy-nav a:hover,
   color: #054dcb; /* ビビッドブルー */
   text-decoration: underline;
@@ -139,12 +139,13 @@ a:active {
   text-decoration-skip-ink: none;
 } */
 
-/* ナビゲーションのホバー装飾 */
+/* ナビゲーションのホバー装飾
 .greedy-nav .visible-links a:before {
   height: 1px;
+  transition: none;
 }
 
-/* ナビゲーションのホバー装飾を無効化
+/* ナビゲーションのホバー装飾を無効化 */
 .masthead__menu-item a::before,
 .masthead__menu-item a::after {
   display: none;
@@ -154,7 +155,8 @@ a:active {
   text-decoration: none;
   border-bottom: none;
   box-shadow: none;
-} */
+} 
+ */
 
 /* スマホのみヘッダーを固定 */
 @media screen and (max-width: 767px) {
