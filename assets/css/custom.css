@@ -107,7 +107,7 @@ a:active {
   letter-spacing: 8%;
   font-weight: normal;
   margin-top: 30px;
-  background-image: /images/base.png;
+  background-image: url("../images/base.png");
 }
 
 .masthead
@@ -116,11 +116,12 @@ a:active {
   color: #231f20; /* ダークグレー */
   background-color: #FFFFFF;
   letter-spacing: 10%;
+  margin-top: 10px;
 }
 
 .masthead a,
 .greedy-nav a {
-  color: #054dcb; /* ビビッドブルー */
+  color: #231f20; /* ダークグレー */
 }
 
 .site-title a:hover,
