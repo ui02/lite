@@ -118,6 +118,7 @@ body,
 
 /* ヘッダー内リンクの基本色 */
 .masthead a,
+.masthead__menu-item a,
 .greedy-nav a {
   color: #231f20;
 }
@@ -146,7 +147,9 @@ body,
   background-color: #FFFFFF;
   border-bottom: none;
 }
-
+.masthead {
+  border-bottom: none;
+}
 
 /* =================================
    04. リンク
@@ -431,12 +434,12 @@ body.layout--home .archive__subtitle {
   background: #054dcb;
   padding: 3px 3px;
   margin-bottom: 30px;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.3em;
 }
 
 /* 記事タイトル */
 .home-post-title {
-  width: 100%;
+  width: 80%;
   font-size: 13px;
   font-weight: 500;
   text-align: center;
