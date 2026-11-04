@@ -440,6 +440,11 @@ body.layout--home .archive__subtitle {
   line-height: 1.6;
   margin: 0 0 3px;
   overflow: hidden;
+
+  box-decoration-break: clone;  
+  display: inline;
+  padding: .3em;
+  background-color: #fcfbf1; /* クリームイエロー */
 }
 
 /* Thumbnail */
