@@ -10,6 +10,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Holiday";
+  src: url("../fonts/Holiday.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* =================================
    フォントサイズ
    ================================= */
@@ -38,7 +46,7 @@ body {
 .archive__item-title,
 .taxonomy__index,
 .archive__subtitle {
-  font-family: "Caveat", "M PLUS Rounded 1c", "Gaegu display", sans-serif;
+  font-family: "Holiday", "M PLUS Rounded 1c", "Gaegu display", sans-serif;
   font-weight: 400;
 }
 
@@ -49,7 +57,7 @@ body {
 
 /* ナビゲーションメニュー */
 .masthead .greedy-nav a {
-  font-family: "Caveat", sans-serif;
+  font-family: font-family: "Holiday", cursive;
 }
 
 
