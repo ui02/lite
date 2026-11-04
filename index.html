@@ -31,6 +31,12 @@ author_profile: false
     {% for post in recent_posts %}
       <a href="{{ post.url | relative_url }}" class="home-post-card">
 
+        <time class="home-post-date">
+          {{ post.date | date: "%Y/%m/%d" }}
+        </time>
+
+        <h3 class="home-post-title">{{ post.title }}</h3>
+        
         {% if post.header.teaser %}
           <img
             src="{{ post.header.teaser | relative_url }}"
@@ -38,18 +44,12 @@ author_profile: false
             class="home-post-image">
         {% endif %}
 
-        <time class="home-post-date">
-          {{ post.date | date: "%Y/%m/%d" }}
-        </time>
-
-        <h3 class="home-post-title">{{ post.title }}</h3>
-
         {% if post.excerpt %}
           <p class="home-post-excerpt">
             {{ post.excerpt | strip_html | truncate: 70 }}
           </p>
         {% endif %}
-
+        
       </a>
     {% endfor %}
   </div>
