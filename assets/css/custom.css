@@ -84,11 +84,6 @@ a,
 a:visited,
 a:active {
   color: #054dcb !important; /* ビビッドブルー */
-  box-decoration-break: clone;  
-  display: inline;
-  padding: .3em;
-  line-height: 2.5;
-  background-color: #fcfbf1; /* クリームイエロー */
 }
 
 /* フッターのリンク色 */
@@ -104,11 +99,6 @@ a:active {
 .greedy-nav a,
 .greedy-nav a:visited {
   color: #054dcb !important; /* ビビッドブルー */
-  box-decoration-break: clone;  
-  display: inline;
-  padding: .3em;
-  line-height: 2.5;
-  background-color: #fcfbf1; /* クリームイエロー */
 }
 
 /* リンクのホバー */
