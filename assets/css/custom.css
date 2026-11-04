@@ -103,7 +103,8 @@ a:active {
    ヘッダー
    ================================= */
 .site-title {
-  font-size: 20px;
+  font-size: 55px;
+  letter-spacing: 20%;
 }
 
 .masthead
@@ -111,6 +112,7 @@ a:active {
   font-family: "Holiday", cursive;
   color: #231f20; /* ダークグレー */
   background-color: #FFFFFF;
+  letter-spacing: 10%;
 }
 
 .masthead a,
