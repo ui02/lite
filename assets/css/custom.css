@@ -55,10 +55,7 @@ body {
   font-family: "M PLUS Rounded 1c", "Caveat", "Gaegu display", sans-serif;
 }
 
-/* ナビゲーションメニュー */
-.masthead .greedy-nav a {
-  font-family: font-family: "Holiday", cursive;
-}
+
 
 
 /* =================================
@@ -102,29 +99,30 @@ a:active {
   font-weight: normal;
 }
 
-/* ヘッダー・ナビゲーションのリンク */
+/* =================================
+   ヘッダー
+   ================================= */
+.site-title {
+  font-size: 20px;
+}
+
+.masthead
+.greedy-nav {
+  font-family: "Holiday", cursive;
+  color: #231f20; /* ダークグレー */
+  background-color: #FFFFFF;
+}
+
 .masthead a,
-.greedy-nav a,
-.greedy-nav a:visited {
+.greedy-nav a {
   color: #054dcb; /* ビビッドブルー */
 }
 
-/* リンクのホバー */
-a:hover,
 .masthead a:hover,
 .greedy-nav a:hover,
-.u-url:hover,
-.u-url a:hover,
-.nav__list a:hover,
-.nav__sub-title a:hover,
-.nav__items a:hover,
-.page__content a:not(.btn):hover,
-.page__taxonomy-item {
   color: #054dcb; /* ビビッドブルー */
-  background-color: #FFFFFF;
   text-decoration: underline;
   text-decoration-color: #054dcb; /* ビビッドブルー */
-  
 }
 
 /* ナビゲーションのホバー装飾を無効化 */
@@ -139,19 +137,42 @@ a:hover,
   box-shadow: none;
 }
 
+/* スマホのみヘッダーを固定 */
+@media screen and (max-width: 767px) {
+  .masthead {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+}
+
+
+/* リンクのホバー */
+a:hover,
+.u-url:hover,
+.u-url a:hover,
+.nav__list a:hover,
+.nav__sub-title a:hover,
+.nav__items a:hover,
+.page__content a:not(.btn):hover,
+.page__taxonomy-item {
+  color: #054dcb; /* ビビッドブルー */
+  background-color: #FFFFFF;
+  text-decoration: underline;
+  text-decoration-color: #054dcb; /* ビビッドブルー */  
+}
+
+
+
 /* サイトタイトル・見出し */
 .site-title,
 .site-title:visited,
-.masthead__menu-item,
 .page__title,
 .archive__item-title {
   color: #231f20; /* ダークグレー */
 }
 
 /* ヘッダー・ナビゲーション */
-.masthead,
-.masthead__menu,
-.masthead__inner-wrap,
 .greedy-nav {
   background-color: #FFFFFF; /* ホワイト */
   border-bottom: none;
@@ -160,15 +181,6 @@ a:hover,
 /* 検索アイコン */
 .fa-search {
   color: #554b42; /* くすみブラウン */
-}
-
-/* スマホのみヘッダーを固定 */
-@media screen and (max-width: 767px) {
-  .masthead {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-  }
 }
 
 /* 記事やページへのリンク */
@@ -418,6 +430,8 @@ body.layout--home .archive__subtitle {
   object-fit: cover;
   border-radius: 10px;
   margin: 0 auto 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.25)
+}
 }
 
 /* Excerpt */
