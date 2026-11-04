@@ -84,6 +84,11 @@ a,
 a:visited,
 a:active {
   color: #054dcb !important; /* ビビッドブルー */
+  box-decoration-break: clone;  
+  display: inline;
+  padding: .3em;
+  line-height: 2.5;
+  background-color: #fcfbf1; /* クリームイエロー */
 }
 
 /* フッターのリンク色 */
@@ -99,6 +104,11 @@ a:active {
 .greedy-nav a,
 .greedy-nav a:visited {
   color: #054dcb !important; /* ビビッドブルー */
+  box-decoration-break: clone;  
+  display: inline;
+  padding: .3em;
+  line-height: 2.5;
+  background-color: #fcfbf1; /* クリームイエロー */
 }
 
 /* リンクのホバー */
@@ -113,9 +123,10 @@ a:hover,
 .page__content a:not(.btn):hover,
 .page__taxonomy-item {
   color: #054dcb !important; /* ビビッドブルー */
-  background-color: #fcfbf1; /* クリームイエロー */
+  background-color: #FFFFFF;
   text-decoration: underline;
   text-decoration-color: #054dcb; /* ビビッドブルー */
+  
 }
 
 /* ナビゲーションのホバー装飾を無効化 */
@@ -207,13 +218,13 @@ figure.highlight {
 /* ページネーション */
 .pagination li a.current,
 .pagination li a.current.disabled {
-  color: #FFFFFF; /* ホワイト */
+  color: #FFFFFF;
   background: #fcfbf1; /* クリームイエロー */
 }
 
 .pagination--pager:hover {
-  background-color: #fcfbf1; /* クリームイエロー */
-  color: #FFFFFF; /* ホワイト */
+  background-color: #FFFFFF;
+  color: #FFFFFF; 
 }
 
 /* 検索ボタン */
