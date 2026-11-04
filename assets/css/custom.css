@@ -403,7 +403,7 @@ body.layout--home .archive__subtitle {
 
 /* セクション全体 */
 .home-recent-posts {
-  max-width: 1500px;
+  max-width: 1300px;
   margin: clamp(60px, 8vw, 100px) auto 100px;
   padding: 0 24px;
 }
