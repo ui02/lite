@@ -107,6 +107,7 @@ a:active {
   letter-spacing: 8%;
   font-weight: normal;
   margin-top: 30px;
+  background-image: /images/base.png;
 }
 
 .masthead
