@@ -505,7 +505,7 @@ body.layout--home .archive__subtitle {
   width: 85%;
   font-size: 11px;
   line-height: 1.7;
-  text-align: center;
+  text-align: left;
   color: #054dcb;
   margin: 0;
 }
