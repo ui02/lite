@@ -44,7 +44,7 @@ body {
 
 /* 画像キャプション */
 .page__content figure figcaption {
-  font-family: "Yomogi", "Caveat", "Gaegu display", sans-serif !important;
+  font-family: "Yomogi", "Caveat", "Gaegu display", sans-serif;
 }
 
 /* ナビゲーションメニュー */
@@ -74,7 +74,7 @@ body,
 .masthead,
 .sidebar,
 .page__footer {
-  background-color: #FFFFFF !important; /* ホワイト */
+  background-color: #FFFFFF; /* ホワイト */
   color: #231f20; /* ダークグレー */
 }
 
@@ -83,14 +83,14 @@ body,
 a,
 a:visited,
 a:active {
-  color: #054dcb !important; /* ビビッドブルー */
+  color: #054dcb; /* ビビッドブルー */
 }
 
 /* フッターのリンク色 */
 .page__footer a,
 .page__footer a:visited,
 .page__footer a:active {
-  color: #054dcb !important; /* ビビッドブルー */
+  color: #054dcb; /* ビビッドブルー */
   font-weight: normal;
 }
 
@@ -98,7 +98,7 @@ a:active {
 .masthead a,
 .greedy-nav a,
 .greedy-nav a:visited {
-  color: #054dcb !important; /* ビビッドブルー */
+  color: #054dcb; /* ビビッドブルー */
 }
 
 /* リンクのホバー */
@@ -112,7 +112,7 @@ a:hover,
 .nav__items a:hover,
 .page__content a:not(.btn):hover,
 .page__taxonomy-item {
-  color: #054dcb !important; /* ビビッドブルー */
+  color: #054dcb; /* ビビッドブルー */
   background-color: #FFFFFF;
   text-decoration: underline;
   text-decoration-color: #054dcb; /* ビビッドブルー */
@@ -122,13 +122,13 @@ a:hover,
 /* ナビゲーションのホバー装飾を無効化 */
 .masthead__menu-item a::before,
 .masthead__menu-item a::after {
-  display: none !important;
-  content: none !important;
+  display: none;
+  content: none;
 }
 .masthead__menu-item a:hover {
-  text-decoration: none !important;
-  border-bottom: none !important;
-  box-shadow: none !important;
+  text-decoration: none;
+  border-bottom: none;
+  box-shadow: none;
 }
 
 /* サイトタイトル・見出し */
@@ -137,7 +137,7 @@ a:hover,
 .masthead__menu-item,
 .page__title,
 .archive__item-title {
-  color: #231f20 !important; /* ダークグレー */
+  color: #231f20; /* ダークグレー */
 }
 
 /* ヘッダー・ナビゲーション */
@@ -145,7 +145,7 @@ a:hover,
 .masthead__menu,
 .masthead__inner-wrap,
 .greedy-nav {
-  background-color: #FFFFFF !important; /* ホワイト */
+  background-color: #FFFFFF; /* ホワイト */
   border-bottom: none;
 }
 
@@ -166,8 +166,8 @@ a:hover,
 /* 記事やページへのリンク */
 .u-url {
   color: #054dcb; /* ビビッドブルー */
-  background-color: #FFFFFF !important; /* ホワイト */
-  text-decoration: none !important;
+  background-color: #FFFFFF; /* ホワイト */
+  text-decoration: none;
 }
 
 
@@ -223,48 +223,48 @@ figure.highlight {
   height: 2rem;
   border: 0;
   outline: none;
-  color: #fcfbf1; /* クリームイエロー */
+  color: #fcfbf1; /*  */
 }
 
 .search__toggle:hover {
-  color: #fcfbf1; /* クリームイエロー */
+  color: #fcfbf1; /*  */
 }
 
 /* 検索結果のハイライト */
 .archive__item-title .ais-Highlight {
-  color: #fcfbf1; /* クリームイエロー */
+  color: #fcfbf1; /*  */
   font-style: normal;
   text-decoration: underline;
-  text-decoration-color: #fcfbf1; /* クリームイエロー */
+  text-decoration-color: #fcfbf1; /*  */
 }
 
 .archive__item-excerpt .ais-Highlight {
-  color: #fcfbf1; /* クリームイエロー */
+  color: #fcfbf1; /*  */
   font-style: normal;
   font-weight: bold;
 }
 
 /* ナビゲーション・サイドバーの見出し */
 .nav__title {
-  background-color: #fcfbf1; /* クリームイエロー */
+  background-color: #fcfbf1; /*  */
   color: #231f20; /* ダークグレー */
   font-style: normal;
 }
 
 /* 目次 */
 .toc .active a {
-  background-color: #fcfbf1; /* クリームイエロー */
+  background-color: #fcfbf1; /*  */
   color: #231f20; /* ダークグレー */
 }
 
 .toc .nav__title {
   color: #231f20; /* ダークグレー */
-  background-color: #fcfbf1; /* クリームイエロー */
+  background-color: #fcfbf1; /*  */
 }
 
 .toc {
   background-color: #FFFFFF; /* ホワイト */
-  border: 1px solid #fcfbf1; /* クリームイエロー */
+  border: 1px solid #fcfbf1; /*  */
 }
 
 .toc__menu a {
@@ -315,11 +315,11 @@ figure.highlight {
 /* スマホ：幅100％・中央寄せ */
 @media screen and (max-width: 767px) {
   .page__content figure.image-gallery {
-    width: 100% !important;
+    width: 100%;
     max-width: 100%;
-    float: none !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .page__content figure.image-gallery img {
@@ -359,7 +359,7 @@ body.layout--home .archive__subtitle {
 .home-recent-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  column-gap: 36px;
+  column-gap: 50px;
   row-gap: 40px;
   width: 100%;
 }
@@ -380,11 +380,11 @@ body.layout--home .archive__subtitle {
   display: inline-block;
   align-self: center;
   font-family: "Pecita", cursive;
-  font-size: 10px;
+  font-size: 12px;
   color: #fcfbf1; /* クリームイエロー */
   background: #054dcb; /* ビビッドブルー */
-  padding: 3px 6px;
-  margin-bottom: 24px;
+  padding: 3px 3px;
+  margin-bottom: 30px;
 }
 
 /* Title */
@@ -395,7 +395,7 @@ body.layout--home .archive__subtitle {
   font-weight: 500;
   text-align: center;
   line-height: 1.6;
-  margin: 0 0 24px;
+  margin: 0 0 14px;
   overflow: hidden;
 }
 
