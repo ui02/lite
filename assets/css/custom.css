@@ -588,9 +588,13 @@ body.layout--home .archive__subtitle {
 .page__title p-name {
   font-family: "Pecita", cursive;
   color: #054dcb;
-  background: #fcfbf1;
 }
-
+.page__title a {
+  background-color: #fcfbf1;
+  padding: 0.1em 0.3em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
 
 /* 投稿日 */
 .layout--single .page__meta {
@@ -602,6 +606,9 @@ body.layout--home .archive__subtitle {
   font-family: "Pecita", cursive;
   color: #fcfbf1;
   background: #054dcb;
+}
+.page__meta-date .fa-calendar-alt {
+  display: none;
 }
 
 /* 本文 */
