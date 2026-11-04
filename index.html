@@ -24,7 +24,10 @@ author_profile: false
 <div class="home-recent-posts">
 
   <h2 class="home-recent-title">- recent posts -</h2>
-
+  
+  <div class="home-recent-grid">
+    {% assign recent_posts = site.posts | where_exp: "post", "post.draft != true" | slice: 0, 4 %}
+    
     {% for post in recent_posts %}
       <a href="{{ post.url | relative_url }}" class="home-post-card">
 
