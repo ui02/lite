@@ -1,3 +1,12 @@
+/*
+   基本カラー
+   #FFFFFF : ホワイト（背景）
+   #231f20 : ダークグレー（文字・サイトタイトル）
+   #054dcb : ビビッドブルー（文字・アクセント）
+   #fcfbf1 : クリームイエロー（補助背景）
+   #554b42 : くすみブラウン（ボーダー）
+*/
+
 /* 【タイムライン表示】 */
 
 .archive-timeline {
@@ -9,7 +18,7 @@
 .archive-timeline__item {
   position: relative;
   padding: 0 0 2.5rem 1.5rem;
-  border-left: 2px solid #e3e6e3;
+  border-left: 2px solid #231f20;
 }
 
 .archive-timeline__item:last-child {
@@ -25,9 +34,9 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: #8b9c91;
+  background: #554b42;
   border: 2px solid #fff;
-  box-shadow: 0 0 0 1px #8b9c91;
+  box-shadow: 0 0 0 1px #fcfbf1;
 }
 
 .archive-timeline__date {
@@ -76,7 +85,7 @@
 
 .archive-timeline__tag {
   padding: 0.15rem 0.55rem;
-  border: 1px solid #ddd;
+  border: 1px solid #554b42;
   border-radius: 999px;
   color: inherit;
   font-size: 0.75rem;
@@ -110,7 +119,7 @@
   overflow: hidden;
   color: inherit;
   text-decoration: none;
-  border: 1px solid #d0d7de;
+  border: 1px solid #231f20;
   border-radius: 7px;
   background: #fff;
   transition: box-shadow 0.2s ease, transform 0.2s ease;
@@ -174,7 +183,7 @@
 
   margin: 3px;
   padding: 3px;
-  border: 1px solid #4B5148;
+  border: 1px solid #231f20;
   box-sizing: border-box;
 }
 
