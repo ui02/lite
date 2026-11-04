@@ -1,8 +1,8 @@
 ---
-title: "BREAD, ESPRESSO & / 千葉市美術館"
+title: "BREAD, ESPRESSO & CCMA"
 date: 2026-10-04
 published: true
-excerpt: ""
+excerpt: "ようやく「パンとエスプレッソと」と千葉市美術館に行ってきた話。"
 categories:
   - Blog
 tags:
