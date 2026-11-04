@@ -1,8 +1,8 @@
 ---
-title: "◸ 2026 ONEW CONCERT [ONEW THE LIVE : Q] IN JAPAN ◿"
+title: "[ONEW THE LIVE : Q] IN JAPAN"
 date: 2026-09-22
 published: true
-excerpt: ""
+excerpt: "【レポ】◸ 2026 ONEW CONCERT [ONEW THE LIVE : Q] IN JAPAN ◿"
 categories:
   - Blog
 tags:
