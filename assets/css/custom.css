@@ -134,13 +134,12 @@ body,
 .masthead__menu-item a,
 .greedy-nav a,
 .visible-links a {
-  color: #231f20;
+  color: #231f20 !important;
 }
 
 /* ヘッダー内リンク：hover */
 .site-title a:hover,
 .masthead__menu-item a:hover,
-.greedy-nav a:hover,
 .greedy-nav a:hover {
   color: #054dcb;
   text-decoration: underline;
@@ -417,15 +416,16 @@ body.layout--home .archive__subtitle {
   text-align: center;
   margin-bottom: 100px;
   border-bottom: none;
-}
 
-.home-recent-title::after {
-  content: "";
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 130px;
   aspect-ratio: 1244 / 542;
-  background: url("../images/base.png") center / contain no-repeat;
-  margin: 12px auto 0;
+  background-image: url("../images/base.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* カード一覧 */
