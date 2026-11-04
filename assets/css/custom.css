@@ -45,6 +45,7 @@ body {
 
 /* 記事タイトル・見出し */
 .page__title,
+.home-post-title.
 .archive__item-title,
 .taxonomy__index,
 .archive__subtitle {
@@ -430,7 +431,7 @@ body.layout--home .archive__subtitle {
   background: #054dcb;
   padding: 3px 3px;
   margin-bottom: 30px;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.1em;
 }
 
 /* 記事タイトル */
@@ -442,6 +443,7 @@ body.layout--home .archive__subtitle {
   line-height: 2.2;
   margin: 0 0 30px;
   overflow: visible;
+  font-family: "Pecita", "M PLUS Rounded 1c", "Caveat", "Gaegu display", sans-serif;
 }
 
 /* タイトル文字の背景 */
