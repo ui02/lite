@@ -502,7 +502,7 @@ body.layout--home .archive__subtitle {
 
 /* 抜粋 */
 .home-post-excerpt {
-  width: 100%;
+  width: 85%;
   font-size: 11px;
   line-height: 1.7;
   text-align: center;
