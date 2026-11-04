@@ -585,6 +585,12 @@ body.layout--home .archive__subtitle {
   text-align: center;
   margin-bottom: 0.5em;
 }
+.page__title p-name {
+  font-family: "Pecita", cursive;
+  color: #054dcb;
+  background: #fcfbf1;
+}
+
 
 /* 投稿日 */
 .layout--single .page__meta {
@@ -592,11 +598,19 @@ body.layout--home .archive__subtitle {
   margin-top: 0;
   margin-bottom: 3em;
 }
+.page__meta-date {
+  font-family: "Pecita", cursive;
+  color: #fcfbf1;
+  background: #054dcb;
+}
 
 /* 本文 */
 .layout--single .page__content {
   text-align: left;
   line-height: 1.5;
+}
+.page h-entry {
+   border: 1px solid #554b42;
 }
 
 /* 段落 */
