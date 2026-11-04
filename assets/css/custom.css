@@ -26,7 +26,7 @@
 
 /* サイト全体 */
 body {
-  font-family: "M PLUS Rounded 1c", "Noto Sans JP", "Gaegu display", sans-serif;
+  font-family: "M PLUS Rounded 1c", "Gaegu display", sans-serif;
 }
 
 /* 記事本文：スマホ・通常 */
@@ -48,7 +48,7 @@ body {
 .archive__item-title,
 .taxonomy__index,
 .archive__subtitle {
-  font-family: "Holiday", "M PLUS Rounded 1c", "Gaegu display", sans-serif;
+  font-family: "M PLUS Rounded 1c", "Gaegu display", sans-serif;
   font-weight: 400;
 }
 
@@ -60,7 +60,6 @@ body {
 
 /* =================================
    02. カラー
-   Natural Sage
    ================================= */
 
 /*
@@ -436,19 +435,21 @@ body.layout--home .archive__subtitle {
 
 /* 記事タイトル */
 .home-post-title {
-  width: fit-content;
-  max-width: 100%;
+  width: 100%;
   font-size: 13px;
   font-weight: 500;
   text-align: center;
-  line-height: 1.6;
-  margin: 0 auto 30px;
-  overflow: hidden;
+  line-height: 2.2;
+  margin: 0 0 30px;
+  overflow: visible;
+}
 
-  box-decoration-break: clone;
-  display: inline-block;
-  padding: 0.3em;
+/* タイトル文字の背景 */
+.home-post-title span {
   background-color: #fcfbf1;
+  padding: 0.15em 0.35em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
 }
 
 /* サムネイル画像 */
