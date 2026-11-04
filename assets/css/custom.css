@@ -374,7 +374,7 @@ figure.highlight {
   height: auto;
   max-height: 70vh;
   object-fit: contain;
-  border-radius: 18px;
+  border-radius: 0px;
 }
 
 
