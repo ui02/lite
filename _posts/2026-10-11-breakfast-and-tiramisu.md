@@ -1,8 +1,8 @@
 ---
-title: "朝食とティラミス"
+title: "Breakfast and Tiramisu"
 date: 2026-10-11
 published: true
-excerpt: ""
+excerpt: "珈琲屋さんのモーニングとティラミスの話。"
 categories:
   - Blog
 tags:
