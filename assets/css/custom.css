@@ -133,16 +133,9 @@ a:active {
   text-decoration-skip-ink: none;
 }
 
-/* ナビゲーションのホバー装飾を無効化 */
-.masthead__menu-item a::before,
-.masthead__menu-item a::after {
-  display: none;
-  content: none;
-}
-.masthead__menu-item a:hover {
-  text-decoration: none;
-  border-bottom: none;
-  box-shadow: none;
+/* ナビゲーションのホバー装飾を修正 */
+.greedy-nav .visible-links a:before {
+  height: 1px;
 }
 
 /* スマホのみヘッダーを固定 */
