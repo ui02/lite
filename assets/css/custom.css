@@ -573,3 +573,77 @@ body.layout--home .archive__subtitle {
 .social-icons .fa-rss,.social-icons .fa-rss-square,.social-icons .fa-square-rss {
     color: #231f20;
 }
+
+
+
+/* ========================================
+   記事ページ
+======================================== */
+
+/* 記事全体の幅 */
+.layout--single .page__inner-wrap {
+  width: 100%;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 記事タイトル */
+.layout--single .page__title {
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+/* 投稿日 */
+.layout--single .page__meta {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 3em;
+}
+
+/* 本文 */
+.layout--single .page__content {
+  text-align: left;
+  line-height: 1.9;
+}
+
+/* 段落 */
+.layout--single .page__content p {
+  margin-bottom: 1.8em;
+}
+
+/* 画像 */
+.layout--single .page__content figure {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+/* 画像キャプション */
+.layout--single .page__content figcaption {
+  text-align: left;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 0.8em;
+  line-height: 1.7;
+}
+
+/* 記事下部の情報 */
+.layout--single .page__meta,
+.layout--single .page__taxonomy {
+  font-size: 0.8em;
+}
+
+
+@media screen and (max-width: 767px) {
+  .layout--single .page__inner-wrap {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .layout--single .page__meta {
+    margin-bottom: 2em;
+  }
+
+  .layout--single .page__content figure {
+    max-width: 100%;
+  }
+}
