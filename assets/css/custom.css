@@ -58,7 +58,10 @@ body {
   font-family: "M PLUS Rounded 1c", "Caveat", "Gaegu display", sans-serif;
 }
 
-
+h1,h2,h3,h4,h5,h6 {
+    font-family:  "Pecita", "M PLUS Rounded 1c", "Caveat", "Gaegu display", sans-serif;
+    font-weight: bold
+}
 
 
 /* =================================
@@ -355,7 +358,7 @@ figure.highlight {
 
 /* Murmurカード */
 .murmur-card {
-  font-family: "Caveat", "Yomogi", "Gaegu display", sans-serif;
+  font-family: "Holiday", "Yomogi", "Gaegu display", sans-serif;
 }
 
 .murmur-card span {
@@ -503,8 +506,8 @@ body.layout--home .archive__subtitle {
 /* 抜粋 */
 .home-post-excerpt {
   width: 85%;
-  font-size: 11px;
-  line-height: 1.7;
+  font-size: 10px;
+  line-height: 1.4;
   text-align: left;
   color: #054dcb;
   margin: 0;
@@ -564,8 +567,8 @@ body.layout--home .archive__subtitle {
 .page__footer {
     margin-top: 3em;
     margin-bottom: 1em;
-    font-size: 14px;
-    font-family: "Pecita", cursive;
+    font-size: 18px;
+    font-family: "Pecita", cursive !important;
 }
 .social-icons .fa-rss,.social-icons .fa-rss-square,.social-icons .fa-square-rss {
     color: #231f20;
