@@ -1,20 +1,18 @@
 main:
-# - title: "Recent Posts"
-#   url: /top/
-  - title: "Diary"
+  - title: "diary"
     url: /diary/ 
-#  - title: "Categories"
-#    url: /categories/
-#  - title: "Tags"
-#    url: /tags/
-  - title: "Murmur"
+  - title: "murmur"
     url: /murmur/
-  - title: "About"
+  - title: "about"
     url: /about/
-  - title: "Gallery"
+  - title: "gallery"
     url: /
-  - title: "Game"
+#  - title: "game"
     url: /
+#  - title: "Categories"
+    url: /categories/
+#  - title: "Tags"
+    url: /tags/
 
 diary:
   - title: ■ Posts by Year
