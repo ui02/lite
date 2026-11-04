@@ -1,5 +1,14 @@
 ---
 ---
+/*
+   基本カラー
+   #FFFFFF : ホワイト（背景）
+   #231f20 : ダークグレー（文字・サイトタイトル）
+   #054dcb : ビビッドブルー（文字・アクセント）
+   #fcfbf1 : クリームイエロー（補助背景）
+   #554b42 : くすみブラウン（ボーダー）
+*/
+
 /* =================================
    年別アーカイブカード
    ================================= */
@@ -12,7 +21,7 @@
   height: 180px;
   padding: 0;
   margin-bottom: 1.25rem;
-  border: 1px solid #E5E8DF;
+  border: 1px solid #554b42;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -32,8 +41,8 @@
 }
 
 .archive-card-link:hover .archive-card {
-  border-color: #6B8F71;
-  background-color: #F7F5F0;
+  border-color: #554b42;
+  background-color: #fcfbf1;
 }
 
 /* サムネイル */
@@ -66,7 +75,7 @@
 
 .archive-card__content h2 {
   margin: 0.4rem 0 0;
-  font-family: "Yomogi", sans-serif;
+  font-family: "M PLUS Rounded 1c", "Caveat", "Gaegu display", sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
   border: none;
@@ -87,10 +96,10 @@
 
 .archive-card__tag {
   padding: 0.1rem 0.5rem;
-  border: 1px solid #E5E8DF;
+  border: 1px solid #554b42;
   border-radius: 20px;
-  background-color: #F7F5F0;
-  color: #4B5148;
+  background-color: #fcfbf1;
+  color: #554b42;
   font-size: 0.65rem;
 }
 
