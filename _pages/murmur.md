@@ -39,7 +39,7 @@ sidebar:
 
   <a class="murmur-card" href="{{ '/murmur/wander/' | relative_url }}">
     <img src="{{ '/assets/images/murmur/covers/wander.jpg' | relative_url }}" alt="">
-    <span>放浪記</span>
+    <span>Wander</span>
   </a>
 
 </div>
