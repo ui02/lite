@@ -108,6 +108,8 @@ a:active {
   font-weight: normal;
   margin-top: 30px;
   background-image: url("../images/base.png");
+  display: flex;
+  align-items: center; /* 縦方向の中央揃え */
 }
 
 .masthead
@@ -116,7 +118,7 @@ a:active {
   color: #231f20; /* ダークグレー */
   background-color: #FFFFFF;
   letter-spacing: 10%;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 .masthead a,
@@ -124,6 +126,7 @@ a:active {
   color: #231f20; /* ダークグレー */
 }
 
+/* 
 .site-title a:hover,
 .masthead a:hover,
 .greedy-nav a:hover,
@@ -134,14 +137,14 @@ a:active {
   text-decoration-line: underline;
   text-decoration-thickness: 1px;
   text-decoration-skip-ink: none;
-}
+} */
 
 /* ナビゲーションのホバー装飾 */
 .greedy-nav .visible-links a:before {
   height: 1px;
 }
 
-/* ナビゲーションのホバー装飾を無効化 */
+/* ナビゲーションのホバー装飾を無効化
 .masthead__menu-item a::before,
 .masthead__menu-item a::after {
   display: none;
@@ -151,7 +154,7 @@ a:active {
   text-decoration: none;
   border-bottom: none;
   box-shadow: none;
-}
+} */
 
 /* スマホのみヘッダーを固定 */
 @media screen and (max-width: 767px) {
