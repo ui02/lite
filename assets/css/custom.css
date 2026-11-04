@@ -333,6 +333,19 @@ figure.highlight {
   font-weight: normal;
 }
 
+/* サイドバー：見出し */
+.nav__sub-title {
+  background-color: #054dcb;
+  color: #fcfbf1;
+  text-align: center;
+  padding: 8px 10px;
+}
+
+/* サイドバー：年別リンク */
+.nav__sub-title + ul li a {
+  color: #054dcb;
+  text-align: center;
+}
 
 /* =================================
    09. ページネーション
