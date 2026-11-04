@@ -378,7 +378,7 @@ figure.highlight {
 .home-random-image {
   width: 100%;
   max-width: 900px;
-  margin: 5rem auto 2rem;
+  margin: 5rem auto 3.5rem;
   text-align: center;
 }
 
@@ -411,7 +411,7 @@ body.layout--home .archive__subtitle {
 /* セクションタイトル */
 .home-recent-title {
   font-family: "Holiday", cursive;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 400;
   text-align: center;
   white-space: nowrap;
