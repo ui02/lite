@@ -1,5 +1,5 @@
 ---
-title: "放浪記"
+title: "Wander"
 date: 2018-01-01
 draft: false
 permalink: /murmur/wander/
@@ -11,6 +11,7 @@ toc_sticky: true
 sidebar:
   nav: "murs"
 ---
+放浪記（2018-2020）
 
 ## 2018
 
