@@ -3,6 +3,14 @@
 ---
 @charset "utf-8";
 
+@font-face {
+  font-family: "Pecita";
+  src: url("../fonts/Pecita.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* =================================
    フォントサイズ
    ================================= */
@@ -369,14 +377,15 @@ body.layout--home .archive__subtitle {
   display: block;
   width: 100%;
   max-width: 100%;
-  aspect-ratio: 1.2 / 1;
+  aspect-ratio: 3 / 2; /* 3:2でサムネイル表示 */
   object-fit: cover;
+  border-radius: 10px;
   margin-bottom: 10px;
 }
 
 .home-post-date {
   display: inline-block;
-  font-family: "Lato", sans-serif;
+  font-family: "Pecita", cursive;
   font-size: 10px;
   color: #fff;
   background: #054dcb; /* ビビッドブルー */
@@ -388,6 +397,7 @@ body.layout--home .archive__subtitle {
   font-size: 13px;
   font-weight: 500;
   margin: 0 0 6px;
+  font-family: "Pecita", cursive;
 }
 
 .home-post-excerpt {
