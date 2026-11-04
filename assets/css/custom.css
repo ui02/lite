@@ -118,11 +118,16 @@ a:active {
   color: #054dcb; /* ビビッドブルー */
 }
 
+.site-title a:hover,
 .masthead a:hover,
 .greedy-nav a:hover,
   color: #054dcb; /* ビビッドブルー */
   text-decoration: underline;
+  text-decoration-style: solid;
   text-decoration-color: #054dcb; /* ビビッドブルー */
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-skip-ink: none;
 }
 
 /* ナビゲーションのホバー装飾を無効化 */
