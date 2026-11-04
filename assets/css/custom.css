@@ -126,7 +126,6 @@ a:active {
   color: #231f20; /* ダークグレー */
 }
 
-/* 
 .site-title a:hover,
 .masthead__menu-item a:hover,
 .greedy-nav a:hover,
@@ -137,9 +136,9 @@ a:active {
   text-decoration-line: underline;
   text-decoration-thickness: 1px;
   text-decoration-skip-ink: none;
-} */
+} 
 
-/* ナビゲーションのホバー装飾
+/* ナビゲーションのホバー装飾 */
 .greedy-nav .visible-links a:before {
   height: 1px;
   transition: none;
@@ -156,7 +155,7 @@ a:active {
   border-bottom: none;
   box-shadow: none;
 } 
- */
+
 
 /* スマホのみヘッダーを固定 */
 @media screen and (max-width: 767px) {
