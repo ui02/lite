@@ -531,3 +531,14 @@ body.layout--home .archive__subtitle {
     padding: 0 16px;
   }
 }
+
+
+/* =================================
+   13. フッター
+   ================================= */
+.page__footer footer {
+    clear: both;
+    margin-inline:auto;margin-top: 0.1em;
+    max-width: 100%;
+    padding: 0 1em 0.1em;
+}
