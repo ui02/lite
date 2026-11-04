@@ -20,3 +20,38 @@ author_profile: false
   document.getElementById("random-home-image").src =
     randomImages[randomIndex];
 </script>
+
+<div class="home-recent-posts">
+
+  <h2 class="home-recent-title">- recent posts -</h2>
+
+  <div class="home-recent-grid">
+    {% assign recent_posts = site.posts | where_exp: "post", "post.draft != true" | slice: 0, 4 %}
+
+    {% for post in recent_posts %}
+      <a href="{{ post.url | relative_url }}" class="home-post-card">
+
+        {% if post.header.teaser %}
+          <img
+            src="{{ post.header.teaser | relative_url }}"
+            alt="{{ post.title | escape }}"
+            class="home-post-image">
+        {% endif %}
+
+        <time class="home-post-date">
+          {{ post.date | date: "%Y/%m/%d" }}
+        </time>
+
+        <h3 class="home-post-title">{{ post.title }}</h3>
+
+        {% if post.excerpt %}
+          <p class="home-post-excerpt">
+            {{ post.excerpt | strip_html | truncate: 70 }}
+          </p>
+        {% endif %}
+
+      </a>
+    {% endfor %}
+  </div>
+
+</div>
