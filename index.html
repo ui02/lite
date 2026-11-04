@@ -2,13 +2,21 @@
 # You don't need to edit this file, it's empty on purpose.
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: home
-author_profile: true
-#entries_layout: grid
-#show_excerpt: false
-classes: wide
-sidebar:
-  - title: ""
-    image: ""
-    nav: "diary"
+layout: splash
+author_profile: false
 ---
+<div class="home-random-image">
+  <img id="random-home-image" src="" alt="" style="margin-top: clamp(20px, 3vw, 48px);">
+</div>
+
+<script>
+  const randomImages = [
+    "{{ '/assets/images/random/photo01.jpg' | relative_url }}",
+    "{{ '/assets/images/random/photo02.jpg' | relative_url }}",
+    "{{ '/assets/images/random/photo03.jpg' | relative_url }}"
+  ];
+
+  const randomIndex = Math.floor(Math.random() * randomImages.length);
+  document.getElementById("random-home-image").src =
+    randomImages[randomIndex];
+</script>
