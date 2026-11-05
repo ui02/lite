@@ -768,7 +768,7 @@ body.layout--home .archive__subtitle {
 
 .home-tumblr-image-link {
   display: block;
-  width: 40%;
+  width: 30%;
   flex-shrink: 0;
   overflow: hidden;
 }
@@ -848,8 +848,12 @@ body.layout--home .archive__subtitle {
   }
 
   .home-tumblr-content {
-    grid-template-columns: 1fr;
+    flex-direction: column;
     gap: 25px;
+  }
+
+  .home-tumblr-image-link {
+    width: 100%;
   }
 
   .home-tumblr-image {
