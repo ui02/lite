@@ -743,7 +743,7 @@ body.layout--home .archive__subtitle {
 ======================================== */
 
 .home-tumblr-feed {
-  max-width: 1300px;
+  max-width: 1000px;
   margin: clamp(60px, 8vw, 100px) auto;
   padding: 0 24px;
 }
@@ -850,7 +850,7 @@ body.layout--home .archive__subtitle {
   }
 
   .home-tumblr-image {
-    width: 100%;
+    width: 50%;
   }
 
   .home-tumblr-post {
