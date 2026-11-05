@@ -67,12 +67,12 @@ h1,h2,h3,h4,h5,h6 {
 .page__title a[href*="/murmur/"] {
   text-decoration-line: underline;
   text-decoration-color: #fcfbf1;
-  text-decoration-thickness: 1em;
-  text-underline-offset: -1em;
+  text-decoration-thickness: 0.7em;
+  text-underline-offset: -0.9em;
   text-decoration-skip-ink: none;
   background-color: #FFFFFF;
   font-size: 40px;
-  padding: 0 0.15em; 
+  padding: 0 0.3em; 
   display: inline-block;
 }
 
