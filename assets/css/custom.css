@@ -265,6 +265,10 @@ a:hover,
   background-color: #FFFFFF;
 }
 
+.sidebar sticky {
+  text-align: center;
+}
+
 /* =================================
    06. ボタン・検索
    ================================= */
