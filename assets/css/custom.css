@@ -68,11 +68,11 @@ h1,h2,h3,h4,h5,h6 {
   text-decoration-line: underline;
   text-decoration-color: #fcfbf1;
   text-decoration-thickness: 0.7em;
-  text-underline-offset: -0.9em;
+  text-underline-offset: -0.7em;
   text-decoration-skip-ink: none;
   background-color: #FFFFFF;
   font-size: 40px;
-  padding: 0 0.3em; 
+  padding: 0 1em; 
   display: inline-block;
 }
 
