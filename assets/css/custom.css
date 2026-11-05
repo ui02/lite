@@ -376,8 +376,8 @@ figure.highlight {
 
   background-image: linear-gradient(
     to bottom,
-    transparent 40%, /* ライン上の透過部分 */
-    #054dcb 40%,  /* 塗り始め */
+    transparent 10%, /* ライン上の透過部分 */
+    #054dcb 10%,  /* 塗り始め */
     #054dcb 90%,  /* 塗り終わり */
     transparent 90%  /* ライン下の透過部分 */
   );
