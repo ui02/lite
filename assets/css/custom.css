@@ -521,16 +521,16 @@ body.layout--home .archive__subtitle {
 .home-post-date {
   display: inline-block;
   flex-shrink: 0;
-  width: 105px;
+  width: 95px;
   box-sizing: border-box;
   text-align: center;
   align-self: center;
 
   font-family: "Pecita", sans-serif;
-  font-size: 12px;
+  font-size: 11px;
   color: #fcfbf1;
   background: #054dcb;
-  padding: 3px 9px;
+  padding: 0px 5px;
   margin-bottom: 50px;
   letter-spacing: 3.6px;
 }
@@ -829,7 +829,7 @@ body.layout--home .archive__subtitle {
   box-sizing: border-box;
   text-align: center;
   margin-bottom: 0px;
-  padding: 3px 9px;
+  padding: 0px 5px;
   background: #054dcb;
   color: #fcfbf1;
   font-family: "Pecita", sans-serif;
