@@ -366,6 +366,7 @@ figure.highlight {
 .nav__sub-title {
   color: #fcfbf1; 
   font-family: "Pecita", sans-serif; 
+  font-size: 16px; 
   text-align: center;
   display: inline;
   text-decoration: none;
@@ -374,10 +375,10 @@ figure.highlight {
   margin: 8px 10px;
   background-image: linear-gradient(
     to bottom,
-    transparent 60%, /* ライン上の透過部分 */
-    #054dcb 60%,  /* 塗り始め */
-    #054dcb 80%,  /* 塗り終わり */
-    transparent 80%  /* ライン下の透過部分 */
+    transparent 55%, /* ライン上の透過部分 */
+    #054dcb 55%,  /* 塗り始め */
+    #054dcb 85%,  /* 塗り終わり */
+    transparent 85%  /* ライン下の透過部分 */
   );
 }
 
