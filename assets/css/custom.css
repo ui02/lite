@@ -265,7 +265,10 @@ a:hover,
   background-color: #FFFFFF;
 }
 
-.sidebar sticky {
+/* 中央寄せ */
+.author__avatar,
+.author__name p-name,
+.nav__items {
   text-align: center;
 }
 
