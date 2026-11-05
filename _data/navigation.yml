@@ -15,7 +15,7 @@ main:
     url: /tags/
 
 diary:
-  - title: ■ Posts by Year
+  - title: Posts by Year
     url: /archive/
     children:
       - title: "2026"
@@ -26,7 +26,7 @@ diary:
         url: /archive/2024
       - title: "2023"
         url: /archive/2023
-  - title: ■ Posts by Tag
+  - title: Posts by Tag
     url: /tags/
     children:
       - title: "Daily life"
