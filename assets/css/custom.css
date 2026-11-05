@@ -26,7 +26,7 @@
 
 /* サイト全体 */
 body {
-  font-family: "M PLUS Rounded 1c", "Gaegu display", sans-serif;
+  font-family: "Zen Maru Gothic", "Gaegu display", sans-serif;
 }
 
 /* 記事本文：スマホ・通常 */
@@ -49,17 +49,17 @@ body {
 .archive__item-title,
 .taxonomy__index,
 .archive__subtitle {
-  font-family: "M PLUS Rounded 1c", "Gaegu display", sans-serif;
+  font-family: "Zen Maru Gothic", "Gaegu display", sans-serif;
   font-weight: 400;
 }
 
 /* 画像キャプション */
 .page__content figure figcaption {
-  font-family: "M PLUS Rounded 1c", "Caveat", "Gaegu display", sans-serif;
+  font-family: "Zen Maru Gothic", "Caveat", "Gaegu display", sans-serif;
 }
 
 h1,h2,h3,h4,h5,h6 {
-    font-family:  "Holiday", "M PLUS Rounded 1c", "Caveat", "Gaegu display", sans-serif;
+    font-family:  "Holiday", "Zen Maru Gothic", "Caveat", "Gaegu display", sans-serif;
     font-weight: bold
 }
 
@@ -493,7 +493,7 @@ body.layout--home .archive__subtitle {
   line-height: 2.2;
   margin: 0 auto 5px;
   overflow: visible;
-  font-family: "Pecita", "M PLUS Rounded 1c", "Caveat", "Gaegu display", sans-serif;
+  font-family: "Pecita", "Zen Maru Gothic", "Caveat", "Gaegu display", sans-serif;
 }
 
 /* タイトル文字の背景 */
