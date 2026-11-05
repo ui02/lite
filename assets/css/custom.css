@@ -753,8 +753,18 @@ body.layout--home .archive__subtitle {
   font-size: 22px;
   font-weight: normal;
   text-align: center;
-  margin: 0 0 35px;
   color: #231f20;
+
+  margin: 0 0 35px;
+  padding: 35px 0;
+
+  background-image: url("../images/base.png");
+  background-size: 130px auto;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border: none !important;
+  box-shadow: none !important;
 }
 
 .home-tumblr-content {
