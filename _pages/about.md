@@ -9,11 +9,9 @@ title: "About"
 A place to keep little things I want to remember from day to day,  
 Games, photos, travels, hobbies, things I’m currently obsessed with… basically, whatever I feel like keeping around.  
   
-📷PHOTO  
-<a href="https://yurilom.tumblr.com/" target="_blank">view</a>  
+📷<a href="https://yurilom.tumblr.com/" target="_blank">view</a>  
   
-🎮GAME  
-<a href="https://yurilom.tumblr.com/" target="_blank">PYZ</a>  
+🎮<a href="https://yurilom.tumblr.com/" target="_blank">PYZ</a>  
   
 —  
   
