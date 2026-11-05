@@ -248,6 +248,7 @@ a:hover,
 /* サイドバー */
 .sidebar {
   background-color: #FFFFFF;
+  opacity: 1 !important;
 }
 
 /* ナビゲーション・サイドバーの見出し */
@@ -261,7 +262,6 @@ a:hover,
 .author__avatar a:hover {
   background-color: #FFFFFF;
 }
-
 
 /* =================================
    06. ボタン・検索
