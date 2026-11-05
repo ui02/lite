@@ -368,6 +368,7 @@ figure.highlight {
   font-family: "Pecita", sans-serif; 
   font-size: 20px; 
   text-align: center;
+  font-weight: normal;
 
   display: block;
   width: fit-content;
