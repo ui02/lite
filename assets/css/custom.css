@@ -366,7 +366,7 @@ figure.highlight {
 .nav__sub-title {
   color: #fcfbf1; 
   font-family: "Pecita", sans-serif; 
-  font-size: 16px; 
+  font-size: 20px; 
   text-align: center;
 
   display: block;
@@ -384,6 +384,7 @@ figure.highlight {
    
   text-decoration: none;
   border-bottom: none;
+  text-transform: capitalize;
 }
 
 /* サイドバー：年別リンク */
