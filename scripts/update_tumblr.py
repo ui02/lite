@@ -80,7 +80,7 @@ def main():
 
         posts.append({
             "date": date_text,
-            "text": text[:100],
+            "text": text[:40],
             "url": url
         })
 
