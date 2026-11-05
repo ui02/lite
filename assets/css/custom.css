@@ -743,7 +743,7 @@ body.layout--home .archive__subtitle {
 ======================================== */
 
 .home-tumblr-feed {
-  max-width: 700px;
+  max-width: 800px;
   margin: clamp(60px, 8vw, 100px) auto;
   padding: 0 24px;
 }
@@ -779,6 +779,7 @@ body.layout--home .archive__subtitle {
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 12px;
+  margin-top:10px;
 }
 
 /* Right post list */
@@ -789,7 +790,6 @@ body.layout--home .archive__subtitle {
   gap: 12px;
   flex: 1;
   min-width: 0;
-  margin-top:10px;
 }
 
 .home-tumblr-post {
