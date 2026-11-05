@@ -749,7 +749,7 @@ body.layout--home .archive__subtitle {
 }
 
 .home-tumblr-title {
-  font-family: "Holiday", sans-serif;
+  font-family: "Pecita", "Zen Maru Gothic", "Caveat", "Gaegu display", sans-serif;
   font-size: 22px;
   font-weight: normal;
   text-align: center;
@@ -774,8 +774,9 @@ body.layout--home .archive__subtitle {
 .home-tumblr-image {
   display: block;
   width: 100%;
-  height: auto;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
+  border-radius: 12px;
 }
 
 /* Right post list */
