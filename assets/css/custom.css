@@ -353,7 +353,7 @@ figure.highlight {
 /* 目次全体 */
 .toc {
   background-color: #FFFFFF;
-  border: 1px solid #fcfbf1;
+  border: 0px solid #fcfbf1;
 }
 
 /* 目次内リンク */
@@ -364,19 +364,21 @@ figure.highlight {
 
 /* サイドバー：見出し */
 .nav__sub-title {
+  color: #fcfbf1; 
+  font-family: "Pecita", sans-serif; 
   text-align: center;
   display: inline;
   text-decoration: none;
-   
+  border-bottom: none;
+  padding: 0 0.4em;
+  margin: 8px 10px;
   background-image: linear-gradient(
     to bottom,
-    transparent 50%, /* ライン上の透過部分 */
-    #fcfbf1 50%,  /* 塗り始め */
-    #fcfbf1 90%,  /* 塗り終わり */
-    transparent 90%  /* ライン下の透過部分 */
+    transparent 60%, /* ライン上の透過部分 */
+    #054dcb 60%,  /* 塗り始め */
+    #054dcb 80%,  /* 塗り終わり */
+    transparent 80%  /* ライン下の透過部分 */
   );
-
-  padding: 8px 0.4em;
 }
 
 /* サイドバー：年別リンク */
