@@ -79,16 +79,17 @@ h1,h2,h3,h4,h5,h6 {
 .page__title a[href*="/murmur/"] {
   display: inline;
   text-decoration: none;
-
+  font-size: 40px;
+   
   background-image: linear-gradient(
     to bottom,
-    transparent 60%,
-    #fcfbf1 60%,
-    #fcfbf1 85%,
-    transparent 85%
+    transparent 50%, /* ライン上の透過部分 */
+    #fcfbf1 50%,  /* 塗り始め */
+    #fcfbf1 90%,  /* 塗り終わり */
+    transparent 90%  /* ライン下の透過部分 */
   );
 
-  padding: 0 0.2em;
+  padding: 0 0.4em;
 }
 
 
