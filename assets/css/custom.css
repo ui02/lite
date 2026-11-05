@@ -368,18 +368,22 @@ figure.highlight {
   font-family: "Pecita", sans-serif; 
   font-size: 16px; 
   text-align: center;
-  display: inline;
-  text-decoration: none;
-  border-bottom: none;
-  padding: 0 0.2em;
-  margin: 0px 0px;
+
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0 0.25em;
+
   background-image: linear-gradient(
     to bottom,
-    transparent 55%, /* ライン上の透過部分 */
-    #054dcb 55%,  /* 塗り始め */
-    #054dcb 85%,  /* 塗り終わり */
-    transparent 85%  /* ライン下の透過部分 */
+    transparent 40%, /* ライン上の透過部分 */
+    #054dcb 40%,  /* 塗り始め */
+    #054dcb 90%,  /* 塗り終わり */
+    transparent 90%  /* ライン下の透過部分 */
   );
+   
+  text-decoration: none;
+  border-bottom: none;
 }
 
 /* サイドバー：年別リンク */
