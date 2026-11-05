@@ -804,7 +804,7 @@ body.layout--home .archive__subtitle {
 
 .home-tumblr-date {
   display: inline-block;
-  margin-bottom: 7px;
+  margin-bottom: 0px;
   padding: 3px 9px;
   background: #054dcb;
   color: #fcfbf1;
