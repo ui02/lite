@@ -59,6 +59,9 @@ def main():
     root = ET.fromstring(rss)
 
     items = root.findall("./channel/item")[:5]
+    print("RSS取得順:")
+    for item in items:
+        print(item.findtext("pubDate"), item.findtext("link"))
 
     posts = []
     image_url = None
