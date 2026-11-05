@@ -806,6 +806,9 @@ body.layout--home .archive__subtitle {
 .home-tumblr-date {
   display: inline-block;
   flex-shrink: 0;
+  width: 85px;
+  box-sizing: border-box;
+  text-align: center;
   margin-bottom: 0px;
   padding: 3px 9px;
   background: #054dcb;
