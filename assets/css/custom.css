@@ -791,7 +791,7 @@ body.layout--home .archive__subtitle {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 12px 15px;
+  padding: 0px 0px;
   background: #fcfbf1;
   color: #054dcb;
   text-decoration: none;
