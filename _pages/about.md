@@ -5,7 +5,7 @@ title: "About"
 
 覚えておきたい日々の記録や、ちょっとした呟きを残す場所。  
 写真、旅行、趣味のこと、そのとき気になっているものなど。  
-　　
+  
 A place to keep little things I want to remember from day to day,  
 Games, photos, travels, hobbies, things I’m currently obsessed with… basically, whatever I feel like keeping around.  
   
