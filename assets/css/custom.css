@@ -788,7 +788,9 @@ body.layout--home .archive__subtitle {
 }
 
 .home-tumblr-post {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 12px;
   padding: 12px 15px;
   background: #fcfbf1;
   color: #054dcb;
