@@ -381,7 +381,7 @@ figure.highlight {
 
   display: block;
   width: fit-content;
-  margin: 0 auto;
+  margin: 10px auto 5px auto;
   padding: 0 0.25em;
 
   background-image: linear-gradient(
@@ -803,7 +803,7 @@ body.layout--home .archive__subtitle {
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 12px;
-  margin-top:10px;
+  margin-top:0px;
 }
 
 /* Right post list */
