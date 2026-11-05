@@ -34,11 +34,6 @@ def fetch(url):
         headers={"User-Agent": USER_AGENT}
     )
     with urllib.request.urlopen(request, timeout=20) as response:
-        print("RSSレスポンスヘッダー:")
-        print("Date:", response.headers.get("Date"))
-        print("Age:", response.headers.get("Age"))
-        print("Cache-Control:", response.headers.get("Cache-Control"))
-        print("ETag:", response.headers.get("ETag"))
         return response.read()
 
 def clean_text(value):
