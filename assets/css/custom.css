@@ -736,3 +736,114 @@ body.layout--home .archive__subtitle {
     border-right: none;
   }
 }
+
+
+/* ========================================
+   INDEX: Tumblr Feed
+======================================== */
+
+.home-tumblr-feed {
+  max-width: 1300px;
+  margin: clamp(60px, 8vw, 100px) auto;
+  padding: 0 24px;
+}
+
+.home-tumblr-title {
+  font-family: "Holiday", sans-serif;
+  font-size: 22px;
+  font-weight: normal;
+  text-align: center;
+  margin: 0 0 35px;
+  color: #231f20;
+}
+
+.home-tumblr-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 40px;
+  align-items: start;
+}
+
+/* Left image */
+
+.home-tumblr-image-link {
+  display: block;
+  overflow: hidden;
+}
+
+.home-tumblr-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Right post list */
+
+.home-tumblr-posts {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.home-tumblr-post {
+  display: block;
+  padding: 12px 15px;
+  background: #fcfbf1;
+  color: #054dcb;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.home-tumblr-post:hover {
+  opacity: 0.7;
+}
+
+.home-tumblr-date {
+  display: inline-block;
+  margin-bottom: 7px;
+  padding: 3px 9px;
+  background: #054dcb;
+  color: #fcfbf1;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.home-tumblr-text {
+  display: block;
+  font-size: 12px;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+/* No image */
+
+.home-tumblr-content.no-image {
+  display: block;
+}
+
+.home-tumblr-content.no-image .home-tumblr-posts {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 768px) {
+  .home-tumblr-feed {
+    padding: 0 16px;
+  }
+
+  .home-tumblr-content {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .home-tumblr-image {
+    width: 100%;
+  }
+
+  .home-tumblr-post {
+    padding: 10px 12px;
+  }
+}
