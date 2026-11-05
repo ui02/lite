@@ -1,0 +1,46 @@
+{% assign tumblr = site.data.tumblr %}
+
+<section class="home-tumblr-feed {% unless tumblr.image_url %}no-image{% endunless %}">
+
+  <h2 class="home-tumblr-title">- my status -</h2>
+
+  <div class="home-tumblr-content">
+
+    {% if tumblr.image_url %}
+      <a href="{{ tumblr.image_link }}"
+         class="home-tumblr-image-link"
+         target="_blank"
+         rel="noopener noreferrer">
+
+        <img
+          src="{{ tumblr.image_url }}"
+          alt="Latest photo from Tumblr"
+          class="home-tumblr-image"
+          loading="lazy">
+      </a>
+    {% endif %}
+
+    <div class="home-tumblr-posts">
+
+      {% for post in tumblr.posts %}
+        <a href="{{ post.url }}"
+           class="home-tumblr-post"
+           target="_blank"
+           rel="noopener noreferrer">
+
+          <time class="home-tumblr-date">
+            {{ post.date }}
+          </time>
+
+          <span class="home-tumblr-text">
+            {{ post.text | escape }}
+          </span>
+
+        </a>
+      {% endfor %}
+
+    </div>
+
+  </div>
+
+</section>
