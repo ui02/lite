@@ -371,8 +371,8 @@ figure.highlight {
   display: inline;
   text-decoration: none;
   border-bottom: none;
-  padding: 0 0.4em;
-  margin: 8px 10px;
+  padding: 0 0.2em;
+  margin: 0px 0px;
   background-image: linear-gradient(
     to bottom,
     transparent 55%, /* ライン上の透過部分 */
