@@ -26,7 +26,7 @@
 
 /* サイト全体 */
 body {
-  font-family: "Zen Maru Gothic", "Gaegu display", sans-serif;
+  font-family: "Zen Maru Gothic", sans-serif;
 }
 
 /* 記事本文：スマホ・通常 */
@@ -49,18 +49,18 @@ body {
 .archive__item-title,
 .taxonomy__index,
 .archive__subtitle {
-  font-family: "Zen Maru Gothic", "Gaegu display", sans-serif;
+  font-family: "Zen Maru Gothic", sans-serif;
   font-weight: 400;
 }
 
 /* 画像キャプション */
 .page__content figure figcaption {
-  font-family: "Zen Maru Gothic", "Caveat", "Gaegu display", sans-serif;
+  font-family: "Zen Maru Gothic", sans-serif;
 }
 
 h1,h2,h3,h4,h5,h6 {
-    font-family:  "Pecita", "Zen Maru Gothic", "Caveat", "Gaegu display", sans-serif;
-    font-weight: normal;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: normal;
 }
 
 /* Murmurタイトルのアンダーライン
@@ -153,7 +153,7 @@ body,
 
 /* ナビゲーション */
 .masthead .greedy-nav {
-  font-family: "Holiday", cursive;
+  font-family: "Holiday", serif;
   color: #231f20;
   background-color: #FFFFFF;
   letter-spacing: 0.1em;
@@ -375,7 +375,7 @@ figure.highlight {
 /* サイドバー：見出し */
 .nav__sub-title {
   color: #fcfbf1; 
-  font-family: "Pecita", sans-serif; 
+  font-family: "Zen Maru Gothic", sans-serif; 
   font-size: 20px; 
   text-align: center;
   font-weight: normal;
@@ -428,7 +428,7 @@ figure.highlight {
 
 /* Murmurカード */
 .murmur-card {
-  font-family: "Holiday", "Yomogi", "Gaegu display", sans-serif;
+  font-family: "Holiday", "Zen Maru Gothic", serif;
 }
 
 .murmur-card span {
@@ -483,7 +483,7 @@ body.layout--home .archive__subtitle {
 
 /* セクションタイトル */
 .home-recent-title {
-  font-family: "Holiday", cursive;
+  font-family: "Holiday", serif;
   font-size: 22px;
   font-weight: 400;
   text-align: center;
@@ -536,8 +536,8 @@ body.layout--home .archive__subtitle {
   text-align: center;
   align-self: center;
 
-  font-family: "Pecita", sans-serif;
-  font-size: 11px;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-size: 13px;
   color: #fcfbf1;
   background: #054dcb;
   padding: 2px 0px 0px 0px;
@@ -555,7 +555,7 @@ body.layout--home .archive__subtitle {
   line-height: 2.2;
   margin: 0 auto 5px;
   overflow: visible;
-  font-family: "Pecita", "Zen Maru Gothic", "Caveat", "Gaegu display", sans-serif;
+  font-family: "Zen Maru Gothic", sans-serif;
 }
 
 /* タイトル文字の背景 */
@@ -576,16 +576,6 @@ body.layout--home .archive__subtitle {
   border-radius: 10px;
   margin: 0 auto 12px;
   box-shadow: 0 0 10px rgba(0,0,0,0.25);
-}
-
-/* 抜粋 */
-.home-post-excerpt {
-  width: 85%;
-  font-size: 12px !important;
-  line-height: 1.4;
-  text-align: left;
-  color: #054dcb;
-  margin: 0;
 }
 
 /* カード：hover */
@@ -643,7 +633,7 @@ body.layout--home .archive__subtitle {
     margin-top: 3em;
     margin-bottom: 1em;
     font-size: 18px;
-    font-family: "Pecita", cursive !important;
+    font-family: "Zen Maru Gothic", sans-serif !important;
 }
 .social-icons .fa-rss,.social-icons .fa-rss-square,.social-icons .fa-square-rss {
     color: #231f20;
@@ -661,7 +651,7 @@ body.layout--home .archive__subtitle {
   margin-bottom: 0.5em;
 }
 .page__title p-name {
-  font-family: "Pecita", cursive;
+  font-family: "Zen Maru Gothic", sans-serif;
   color: #054dcb;
 }
 .page__title a {
@@ -678,7 +668,7 @@ body.layout--home .archive__subtitle {
   margin-bottom: 3em;
 }
 .page__meta-date {
-  font-family: "Pecita", cursive;
+  font-family: "Zen Maru Gothic", sans-serif;
   color: #fcfbf1;
   background: #054dcb;
 }
@@ -709,7 +699,7 @@ body.layout--home .archive__subtitle {
 /* 画像キャプション */
 .layout--single .page__content figcaption {
   text-align: left;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Zen Maru Gothic", sans-serif;
   font-size: 0.8em;
   line-height: 1.7;
 }
@@ -764,7 +754,7 @@ body.layout--home .archive__subtitle {
 }
 
 .home-tumblr-title {
-  font-family: "Holiday", sans-serif;
+  font-family: "Holiday", serif;
   font-size: 22px;
   font-weight: normal;
   text-align: center;
@@ -842,8 +832,8 @@ body.layout--home .archive__subtitle {
   padding: 2px 0px 0px 0px;
   background: #054dcb;
   color: #fcfbf1;
-  font-family: "Pecita", sans-serif;
-  font-size: 12px;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-size: 13px;
   letter-spacing: 3.3px;
   line-height: 1.5;
   align-self: flex-start;
