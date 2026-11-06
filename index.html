@@ -36,10 +36,6 @@ author_profile: false
         <time class="home-post-date">
           {{ post.date | date: "%Y/%m/%d" }}
         </time>
-
-        <h3 class="home-post-title">
-          <span>{{ post.title }}</span>
-        </h3>
         
         {% if post.header.teaser %}
           <img
@@ -48,11 +44,9 @@ author_profile: false
             class="home-post-image">
         {% endif %}
 
-        {% if post.excerpt %}
-          <p class="home-post-excerpt">
-            {{ post.excerpt | strip_html | truncate: 70 }}
-          </p>
-        {% endif %}
+        <h3 class="home-post-title">
+          <span>{{ post.title }}</span>
+        </h3>
         
       </a>
     {% endfor %}
