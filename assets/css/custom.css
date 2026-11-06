@@ -158,7 +158,7 @@ body,
   background-color: #FFFFFF;
   letter-spacing: 0.1em;
   margin-top: 45px;
-  margin-bottom: 45px;
+  margin-bottom: 0px;
 }
 
 /* ヘッダー内リンクの基本色 */
@@ -449,9 +449,9 @@ figure.highlight {
    --------------------------------- */
 
 .home-random-image {
-  width: 100%;
+  width: 90%;
   max-width: 900px;
-  margin: 5rem auto 3.5rem;
+  margin: 13rem auto 5rem;
   text-align: center;
 }
 
