@@ -268,7 +268,8 @@ a:hover,
 /* 中央寄せ */
 .author__avatar,
 .author__name p-name,
-.nav__items {
+.nav__items,
+.u-url {
   text-align: center;
 }
 
