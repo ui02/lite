@@ -207,7 +207,7 @@ body,
 a,
 a:visited,
 a:active {
-  color: #054dcb;
+  color: #054dcb !important;
 }
 
 /* 記事やページへのリンク */
