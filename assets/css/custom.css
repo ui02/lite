@@ -639,19 +639,18 @@ body.layout--home .archive__subtitle {
 /* =================================
    13. フッター
    ================================= */
-.page__footer,
-.social-icons,
+
 .page__footer-copyright {
     margin-top: 3em;
     margin-bottom: 1em;
     font-size: 18px;
     font-family: "Pecita", "Zen Maru Gothic", sans-serif !important;
 }
-.social-icons .fa-rss,.social-icons .fa-rss-square,.social-icons .fa-square-rss {
-    color: #231f20;
+
+/* フッターのSocial Icons・Feedを非表示 */
+.page__footer-follow {
+  display: none !important;
 }
-
-
 
 /* ========================================
    記事ページ
