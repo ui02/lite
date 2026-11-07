@@ -26,7 +26,7 @@
 
 /* サイト全体 */
 body {
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "Zen Maru Gothic", "Caveat", sans-serif;
 }
 
 /* 記事本文：スマホ・通常 */
@@ -49,17 +49,17 @@ body {
 .archive__item-title,
 .taxonomy__index,
 .archive__subtitle {
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "Zen Maru Gothic", "Caveat", sans-serif;
   font-weight: 400;
 }
 
 /* 画像キャプション */
 .page__content figure figcaption {
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "Zen Maru Gothic", "Caveat", sans-serif;
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "Zen Maru Gothic", "Caveat", sans-serif;
   font-weight: normal;
 }
 
@@ -375,7 +375,7 @@ figure.highlight {
 /* サイドバー：見出し */
 .nav__sub-title {
   color: #fcfbf1; 
-  font-family: "Zen Maru Gothic", sans-serif; 
+  font-family: "Zen Maru Gothic", "Caveat", sans-serif; 
   font-size: 20px; 
   text-align: center;
   font-weight: normal;
@@ -449,7 +449,7 @@ figure.highlight {
    --------------------------------- */
 
 .home-random-image {
-  width: 90%;
+  width: 80%;
   max-width: 900px;
   margin: 20rem auto 10rem;
   text-align: center;
@@ -536,11 +536,11 @@ body.layout--home .archive__subtitle {
   text-align: center;
   align-self: center;
 
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "Zen Maru Gothic", "Caveat", sans-serif;
   font-size: 13px;
   color: #fcfbf1;
   background: #054dcb;
-  padding: 2px 0px 0px 0px;
+  padding: 0px 1px 0px 1px;
   margin-bottom: 50px;
   letter-spacing: 3.6px;
 }
@@ -555,7 +555,7 @@ body.layout--home .archive__subtitle {
   line-height: 2.2;
   margin: 0 auto 5px;
   overflow: visible;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "Zen Maru Gothic", "Caveat", sans-serif;
 }
 
 /* タイトル文字の背景 */
@@ -633,7 +633,7 @@ body.layout--home .archive__subtitle {
     margin-top: 3em;
     margin-bottom: 1em;
     font-size: 18px;
-    font-family: "Zen Maru Gothic", sans-serif !important;
+    font-family: "Zen Maru Gothic", "Caveat", sans-serif !important;
 }
 .social-icons .fa-rss,.social-icons .fa-rss-square,.social-icons .fa-square-rss {
     color: #231f20;
@@ -651,7 +651,7 @@ body.layout--home .archive__subtitle {
   margin-bottom: 0.5em;
 }
 .page__title p-name {
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "Zen Maru Gothic", "Caveat", sans-serif;
   color: #054dcb;
 }
 .page__title a {
@@ -668,7 +668,7 @@ body.layout--home .archive__subtitle {
   margin-bottom: 3em;
 }
 .page__meta-date {
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "Zen Maru Gothic", "Caveat", sans-serif;
   color: #fcfbf1;
   background: #054dcb;
 }
@@ -699,7 +699,7 @@ body.layout--home .archive__subtitle {
 /* 画像キャプション */
 .layout--single .page__content figcaption {
   text-align: left;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "Zen Maru Gothic", "Caveat", sans-serif;
   font-size: 0.8em;
   line-height: 1.7;
 }
@@ -829,10 +829,10 @@ body.layout--home .archive__subtitle {
   box-sizing: border-box;
   text-align: center;
   margin-bottom: 0px;
-  padding: 2px 0px 0px 0px;
+  padding: 0px 1px 0px 1px;
   background: #054dcb;
   color: #fcfbf1;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "Zen Maru Gothic", "Caveat", sans-serif;
   font-size: 13px;
   letter-spacing: 3.3px;
   line-height: 1.5;
