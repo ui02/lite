@@ -1,0 +1,31 @@
+{% assign posts = site.data.murmur.posts | slice: 0, 100 %}
+
+<div class="archive-timeline murmur-timeline">
+  {% for post in posts %}
+    <article class="archive-timeline__item">
+      <div class="archive-timeline__date">
+        <a href="{{ post.url }}" target="_blank" rel="noopener">
+          {{ post.date }}
+        </a>
+      </div>
+
+      <div class="archive-timeline__content">
+        {% if post.text != "" %}
+          <p>{{ post.text | escape | newline_to_br }}</p>
+        {% endif %}
+
+        {% if post.images.size > 0 %}
+          <div class="murmur-gallery">
+            {% for image in post.images %}
+              <img
+                src="{{ image | relative_url }}"
+                alt=""
+                loading="lazy"
+              >
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+    </article>
+  {% endfor %}
+</div>
