@@ -6,13 +6,13 @@ main:
   - title: "about"
     url: /about/
 #  - title: "gallery"
-    url: /
+#   url: /
 #  - title: "game"
-    url: /
+#   url: /
 #  - title: "Categories"
-    url: /categories/
+#   url: /categories/
 #  - title: "Tags"
-    url: /tags/
+#   url: /tags/
 
 diary:
   - title: Archives
