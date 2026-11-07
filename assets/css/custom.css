@@ -63,7 +63,7 @@ h1,h2,h3,h4,h5,h6 {
   font-weight: normal;
 }
 
-.author__content {
+.author__name p-name {
   font-family: "Pecita", "Zen Maru Gothic", sans-serif;
 }
 
@@ -457,7 +457,7 @@ figure.highlight {
 .home-random-image {
   width: 100%;
   max-width: 700px;
-  margin: 20rem auto 10rem !important;
+  margin: 10rem auto 10rem !important;
   text-align: center;
 }
 
@@ -639,7 +639,9 @@ body.layout--home .archive__subtitle {
 /* =================================
    13. フッター
    ================================= */
-.page__footer {
+.page__footer,
+.social-icons,
+.page__footer-copyright {
     margin-top: 3em;
     margin-bottom: 1em;
     font-size: 18px;
