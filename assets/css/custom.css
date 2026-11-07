@@ -63,6 +63,10 @@ h1,h2,h3,h4,h5,h6 {
   font-weight: normal;
 }
 
+.author__content {
+  font-family: "Pecita", "Zen Maru Gothic", sans-serif;
+}
+
 /* Murmurタイトルのアンダーライン
 .page__title a[href*="/murmur/"] {
   text-decoration-line: underline;
@@ -269,7 +273,7 @@ a:hover,
 
 /* 中央寄せ */
 .author__avatar,
-.author__name p-name,
+.author__content,
 .nav__items,
 .u-url {
   text-align: center;
