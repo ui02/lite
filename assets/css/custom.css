@@ -26,7 +26,7 @@
 
 /* サイト全体 */
 body {
-  font-family: "Pecita", "Zen Maru Gothic", sans-serif;
+  font-family: "Caveat", "Zen Maru Gothic", sans-serif;
 }
 
 /* 記事本文：スマホ・通常 */
@@ -55,7 +55,7 @@ body {
 
 /* 画像キャプション */
 .page__content figure figcaption {
-  font-family: "Pecita", "Zen Maru Gothic", sans-serif;
+  font-family: "Caveat", "Zen Maru Gothic", sans-serif;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -639,7 +639,7 @@ body.layout--home .archive__subtitle {
     margin-top: 3em;
     margin-bottom: 1em;
     font-size: 18px;
-    font-family: "Pecita", "Zen Maru Gothic", sans-serif;
+    font-family: "Pecita", "Zen Maru Gothic", sans-serif !important;
 }
 .social-icons .fa-rss,.social-icons .fa-rss-square,.social-icons .fa-square-rss {
     color: #231f20;
@@ -705,7 +705,7 @@ body.layout--home .archive__subtitle {
 /* 画像キャプション */
 .layout--single .page__content figcaption {
   text-align: left;
-  font-family: "Pecita", "Zen Maru Gothic", sans-serif;
+  font-family: "Caveat", "Zen Maru Gothic", sans-serif;
   font-size: 0.8em;
   line-height: 1.7;
 }
