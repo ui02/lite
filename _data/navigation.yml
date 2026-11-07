@@ -40,16 +40,6 @@ murs:
     children:
       - title: "2026"
         url: /murmur/2026/
-      - title: "-June"
-        url: /murmur/2026-06/
-      - title: "-May"
-        url: /murmur/2026-05/
-      - title: "-March"
-        url: /murmur/2026-03/
-      - title: "-February"
-        url: /murmur/2026-02/
-      - title: "-January"
-        url: /murmur/2026-01/
       - title: "2025"
         url: /murmur/2025/
       - title: "2024"
