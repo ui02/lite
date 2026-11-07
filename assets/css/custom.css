@@ -775,10 +775,14 @@ body.layout--home .archive__subtitle {
   margin: 0 0 35px;
   padding: 35px 0;
 
-  background-image: url("");
-  background-size: 130px auto;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image:
+    linear-gradient(
+      to bottom,
+      transparent 50%,
+      #fcfbf1 50%,
+      #fcfbf1 90%,
+      transparent 90%
+    );
 
   border: none !important;
   box-shadow: none !important;
@@ -821,10 +825,11 @@ body.layout--home .archive__subtitle {
 
 .home-tumblr-post {
   display: flex;
+  font-size: 13px; 
   align-items: center;
   gap: 12px;
   padding: 0px 0px;
-  background: #fcfbf1;
+  background: #FFFFF;
   color: #054dcb;
   text-decoration: none;
   transition: opacity 0.2s ease;
