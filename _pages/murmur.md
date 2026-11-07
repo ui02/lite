@@ -1,7 +1,7 @@
 ---
 title: "Murmur"
 layout: single
-permalink: /murmur/
+permalink: /murmur0/
 author_profile: false
 ---
 
