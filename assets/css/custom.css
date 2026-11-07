@@ -45,7 +45,7 @@ body {
 
 /* 記事タイトル・見出し */
 .page__title,
-.home-post-title.
+.home-post-title,
 .archive__item-title,
 .taxonomy__index,
 .archive__subtitle {
