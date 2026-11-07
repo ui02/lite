@@ -808,7 +808,7 @@ body.layout--home .archive__subtitle {
 .home-tumblr-posts {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 5px;
   flex: 1;
   min-width: 0;
 }
