@@ -121,11 +121,6 @@ body,
   color: #231f20;
 }
 
-/* サイトタイトル */
-.site-title {
-  color: #054dcb;
-}
-
 /* 記事タイトル */
 .page__title,
 .archive__item-title {
@@ -138,6 +133,7 @@ body,
 
 /* サイトタイトル */
 .site-title {
+  color: #054dcb !important;
   font-size: 40px;
   letter-spacing: 0.08em;
   font-weight: normal;
@@ -155,7 +151,6 @@ body,
   background-position: center;
   background-repeat: no-repeat;
 }
-
 
 /* ナビゲーション */
 .masthead .greedy-nav {
@@ -211,7 +206,7 @@ body,
 a,
 a:visited,
 a:active {
-  color: #054dcb !important;
+  color: #054dcb;
 }
 
 /* 記事やページへのリンク */
@@ -829,15 +824,6 @@ body.layout--home .archive__subtitle {
   color: #054dcb;
   text-decoration: none;
   transition: opacity 0.2s ease;
-   
-  background-image:
-    linear-gradient(
-      to bottom,
-      transparent 50%,
-      #fcfbf1 50%,
-      #fcfbf1 90%,
-      transparent 90%
-    );
 }
 
 .home-tumblr-post:hover {
@@ -861,14 +847,23 @@ body.layout--home .archive__subtitle {
 }
 
 .home-tumblr-text {
-  display: block;
+  display: inline-block;
+  width: fit-content;
+  max-width: 100%;
   font-size: 13px;
   line-height: 1.8;
-  flex: 1;
-  min-width: 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+
+  background-image:
+    linear-gradient(
+      to bottom,
+      transparent 20%,
+      #fcfbf1 20%,
+      #fcfbf1 80%,
+      transparent 80%
+    );
 }
 
 /* No image */
