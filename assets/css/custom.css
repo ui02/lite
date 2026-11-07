@@ -822,6 +822,8 @@ body.layout--home .archive__subtitle {
   display: flex;
   font-size: 13px; 
   align-items: center;
+  height: 32px;
+  overflow: hidden;
   gap: 12px;
   padding: 0px 0px;
   color: #054dcb;
@@ -856,14 +858,17 @@ body.layout--home .archive__subtitle {
   font-size: 13px;
   letter-spacing: 3.3px;
   line-height: 1.5;
-  align-self: flex-start;
 }
 
 .home-tumblr-text {
   display: block;
   font-size: 13px;
   line-height: 1.8;
-  overflow-wrap: anywhere;
+  flex: 1;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* No image */
