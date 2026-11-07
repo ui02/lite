@@ -457,7 +457,7 @@ figure.highlight {
 .home-random-image {
   width: 100%;
   max-width: 700px;
-  margin: 10rem auto 10rem !important;
+  margin: 5rem auto 6rem !important;
   text-align: center;
 }
 
@@ -775,14 +775,10 @@ body.layout--home .archive__subtitle {
   margin: 0 0 35px;
   padding: 35px 0;
 
-  background-image:
-    linear-gradient(
-      to bottom,
-      transparent 50%,
-      #fcfbf1 50%,
-      #fcfbf1 90%,
-      transparent 90%
-    );
+  background-image: url("");
+  background-size: 130px auto;
+  background-position: center;
+  background-repeat: no-repeat;
 
   border: none !important;
   box-shadow: none !important;
@@ -829,10 +825,18 @@ body.layout--home .archive__subtitle {
   align-items: center;
   gap: 12px;
   padding: 0px 0px;
-  background: #FFFFF;
   color: #054dcb;
   text-decoration: none;
   transition: opacity 0.2s ease;
+   
+  background-image:
+    linear-gradient(
+      to bottom,
+      transparent 50%,
+      #fcfbf1 50%,
+      #fcfbf1 90%,
+      transparent 90%
+    );
 }
 
 .home-tumblr-post:hover {
