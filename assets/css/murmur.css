@@ -57,9 +57,9 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: #554b42;
-  border: 2px solid #fff;
-  box-shadow: 0 0 0 1px #fcfbf1;
+  background: #054dcb;
+  border: 0px solid #fff;
+  box-shadow: 0 0 0 2px #054dcb;
 }
 
 .murmur-page .archive-timeline__date {
@@ -119,6 +119,7 @@
 }
 
 .murmur-page .archive-timeline__content p {
+  color: #054dcb;
   display: inline-block;
   width: fit-content;
   max-width: 100%;
