@@ -297,6 +297,15 @@ body.notebook-page {
 .tab-faves { background: #fff; }
 .tab-gallery { background: #c5e7f1; }
 .tab-about { background: #eaf7fb; }
+.index-tabs {
+  position: absolute;
+  top: 13%;
+  right: -34px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 39px;
+}
 
 @media (max-width: 760px) {
   body.notebook-page { display: block; padding: 18px 14px 28px; }
