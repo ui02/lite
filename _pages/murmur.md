@@ -10,4 +10,6 @@ sidebar:
 
 日々のちょっとしたつぶやき
 
-{% include murmur-feed.html %}
+<div class="murmur-page">
+  {% include murmur-feed.html %}
+</div>
