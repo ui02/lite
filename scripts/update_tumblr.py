@@ -72,7 +72,8 @@ def main():
 
         try:
             date = parsedate_to_datetime(pub_date)
-            date_text = date.strftime("%Y/%m/%d")
+            date = date.astimezone(ZoneInfo("Asia/Tokyo"))
+            date_text = date.strftime("%m/%d - %H:%M")
         except Exception:
             date_text = ""
 
