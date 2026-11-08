@@ -45,22 +45,30 @@ permalink: /planner/
   {% endif %}
 </div>
 
-        <section class="murmur-section">
-          <div class="section-heading">
-            <span class="heading-mark">✎</span>
-            <h2>little thoughts</h2>
-            <span class="heading-rule"></span>
-          </div>
-          <div class="tumblr-feed">
-            <!-- Replace the sample text below with your TumblrFEED content. -->
-            <p>Collecting little things that make an ordinary day feel special.</p>
-            <p class="feed-meta">NOV 08, 2026 <span>·</span> 11:24 PM</p>
-          </div>
-          <div class="tumblr-feed second-feed">
-            <p>A quiet day, a warm drink, and a little time for myself.</p>
-            <p class="feed-meta">NOV 06, 2026 <span>·</span> 08:10 PM</p>
-          </div>
-        </section>
+<section class="murmur-section">
+  <div class="section-heading">
+    <span class="heading-mark">✎</span>
+    <h2>little thoughts</h2>
+    <span class="heading-rule"></span>
+  </div>
+
+  {% for post in tumblr.posts limit: 5 %}
+    <a class="tumblr-feed"
+       href="{{ post.url }}"
+       target="_blank"
+       rel="noopener noreferrer">
+
+      <p>{{ post.text | escape }}</p>
+
+      <p class="feed-meta">
+        {{ post.date }}
+        <span>·</span>
+        TUMBLR
+      </p>
+
+    </a>
+  {% endfor %}
+</section>
 
         <nav class="quick-links" aria-label="Quick links">
           <a class="quick-link" href="{{ '/planner/diary/' | relative_url }}">
