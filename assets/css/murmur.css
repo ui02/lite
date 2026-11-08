@@ -12,12 +12,12 @@
    タイムライン表示
 ======================================== */
 
-.murmur-page .page h-entry {
-  padding: 0 150px;
+.murmur-page .page__inner-wrap {
+  width: 70%;
 }
 
 .murmur-page .page__content e-content p {
-  text-align: center;
+  text-align: center !important;
 }
 
 .murmur-page .archive-timeline {
@@ -28,7 +28,7 @@
 
 .murmur-page .archive-timeline__item {
   position: relative;
-  padding: 0 0 2rem 1rem;
+  padding: 0 0 1rem 1rem;
   border-left: 1px solid #231f20;
 }
 
@@ -65,12 +65,14 @@
   font-size: 13px;
   letter-spacing: 3.3px;
   line-height: 1.5;
-}
+  transition: none;
+
 .archive-timeline__date a,
 .archive-timeline__date a:visited,
 .archive-timeline__date a:hover,
 .archive-timeline__date a:active {
   color: #fcfbf1 !important;
+}
 }
 
 .murmur-page .archive-timeline__title {
@@ -94,7 +96,7 @@
   max-width: 100%;
   font-size: 13px;
   line-height: 1.8;
-  margin: 5px 5px;
+  margin: 5px 5px !important;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
