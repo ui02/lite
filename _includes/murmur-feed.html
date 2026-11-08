@@ -17,11 +17,13 @@
         {% if post.images.size > 0 %}
           <div class="murmur-gallery">
             {% for image in post.images %}
-              <img
-                src="{{ image | relative_url }}"
-                alt=""
-                loading="lazy"
-              >
+              <a href="{{ image | relative_url }}" target="_blank" rel="noopener">
+                <img
+                  src="{{ image | relative_url }}"
+                  alt=""
+                  loading="lazy"
+                >
+              </a>
             {% endfor %}
           </div>
         {% endif %}
