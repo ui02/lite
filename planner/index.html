@@ -2,102 +2,118 @@
 layout: null
 permalink: /planner/
 ---
-
 <!doctype html>
 <html lang="ja">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#78b85a">
-  <title>MY LITTLE WORLD | IOLITE</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Press+Start+2P&family=Nunito:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <title>my little notebook</title>
   <link rel="stylesheet" href="{{ '/assets/css/planner.css' | relative_url }}">
 </head>
-
-<body class="planner-site pixel-world">
-  <main class="game-window">
-    <header class="hud">
-      <a class="game-logo" href="{{ '/' | relative_url }}">
-        <span class="logo-pixel">✿</span>
-        <span>IOLITE<span class="logo-sub"> / MY LITTLE WORLD</span></span>
-      </a>
-      <div class="hud-right">
-        <span class="season"><span class="sun-icon">☀</span> SUNNY DAY</span>
-        <span class="hud-date">YEAR 01　・　DAY 08</span>
-      </div>
-    </header>
-
-    <section class="game-scene" aria-label="My little world">
-      <div class="scene-sky">
-        <div class="sun"></div>
-        <div class="cloud cloud-one"><i></i><b></b><em></em></div>
-        <div class="cloud cloud-two"><i></i><b></b><em></em></div>
-        <div class="mountain mountain-back"></div>
-        <div class="mountain mountain-front"></div>
-      </div>
-
-      <div class="scene-ground">
-        <div class="grass-pattern" aria-hidden="true"></div>
-        <div class="path path-one"></div>
-        <div class="path path-two"></div>
-
-        <div class="welcome-sign pixel-panel">
-          <div class="panel-top"><span>✦ WELCOME ✦</span><span class="panel-lights">▪ ▪ ▪</span></div>
-          <p class="welcome-title">MY LITTLE<br>WORLD!</p>
-          <p class="welcome-copy">A tiny place for<br>all my favorite things.</p>
-          <div class="sign-flower">✿</div>
+<body class="notebook-page">
+  <main class="notebook-wrap">
+    <div class="notebook" aria-label="My little notebook">
+      <!-- LEFT PAGE: profile image, Tumblr text feed, and quick links -->
+      <section class="page page-left">
+        <div class="page-kicker">
+          <span class="tiny-star">✳</span>
+          <span>MY LITTLE NOTEBOOK</span>
+          <span class="page-number">01</span>
         </div>
 
-        <div class="cabin">
-          <div class="roof"></div>
-          <div class="roof-shade"></div>
-          <div class="cabin-wall">
-            <div class="window window-left"><i></i></div>
-            <div class="door"><i></i></div>
-            <div class="window window-right"><i></i></div>
+        <div class="profile-photo photo-placeholder">
+          <!-- Replace this block with an img element when your MurmurFEED image is ready. -->
+          <div class="photo-sky"></div>
+          <div class="photo-hill"></div>
+          <span class="photo-label">a little moment</span>
+        </div>
+
+        <section class="murmur-section">
+          <div class="section-heading">
+            <span class="heading-mark">✎</span>
+            <h2>little thoughts</h2>
+            <span class="heading-rule"></span>
           </div>
-          <div class="cabin-base"></div>
-          <div class="cabin-name">IOLITE HOUSE</div>
-        </div>
+          <div class="tumblr-feed">
+            <!-- Replace the sample text below with your TumblrFEED content. -->
+            <p>Collecting little things that make an ordinary day feel special.</p>
+            <p class="feed-meta">NOV 08, 2026 <span>·</span> 11:24 PM</p>
+          </div>
+          <div class="tumblr-feed second-feed">
+            <p>A quiet day, a warm drink, and a little time for myself.</p>
+            <p class="feed-meta">NOV 06, 2026 <span>·</span> 08:10 PM</p>
+          </div>
+        </section>
 
-        <div class="tree tree-left"><div class="tree-top"></div><div class="tree-trunk"></div></div>
-        <div class="tree tree-right"><div class="tree-top"></div><div class="tree-trunk"></div></div>
-        <div class="bush bush-one"></div>
-        <div class="bush bush-two"></div>
-        <div class="flower-patch patch-one">✿　✿　✿</div>
-        <div class="flower-patch patch-two">✿　✿</div>
-        <div class="mailbox"><span>✉</span></div>
-
-        <div class="character" aria-label="A tiny pixel character">
-          <div class="char-hair"></div>
-          <div class="char-face"><i></i><b></b></div>
-          <div class="char-body"></div>
-          <div class="char-feet"></div>
-        </div>
-
-        <nav class="game-menu" aria-label="Main menu">
-          <a class="menu-item menu-diary" href="#diary"><span class="menu-icon">▣</span><span>DIARY</span><small>日々の記録</small></a>
-          <a class="menu-item menu-faves" href="#favorites"><span class="menu-icon">♥</span><span>FAVORITES</span><small>好きなもの</small></a>
-          <a class="menu-item menu-gallery" href="#gallery"><span class="menu-icon">▧</span><span>GALLERY</span><small>写真と記録</small></a>
-          <a class="menu-item menu-about" href="#about"><span class="menu-icon">?</span><span>ABOUT</span><small>この場所について</small></a>
+        <nav class="quick-links" aria-label="Quick links">
+          <a class="quick-link" href="{{ '/planner/diary/' | relative_url }}">
+            <span class="quick-icon">☷</span><span>DIARY</span>
+          </a>
+          <a class="quick-link" href="{{ '/planner/favorites/' | relative_url }}">
+            <span class="quick-icon">♡</span><span>FAVES</span>
+          </a>
+          <a class="quick-link" href="{{ '/planner/gallery/' | relative_url }}">
+            <span class="quick-icon">▧</span><span>GALLERY</span>
+          </a>
+          <a class="quick-link" href="{{ '/planner/about/' | relative_url }}">
+            <span class="quick-icon">✿</span><span>ABOUT</span>
+          </a>
         </nav>
 
-        <div class="speech-bubble">今日は何をしよう？<span>▼</span></div>
-      </div>
+        <div class="left-footer">
+          <span>made of little things</span>
+          <span>♡</span>
+        </div>
+      </section>
 
-      <div class="scene-bottom">
-        <span>♥  A SMALL CORNER OF THE INTERNET</span>
-        <span>PRESS START TO EXPLORE ✦</span>
-      </div>
-    </section>
+      <!-- RIGHT PAGE: updates and large feature image -->
+      <section class="page page-right">
+        <div class="right-topline">
+          <span class="date-label">SUNDAY, NOVEMBER 08</span>
+          <span class="weather-label">☀ A GOOD DAY TO BE HERE</span>
+        </div>
 
-    <footer class="game-footer">
-      <a href="{{ '/' | relative_url }}">← BACK TO IOLITE</a>
-      <span>MADE WITH PIXELS & DAYDREAMS</span>
-      <span>© 2026 IOLITE</span>
-    </footer>
+        <section class="updates">
+          <div class="updates-title">
+            <span class="updates-icon">✧</span>
+            <h2>UPDATE</h2>
+            <span class="updates-subtitle">what's new?</span>
+          </div>
+          <ul class="update-list">
+            <li><time datetime="2026-11-08">11.08</time><span>Giving this little corner a fresh new look.</span><i>✳</i></li>
+            <li><time datetime="2026-11-03">11.03</time><span>Added a few things to my favorites.</span><i>♡</i></li>
+            <li><time datetime="2026-10-28">10.28</time><span>New photos from an ordinary weekend.</span><i>✧</i></li>
+          </ul>
+        </section>
+
+        <figure class="feature-photo photo-placeholder">
+          <!-- Replace this block with your wide landscape photo. -->
+          <div class="feature-sun"></div>
+          <div class="feature-cloud cloud-one"></div>
+          <div class="feature-cloud cloud-two"></div>
+          <div class="feature-mountain mountain-back"></div>
+          <div class="feature-mountain mountain-front"></div>
+          <div class="feature-field"></div>
+          <figcaption>
+            <span>little things, lovely days</span>
+            <span>✧ 2026</span>
+          </figcaption>
+        </figure>
+
+        <div class="right-footer">
+          <span>TAKE IT SLOW & ENJOY THE LITTLE THINGS</span>
+          <span>PAGE 02 / 02</span>
+        </div>
+      </section>
+    </div>
+
+    <!-- INDEX TABS: change hrefs to your actual page URLs when ready -->
+    <nav class="index-tabs" aria-label="Notebook index">
+      <a class="index-tab tab-diary" href="{{ '/planner/diary/' | relative_url }}">DIARY <span>01</span></a>
+      <a class="index-tab tab-faves" href="{{ '/planner/favorites/' | relative_url }}">FAVES <span>02</span></a>
+      <a class="index-tab tab-gallery" href="{{ '/planner/gallery/' | relative_url }}">GALLERY <span>03</span></a>
+      <a class="index-tab tab-about" href="{{ '/planner/about/' | relative_url }}">ABOUT <span>04</span></a>
+    </nav>
   </main>
 </body>
 </html>
