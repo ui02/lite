@@ -7,7 +7,10 @@
    #554b42 : くすみブラウン（ボーダー）
 */
 
-/* 【タイムライン表示】 */
+
+/* ========================================
+   タイムライン表示
+======================================== */
 
 .archive-timeline {
   position: relative;
@@ -61,52 +64,52 @@
   margin: 0 0 0.8rem;
 }
 
-.archive-timeline__media {
+
+/* ========================================
+   Murmur 画像ギャラリー
+======================================== */
+
+.murmur-gallery {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem;
-  margin-top: 1rem;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 12px;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 4px;
 }
 
-.archive-timeline__media img {
+/* 画像共通 */
+.murmur-gallery img {
   display: block;
-  width: 100%;
+  flex: 0 0 180px;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+
+  margin: 0;
+  padding: 3px;
+  border: 1px solid #231f20;
+  box-sizing: border-box;
+}
+
+/* 画像1枚の場合 */
+.murmur-gallery img:only-child {
+  flex: 0 0 auto;
+  width: auto;
+  max-width: 100%;
   height: auto;
-  max-width: 480px;
-  border-radius: 6px;
-}
-
-.archive-timeline__tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-  margin-top: 1rem;
-}
-
-.archive-timeline__tag {
-  padding: 0.15rem 0.55rem;
-  border: 1px solid #554b42;
-  border-radius: 999px;
-  color: inherit;
-  font-size: 0.75rem;
-}
-
-@media (max-width: 600px) {
-  .archive-timeline {
-    padding-left: 0.5rem;
-  }
-
-  .archive-timeline__item {
-    padding-left: 1.1rem;
-  }
-
-  .archive-timeline__media img {
-    max-width: 100%;
-  }
+  max-height: 400px;
+  object-fit: contain;
 }
 
 
-/* Murmur year cards */
+/* ========================================
+   Murmur 年別カード
+======================================== */
+
 .murmur-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -147,7 +150,31 @@
   font-weight: 600;
 }
 
+
+/* ========================================
+   スマホ表示
+======================================== */
+
 @media (max-width: 600px) {
+
+  .archive-timeline {
+    padding-left: 0.5rem;
+  }
+
+  .archive-timeline__item {
+    padding-left: 1.1rem;
+  }
+
+  .murmur-gallery {
+    gap: 6px;
+  }
+
+  .murmur-gallery img {
+    flex-basis: 140px;
+    width: 140px;
+    height: 140px;
+  }
+
   .murmur-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 0.75rem;
@@ -157,38 +184,4 @@
     min-height: auto;
     padding: 0.7rem;
   }
-}
-
-/* タイムライン画像 */
-.archive-timeline__gallery {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  gap: 4px;
-}
-
-/* 画像を囲むリンク */
-.archive-timeline__gallery a {
-  display: block;
-  width: 45%;
-  flex-shrink: 0;
-}
-
-/* 画像本体 */
-.archive-timeline__gallery .timeline-image {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  display: block;
-
-  margin: 3px;
-  padding: 3px;
-  border: 1px solid #231f20;
-  box-sizing: border-box;
-}
-
-/* aタグで囲まれていない画像 */
-.archive-timeline__gallery > img.timeline-image {
-  width: 45%;
-  flex-shrink: 0;
 }
