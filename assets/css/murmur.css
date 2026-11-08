@@ -43,10 +43,19 @@
 }
 
 .archive-timeline__date {
-  margin: 0 0 0.6rem;
-  color: #777;
-  font-size: 0.8rem;
-  letter-spacing: 0.04em;
+  display: inline-block;
+  flex-shrink: 0;
+  width: 93px;
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: 0px;
+  padding: 0px 1px 0px 1px;
+  background: #054dcb;
+  color: #fcfbf1;
+  font-family: "Pecita", "Zen Maru Gothic", sans-serif;
+  font-size: 13px;
+  letter-spacing: 3.3px;
+  line-height: 1.5;
 }
 
 .archive-timeline__title {
