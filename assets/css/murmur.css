@@ -51,11 +51,17 @@
   margin-bottom: 0px;
   padding: 0px 1px 2px 1px;
   background: #054dcb;
-  color: #fcfbf1 !important;
+  color: #fcfbf1;
   font-family: "Pecita", "Zen Maru Gothic", sans-serif;
   font-size: 13px;
   letter-spacing: 3.3px;
   line-height: 1.5;
+}
+.archive-timeline__date a,
+.archive-timeline__date a:visited,
+.archive-timeline__date a:hover,
+.archive-timeline__date a:active {
+  color: #fcfbf1 !important;
 }
 
 .archive-timeline__title {
