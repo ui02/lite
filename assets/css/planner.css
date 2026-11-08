@@ -192,9 +192,22 @@ body.notebook-page {
   min-height: 135px;
   padding: 14px 17px 11px;
   border: 1px solid #dceef4;
-  background: linear-gradient(110deg, #f5fbfd, #fff 75%);
+
+  background:
+    linear-gradient(
+      110deg,
+      rgba(245, 251, 253, 0.82),
+      rgba(255, 255, 255, 0.72) 75%
+    ),
+    url("../images/planner/background/bg01.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
   position: relative;
 }
+
 .updates::before {
   content: "";
   position: absolute; top: -5px; left: 22px;
