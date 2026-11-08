@@ -11,6 +11,7 @@ permalink: /planner/
   <link rel="stylesheet" href="{{ '/assets/css/planner.css' | relative_url }}">
 </head>
 <body class="notebook-page">
+  {% assign tumblr = site.data.tumblr %}
   <main class="notebook-wrap">
     <div class="notebook" aria-label="My little notebook">
       <!-- LEFT PAGE: profile image, Tumblr text feed, and quick links -->
@@ -26,12 +27,23 @@ permalink: /planner/
           <span class="page-number">01</span>
         </div>
 
-        <div class="profile-photo photo-placeholder">
-          <!-- Replace this block with an img element when your MurmurFEED image is ready. -->
-          <div class="photo-sky"></div>
-          <div class="photo-hill"></div>
-          <span class="photo-label">a little moment</span>
-        </div>
+<div class="profile-photo">
+  {% if tumblr.image_url %}
+    <a href="{{ tumblr.image_link }}"
+       class="profile-photo-link"
+       target="_blank"
+       rel="noopener noreferrer">
+
+      <img
+        src="{{ tumblr.image_url }}"
+        alt="Latest photo from Tumblr"
+        class="profile-photo-image"
+        loading="lazy">
+    </a>
+  {% else %}
+    <span class="photo-label">no photo yet</span>
+  {% endif %}
+</div>
 
         <section class="murmur-section">
           <div class="section-heading">
