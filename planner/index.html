@@ -8,141 +8,95 @@ permalink: /planner/
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#eee9df">
-  <title>MY LITTLE JOURNAL | IOLITE</title>
+  <meta name="theme-color" content="#78b85a">
+  <title>MY LITTLE WORLD | IOLITE</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Patrick+Hand&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Press+Start+2P&family=Nunito:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/planner.css' | relative_url }}">
 </head>
 
-<body class="planner-site">
-  <main class="planner">
-    <header class="topbar">
-      <a class="brand" href="{{ '/' | relative_url }}">IOLITE <span>personal archive</span></a>
-      <div class="topbar-note">A LITTLE SPACE ON THE INTERNET ✳</div>
+<body class="planner-site pixel-world">
+  <main class="game-window">
+    <header class="hud">
+      <a class="game-logo" href="{{ '/' | relative_url }}">
+        <span class="logo-pixel">✿</span>
+        <span>IOLITE<span class="logo-sub"> / MY LITTLE WORLD</span></span>
+      </a>
+      <div class="hud-right">
+        <span class="season"><span class="sun-icon">☀</span> SUNNY DAY</span>
+        <span class="hud-date">YEAR 01　・　DAY 08</span>
+      </div>
     </header>
 
-    <section class="desk" aria-label="My little journal">
-      <div class="paper">
-        <div class="paper-holes" aria-hidden="true"><i></i><i></i><i></i></div>
-
-        <div class="paper-header">
-          <div>
-            <p class="eyebrow">MY PERSONAL SPACE / NO. 001</p>
-            <h1>My little journal<span>✳</span></h1>
-            <p class="subtitle">日々のこと、好きなもの、なんでもない記録。</p>
-          </div>
-          <div class="date-stamp">
-            <span class="date-day">08</span>
-            <span>NOV<br>2026</span>
-          </div>
-        </div>
-
-        <div class="paper-rule"></div>
-
-        <div class="intro-grid">
-          <section class="intro-card">
-            <p class="section-label">HELLO, THERE!</p>
-            <h2>Welcome to my tiny corner.</h2>
-            <p>好きなものを集めたり、写真を貼ったり、気ままに更新する小さな場所。気になるところからのぞいていってね。</p>
-            <p class="handwritten">stay a little, if you like ♡</p>
-          </section>
-
-          <div class="photo-stack" aria-label="Decorative photo placeholders">
-            <div class="photo photo-main">
-              <div class="photo-art photo-art-one"><span>little<br>moments</span></div>
-              <small>somewhere in my mind</small>
-            </div>
-            <div class="photo photo-small">
-              <div class="photo-art photo-art-two">✿</div>
-              <small>favorite things</small>
-            </div>
-            <span class="tape tape-photo" aria-hidden="true"></span>
-          </div>
-        </div>
-
-        <div class="content-grid">
-          <section class="memo-card">
-            <div class="card-heading">
-              <span class="section-label">CURRENTLY</span>
-              <span class="tiny-star">✳</span>
-            </div>
-            <ul class="current-list">
-              <li><span>listening</span><b>SHINee on repeat</b></li>
-              <li><span>watching</span><b>something good</b></li>
-              <li><span>making</span><b>little things by hand</b></li>
-              <li><span>mood</span><b>slow & cozy</b></li>
-            </ul>
-          </section>
-
-          <section class="memo-card quote-card">
-            <span class="section-label">A NOTE TO SELF</span>
-            <p class="quote">“Make room for<br>the things you love.”</p>
-            <span class="handwritten quote-by">— a gentle reminder</span>
-            <span class="doodle-heart" aria-hidden="true">♡</span>
-          </section>
-        </div>
-
-        <section class="links-area" aria-label="Journal sections">
-          <div class="links-heading">
-            <span class="section-label">PICK A PAGE</span>
-            <span class="heading-caption">little tabs, little worlds</span>
-          </div>
-          <nav class="sticky-tabs">
-            <a class="sticky-tab tab-yellow" href="#diary"><span>01</span>DIARY<small>日々の記録</small></a>
-            <a class="sticky-tab tab-pink" href="#favorites"><span>02</span>FAVORITES<small>好きなもの</small></a>
-            <a class="sticky-tab tab-blue" href="#gallery"><span>03</span>GALLERY<small>写真と小さな思い出</small></a>
-            <a class="sticky-tab tab-green" href="#about"><span>04</span>ABOUT<small>この場所について</small></a>
-          </nav>
-        </section>
-
-        <div class="paper-footer">
-          <span>MADE WITH ♥ AND A LITTLE BIT OF HTML</span>
-          <span>© IOLITE 2026</span>
-        </div>
+    <section class="game-scene" aria-label="My little world">
+      <div class="scene-sky">
+        <div class="sun"></div>
+        <div class="cloud cloud-one"><i></i><b></b><em></em></div>
+        <div class="cloud cloud-two"><i></i><b></b><em></em></div>
+        <div class="mountain mountain-back"></div>
+        <div class="mountain mountain-front"></div>
       </div>
 
-      <aside class="side-note side-note-left">
-        <span class="note-pin"></span>
-        <p class="handwritten">collecting<br>small joys</p>
-        <span class="note-sparkle">✧</span>
-      </aside>
-      <div class="sticker sticker-flower" aria-hidden="true">✿</div>
-      <div class="sticker sticker-smile" aria-hidden="true">☺</div>
-      <div class="sticker sticker-star" aria-hidden="true">✦</div>
+      <div class="scene-ground">
+        <div class="grass-pattern" aria-hidden="true"></div>
+        <div class="path path-one"></div>
+        <div class="path path-two"></div>
+
+        <div class="welcome-sign pixel-panel">
+          <div class="panel-top"><span>✦ WELCOME ✦</span><span class="panel-lights">▪ ▪ ▪</span></div>
+          <p class="welcome-title">MY LITTLE<br>WORLD!</p>
+          <p class="welcome-copy">A tiny place for<br>all my favorite things.</p>
+          <div class="sign-flower">✿</div>
+        </div>
+
+        <div class="cabin">
+          <div class="roof"></div>
+          <div class="roof-shade"></div>
+          <div class="cabin-wall">
+            <div class="window window-left"><i></i></div>
+            <div class="door"><i></i></div>
+            <div class="window window-right"><i></i></div>
+          </div>
+          <div class="cabin-base"></div>
+          <div class="cabin-name">IOLITE HOUSE</div>
+        </div>
+
+        <div class="tree tree-left"><div class="tree-top"></div><div class="tree-trunk"></div></div>
+        <div class="tree tree-right"><div class="tree-top"></div><div class="tree-trunk"></div></div>
+        <div class="bush bush-one"></div>
+        <div class="bush bush-two"></div>
+        <div class="flower-patch patch-one">✿　✿　✿</div>
+        <div class="flower-patch patch-two">✿　✿</div>
+        <div class="mailbox"><span>✉</span></div>
+
+        <div class="character" aria-label="A tiny pixel character">
+          <div class="char-hair"></div>
+          <div class="char-face"><i></i><b></b></div>
+          <div class="char-body"></div>
+          <div class="char-feet"></div>
+        </div>
+
+        <nav class="game-menu" aria-label="Main menu">
+          <a class="menu-item menu-diary" href="#diary"><span class="menu-icon">▣</span><span>DIARY</span><small>日々の記録</small></a>
+          <a class="menu-item menu-faves" href="#favorites"><span class="menu-icon">♥</span><span>FAVORITES</span><small>好きなもの</small></a>
+          <a class="menu-item menu-gallery" href="#gallery"><span class="menu-icon">▧</span><span>GALLERY</span><small>写真と記録</small></a>
+          <a class="menu-item menu-about" href="#about"><span class="menu-icon">?</span><span>ABOUT</span><small>この場所について</small></a>
+        </nav>
+
+        <div class="speech-bubble">今日は何をしよう？<span>▼</span></div>
+      </div>
+
+      <div class="scene-bottom">
+        <span>♥  A SMALL CORNER OF THE INTERNET</span>
+        <span>PRESS START TO EXPLORE ✦</span>
+      </div>
     </section>
 
-    <section class="preview-sections" aria-label="Page previews">
-      <article class="preview-card" id="diary">
-        <div class="preview-number">01 / DIARY</div>
-        <h2>日々の記録 <span>✎</span></h2>
-        <p>何気ない日常や、その日の気分を気ままに。</p>
-        <a href="#top" class="back-link">BACK TO THE TOP ↑</a>
-      </article>
-      <article class="preview-card" id="favorites">
-        <div class="preview-number">02 / FAVORITES</div>
-        <h2>好きなもの <span>♡</span></h2>
-        <p>音楽、映画、本、ゲーム。好きなものを少しずつ集めるページ。</p>
-        <a href="#top" class="back-link">BACK TO THE TOP ↑</a>
-      </article>
-      <article class="preview-card" id="gallery">
-        <div class="preview-number">03 / GALLERY</div>
-        <h2>写真のアルバム <span>▧</span></h2>
-        <p>写真やスクリーンショットを貼っていく小さなギャラリー。</p>
-        <a href="#top" class="back-link">BACK TO THE TOP ↑</a>
-      </article>
-      <article class="preview-card" id="about">
-        <div class="preview-number">04 / ABOUT</div>
-        <h2>この場所について <span>✳</span></h2>
-        <p>ここは自分のペースで好きなものを並べる、個人的なインターネットの片隅。</p>
-        <a href="#top" class="back-link">BACK TO THE TOP ↑</a>
-      </article>
-    </section>
-
-    <footer class="site-footer">
-      <a href="{{ '/' | relative_url }}">← back to IOLITE</a>
-      <span>take it easy, take your time.</span>
+    <footer class="game-footer">
+      <a href="{{ '/' | relative_url }}">← BACK TO IOLITE</a>
+      <span>MADE WITH PIXELS & DAYDREAMS</span>
+      <span>© 2026 IOLITE</span>
     </footer>
   </main>
 </body>
