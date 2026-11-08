@@ -6,6 +6,7 @@ import xml.etree.ElementTree as ET
 from html.parser import HTMLParser
 from email.utils import parsedate_to_datetime
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 
 RSS_URL = "https://uilx02.tumblr.com/rss"
