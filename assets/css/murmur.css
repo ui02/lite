@@ -80,7 +80,7 @@
   margin: 0 0 0.8rem;
 }
 
-.archive-timeline__content {
+.archive-timeline__content p {
   display: inline-block;
   width: fit-content;
   max-width: 100%;
@@ -99,7 +99,6 @@
       #fcfbf1 90%,
       transparent 90%
     );
-}
 }
 
 /* ========================================
