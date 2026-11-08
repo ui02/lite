@@ -12,6 +12,10 @@
    タイムライン表示
 ======================================== */
 
+.murmur-page .page__content e-content {
+  width: 80%;
+}
+
 .murmur-page .archive-timeline {
   position: relative;
   margin: 2rem 0;
