@@ -247,6 +247,7 @@ body.notebook-page {
   outline: 1px solid #dceef4;
   box-shadow: 0 5px 18px rgba(67,119,139,.13);
   background: linear-gradient(#b8e4f1 0%, #e6f7fa 56%, #d6e9d9 57%, #9dc9b7 100%);
+  overflow: hidden;
 }
 
 .feature-photo figcaption {
