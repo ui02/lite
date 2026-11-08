@@ -94,11 +94,10 @@
   max-width: 100%;
   font-size: 13px;
   line-height: 1.8;
-  padding: 5px 5px;
+  margin: 5px 5px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  margin-bottom: 0px !important; 
 
   background-image:
     linear-gradient(
