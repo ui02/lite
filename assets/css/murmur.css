@@ -41,7 +41,7 @@
 .murmur-page .archive-timeline__item {
   position: relative;
   padding: 0 0 1rem 1rem;
-  border-left: 1px solid #231f20;
+  border-left: 2px solid #054dcb;
 }
 
 .murmur-page .archive-timeline__item:last-child {
@@ -59,23 +59,10 @@
   font-size: 17px;
   color: #054dcb;
   background: none;
-  border: 1px solid #fff;
+  border: none;
   box-shadow: none;
 }
-/* 
-.murmur-page .archive-timeline__item::before {
-  content: "";
-  position: absolute;
-  left: -7px;
-  top: 0.35rem;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: #054dcb;
-  border: 0px solid #fff;
-  box-shadow: 0 0 0 2px #054dcb;
-}
- */
+
 .murmur-page .archive-timeline__date {
   display: inline-block;
   flex-shrink: 0;
