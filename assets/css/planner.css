@@ -30,7 +30,7 @@ body.notebook-page {
   background-image: url("../images/planner/background/53.gif");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-attachment: fixed;
   font-family: "Trebuchet MS", "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
 }
