@@ -4,6 +4,15 @@
    Main colors: baby blue #bbe2f1 + white.
    ========================================================= */
 
+/* フォントの読み込み */
+@font-face {
+  font-family: "Pecita";
+  src: url("../fonts/Pecita.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --baby-blue: #bbe2f1;
   --blue-deep: #5b9eb8;
@@ -32,7 +41,7 @@ body.notebook-page {
   background-position: top left;
   background-repeat: repeat;
   background-attachment: fixed;
-  font-family: "Trebuchet MS", "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-family: "Pecita", "Zen Maru Gothic", sans-serif;
 }
 
 .notebook-wrap {
