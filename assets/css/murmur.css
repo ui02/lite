@@ -21,7 +21,7 @@
 .archive-timeline__item {
   position: relative;
   padding: 0 0 2.5rem 1.5rem;
-  border-left: 2px solid #231f20;
+  border-left: 1px solid #231f20;
 }
 
 .archive-timeline__item:last-child {
@@ -48,6 +48,7 @@
   width: 93px;
   box-sizing: border-box;
   text-align: center;
+  text-decoration: none; 
   margin-bottom: 0px;
   padding: 0px 1px 2px 1px;
   background: #054dcb;
@@ -79,7 +80,27 @@
   margin: 0 0 0.8rem;
 }
 
+.archive-timeline__content {
+  display: inline-block;
+  width: fit-content;
+  max-width: 100%;
+  font-size: 13px;
+  line-height: 1.8;
+  padding: 0 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
+  background-image:
+    linear-gradient(
+      to bottom,
+      transparent 10%,
+      #fcfbf1 10%,
+      #fcfbf1 90%,
+      transparent 90%
+    );
+}
+}
 
 /* ========================================
    Murmur 画像ギャラリー
