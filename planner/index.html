@@ -115,5 +115,19 @@ permalink: /planner/
       <a class="index-tab tab-about" href="{{ '/planner/about/' | relative_url }}">ABOUT <span>04</span></a>
     </nav>
   </main>
+
+<script>
+  const randomImages = [
+    "{{ '/assets/images/random/pola01.png' | relative_url }}",
+    "{{ '/assets/images/random/pola02.png' | relative_url }}",
+    "{{ '/assets/images/random/pola03.png' | relative_url }}"
+  ];
+
+  const randomIndex = Math.floor(Math.random() * randomImages.length);
+
+  document.getElementById("random-feature-image").src =
+    randomImages[randomIndex];
+</script>
+  
 </body>
 </html>
