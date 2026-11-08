@@ -22,7 +22,7 @@ permalink: /planner/
               alt=""
             >
           </span>
-          <span>MY LITTLE NOTEBOOK</span>
+          <span><a href="https://ui02.github.io/lite/planner/">[iolite] notebook</a></span>
           <span class="page-number">01</span>
         </div>
 
@@ -67,7 +67,12 @@ permalink: /planner/
 
         <div class="left-footer">
           <span>made of little things</span>
-          <span>♡</span>
+          <span class="tiny-star">
+            <img
+              src="{{ '/assets/images/planner/icon/heart01.png' | relative_url }}"
+              alt=""
+            >
+          </span>
         </div>
       </section>
 
@@ -119,9 +124,9 @@ permalink: /planner/
 <!-- 右ページのランダム写真 -->
 <script>
   const randomImages = [
-    "{{ '/assets/images/random/photo01.png' | relative_url }}",
-    "{{ '/assets/images/random/photo02.png' | relative_url }}",
-    "{{ '/assets/images/random/photo03.png' | relative_url }}"
+    "{{ '/assets/images/random/photo01.jpg' | relative_url }}",
+    "{{ '/assets/images/random/photo02.jpg' | relative_url }}",
+    "{{ '/assets/images/random/photo03.jpg' | relative_url }}"
   ];
 
   const randomIndex = Math.floor(Math.random() * randomImages.length);
