@@ -10,12 +10,16 @@ permalink: /planner/
   <title>my little notebook</title>
   <link rel="stylesheet" href="{{ '/assets/css/planner.css' | relative_url }}">
 </head>
+
 <body class="notebook-page">
   {% assign tumblr = site.data.tumblr %}
+
   <main class="notebook-wrap">
     <div class="notebook" aria-label="My little notebook">
+
       <!-- LEFT PAGE: profile image, Tumblr text feed, and quick links -->
       <section class="page page-left">
+
         <div class="page-kicker">
           <span class="tiny-star">
             <img
@@ -23,63 +27,67 @@ permalink: /planner/
               alt=""
             >
           </span>
-          <span><a href="https://ui02.github.io/lite/planner/">[iolite] notebook</a></span>
+          <span>
+            <a href="{{ '/planner/' | relative_url }}">[iolite] notebook</a>
+          </span>
           <span class="page-number">01</span>
         </div>
 
-<div class="profile-photo">
-  {% if tumblr.image_url %}
-    <a href="{{ tumblr.image_link }}"
-       class="profile-photo-link"
-       target="_blank"
-       rel="noopener noreferrer">
+        <!-- Latest Tumblr photo -->
+        <div class="profile-photo">
+          {% if tumblr.image_url %}
+            <a href="{{ tumblr.image_link }}"
+               class="profile-photo-link"
+               target="_blank"
+               rel="noopener noreferrer">
+              <img
+                src="{{ tumblr.image_url }}"
+                alt="Latest photo from Tumblr"
+                class="profile-photo-image"
+                loading="lazy"
+              >
+            </a>
+          {% else %}
+            <span class="photo-label">no photo yet</span>
+          {% endif %}
+        </div>
 
-      <img
-        src="{{ tumblr.image_url }}"
-        alt="Latest photo from Tumblr"
-        class="profile-photo-image"
-        loading="lazy">
-    </a>
-  {% else %}
-    <span class="photo-label">no photo yet</span>
-  {% endif %}
-</div>
+        <!-- Tumblr text feed -->
+        <section class="murmur-section">
+          <div class="section-heading">
+            <span class="heading-mark">✎</span>
+            <h2>little thoughts</h2>
+            <span class="heading-rule"></span>
+          </div>
 
-<section class="murmur-section">
-  <div class="section-heading">
-    <span class="heading-mark">✎</span>
-    <h2>little thoughts</h2>
-    <span class="heading-rule"></span>
-  </div>
+          {% for post in tumblr.posts limit: 5 %}
+            <a class="tumblr-feed"
+               href="{{ post.url }}"
+               target="_blank"
+               rel="noopener noreferrer">
+              <span class="feed-meta">{{ post.date }}</span>
+              <span class="tumblr-feed-text">{{ post.text | escape }}</span>
+            </a>
+          {% endfor %}
+        </section>
 
-{% for post in tumblr.posts limit: 5 %}
-  <a class="tumblr-feed"
-     href="{{ post.url }}"
-     target="_blank"
-     rel="noopener noreferrer">
-
-    <span class="feed-meta">{{ post.date }}</span>
-    <span class="tumblr-feed-text">{{ post.text | escape }}</span>
-
-  </a>
-{% endfor %}
-
-    </a>
-  {% endfor %}
-</section>
-
+        <!-- Quick links -->
         <nav class="quick-links" aria-label="Quick links">
           <a class="quick-link" href="{{ '/planner/diary/' | relative_url }}">
-            <span class="quick-icon">☷</span><span>DIARY</span>
+            <span class="quick-icon">☷</span>
+            <span>DIARY</span>
           </a>
           <a class="quick-link" href="{{ '/planner/favorites/' | relative_url }}">
-            <span class="quick-icon">♡</span><span>FAVES</span>
+            <span class="quick-icon">♡</span>
+            <span>FAVES</span>
           </a>
           <a class="quick-link" href="{{ '/planner/gallery/' | relative_url }}">
-            <span class="quick-icon">▧</span><span>GALLERY</span>
+            <span class="quick-icon">▧</span>
+            <span>GALLERY</span>
           </a>
           <a class="quick-link" href="{{ '/planner/about/' | relative_url }}">
-            <span class="quick-icon">✿</span><span>ABOUT</span>
+            <span class="quick-icon">✿</span>
+            <span>ABOUT</span>
           </a>
         </nav>
 
@@ -91,6 +99,7 @@ permalink: /planner/
 
       <!-- RIGHT PAGE: updates and large feature image -->
       <section class="page page-right">
+
         <div class="right-topline">
           <time class="date-label" id="today-date"></time>
           <span class="weather-label">☀ A GOOD DAY TO BE HERE</span>
@@ -102,21 +111,33 @@ permalink: /planner/
             <h2>UPDATE</h2>
             <span class="updates-subtitle">what's new?</span>
           </div>
+
           <ul class="update-list">
-            <li><time datetime="2026-11-08">11.08</time><span>Giving this little corner a fresh new look.</span><i>✳</i></li>
-            <li><time datetime="2026-11-03">11.03</time><span>Added a few things to my favorites.</span><i>♡</i></li>
-            <li><time datetime="2026-10-28">10.28</time><span>New photos from an ordinary weekend.</span><i>✧</i></li>
+            <li>
+              <time datetime="2026-11-08">11.08</time>
+              <span>Giving this little corner a fresh new look.</span>
+              <i>✳</i>
+            </li>
+            <li>
+              <time datetime="2026-11-03">11.03</time>
+              <span>Added a few things to my favorites.</span>
+              <i>♡</i>
+            </li>
+            <li>
+              <time datetime="2026-10-28">10.28</time>
+              <span>New photos from an ordinary weekend.</span>
+              <i>✧</i>
+            </li>
           </ul>
         </section>
 
-          <figure class="feature-photo">
-            <img id="random-feature-image" src="" alt="">
-
-            <figcaption>
-              <span>little things, lovely days</span>
-              <span>✧ 2026</span>
-            </figcaption>
-          </figure>
+        <figure class="feature-photo">
+          <img id="random-feature-image" src="" alt="">
+          <figcaption>
+            <span>little things, lovely days</span>
+            <span>✧ 2026</span>
+          </figcaption>
+        </figure>
 
         <div class="right-footer">
           <span>TAKE IT SLOW & ENJOY THE LITTLE THINGS</span>
@@ -125,41 +146,49 @@ permalink: /planner/
       </section>
     </div>
 
-    <!-- INDEX TABS: change hrefs to your actual page URLs when ready -->
+    <!-- INDEX TABS -->
     <nav class="index-tabs" aria-label="Notebook index">
-      <a class="index-tab tab-diary" href="{{ '/planner/diary/' | relative_url }}">DIARY <span>01</span></a>
-      <a class="index-tab tab-faves" href="{{ '/planner/favorites/' | relative_url }}">FAVES <span>02</span></a>
-      <a class="index-tab tab-gallery" href="{{ '/planner/gallery/' | relative_url }}">GALLERY <span>03</span></a>
-      <a class="index-tab tab-about" href="{{ '/planner/about/' | relative_url }}">ABOUT <span>04</span></a>
+      <a class="index-tab tab-diary" href="{{ '/planner/diary/' | relative_url }}">
+        DIARY <span>01</span>
+      </a>
+      <a class="index-tab tab-faves" href="{{ '/planner/favorites/' | relative_url }}">
+        FAVES <span>02</span>
+      </a>
+      <a class="index-tab tab-gallery" href="{{ '/planner/gallery/' | relative_url }}">
+        GALLERY <span>03</span>
+      </a>
+      <a class="index-tab tab-about" href="{{ '/planner/about/' | relative_url }}">
+        ABOUT <span>04</span>
+      </a>
     </nav>
   </main>
-  
-<!-- 右ページのランダム写真 -->
-<script>
-  const randomImages = [
-    "{{ '/assets/images/random/photo01.jpg' | relative_url }}",
-    "{{ '/assets/images/random/photo02.jpg' | relative_url }}",
-    "{{ '/assets/images/random/photo03.jpg' | relative_url }}"
-  ];
 
-  const randomIndex = Math.floor(Math.random() * randomImages.length);
+  <!-- Random feature image -->
+  <script>
+    const randomImages = [
+      "{{ '/assets/images/random/photo01.jpg' | relative_url }}",
+      "{{ '/assets/images/random/photo02.jpg' | relative_url }}",
+      "{{ '/assets/images/random/photo03.jpg' | relative_url }}"
+    ];
 
-  document.getElementById("random-feature-image").src =
-    randomImages[randomIndex];
-</script>
+    const randomIndex = Math.floor(Math.random() * randomImages.length);
 
-<!-- 右ページ上部の日付表記 -->
-<script>
-  const today = new Intl.DateTimeFormat("en-US", {
-    timeZone: "Asia/Tokyo",
-    weekday: "long",
-    month: "long",
-    day: "2-digit"
-  }).format(new Date());
+    document.getElementById("random-feature-image").src =
+      randomImages[randomIndex];
+  </script>
 
-  document.getElementById("today-date").textContent =
-    today.toUpperCase();
-</script>
-  
+  <!-- Today's date -->
+  <script>
+    const today = new Intl.DateTimeFormat("en-US", {
+      timeZone: "Asia/Tokyo",
+      weekday: "long",
+      month: "long",
+      day: "2-digit"
+    }).format(new Date());
+
+    document.getElementById("today-date").textContent =
+      today.toUpperCase();
+  </script>
+
 </body>
 </html>
