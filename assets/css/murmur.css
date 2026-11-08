@@ -50,6 +50,20 @@
 }
 
 .murmur-page .archive-timeline__item::before {
+  content: "\f099";
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  position: absolute;
+  left: -7px;
+  top: 0.25rem;
+  font-size: 14px;
+  color: #054dcb;
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+/* 
+.murmur-page .archive-timeline__item::before {
   content: "";
   position: absolute;
   left: -7px;
@@ -61,7 +75,7 @@
   border: 0px solid #fff;
   box-shadow: 0 0 0 2px #054dcb;
 }
-
+ */
 .murmur-page .archive-timeline__date {
   display: inline-block;
   flex-shrink: 0;
