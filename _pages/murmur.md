@@ -8,8 +8,10 @@ sidebar:
   nav: "murs"
 ---
 
-日々のちょっとしたつぶやき
-
 <div class="murmur-page">
+
+  <p class="murmur-intro">日々のちょっとしたつぶやき</p>
+
   {% include murmur-feed.html %}
+
 </div>
