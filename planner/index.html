@@ -74,7 +74,7 @@ permalink: /planner/
       <!-- RIGHT PAGE: updates and large feature image -->
       <section class="page page-right">
         <div class="right-topline">
-          <span class="date-label">SUNDAY, NOVEMBER 08</span>
+          <time class="date-label" id="today-date"></time>
           <span class="weather-label">☀ A GOOD DAY TO BE HERE</span>
         </div>
 
@@ -115,7 +115,8 @@ permalink: /planner/
       <a class="index-tab tab-about" href="{{ '/planner/about/' | relative_url }}">ABOUT <span>04</span></a>
     </nav>
   </main>
-
+  
+<!-- 右ページのランダム写真 -->
 <script>
   const randomImages = [
     "{{ '/assets/images/random/pola01.png' | relative_url }}",
@@ -127,6 +128,19 @@ permalink: /planner/
 
   document.getElementById("random-feature-image").src =
     randomImages[randomIndex];
+</script>
+
+<!-- 右ページ上部の日付表記 -->
+<script>
+  const today = new Intl.DateTimeFormat("en-US", {
+    timeZone: "Asia/Tokyo",
+    weekday: "long",
+    month: "long",
+    day: "2-digit"
+  }).format(new Date());
+
+  document.getElementById("today-date").textContent =
+    today.toUpperCase();
 </script>
   
 </body>
