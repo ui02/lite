@@ -336,3 +336,16 @@ body.notebook-page {
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
 }
+
+
+/* =========================================================
+   カスタム
+   ========================================================= */
+
+/* TOP左上のアイコン */
+.tiny-star img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  display: block;
+}
