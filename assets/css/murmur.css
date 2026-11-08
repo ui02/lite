@@ -12,6 +12,18 @@
    タイムライン表示
 ======================================== */
 
+/* Murmur全体の横幅 */
+.murmur-page {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* ページ説明文 */
+.murmur-page .murmur-intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
 .murmur-page .page__inner-wrap {
   width: 70%;
 }
@@ -73,6 +85,22 @@
 .archive-timeline__date a:active {
   color: #fcfbf1 !important;
 }
+}
+
+/* 日付リンク：通常時 */
+.murmur-page .archive-timeline__date a {
+  color: #fcfbf1 !important;
+  text-decoration: none !important;
+  transition: none !important;
+}
+
+/* 日付リンク：ホバー時 */
+.murmur-page .archive-timeline__date a:hover {
+  background-color: transparent !important;
+  opacity: 0.6;
+  text-decoration: underline !important;
+  text-decoration-color: #fcfbf1 !important;
+  transition: none !important;
 }
 
 .murmur-page .archive-timeline__title {
@@ -203,6 +231,10 @@
 ======================================== */
 
 @media (max-width: 600px) {
+
+ .murmur-page {
+   width: 95%;
+  }
 
  .murmur-page .archive-timeline {
     padding-left: 0.5rem;
