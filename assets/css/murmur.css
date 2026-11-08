@@ -65,6 +65,7 @@
 }
 
 
+
 /* ========================================
    Murmur 画像ギャラリー
 ======================================== */
@@ -73,7 +74,7 @@
   display: flex;
   flex-wrap: nowrap;
   align-items: flex-start;
-  gap: 8px;
+  gap: 10px;
   margin-top: 12px;
   max-width: 100%;
   overflow-x: auto;
@@ -88,23 +89,24 @@
   width: 180px;
   height: 180px;
   object-fit: cover;
-
+  border: none;
+  border-radius: 8px;
   margin: 0;
-  padding: 3px;
-  border: 1px solid #231f20;
-  box-sizing: border-box;
+  padding: 0;
 }
 
-/* 画像1枚の場合 */
-.murmur-gallery img:only-child {
-  flex: 0 0 auto;
-  width: auto;
-  max-width: 100%;
-  height: auto;
-  max-height: 400px;
-  object-fit: contain;
-}
+/* スマホ表示 */
+@media (max-width: 600px) {
+  .murmur-gallery {
+    gap: 8px;
+  }
 
+  .murmur-gallery img {
+    flex-basis: 140px;
+    width: 140px;
+    height: 140px;
+  }
+}
 
 /* ========================================
    Murmur 年別カード
