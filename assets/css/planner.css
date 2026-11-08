@@ -1,0 +1,274 @@
+/* IOLITE / planner draft
+   All styles are scoped to .planner-site so they won't interfere with the main theme. */
+
+:root {
+  --ink: #45433f;
+  --muted: #8b867d;
+  --paper: #fffdf7;
+  --desk: #e8e2d8;
+  --line: #e9e3d8;
+  --accent: #b77d73;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body.planner-site {
+  margin: 0;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 15% 20%, rgba(255,255,255,.75), transparent 25rem),
+    repeating-linear-gradient(0deg, rgba(120,105,85,.025) 0, rgba(120,105,85,.025) 1px, transparent 1px, transparent 4px),
+    var(--desk);
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.planner-site a { color: inherit; text-decoration: none; }
+
+.planner {
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 24px 0 50px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 5px 18px;
+  color: #777168;
+  font-family: "DM Mono", monospace;
+  font-size: 10px;
+  letter-spacing: .12em;
+}
+
+.brand { font-size: 15px; font-weight: 500; letter-spacing: .16em; }
+.brand span { margin-left: 8px; font-size: 9px; letter-spacing: .08em; opacity: .7; }
+.topbar-note { font-size: 9px; }
+
+.desk {
+  position: relative;
+  padding: 34px 8%;
+  background: #d8d0c4;
+  box-shadow: 0 18px 45px rgba(67, 57, 43, .13);
+  isolation: isolate;
+}
+
+.desk::before {
+  content: "";
+  position: absolute;
+  inset: 12px;
+  border: 1px solid rgba(255,255,255,.45);
+  pointer-events: none;
+}
+
+.paper {
+  position: relative;
+  max-width: 790px;
+  margin: 0 auto;
+  padding: 54px 66px 28px;
+  background:
+    radial-gradient(rgba(128, 111, 85, .07) .55px, transparent .7px),
+    var(--paper);
+  background-size: 5px 5px, auto;
+  box-shadow: 2px 8px 22px rgba(62, 52, 40, .12);
+}
+
+.paper-holes {
+  position: absolute;
+  left: 20px;
+  top: 62px;
+  display: flex;
+  flex-direction: column;
+  gap: 105px;
+}
+.paper-holes i {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #e4ded3;
+  box-shadow: inset 1px 2px 3px rgba(60,50,40,.18), 0 1px 0 white;
+}
+
+.paper-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; }
+.eyebrow, .section-label, .preview-number {
+  margin: 0;
+  color: #a39a8d;
+  font: 10px/1.5 "DM Mono", monospace;
+  letter-spacing: .13em;
+}
+.paper-header h1 {
+  margin: 8px 0 0;
+  color: #4c4943;
+  font: 42px/1.12 "Patrick Hand", cursive;
+  letter-spacing: .015em;
+}
+.paper-header h1 span { margin-left: 8px; color: #c68c80; font-size: 25px; vertical-align: top; }
+.subtitle { margin: 8px 0 0; color: #898278; font-size: 11px; }
+.date-stamp {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 8px;
+  padding: 7px 10px;
+  border: 1px solid #e7c9c1;
+  color: #b77d73;
+  font: 9px/1.35 "DM Mono", monospace;
+  letter-spacing: .08em;
+  transform: rotate(4deg);
+}
+.date-day { font: 29px/1 "Patrick Hand", cursive; }
+.paper-rule { height: 1px; margin: 25px 0 28px; background: var(--line); }
+
+.intro-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 34px; align-items: center; }
+.intro-card h2 { margin: 9px 0 10px; font-size: 17px; font-weight: 600; letter-spacing: .02em; }
+.intro-card > p:not(.section-label):not(.handwritten) { margin: 0; color: #777168; font-size: 11px; line-height: 2.1; }
+.handwritten { color: #b77d73; font: 19px/1.3 "Patrick Hand", cursive; }
+.intro-card .handwritten { margin: 13px 0 0; }
+
+.photo-stack { position: relative; min-height: 190px; }
+.photo {
+  position: absolute;
+  padding: 8px 8px 22px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(60,50,40,.16);
+}
+.photo-main { width: 160px; right: 32px; top: 0; transform: rotate(5deg); }
+.photo-small { width: 105px; left: 12px; bottom: 2px; transform: rotate(-9deg); }
+.photo-art { display: grid; place-items: center; min-height: 112px; overflow: hidden; }
+.photo-art-one {
+  color: #fffaf0;
+  background: linear-gradient(145deg, #b5b7a1, #d9bca8 52%, #8c9b91);
+  font: 23px/1.05 "Patrick Hand", cursive;
+  text-align: center;
+}
+.photo-art-two {
+  min-height: 72px;
+  color: #fff9f1;
+  background: linear-gradient(135deg, #d9a6a0, #e8c9b9);
+  font-size: 36px;
+}
+.photo small { display: block; padding-top: 5px; color: #999187; text-align: center; font: 8px "DM Mono", monospace; }
+.tape {
+  position: absolute;
+  z-index: 2;
+  width: 65px;
+  height: 17px;
+  background: rgba(226, 199, 154, .65);
+  transform: rotate(-13deg);
+}
+.tape-photo { top: -5px; right: 78px; }
+
+.content-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 25px; }
+.memo-card { position: relative; min-height: 160px; padding: 17px 19px; background: #f6f2e9; border: 1px solid #eee8dc; }
+.card-heading { display: flex; justify-content: space-between; }
+.tiny-star { color: #c58c7f; }
+.current-list { margin: 13px 0 0; padding: 0; list-style: none; }
+.current-list li { display: flex; justify-content: space-between; gap: 8px; padding: 5px 0; border-bottom: 1px dashed #e1d9cb; font-size: 10px; }
+.current-list li span { color: #a49b8e; font: 9px "DM Mono", monospace; }
+.current-list li b { font-weight: 500; text-align: right; }
+.quote-card { background: #f8eeeb; transform: rotate(1deg); }
+.quote { margin: 15px 0 0; color: #8d6b65; font: 25px/1.15 "Patrick Hand", cursive; }
+.quote-by { display: block; margin-top: 7px; font-size: 14px; }
+.doodle-heart { position: absolute; right: 19px; bottom: 14px; color: #c68c80; font-size: 27px; transform: rotate(12deg); }
+
+.links-area { margin-top: 29px; }
+.links-heading { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 12px; }
+.heading-caption { color: #aaa195; font: 10px "Patrick Hand", cursive; }
+.sticky-tabs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+.sticky-tab {
+  position: relative;
+  display: flex;
+  min-height: 94px;
+  flex-direction: column;
+  justify-content: center;
+  padding: 13px 12px 10px;
+  box-shadow: 1px 4px 7px rgba(65,55,40,.10);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.sticky-tab:hover { transform: translateY(-5px) rotate(-1deg); box-shadow: 2px 8px 12px rgba(65,55,40,.14); }
+.sticky-tab > span { color: rgba(70,65,55,.48); font: 9px "DM Mono", monospace; }
+.sticky-tab { font: 17px/1.25 "Patrick Hand", cursive; letter-spacing: .04em; }
+.sticky-tab small { margin-top: 5px; color: rgba(70,65,55,.65); font: 9px "Noto Sans JP", sans-serif; letter-spacing: 0; }
+.tab-yellow { background: #f3e6ad; transform: rotate(-1deg); }
+.tab-pink { background: #f0d4d0; transform: rotate(1deg); }
+.tab-blue { background: #d5e1e3; transform: rotate(-.5deg); }
+.tab-green { background: #dce4cf; transform: rotate(1deg); }
+
+.paper-footer { display: flex; justify-content: space-between; gap: 12px; margin-top: 29px; padding-top: 12px; border-top: 1px solid var(--line); color: #b0a89c; font: 8px "DM Mono", monospace; letter-spacing: .08em; }
+
+.side-note {
+  position: absolute;
+  z-index: 3;
+  display: grid;
+  place-items: center;
+  width: 125px;
+  height: 112px;
+  padding: 12px;
+  background: #e7d8b8;
+  box-shadow: 2px 5px 12px rgba(60,50,40,.13);
+  transform: rotate(-8deg);
+}
+.side-note-left { left: 1%; top: 17%; }
+.side-note p { margin: 0; color: #82735e; text-align: center; font-size: 21px; }
+.note-pin { position: absolute; top: -6px; width: 10px; height: 10px; border-radius: 50%; background: #bc887c; box-shadow: 0 1px 2px #8e6d63; }
+.note-sparkle { position: absolute; right: 12px; bottom: 6px; color: #b18b67; }
+.sticker { position: absolute; z-index: 4; pointer-events: none; animation: floaty 5s ease-in-out infinite; }
+.sticker-flower { top: 10%; right: 5%; color: #c98d84; font-size: 42px; transform: rotate(12deg); }
+.sticker-smile { right: 3%; bottom: 17%; color: #d4a95f; font-size: 36px; animation-delay: -2s; }
+.sticker-star { left: 4%; bottom: 10%; color: #a5a98b; font-size: 28px; animation-delay: -3s; }
+@keyframes floaty { 0%, 100% { translate: 0 0; } 50% { translate: 0 -7px; } }
+
+.preview-sections { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; max-width: 790px; margin: 28px auto 0; }
+.preview-card { position: relative; min-height: 145px; padding: 20px 23px; background: rgba(255,253,247,.72); border: 1px solid rgba(255,255,255,.8); scroll-margin-top: 20px; }
+.preview-card h2 { margin: 9px 0 5px; font-size: 16px; }
+.preview-card h2 span { color: #bf8d80; }
+.preview-card p { margin: 0 0 13px; color: #817a70; font-size: 11px; }
+.back-link { color: #a18d7d !important; font: 9px "DM Mono", monospace; letter-spacing: .08em; }
+.site-footer { display: flex; justify-content: space-between; max-width: 790px; margin: 20px auto 0; color: #8c8378; font: 10px "DM Mono", monospace; }
+.site-footer a { border-bottom: 1px solid #b9afa1; }
+
+@media (max-width: 850px) {
+  .desk { padding: 28px 5%; }
+  .paper { padding: 48px 45px 25px; }
+  .side-note-left { left: -2%; top: 8%; transform: scale(.8) rotate(-8deg); transform-origin: left top; }
+  .sticker-flower { right: 1%; }
+}
+
+@media (max-width: 620px) {
+  .planner { width: min(100% - 20px, 500px); padding-top: 14px; }
+  .topbar { margin-bottom: 12px; }
+  .topbar-note { display: none; }
+  .desk { padding: 13px 10px; }
+  .desk::before { inset: 6px; }
+  .paper { padding: 38px 22px 22px 31px; }
+  .paper-holes { left: 10px; top: 47px; gap: 92px; }
+  .paper-holes i { width: 8px; height: 8px; }
+  .paper-header h1 { font-size: 34px; }
+  .date-stamp { padding: 5px 7px; }
+  .intro-grid { grid-template-columns: 1fr; gap: 8px; }
+  .photo-stack { min-height: 175px; width: min(100%, 290px); margin: 0 auto; }
+  .photo-main { right: 30px; }
+  .photo-small { left: 10px; }
+  .content-grid { grid-template-columns: 1fr; gap: 12px; margin-top: 18px; }
+  .memo-card { min-height: 145px; }
+  .sticky-tabs { grid-template-columns: repeat(2, 1fr); gap: 9px; }
+  .sticky-tab { min-height: 82px; }
+  .paper-footer { font-size: 7px; }
+  .side-note-left { display: none; }
+  .sticker-flower { top: 1%; right: 0; font-size: 30px; }
+  .sticker-smile { right: 0; bottom: 11%; font-size: 27px; }
+  .sticker-star { left: 0; bottom: 5%; font-size: 22px; }
+  .preview-sections { grid-template-columns: 1fr; gap: 10px; margin: 16px 5px 0; }
+  .preview-card { min-height: 125px; }
+  .site-footer { margin: 16px 5px 0; font-size: 8px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .sticker { animation: none; }
+  .sticky-tab { transition: none; }
+}
