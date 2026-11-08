@@ -16,6 +16,10 @@
   width: 80%;
 }
 
+.murmur-page .page__content e-content p {
+  text-align: center;
+}
+
 .murmur-page .archive-timeline {
   position: relative;
   margin: 2rem 0;
