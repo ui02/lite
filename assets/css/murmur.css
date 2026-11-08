@@ -12,24 +12,24 @@
    タイムライン表示
 ======================================== */
 
-.archive-timeline {
+.murmur-page .archive-timeline {
   position: relative;
   margin: 2rem 0;
   padding-left: 1.6rem;
 }
 
-.archive-timeline__item {
+.murmur-page .archive-timeline__item {
   position: relative;
   padding: 0 0 2.5rem 1.5rem;
   border-left: 1px solid #231f20;
 }
 
-.archive-timeline__item:last-child {
+.murmur-page .archive-timeline__item:last-child {
   border-left-color: transparent;
   padding-bottom: 0.5rem;
 }
 
-.archive-timeline__item::before {
+.murmur-page .archive-timeline__item::before {
   content: "";
   position: absolute;
   left: -7px;
@@ -42,7 +42,7 @@
   box-shadow: 0 0 0 1px #fcfbf1;
 }
 
-.archive-timeline__date {
+.murmur-page .archive-timeline__date {
   display: inline-block;
   flex-shrink: 0;
   width: 93px;
@@ -65,22 +65,22 @@
   color: #fcfbf1 !important;
 }
 
-.archive-timeline__title {
+.murmur-page .archive-timeline__title {
   margin: 0 0 0.6rem;
   font-size: 1.05rem;
   font-weight: 600;
 }
 
-.archive-timeline__body {
+.murmur-page .archive-timeline__body {
   line-height: 1.8;
   overflow-wrap: anywhere;
 }
 
-.archive-timeline__body p {
+.murmur-page .archive-timeline__body p {
   margin: 0 0 0.8rem;
 }
 
-.archive-timeline__content p {
+.murmur-page .archive-timeline__content p {
   display: inline-block;
   width: fit-content;
   max-width: 100%;
@@ -106,7 +106,7 @@
    Murmur 画像ギャラリー
 ======================================== */
 
-.murmur-gallery {
+.murmur-page .murmur-gallery {
   display: flex;
   flex-wrap: nowrap;
   align-items: flex-start;
@@ -119,7 +119,7 @@
 }
 
 /* 画像共通 */
-.murmur-gallery img {
+.murmur-page .murmur-gallery img {
   display: block;
   flex: 0 0 180px;
   width: 180px;
@@ -133,11 +133,11 @@
 
 /* スマホ表示 */
 @media (max-width: 600px) {
-  .murmur-gallery {
+ .murmur-page .murmur-gallery {
     gap: 8px;
   }
 
-  .murmur-gallery img {
+ .murmur-page .murmur-gallery img {
     flex-basis: 140px;
     width: 140px;
     height: 140px;
@@ -148,14 +148,14 @@
    Murmur 年別カード
 ======================================== */
 
-.murmur-grid {
+.murmur-page .murmur-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
   margin-top: 2rem;
 }
 
-.murmur-card {
+.murmur-page .murmur-card {
   display: block;
   overflow: hidden;
   color: inherit;
@@ -166,13 +166,13 @@
   transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 
-.murmur-card:hover {
+.murmur-page .murmur-card:hover {
   text-decoration: none;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-.murmur-card img {
+.murmur-page .murmur-card img {
   display: block;
   width: 100%;
   aspect-ratio: 16 / 9;
@@ -180,7 +180,7 @@
   margin: 0;
 }
 
-.murmur-card span {
+.murmur-page .murmur-card span {
   display: block;
   min-height: 5rem;
   padding: 0.8rem 1rem;
@@ -195,30 +195,30 @@
 
 @media (max-width: 600px) {
 
-  .archive-timeline {
+ .murmur-page .archive-timeline {
     padding-left: 0.5rem;
   }
 
-  .archive-timeline__item {
+.murmur-page .archive-timeline__item {
     padding-left: 1.1rem;
   }
 
-  .murmur-gallery {
+.murmur-page .murmur-gallery {
     gap: 6px;
   }
 
-  .murmur-gallery img {
+.murmur-page .murmur-gallery img {
     flex-basis: 140px;
     width: 140px;
     height: 140px;
   }
 
-  .murmur-grid {
+ .murmur-page .murmur-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 0.75rem;
   }
 
-  .murmur-card span {
+.murmur-page .murmur-card span {
     min-height: auto;
     padding: 0.7rem;
   }
