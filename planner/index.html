@@ -60,15 +60,18 @@ permalink: /planner/
             <span class="heading-rule"></span>
           </div>
 
-          {% for post in tumblr.posts limit: 5 %}
-            <a class="tumblr-feed"
-               href="{{ post.url }}"
-               target="_blank"
-               rel="noopener noreferrer">
-              <span class="feed-meta">{{ post.date }}</span>
-              <span class="tumblr-feed-text">{{ post.text | escape }}</span>
-            </a>
-          {% endfor %}
+{% for post in tumblr.posts limit: 5 %}
+  <div class="tumblr-feed">
+    <a class="feed-meta"
+       href="{{ post.url }}"
+       target="_blank"
+       rel="noopener noreferrer">
+      {{ post.date }}
+    </a>
+    <span class="tumblr-feed-text">{{ post.text | escape }}</span>
+  </div>
+{% endfor %}
+          
         </section>
 
         <!-- Quick links -->
