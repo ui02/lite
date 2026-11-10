@@ -483,7 +483,7 @@ page-kicker a: {
   width: 92%;
   height: 190px;
   min-height: 0;
-  padding: 7px;
+  padding: 0px;
   border: 7px solid #fff;
   outline: 1px solid #dceef4;
   background: #d9f0f7;
@@ -512,7 +512,7 @@ page-kicker a: {
   left: -22px;
   margin: 0;
   transform: rotate(-9deg);
-  font-family: "Pecita", cursive;
+  font-family: "Holiday", cursive;
   font-size: clamp(62px, 7vw, 98px);
   font-weight: normal;
   line-height: 1;
