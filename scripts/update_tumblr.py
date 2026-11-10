@@ -37,6 +37,7 @@ def fetch(url):
     with urllib.request.urlopen(request, timeout=20) as response:
         return response.read()
 
+
 def clean_text(value):
     value = html.unescape(value or "")
     value = re.sub(r"<[^>]+>", "", value)
@@ -58,13 +59,12 @@ def main():
     rss = fetch(RSS_URL)
     root = ET.fromstring(rss)
 
-    items = root.findall("./channel/item")[:5]
+    items = root.findall("./channel/item")
 
+    # 本文：最新3件
     posts = []
-    image_url = None
-    image_link = None
 
-    for item in items:
+    for item in items[:3]:
         title = clean_text(item.findtext("title", ""))
         description = clean_text(item.findtext("description", ""))
         url = item.findtext("link", "")
@@ -85,15 +85,34 @@ def main():
             "url": url
         })
 
-        if image_url is None and url:
-            candidate = get_image(url)
-            if candidate:
-                image_url = candidate
-                image_link = url
+    # 写真：画像が見つかった投稿から最新3件
+    images = []
+
+    for item in items:
+        if len(images) >= 3:
+            break
+
+        url = item.findtext("link", "")
+
+        if not url:
+            continue
+
+        candidate = get_image(url)
+
+        if candidate:
+            images.append({
+                "image_url": candidate,
+                "image_link": url
+            })
+
+    # 既存の単数形データも残す
+    image_url = images[0]["image_url"] if images else None
+    image_link = images[0]["image_link"] if images else None
 
     data = {
         "image_url": image_url,
         "image_link": image_link,
+        "images": images,
         "posts": posts
     }
 
