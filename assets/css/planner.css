@@ -562,9 +562,10 @@ page-kicker a: {
 .spotify-frame {
   width: 100%;
   overflow: hidden;
-  border: 3px solid #222;
-  background: #fff;
-  box-shadow: 0 3px 0 #d4eef4;
+  border: 0px solid #c7eaf2;
+  border-radius: 8px;
+  background: #eaf7fb;
+  box-shadow: 0 0px 0 #d4eef4;
 }
 
 .spotify-frame iframe {
