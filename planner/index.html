@@ -2,83 +2,72 @@
 layout: null
 permalink: /planner/
 ---
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>IOLITE.</title>
-
+  <title>my little notebook</title>
   <link rel="stylesheet" href="{{ '/assets/css/planner.css' | relative_url }}">
 </head>
-
 <body class="notebook-page">
-
   {% assign tumblr = site.data.tumblr %}
 
   <main class="notebook-wrap">
+    <div class="notebook" aria-label="My little notebook">
 
-    <div class="notebook">
-
-      <!-- =========================
-           LEFT PAGE
-      ========================== -->
+      <!-- LEFT PAGE -->
       <section class="page page-left">
-
-        <!-- ランダム写真＋サイトタイトル -->
-        <div class="profile-area">
-
-          <div class="profile-photo">
-            <img id="random-photo" src="" alt="A little moment">
-          </div>
-
-          <h1 class="site-logo">
-            <a href="{{ '/' | relative_url }}">iolite.</a>
-          </h1>
-
-          <span class="photo-number">01</span>
-
+        <div class="page-kicker">
+          <span class="tiny-star">
+            <img src="{{ '/assets/images/planner/icon/heart01.png' | relative_url }}" alt="">
+          </span>
+          <span><a href="{{ '/planner/' | relative_url }}">[iolite]</a> notebook</span>
+          <span class="page-number">01</span>
         </div>
 
+        <!-- Random photo + site title -->
+        <div class="profile-area">
+          <div class="profile-photo">
+            <img id="random-feature-image" src="" alt="A little moment" class="profile-photo-image">
+          </div>
+          <h1 class="site-logo">
+            <a href="{{ '/planner/' | relative_url }}">iolite.</a>
+          </h1>
+        </div>
 
         <!-- UPDATE -->
         <section class="updates">
-
-          <div class="section-heading">
-            <span class="heading-star">✧</span>
+          <div class="updates-title">
+            <span class="updates-icon">⋆˙⟡</span>
             <h2>UPDATE</h2>
-            <span class="heading-sub">what's new?</span>
+            <span class="updates-subtitle">what's new?</span>
           </div>
-
           <ul class="update-list">
             <li>
-              <time>11.08</time>
+              <time datetime="2026-11-08">11.08</time>
               <span>Giving this little corner a fresh new look.</span>
+              <i>✳</i>
             </li>
             <li>
-              <time>11.03</time>
+              <time datetime="2026-11-03">11.03</time>
               <span>Added a few things to my favorites.</span>
+              <i>♡</i>
             </li>
             <li>
-              <time>10.28</time>
+              <time datetime="2026-10-28">10.28</time>
               <span>New photos from an ordinary weekend.</span>
+              <i>✧</i>
             </li>
           </ul>
-
         </section>
 
-
-        <!-- Spotify -->
+        <!-- Spotify playlist -->
         <section class="playlist">
-
-          <div class="playlist-heading">
-            <span>＊</span> Play list
-          </div>
-
+          <h2 class="playlist-title">＊ Play list</h2>
           <div class="spotify-frame">
             <iframe
-              src="https://open.spotify.com/embed/playlist/ここにプレイリストID"
+              src="https://open.spotify.com/embed/playlist/5AM2XS86CHUxU5yeNj0xFq?si=493c2f030321437f"              
               width="100%"
               height="152"
               frameborder="0"
@@ -86,42 +75,34 @@ permalink: /planner/
               loading="lazy">
             </iframe>
           </div>
-
         </section>
 
-        <footer class="page-footer left-footer">
+        <div class="left-footer">
           <span>made of little things</span>
-          <span>♥</span>
-        </footer>
-
+          <span>❤</span>
+        </div>
       </section>
 
-
-
-      <!-- =========================
-           RIGHT PAGE
-      ========================== -->
+      <!-- RIGHT PAGE -->
       <section class="page page-right">
-
         <div class="right-topline">
-          <span id="today-date">A GOOD DAY TO BE HERE</span>
-          <span>✧ A GOOD DAY TO BE HERE</span>
+          <time class="date-label" id="today-date"></time>
+          <span class="weather-label">☀ A GOOD DAY TO BE HERE</span>
         </div>
 
-
-        <!-- Tumblr FEED -->
+        <!-- Tumblr: latest 3 posts + each post image -->
         <section class="tumblr-section">
-
-          <div class="section-heading tumblr-heading">
-            <span class="heading-star">✧</span>
+          <div class="section-heading">
+            <span class="heading-mark">
+              <img src="{{ '/assets/images/planner/icon/flower01.gif' | relative_url }}" alt="">
+            </span>
             <h2>little thoughts</h2>
+            <span class="heading-rule"></span>
           </div>
 
           <div class="tumblr-posts">
-
             {% for post in tumblr.posts limit: 3 %}
               <article class="tumblr-post">
-
                 {% if post.image_url %}
                   <a class="tumblr-post-image"
                      href="{{ post.url }}"
@@ -130,165 +111,116 @@ permalink: /planner/
                     <img src="{{ post.image_url }}" alt="" loading="lazy">
                   </a>
                 {% endif %}
-
-                <div class="tumblr-post-info">
-
-                  <a class="tumblr-post-date"
-                     href="{{ post.url }}"
-                     target="_blank"
-                     rel="noopener noreferrer">
-                    {{ post.date }}
-                  </a>
-
-                  <span class="tumblr-post-text">
-                    {{ post.text | escape }}
-                  </span>
-
-                </div>
-
+                <a class="tumblr-post-date"
+                   href="{{ post.url }}"
+                   target="_blank"
+                   rel="noopener noreferrer">{{ post.date }}</a>
+                <div class="tumblr-post-text">{{ post.text | escape }}</div>
               </article>
             {% endfor %}
-
           </div>
-
         </section>
 
-
-        <!-- TODO MEMO -->
+        <!-- TODO memo -->
         <section class="todo-note">
-
-          <div class="todo-decoration tape tape-left"></div>
-          <div class="todo-decoration tape tape-right"></div>
-
+          <span class="todo-tape todo-tape-left"></span>
+          <span class="todo-tape todo-tape-right"></span>
           <div class="todo-content">
             <h2>I'm working on...</h2>
-
             <ul>
               <li>.todo #01</li>
               <li>.todo #02</li>
               <li>.todo #03</li>
             </ul>
           </div>
-
           <span class="todo-flower">✿</span>
-
         </section>
 
-
-        <!-- CAMERA -->
+        <!-- Camera with a photo in its screen -->
         <section class="camera-area">
-
           <div class="camera-object">
-
-            <img
-              class="camera-screen"
-              src="{{ '/assets/images/planner/screens/camera-photo.jpg' | relative_url }}"
-              alt="">
-
-            <img
-              class="camera-frame"
-              src="{{ '/assets/images/planner/objects/camera-frame.png' | relative_url }}"
-              alt="">
-
+            <img class="camera-screen"
+                 src="{{ '/assets/images/planner/screens/camera-photo.jpg' | relative_url }}"
+                 alt="">
+            <img class="camera-frame"
+                 src="{{ '/assets/images/planner/objects/camera-frame.png' | relative_url }}"
+                 alt="">
           </div>
-
-          <!-- CAMERA DECORATIONS -->
-          <img
-            class="camera-sticker camera-sticker-bear"
-            src="{{ '/assets/images/planner/stickers/bear.png' | relative_url }}"
-            alt="">
-
-          <img
-            class="camera-sticker camera-sticker-star"
-            src="{{ '/assets/images/planner/stickers/star.png' | relative_url }}"
-            alt="">
-
+          <img class="camera-deco camera-bear"
+               src="{{ '/assets/images/planner/stickers/bear.png' | relative_url }}"
+               alt="">
+          <img class="camera-deco camera-star"
+               src="{{ '/assets/images/planner/stickers/star.png' | relative_url }}"
+               alt="">
         </section>
 
-
-        <!-- GAME CONSOLE -->
+        <!-- Handheld console with a photo in its screen -->
         <section class="game-area">
-
           <div class="game-object">
-
-            <img
-              class="game-screen"
-              src="{{ '/assets/images/planner/screens/game-photo.jpg' | relative_url }}"
-              alt="">
-
-            <img
-              class="game-frame"
-              src="{{ '/assets/images/planner/objects/gameboy-frame.png' | relative_url }}"
-              alt="">
-
+            <img class="game-screen"
+                 src="{{ '/assets/images/planner/screens/game-photo.jpg' | relative_url }}"
+                 alt="">
+            <img class="game-frame"
+                 src="{{ '/assets/images/planner/objects/gameboy-frame.png' | relative_url }}"
+                 alt="">
           </div>
-
         </section>
 
-
-        <!-- BANNERS -->
-        <nav class="banner-links">
-
-          <a href="{{ '/about/' | relative_url }}">banner</a>
-          <a href="{{ '/gallery/' | relative_url }}">banner</a>
-          <a href="{{ '/murs/' | relative_url }}">banner</a>
-
+        <!-- Banner links -->
+        <nav class="banner-links" aria-label="Banner links">
+          <a href="{{ '/planner/diary/' | relative_url }}">banner</a>
+          <a href="{{ '/planner/favorites/' | relative_url }}">banner</a>
+          <a href="{{ '/planner/gallery/' | relative_url }}">banner</a>
         </nav>
 
-
-        <!-- DECORATIVE STICKERS -->
-        <div class="sticker sticker-heart">♥</div>
-        <div class="sticker sticker-sparkle">✧</div>
-        <div class="sticker sticker-flower">✿</div>
-
-        <footer class="page-footer right-footer">
+        <div class="right-footer">
           <span>TAKE IT SLOW & ENJOY THE LITTLE THINGS</span>
-        </footer>
+          <span>PAGE 02 / 02</span>
+        </div>
 
+        <!-- Decorative stickers -->
+        <span class="scrap-sticker sticker-heart">♥</span>
+        <span class="scrap-sticker sticker-flower">✿</span>
       </section>
-
     </div>
 
-
-    <!-- SIDE TABS -->
-    <nav class="index-tabs">
-
-      <a href="{{ '/planner/diary/' | relative_url }}">DIARY</a>
-      <a href="{{ '/planner/faves/' | relative_url }}">FAVES</a>
-      <a href="{{ '/planner/gallery/' | relative_url }}">GALLERY</a>
-      <a href="{{ '/about/' | relative_url }}">ABOUT</a>
-
+    <!-- ORIGINAL INDEX TABS -->
+    <nav class="index-tabs" aria-label="Notebook index">
+      <a class="index-tab tab-diary" href="{{ '/planner/diary/' | relative_url }}">
+        DIARY <span>01</span>
+      </a>
+      <a class="index-tab tab-faves" href="{{ '/planner/favorites/' | relative_url }}">
+        FAVES <span>02</span>
+      </a>
+      <a class="index-tab tab-gallery" href="{{ '/planner/gallery/' | relative_url }}">
+        GALLERY <span>03</span>
+      </a>
+      <a class="index-tab tab-about" href="{{ '/planner/about/' | relative_url }}">
+        ABOUT <span>04</span>
+      </a>
     </nav>
-
-
   </main>
 
-
-  <!-- RANDOM PHOTO -->
+  <!-- Random photo -->
   <script>
-    const randomPhotos = [
+    const randomImages = [
       "{{ '/assets/images/random/photo01.jpg' | relative_url }}",
       "{{ '/assets/images/random/photo02.jpg' | relative_url }}",
       "{{ '/assets/images/random/photo03.jpg' | relative_url }}"
     ];
+    const randomIndex = Math.floor(Math.random() * randomImages.length);
+    document.getElementById("random-feature-image").src = randomImages[randomIndex];
+  </script>
 
-    const randomPhoto =
-      randomPhotos[Math.floor(Math.random() * randomPhotos.length)];
-
-    document.getElementById("random-photo").src = randomPhoto;
-
-
-    // TODAY
+  <!-- Today's date -->
+  <script>
     const today = new Intl.DateTimeFormat("en-US", {
       timeZone: "Asia/Tokyo",
       weekday: "long",
       month: "long",
       day: "2-digit"
     }).format(new Date());
-
-    document.getElementById("today-date").textContent =
-      today.toUpperCase();
+    document.getElementById("today-date").textContent = today.toUpperCase();
   </script>
-
 </body>
 </html>
