@@ -488,14 +488,14 @@ page-kicker a: {
   top: 8px;
   right: 0;
   width: 92%;
-  height: 190px;
+  height: 200px;
   min-height: 0;
   padding: 0px;
   border: 7px solid #fff;
   outline: 1px solid #dceef4;
   background: #d9f0f7;
   box-shadow: 0 4px 13px rgba(67,119,139,.12);
-  transform: rotate(-1deg);
+  transform: rotate(2deg);
   overflow: hidden;
 }
 
