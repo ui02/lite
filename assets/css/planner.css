@@ -515,7 +515,7 @@ page-kicker a: {
 .site-logo {
   position: absolute;
   z-index: 3;
-  top: -43px;
+  top: -30px;
   left: -22px;
   margin: 0;
   transform: rotate(-9deg);
