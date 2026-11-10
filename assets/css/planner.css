@@ -12,6 +12,13 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Holiday";
+  src: url("../fonts/Holiday.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 :root {
   --baby-blue: #bbe2f1;
