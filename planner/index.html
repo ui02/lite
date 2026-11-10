@@ -2,186 +2,283 @@
 layout: null
 permalink: /planner/
 ---
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>my little notebook</title>
+  <title>IOLITE.</title>
+
   <link rel="stylesheet" href="{{ '/assets/css/planner.css' | relative_url }}">
 </head>
 
 <body class="notebook-page">
+
   {% assign tumblr = site.data.tumblr %}
 
   <main class="notebook-wrap">
-    <div class="notebook" aria-label="My little notebook">
 
-      <!-- LEFT PAGE: profile image, Tumblr text feed, and quick links -->
+    <div class="notebook">
+
+      <!-- =========================
+           LEFT PAGE
+      ========================== -->
       <section class="page page-left">
 
-        <div class="page-kicker">
-          <span class="tiny-star">
-            <img
-              src="{{ '/assets/images/planner/icon/heart01.png' | relative_url }}"
-              alt=""
-            >
-          </span>
-          <span>
-            <a href="{{ '/planner/' | relative_url }}">[iolite]</a> notebook
-          </span>
-          <span class="page-number">01</span>
-        </div>
+        <!-- ランダム写真＋サイトタイトル -->
+        <div class="profile-area">
 
-        <!-- Latest Tumblr photo -->
-        <div class="profile-photo">
-          {% if tumblr.image_url %}
-            <a href="{{ tumblr.image_link }}"
-               class="profile-photo-link"
-               target="_blank"
-               rel="noopener noreferrer">
-              <img
-                src="{{ tumblr.image_url }}"
-                alt="Latest photo from Tumblr"
-                class="profile-photo-image"
-                loading="lazy"
-              >
-            </a>
-          {% else %}
-            <span class="photo-label">no photo yet</span>
-          {% endif %}
-        </div>
-
-        <!-- Tumblr text feed -->
-        <section class="murmur-section">
-          <div class="section-heading">
-            <span class="heading-mark"><img src="{{ '/assets/images/planner/icon/flower01.gif' | relative_url }}" alt="" ></span>
-            <h2>little thoughts</h2>
-            <span class="heading-rule"></span>
+          <div class="profile-photo">
+            <img id="random-photo" src="" alt="A little moment">
           </div>
 
-{% for post in tumblr.posts limit: 5 %}
-  <div class="tumblr-feed">
-    <a class="feed-meta"
-       href="{{ post.url }}"
-       target="_blank"
-       rel="noopener noreferrer">
-      {{ post.date }}
-    </a>
-    <span class="tumblr-feed-text">{{ post.text | escape }}</span>
-  </div>
-{% endfor %}
-          
-        </section>
+          <h1 class="site-logo">
+            <a href="{{ '/' | relative_url }}">iolite.</a>
+          </h1>
 
-        <!-- Quick links -->
-        <nav class="quick-links" aria-label="Quick links">
-          <a class="quick-link" href="{{ '/planner/diary/' | relative_url }}">
-            <span class="quick-icon">☷</span>
-            <span>DIARY</span>
-          </a>
-          <a class="quick-link" href="{{ '/planner/favorites/' | relative_url }}">
-            <span class="quick-icon">♡</span>
-            <span>FAVES</span>
-          </a>
-          <a class="quick-link" href="{{ '/planner/gallery/' | relative_url }}">
-            <span class="quick-icon">▧</span>
-            <span>GALLERY</span>
-          </a>
-          <a class="quick-link" href="{{ '/planner/about/' | relative_url }}">
-            <span class="quick-icon">✿</span>
-            <span>ABOUT</span>
-          </a>
-        </nav>
+          <span class="photo-number">01</span>
 
-        <div class="left-footer">
-          <span>made of little things</span>
-          <span>❤</span>
-        </div>
-      </section>
-
-      <!-- RIGHT PAGE: updates and large feature image -->
-      <section class="page page-right">
-
-        <div class="right-topline">
-          <time class="date-label" id="today-date"></time>
-          <span class="weather-label">☀ A GOOD DAY TO BE HERE</span>
         </div>
 
+
+        <!-- UPDATE -->
         <section class="updates">
-          <div class="updates-title">
-            <span class="updates-icon">⋆˙⟡</span>
+
+          <div class="section-heading">
+            <span class="heading-star">✧</span>
             <h2>UPDATE</h2>
-            <span class="updates-subtitle">what's new?</span>
+            <span class="heading-sub">what's new?</span>
           </div>
 
           <ul class="update-list">
             <li>
-              <time datetime="2026-11-08">11.08</time>
+              <time>11.08</time>
               <span>Giving this little corner a fresh new look.</span>
-              <i>✳</i>
             </li>
             <li>
-              <time datetime="2026-11-03">11.03</time>
+              <time>11.03</time>
               <span>Added a few things to my favorites.</span>
-              <i>♡</i>
             </li>
             <li>
-              <time datetime="2026-10-28">10.28</time>
+              <time>10.28</time>
               <span>New photos from an ordinary weekend.</span>
-              <i>✧</i>
             </li>
           </ul>
+
         </section>
 
-        <figure class="feature-photo">
-          <img id="random-feature-image" src="" alt="">
-          <figcaption>
-            <span>little things, lovely days</span>
-            <span>✧ 2026</span>
-          </figcaption>
-        </figure>
 
-        <div class="right-footer">
-          <span>TAKE IT SLOW & ENJOY THE LITTLE THINGS</span>
-          <span>PAGE 02 / 02</span>
-        </div>
+        <!-- Spotify -->
+        <section class="playlist">
+
+          <div class="playlist-heading">
+            <span>＊</span> Play list
+          </div>
+
+          <div class="spotify-frame">
+            <iframe
+              src="https://open.spotify.com/embed/playlist/ここにプレイリストID"
+              width="100%"
+              height="152"
+              frameborder="0"
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy">
+            </iframe>
+          </div>
+
+        </section>
+
+        <footer class="page-footer left-footer">
+          <span>made of little things</span>
+          <span>♥</span>
+        </footer>
+
       </section>
+
+
+
+      <!-- =========================
+           RIGHT PAGE
+      ========================== -->
+      <section class="page page-right">
+
+        <div class="right-topline">
+          <span id="today-date">A GOOD DAY TO BE HERE</span>
+          <span>✧ A GOOD DAY TO BE HERE</span>
+        </div>
+
+
+        <!-- Tumblr FEED -->
+        <section class="tumblr-section">
+
+          <div class="section-heading tumblr-heading">
+            <span class="heading-star">✧</span>
+            <h2>little thoughts</h2>
+          </div>
+
+          <div class="tumblr-posts">
+
+            {% for post in tumblr.posts limit: 3 %}
+              <article class="tumblr-post">
+
+                {% if post.image_url %}
+                  <a class="tumblr-post-image"
+                     href="{{ post.url }}"
+                     target="_blank"
+                     rel="noopener noreferrer">
+                    <img src="{{ post.image_url }}" alt="" loading="lazy">
+                  </a>
+                {% endif %}
+
+                <div class="tumblr-post-info">
+
+                  <a class="tumblr-post-date"
+                     href="{{ post.url }}"
+                     target="_blank"
+                     rel="noopener noreferrer">
+                    {{ post.date }}
+                  </a>
+
+                  <span class="tumblr-post-text">
+                    {{ post.text | escape }}
+                  </span>
+
+                </div>
+
+              </article>
+            {% endfor %}
+
+          </div>
+
+        </section>
+
+
+        <!-- TODO MEMO -->
+        <section class="todo-note">
+
+          <div class="todo-decoration tape tape-left"></div>
+          <div class="todo-decoration tape tape-right"></div>
+
+          <div class="todo-content">
+            <h2>I'm working on...</h2>
+
+            <ul>
+              <li>.todo #01</li>
+              <li>.todo #02</li>
+              <li>.todo #03</li>
+            </ul>
+          </div>
+
+          <span class="todo-flower">✿</span>
+
+        </section>
+
+
+        <!-- CAMERA -->
+        <section class="camera-area">
+
+          <div class="camera-object">
+
+            <img
+              class="camera-screen"
+              src="{{ '/assets/images/planner/screens/camera-photo.jpg' | relative_url }}"
+              alt="">
+
+            <img
+              class="camera-frame"
+              src="{{ '/assets/images/planner/objects/camera-frame.png' | relative_url }}"
+              alt="">
+
+          </div>
+
+          <!-- CAMERA DECORATIONS -->
+          <img
+            class="camera-sticker camera-sticker-bear"
+            src="{{ '/assets/images/planner/stickers/bear.png' | relative_url }}"
+            alt="">
+
+          <img
+            class="camera-sticker camera-sticker-star"
+            src="{{ '/assets/images/planner/stickers/star.png' | relative_url }}"
+            alt="">
+
+        </section>
+
+
+        <!-- GAME CONSOLE -->
+        <section class="game-area">
+
+          <div class="game-object">
+
+            <img
+              class="game-screen"
+              src="{{ '/assets/images/planner/screens/game-photo.jpg' | relative_url }}"
+              alt="">
+
+            <img
+              class="game-frame"
+              src="{{ '/assets/images/planner/objects/gameboy-frame.png' | relative_url }}"
+              alt="">
+
+          </div>
+
+        </section>
+
+
+        <!-- BANNERS -->
+        <nav class="banner-links">
+
+          <a href="{{ '/about/' | relative_url }}">banner</a>
+          <a href="{{ '/gallery/' | relative_url }}">banner</a>
+          <a href="{{ '/murs/' | relative_url }}">banner</a>
+
+        </nav>
+
+
+        <!-- DECORATIVE STICKERS -->
+        <div class="sticker sticker-heart">♥</div>
+        <div class="sticker sticker-sparkle">✧</div>
+        <div class="sticker sticker-flower">✿</div>
+
+        <footer class="page-footer right-footer">
+          <span>TAKE IT SLOW & ENJOY THE LITTLE THINGS</span>
+        </footer>
+
+      </section>
+
     </div>
 
-    <!-- INDEX TABS -->
-    <nav class="index-tabs" aria-label="Notebook index">
-      <a class="index-tab tab-diary" href="{{ '/planner/diary/' | relative_url }}">
-        DIARY <span>01</span>
-      </a>
-      <a class="index-tab tab-faves" href="{{ '/planner/favorites/' | relative_url }}">
-        FAVES <span>02</span>
-      </a>
-      <a class="index-tab tab-gallery" href="{{ '/planner/gallery/' | relative_url }}">
-        GALLERY <span>03</span>
-      </a>
-      <a class="index-tab tab-about" href="{{ '/planner/about/' | relative_url }}">
-        ABOUT <span>04</span>
-      </a>
+
+    <!-- SIDE TABS -->
+    <nav class="index-tabs">
+
+      <a href="{{ '/planner/diary/' | relative_url }}">DIARY</a>
+      <a href="{{ '/planner/faves/' | relative_url }}">FAVES</a>
+      <a href="{{ '/planner/gallery/' | relative_url }}">GALLERY</a>
+      <a href="{{ '/about/' | relative_url }}">ABOUT</a>
+
     </nav>
+
+
   </main>
 
-  <!-- Random feature image -->
+
+  <!-- RANDOM PHOTO -->
   <script>
-    const randomImages = [
+    const randomPhotos = [
       "{{ '/assets/images/random/photo01.jpg' | relative_url }}",
       "{{ '/assets/images/random/photo02.jpg' | relative_url }}",
       "{{ '/assets/images/random/photo03.jpg' | relative_url }}"
     ];
 
-    const randomIndex = Math.floor(Math.random() * randomImages.length);
+    const randomPhoto =
+      randomPhotos[Math.floor(Math.random() * randomPhotos.length)];
 
-    document.getElementById("random-feature-image").src =
-      randomImages[randomIndex];
-  </script>
+    document.getElementById("random-photo").src = randomPhoto;
 
-  <!-- Today's date -->
-  <script>
+
+    // TODAY
     const today = new Intl.DateTimeFormat("en-US", {
       timeZone: "Asia/Tokyo",
       weekday: "long",
