@@ -55,16 +55,18 @@ def get_image(post_url):
         return None
 
 
+
 def main():
     rss = fetch(RSS_URL)
     root = ET.fromstring(rss)
 
-    items = root.findall("./channel/item")
+    items = root.findall("./channel/item")[:3]
 
-    # 本文：最新3件
     posts = []
+    image_url = None
+    image_link = None
 
-    for item in items[:3]:
+    for item in items:
         title = clean_text(item.findtext("title", ""))
         description = clean_text(item.findtext("description", ""))
         url = item.findtext("link", "")
@@ -79,40 +81,24 @@ def main():
 
         text = description or title
 
+        # 各投稿の写真を取得
+        post_image = get_image(url) if url else None
+
         posts.append({
             "date": date_text,
             "text": text[:40],
-            "url": url
+            "url": url,
+            "image_url": post_image
         })
 
-    # 写真：画像が見つかった投稿から最新3件
-    images = []
-
-    for item in items:
-        if len(images) >= 3:
-            break
-
-        url = item.findtext("link", "")
-
-        if not url:
-            continue
-
-        candidate = get_image(url)
-
-        if candidate:
-            images.append({
-                "image_url": candidate,
-                "image_link": url
-            })
-
-    # 既存の単数形データも残す
-    image_url = images[0]["image_url"] if images else None
-    image_link = images[0]["image_link"] if images else None
+        # 既存のimage_url / image_linkも互換性のため残す
+        if image_url is None and post_image:
+            image_url = post_image
+            image_link = url
 
     data = {
         "image_url": image_url,
         "image_link": image_link,
-        "images": images,
         "posts": posts
     }
 
