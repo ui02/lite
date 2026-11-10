@@ -90,25 +90,38 @@ permalink: /planner/
             <span class="heading-rule"></span>
           </div>
 
-          <div class="tumblr-posts">
-            {% for post in tumblr.posts limit: 3 %}
-              <article class="tumblr-post">
-                {% if post.image_url %}
-                  <a class="tumblr-post-image"
-                     href="{{ post.url }}"
-                     target="_blank"
-                     rel="noopener noreferrer">
-                    <img src="{{ post.image_url }}" alt="" loading="lazy">
-                  </a>
-                {% endif %}
-                <a class="tumblr-post-date"
-                   href="{{ post.url }}"
-                   target="_blank"
-                   rel="noopener noreferrer">{{ post.date }}</a>
-                <div class="tumblr-post-text">{{ post.text | escape }}</div>
-              </article>
-            {% endfor %}
-          </div>
+
+<div class="tumblr-posts">
+
+  <!-- 本文3件 -->
+  <div class="tumblr-post-texts">
+    {% for post in tumblr.posts limit: 3 %}
+      <article class="tumblr-post">
+        <a class="tumblr-post-date"
+           href="{{ post.url }}"
+           target="_blank"
+           rel="noopener noreferrer">{{ post.date }}</a>
+        <div class="tumblr-post-text">{{ post.text | escape }}</div>
+      </article>
+    {% endfor %}
+  </div>
+
+  <!-- 写真3件 -->
+  <div class="tumblr-post-images">
+    {% for post in tumblr.posts limit: 3 %}
+      {% if post.image_url %}
+        <a class="tumblr-post-image"
+           href="{{ post.url }}"
+           target="_blank"
+           rel="noopener noreferrer">
+          <img src="{{ post.image_url }}" alt="" loading="lazy">
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+</div>
+
         </section>
 
         <!-- TODO memo -->
