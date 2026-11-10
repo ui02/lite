@@ -977,3 +977,37 @@ page-kicker a: {
   .site-logo { font-size: 64px; }
   .camera-bear { width: 68px; }
 }
+
+
+
+
+
+/* Tumblr FEED: text + image layout */
+
+.tumblr-post-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tumblr-post-images {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.tumblr-post-image {
+  display: block;
+  overflow: hidden;
+  border-radius: 10px;
+  aspect-ratio: 1 / 1;
+}
+
+.tumblr-post-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
