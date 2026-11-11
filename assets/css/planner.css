@@ -614,15 +614,19 @@ page-kicker a: {
   object-fit: contain;
 }
 
+/* Tumblr feed */
 .tumblr-posts {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 9px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .tumblr-post {
+  width: 100%;
   min-width: 0;
+  box-sizing: border-box;
 }
+
 
 .tumblr-post-image {
   display: block;
@@ -1011,3 +1015,4 @@ page-kicker a: {
   object-fit: cover;
   border-radius: 10px;
 }
+
