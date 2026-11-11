@@ -8,13 +8,15 @@
 </head>
 <body class="notebook-page">
 
-  <main class="notebook-wrap">
-    <div class="notebook" aria-label="My little notebook">
+<main class="notebook-wrap">
+  <div class="notebook" aria-label="My little notebook">
 
-      {{ content }}
+    {% include notebook-left.html %}
 
-    </div>
-  </main>
+    {{ content }}
+
+  </div>
+</main>
 
 </body>
 </html>
