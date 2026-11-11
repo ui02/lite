@@ -397,17 +397,24 @@ body.notebook-page a:visited {
 }
 
 .playlist-title {
-  margin: 0 0 8px;
+  margin: 0;
   color: var(--blue-ink);
   font: 700 15px Georgia, "Yu Mincho", serif;
+}
+
+.playlist-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
 }
 
 /* Spotify上部のアイコン */
 .playlist-icons {
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin: 0 0 12px;
+  gap: 10px;
+  margin-left: auto;
 }
 
 .playlist-icons a {
