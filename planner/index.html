@@ -144,24 +144,26 @@ permalink: /planner/
       {% endfor %}
     </div>
 
-    <!-- TODO memo -->
-    <section class="todo-note">
-      <span class="todo-tape todo-tape-left"></span>
-      <span class="todo-tape todo-tape-right"></span>
-      <div class="todo-content">
-        <h2>I'm working on...</h2>
-        <ul>
-          <li>.todo #01</li>
-          <li>.todo #02</li>
-        </ul>
-      </div>
-      <span class="todo-flower"></span>
-    </section>
+    <!-- TODO memo + decoration -->
+    <div class="todo-wrap">
+      <section class="todo-note">
+        <span class="todo-tape todo-tape-left"></span>
+        <span class="todo-tape todo-tape-right"></span>
+        <div class="todo-content">
+          <h2>I'm working on...</h2>
+          <ul>
+            <li>.todo #01</li>
+            <li>.todo #02</li>
+          </ul>
+        </div>
+        <span class="todo-flower"></span>
+      </section>
 
-    <!-- TODO decoration -->
-    <img class="todo-decoration"
-         src="/assets/images/planner/objects/102L.png"
-         alt="">
+      <!-- TODO decoration -->
+      <img class="todo-decoration"
+           src="{{ '/assets/images/planner/objects/102L.png' | relative_url }}"
+           alt="">
+    </div>
 
   </div>
 </section>
