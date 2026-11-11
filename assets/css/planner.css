@@ -817,7 +817,7 @@ page-kicker a: {
   grid-row: 3 / 5;
   align-self: end;
   justify-self: end;
-  width: min(200%, 490px);
+  width: min(150%, 367.5px);
   height: 640px;
   pointer-events: none;
   z-index: 20;
