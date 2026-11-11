@@ -656,7 +656,7 @@ body.notebook-page a:visited {
 .camera-area {
   position: relative;
   grid-column: 1;
-  grid-row: 15;
+  grid-row: 3;
   min-height: 180px;
   min-width: 100px;
   margin-top: 5px;
