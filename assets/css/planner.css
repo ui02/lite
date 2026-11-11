@@ -214,12 +214,25 @@ body.notebook-page {
 .quick-icon { color: #68abc2; font-size: 19px; line-height: 1; }
 .left-footer { padding-top: 7px; border-top: 1px solid #e7f2f5; font-size: 8px; }
 
+
 .page-right {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-rows: auto auto auto minmax(0, 1fr) auto;
+  gap: 12px 20px;
   padding: 27px 34px 21px 37px;
 }
+
+/* ノート本体の角丸は維持 */
+.page-left {
+  border-radius: 9px 0 0 9px;
+}
+
+.page-right {
+  border-radius: 0 13px 13px 0;
+}
+
+
 .right-topline { flex: 0 0 auto; }
 .weather-label { color: #80b7c9; }
 
@@ -598,7 +611,7 @@ page-kicker a: {
 }
 
 .tumblr-section {
-  grid-column: 1;
+  grid-column: 1 / -1;
   grid-row: 2;
   min-width: 0;
 }
@@ -627,6 +640,13 @@ page-kicker a: {
   box-sizing: border-box;
 }
 
+.tumblr-bottom-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  gap: 20px;
+  align-items: start;
+  margin-top: 12px;
+}
 
 .tumblr-post-image {
   display: block;
@@ -672,16 +692,20 @@ page-kicker a: {
 }
 
 .todo-note {
-  position: relative;
   grid-column: 2;
-  grid-row: 2;
-  align-self: center;
-  min-height: 145px;
-  margin: 8px 0 0;
+  min-width: 0;
+  width: 100%;
+  margin-top: 24px;
   padding: 22px 18px;
+
   background: rgba(237,243,247,.92);
   clip-path: polygon(4% 5%, 96% 0, 100% 14%, 97% 84%, 88% 100%, 12% 95%, 0 83%, 2% 17%);
-  transform: rotate(1deg);
+
+  transform: rotate(3deg);
+  transform-origin: center top;
+
+  position: relative;
+  z-index: 2;
 }
 
 .todo-note h2 {
@@ -793,11 +817,11 @@ page-kicker a: {
   grid-row: 3 / 5;
   align-self: end;
   justify-self: end;
-  width: min(100%, 245px);
-  height: 320px;
+  width: min(200%, 490px);
+  height: 640px;
   pointer-events: none;
   z-index: 20;
-  margin: 0 -35px -45px 0;
+  margin: 0 -70px -90px 0;
 }
 
 .game-object {
@@ -942,7 +966,6 @@ page-kicker a: {
 
   .right-topline,
   .tumblr-section,
-  .todo-note,
   .camera-area,
   .game-area,
   .banner-links {
@@ -951,7 +974,6 @@ page-kicker a: {
 
   .right-topline { grid-row: 1; }
   .tumblr-section { grid-row: 2; }
-  .todo-note { grid-row: 3; width: 90%; justify-self: center; }
   .camera-area { grid-row: 4; min-height: 220px; }
   .game-area {
     grid-row: 5;
@@ -973,6 +995,20 @@ page-kicker a: {
   }
 
   .sticker-star { width: 48px; }
+
+.tumblr-bottom-row {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 18px;
+}
+
+.todo-note {
+  grid-column: 1;
+  grid-row: auto;
+  width: 90%;
+  justify-self: center;
+  margin-top: 20px;
+}
+   
 }
 
 @media (max-width: 420px) {
@@ -998,7 +1034,6 @@ page-kicker a: {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 8px;
-  margin-top: 12px;
 }
 
 .tumblr-post-image {
@@ -1021,11 +1056,3 @@ page-kicker a: {
   overflow: visible;
 }
 
-/* ノート本体の角丸は維持 */
-.page-left {
-  border-radius: 9px 0 0 9px;
-}
-
-.page-right {
-  border-radius: 0 13px 13px 0;
-}
