@@ -135,7 +135,7 @@ body.notebook-page a:visited {
 .page-kicker > span:nth-child(2) {
   margin-left: 30px;
 }
-page-kicker a: {
+.page-kicker a: {
   background-color: #e6f8ff; 
 }
 .page-number { color: var(--blue-deep); }
@@ -152,7 +152,7 @@ page-kicker a: {
   position: absolute;
   z-index: 3;
   top: -28px;
-  left: -22px;
+  left: -30px;
   margin: 0;
   transform: rotate(-9deg);
   font-family: "Holiday", cursive;
@@ -164,7 +164,7 @@ page-kicker a: {
 }
 
 .site-logo a {
-  color: #82dce9;
+  color: #82e3f3;
   text-decoration: none;
   text-shadow: 2px 3px 0 #fff;
 }
@@ -319,7 +319,30 @@ page-kicker a: {
   border: 0;
 }
 
+.playlist-icons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 12px;
+}
 
+.playlist-icons a {
+  display: block;
+  width: 36px;
+  height: 36px;
+  transition: transform .2s ease;
+}
+
+.playlist-icons a:hover {
+  transform: translateY(-3px);
+}
+
+.playlist-icons img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 
 
 
@@ -352,9 +375,17 @@ page-kicker a: {
 /* ★右ページ：ヘッダー＆フッター★ */
 .right-topline { flex: 0 0 auto; }
 .weather-label { color: #80b7c9; } /* ヘッダー右★ */
+/* バナーとフッターの間に余白を確保(PC)*/
+@media (min-width: 761px) {
+  .page-right {
+    padding-bottom: 55px;
+  }
 
-
-
+  .banner-links {
+    align-self: end;
+    margin-bottom: 5px;
+  }
+}
 
 /* ★インデックスタブ★ */
 .index-tab {
@@ -545,7 +576,7 @@ page-kicker a: {
   grid-column: 2;
   min-width: 0;
   width: 100%;
-  margin-top: 24px;
+  margin-top: -10px;
   padding: 22px 18px;
 
   background: rgba(237,243,247,.92);
@@ -575,6 +606,23 @@ page-kicker a: {
   color: #2367bd;
   font: 15px/1.35 "Trebuchet MS", sans-serif;
 }
+.todo-photo {
+  position: absolute;
+  top: -35px;
+  right: 20px;
+  width: 85px;
+  height: 65px;
+  object-fit: cover;
+
+  padding: 4px;
+  background: #fff;
+  border: 1px solid #dceef4;
+  box-shadow: 0 3px 8px rgba(67,119,139,.15);
+
+  transform: rotate(7deg);
+  z-index: 3;
+}
+
 
 .todo-tape {
   position: absolute;
