@@ -60,23 +60,37 @@ permalink: /planner/
         </section>
 
         <!-- Spotify playlist -->
-        <section class="playlist">
-          <h2 class="playlist-title">♫ Play list</h2>
-<div class="playlist-icons">
-  <a href="#" aria-label="Link 3">
-    <img src="{{ '/assets/images/planner/stickers/star.png' | relative_url }}" alt="">
-  </a>
-  <a href="#" aria-label="Link 1">
-    <img src="{{ '/assets/images/planner/stickers/heart03.png' | relative_url }}" alt="">
-  </a>
-  <a href="#" aria-label="Link 2">
-    <img src="{{ '/assets/images/planner/stickers/heart04.png' | relative_url }}" alt="">
-  </a>
-</div>
-          <div class="spotify-frame">
-<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1ISYOmMR2i22uJVlNA6nmj?utm_source=generator&si=cfb2c596911f41c0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <div class="playlist">
+          <div class="playlist-heading">
+            <h2 class="playlist-title">♫ Play list</h2>
+
+            <div class="playlist-icons">
+              <a href="#" aria-label="Link 3">
+                <img src="{{ '/assets/images/planner/stickers/star.png' | relative_url }}" alt="">
+              </a>
+              <a href="#" aria-label="Link 1">
+                <img src="{{ '/assets/images/planner/stickers/heart03.png' | relative_url }}" alt="">
+              </a>
+              <a href="#" aria-label="Link 2">
+                <img src="{{ '/assets/images/planner/stickers/heart04.png' | relative_url }}" alt="">
+              </a>
+            </div>
           </div>
-        </section>
+
+          <div class="spotify-frame">
+            <iframe
+              data-testid="embed-iframe"
+              style="border-radius:12px"
+              src="https://open.spotify.com/embed/playlist/1ISYOmMR2i22uJVlNA6nmj?utm_source=generator&si=cfb2c596911f41c0"
+              width="100%"
+              height="152"
+              frameBorder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
 
         <div class="left-footer">
           <span class="page-number">01</span>
