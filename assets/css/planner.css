@@ -609,7 +609,6 @@ page-kicker a: {
   position: relative;
   grid-column: 1;
   grid-row: 3;
-  align-self: end;
   min-height: 0;
   min-width: 100px;
   margin-top: 5px;
