@@ -58,7 +58,7 @@ body.notebook-page {
   background-position: top left;
   background-repeat: repeat;
   background-attachment: fixed;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "Caveat", "Zen Maru Gothic", sans-serif;
 }
 
 body.notebook-page a {
@@ -182,7 +182,7 @@ body.notebook-page a:visited {
 .updates-title h2 {
   margin: 0;
   color: var(--blue-ink);
-  font: 700 13px Georgia, "Yu Mincho", serif;
+  font: 700 13px "Pecita", serif;
   letter-spacing: .08em;
 }
 
@@ -351,7 +351,7 @@ body.notebook-page a:visited {
 
 .updates-subtitle {
   color: #9cb7c0;
-  font: italic 11px Georgia, serif;
+  font: italic 11px "Caveat", "Zen Maru Gothic", sans-serif;
 }
 
 .update-list {
@@ -368,12 +368,12 @@ body.notebook-page a:visited {
   padding: 6px 0;
   border-top: 1px dashed #dcecf1;
   color: #667f88;
-  font: 11px/1.35 Georgia, "Yu Mincho", serif;
+  font: 11px/1.35 "Caveat", "Zen Maru Gothic", sans-serif;
 }
 
 .update-list time {
   color: #65a4b9;
-  font: 700 9px "Trebuchet MS", sans-serif;
+  font: 700 9px "Caveat", "Zen Maru Gothic", sans-serif;
   letter-spacing: .08em;
 }
 
@@ -399,7 +399,7 @@ body.notebook-page a:visited {
 .playlist-title {
   margin: 0;
   color: var(--blue-ink);
-  font: 700 15px Georgia, "Yu Mincho", serif;
+  font: 700 15px "Pecita", serif;
 }
 
 .playlist-heading {
@@ -548,7 +548,7 @@ body.notebook-page a:visited {
   display: inline-block;
   margin-top: 5px;
   color: #91aab2;
-  font: 8px "Trebuchet MS", sans-serif;
+  font: 8px "Caveat", "Zen Maru Gothic", sans-serif;
   text-decoration: none;
 }
 
@@ -568,7 +568,7 @@ body.notebook-page a:visited {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   color: #647b83;
-  font: 10px/1.45 Georgia, "Yu Mincho", serif;
+  font: 10px/1.45 "Caveat", "Zen Maru Gothic", sans-serif;
   overflow-wrap: anywhere;
 }
 
@@ -681,7 +681,7 @@ body.notebook-page a:visited {
 .todo-note h2 {
   margin: 0 0 10px;
   color: var(--blue-ink);
-  font: 700 13px Georgia, "Yu Mincho", serif;
+  font: 700 13px "Pecita", serif;
   letter-spacing: .08em;
 }
 
@@ -695,7 +695,7 @@ body.notebook-page a:visited {
 .todo-note li {
   margin: 6px 0;
   color: #667f88;
-  font: 11px/1.5 Georgia, "Yu Mincho", serif;
+  font: 11px/1.5 "Caveat", "Zen Maru Gothic", sans-serif;
 }
 
 /* 個別テープ装飾は使わず、::beforeの共通テープを使用 */
@@ -826,7 +826,7 @@ body.notebook-page a:visited {
   border-radius: 20px;
   background: linear-gradient(#c6f5fc, #83dce9);
   color: #315e6d;
-  font: 12px Georgia, serif;
+  font: 12px "Caveat", "Zen Maru Gothic", sans-serif;
   text-decoration: none;
   box-shadow: 0 2px 3px rgba(70, 130, 150, .2);
 }
