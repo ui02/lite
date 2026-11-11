@@ -326,7 +326,7 @@ page-kicker a: {
 
 
 
-/* ★右ページ：Tumblr FEED★ */
+/* ★右ページ：★ */
 .section-heading {
   display: flex; align-items: center; gap: 7px;
   margin-bottom: 8px;
@@ -760,6 +760,88 @@ page-kicker a: {
   left: 49%;
   width: 38px;
 }
+
+
+/* =========================================================
+   UPDATE / TUMBLR / TODO 共通カードデザイン
+   ========================================================= */
+
+.tumblr-section,
+.todo-note {
+  position: relative;
+  padding: 14px 17px 11px;
+  border: 1px solid #dceef4;
+
+  background:
+    linear-gradient(
+      110deg,
+      rgba(245, 251, 253, 0.82),
+      rgba(255, 255, 255, 0.72) 75%
+    ),
+    url("../images/planner/background/bg01.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* マスキングテープ */
+.tumblr-section::before,
+.todo-note::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 22px;
+  width: 55px;
+  height: 10px;
+  background: rgba(187,226,241,.72);
+  transform: rotate(-2deg);
+}
+
+/* Tumblr FEED */
+.tumblr-section {
+  transform: rotate(-0.3deg);
+}
+
+.tumblr-posts {
+  gap: 0;
+}
+
+.tumblr-post + .tumblr-post {
+  padding-top: 7px;
+  margin-top: 7px;
+  border-top: 1px dashed #dcecf1;
+}
+
+/* TODOメモ */
+.todo-note {
+  clip-path: none;
+  transform: rotate(2deg);
+  transform-origin: center top;
+  margin-top: 24px;
+  padding: 18px 18px 16px;
+}
+
+/* TODOの見出し */
+.todo-note h2 {
+  margin: 0 0 10px;
+  color: var(--blue-ink);
+  font: 700 13px Georgia, "Yu Mincho", serif;
+  letter-spacing: .08em;
+}
+
+/* TODOのリスト */
+.todo-note li {
+  margin: 6px 0;
+  color: #667f88;
+  font: 11px/1.5 Georgia, "Yu Mincho", serif;
+}
+
+/* 既存のテープ装飾は共通テープに統一 */
+.todo-tape {
+  display: none;
+}
+
 
 
 /* MOBILE */
