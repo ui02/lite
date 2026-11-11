@@ -90,23 +90,18 @@ permalink: /planner/
             <span class="heading-rule"></span>
           </div>
 
-
 <div class="tumblr-posts">
-
   <!-- 本文3件 -->
-  <div class="tumblr-post-texts">
-    {% for post in tumblr.posts limit: 3 %}
-      <article class="tumblr-post">
-        <a class="tumblr-post-date"
-           href="{{ post.url }}"
-           target="_blank"
-           rel="noopener noreferrer">{{ post.date }}</a>
-        <div class="tumblr-post-text">{{ post.text | escape }}</div>
-      </article>
-    {% endfor %}
-  </div>
-
-  <!-- 写真3件 -->
+  {% for post in tumblr.posts limit: 3 %}
+    <article class="tumblr-post">
+      <a class="tumblr-post-date"
+         href="{{ post.url }}"
+         target="_blank"
+         rel="noopener noreferrer">{{ post.date }}</a>
+      <div class="tumblr-post-text">{{ post.text | escape }}</div>
+    </article>
+  {% endfor %}
+  <!-- 本文3件の下に写真3枚 -->
   <div class="tumblr-post-images">
     {% for post in tumblr.posts limit: 3 %}
       {% if post.image_url %}
@@ -119,7 +114,6 @@ permalink: /planner/
       {% endif %}
     {% endfor %}
   </div>
-
 </div>
 
         </section>
