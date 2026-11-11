@@ -80,62 +80,75 @@ permalink: /planner/
           <span class="weather-label">☀ A GOOD DAY TO BE HERE</span>
         </div>
 
-        <!-- Tumblr: latest 3 posts + each post image -->
-        <section class="tumblr-section">
-          <div class="section-heading">
-            <span class="heading-mark">
-              <img src="{{ '/assets/images/planner/icon/flower01.gif' | relative_url }}" alt="">
-            </span>
-            <h2>little thoughts</h2>
-            <span class="heading-rule"></span>
-          </div>
-
-
+<!-- Tumblr: latest 3 posts + each post image -->
 <section class="tumblr-section">
-<div class="tumblr-posts">
-  <!-- FEEDの見出し -->
-<div class="tumblr-posts">
+  <div class="section-heading">
+    <span class="heading-mark">
+      <img src="{{ '/assets/images/planner/icon/flower01.gif' | relative_url }}" alt="">
+    </span>
+    <h2>little thoughts</h2>
+    <span class="heading-rule"></span>
+  </div>
+
   <!-- 本文3件 -->
-  {% for post in tumblr.posts limit: 3 %}
-    <article class="tumblr-post">
-      <a class="tumblr-post-date"
-         href="{{ post.url }}"
-         target="_blank"
-         rel="noopener noreferrer">{{ post.date }}</a>
-      <div class="tumblr-post-text">{{ post.text | escape }}</div>
-    </article>
-  {% endfor %}
-</div>
-  <div class="tumblr-bottom-row">
-  <!-- 本文3件の下に写真3枚 -->
-  <div class="tumblr-post-images">
+  <div class="tumblr-posts">
     {% for post in tumblr.posts limit: 3 %}
-      {% if post.image_url %}
-        <a class="tumblr-post-image"
+      <article class="tumblr-post">
+        <a class="tumblr-post-date"
            href="{{ post.url }}"
            target="_blank"
-           rel="noopener noreferrer">
-          <img src="{{ post.image_url }}" alt="" loading="lazy">
-        </a>
-      {% endif %}
+           rel="noopener noreferrer">{{ post.date }}</a>
+        <div class="tumblr-post-text">{{ post.text | escape }}</div>
+      </article>
     {% endfor %}
-  </div>     
-        <!-- TODO memo -->
-        <section class="todo-note">
-          <span class="todo-tape todo-tape-left"></span>
-          <span class="todo-tape todo-tape-right"></span>
-          <div class="todo-content">
-            <h2>I'm working on...</h2>
-            <ul>
-              <li>.todo #01</li>
-              <li>.todo #02</li>
-              <li>.todo #03</li>
-            </ul>
-          </div>
-          <span class="todo-flower">✿</span>
-        </section>
+  </div>
+
+  <!-- 画像3枚 + TODOメモ -->
+  <div class="tumblr-bottom-row">
+
+    <div class="tumblr-post-images">
+      {% for post in tumblr.posts limit: 3 %}
+        {% if post.image_url %}
+          <a class="tumblr-post-image"
+             href="{{ post.url }}"
+             target="_blank"
+             rel="noopener noreferrer">
+            <img src="{{ post.image_url }}" alt="" loading="lazy">
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <!-- TODO memo -->
+    <section class="todo-note">
+      <span class="todo-tape todo-tape-left"></span>
+      <span class="todo-tape todo-tape-right"></span>
+      <div class="todo-content">
+        <h2>I'm working on...</h2>
+        <ul>
+          <li>.todo #01</li>
+          <li>.todo #02</li>
+          <li>.todo #03</li>
+        </ul>
+      </div>
+      <span class="todo-flower">✿</span>
+    </section>
+
+  </div>
 </section>
-          
+
+<!-- Camera with a photo in its screen -->
+<section class="camera-area">
+  <div class="camera-object">
+    <img class="camera-screen"
+         src="{{ '/assets/images/planner/screens/camera-photo.jpg' | relative_url }}"
+         alt="">
+    <img class="camera-frame"
+         src="{{ '/assets/images/planner/objects/camera-frame.png' | relative_url }}"
+         alt="">
+  </div>
+</section>
+
         <!-- Camera with a photo in its screen -->
         <section class="camera-area">
           <div class="camera-object">
