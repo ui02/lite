@@ -90,6 +90,10 @@ permalink: /planner/
             <span class="heading-rule"></span>
           </div>
 
+
+<section class="tumblr-section">
+<div class="tumblr-posts">
+  <!-- FEEDの見出し -->
 <div class="tumblr-posts">
   <!-- 本文3件 -->
   {% for post in tumblr.posts limit: 3 %}
@@ -101,6 +105,8 @@ permalink: /planner/
       <div class="tumblr-post-text">{{ post.text | escape }}</div>
     </article>
   {% endfor %}
+</div>
+  <div class="tumblr-bottom-row">
   <!-- 本文3件の下に写真3枚 -->
   <div class="tumblr-post-images">
     {% for post in tumblr.posts limit: 3 %}
@@ -113,11 +119,7 @@ permalink: /planner/
         </a>
       {% endif %}
     {% endfor %}
-  </div>
-</div>
-
-        </section>
-
+  </div>     
         <!-- TODO memo -->
         <section class="todo-note">
           <span class="todo-tape todo-tape-left"></span>
@@ -132,7 +134,8 @@ permalink: /planner/
           </div>
           <span class="todo-flower">✿</span>
         </section>
-
+</section>
+          
         <!-- Camera with a photo in its screen -->
         <section class="camera-area">
           <div class="camera-object">
