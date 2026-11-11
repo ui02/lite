@@ -4,9 +4,6 @@ layout: notebook
 
   {% assign tumblr = site.data.tumblr %}
 
-  <main class="notebook-wrap">
-    <div class="notebook" aria-label="My little notebook">
-
       {% include notebook-left.html %}
 
       <!-- RIGHT PAGE -->
@@ -125,7 +122,7 @@ layout: notebook
         <span class="scrap-sticker sticker-heart">♥</span>
         <span class="scrap-sticker sticker-flower">✿</span> -->
       </section>
-    </div>
+
 
     <!-- ORIGINAL INDEX TABS
     <nav class="index-tabs" aria-label="Notebook index">
@@ -143,7 +140,7 @@ layout: notebook
       </a>
     </nav>
      -->
-  </main>
+
 
   <!-- Today's date -->
   <script>
@@ -155,5 +152,3 @@ layout: notebook
     }).format(new Date());
     document.getElementById("today-date").textContent = today.toUpperCase();
   </script>
-
-</html>
