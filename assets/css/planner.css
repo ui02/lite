@@ -818,10 +818,10 @@ page-kicker a: {
   align-self: end;
   justify-self: end;
   width: min(150%, 367.5px);
-  height: 640px;
+  height: 480px;
   pointer-events: none;
   z-index: 20;
-  margin: 0 -70px -90px 0;
+  margin: 0 -52.5px -67.5px 0;
 }
 
 .game-object {
