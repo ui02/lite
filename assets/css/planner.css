@@ -78,16 +78,16 @@ body.notebook-page a:visited {
 
 .notebook-wrap {
   position: relative;
-  width: min(1180px, calc(0vw - 92px));
-  height: min(760px, calc(0vh - 44px));
+  width: min(1180px, calc(100vw - 92px));
+  height: min(760px, calc(100vh - 44px));
   min-height: 560px;
 }
 
 .notebook {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  width: 0%;
-  height: 0%;
+  width: 100%;
+  height: 100%;
   overflow: visible;
   background: var(--paper);
   border: 1px solid rgba(91, 158, 184, .28);
