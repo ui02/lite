@@ -715,8 +715,8 @@ body.notebook-page a:visited {
 .camera-screen {
   position: absolute;
   z-index: 1;
-  top: 25%;
-  left: 34%;
+  top: 28%;
+  left: 30%;
   width: 35%;
   height: 38%;
   object-fit: cover;
