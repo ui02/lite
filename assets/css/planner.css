@@ -4,7 +4,7 @@
    Main colors: baby blue #bbe2f1 + white.
    ========================================================= */
 
-/* フォントの読み込み */
+/* ★基本★ */
 @font-face {
   font-family: "Pecita";
   src: url("../fonts/Pecita.otf") format("opentype");
@@ -51,6 +51,21 @@ body.notebook-page {
   font-family: "Zen Maru Gothic", sans-serif;
 }
 
+body.notebook-page a {
+  color: #5b9eb8;
+  text-decoration: none;
+  transition: color .2s ease;
+}
+
+body.notebook-page a:hover {
+  color: #397b96;
+  text-decoration: underline;
+}
+
+body.notebook-page a:visited {
+  color: #5b9eb8;
+}
+
 .notebook-wrap {
   position: relative;
   width: min(1180px, calc(100vw - 92px));
@@ -63,7 +78,7 @@ body.notebook-page {
   grid-template-columns: 1fr 2fr;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  overflow: visible; /* ノートの外側にはみ出す装飾を表示 */
   background: var(--paper);
   border: 1px solid rgba(91,158,184,.28);
   border-radius: 9px 13px 13px 9px;
@@ -80,6 +95,18 @@ body.notebook-page {
     #fff;
 }
 
+/* ★左右ページ：ヘッダー＆フッター★ */
+.page-kicker, .right-topline, .right-footer, .left-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--muted);
+  font-size: 9px;
+  letter-spacing: .16em;
+  font-weight: 700;
+}
+
+/* ★左ページ★ */
 .page-left {
   display: flex;
   flex-direction: column;
@@ -87,8 +114,8 @@ body.notebook-page {
   padding-right: 25px;
   border-right: 1px solid #d7eaf0;
   box-shadow: inset -7px 0 12px -13px #548da3;
+  border-radius: 9px 0 0 9px;
 }
-
 .page-left::after {
   content: "";
   position: absolute;
@@ -100,19 +127,54 @@ body.notebook-page {
   pointer-events: none;
 }
 
-.page-kicker, .right-topline, .right-footer, .left-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: var(--muted);
-  font-size: 9px;
-  letter-spacing: .16em;
-  font-weight: 700;
+/* ★左ページ：ヘッダー＆フッター★ */
+.page-kicker {
+  position: relative;
+  grid-row: 1;
+}
+.page-kicker > span:nth-child(2) {
+  margin-left: 30px;
+}
+page-kicker a: {
+  background-color: #e6f8ff; 
+}
+.page-number { color: var(--blue-deep); }
+.left-footer {
+  font-size: 8px;
+  grid-row: 5;
+  align-self: end;
+  padding-top: 7px;
+  border-top: 1px solid #e7f2f5;
 }
 
-.page-number { color: var(--blue-deep); }
+/* ★左ページ：サイトタイトル★ */
+.site-logo {
+  position: absolute;
+  z-index: 3;
+  top: -28px;
+  left: -22px;
+  margin: 0;
+  transform: rotate(-9deg);
+  font-family: "Holiday", cursive;
+  font-size: clamp(62px, 7vw, 90px);
+  font-weight: normal;
+  line-height: 1;
+  letter-spacing: -4px;
+  pointer-events: none;
+}
 
-.photo-placeholder { position: relative; overflow: hidden; }
+.site-logo a {
+  color: #82dce9;
+  text-decoration: none;
+  text-shadow: 2px 3px 0 #fff;
+}
+
+.site-logo a:hover {
+  color: #82dce9;
+  text-decoration: none;
+}
+
+/* ★左ページ：ランダム画像★ */
 .profile-photo {
   height: 30%;
   min-height: 145px;
@@ -122,120 +184,17 @@ body.notebook-page {
   background: #d9f0f7;
   box-shadow: 0 4px 13px rgba(67,119,139,.12);
   transform: rotate(-1deg);
-}
-.photo-sky {
-  position: absolute; inset: 0 0 42%;
-  background: linear-gradient(#a9dced, #e9f8fb);
-}
-.photo-hill {
-  position: absolute; left: -8%; right: -8%; bottom: -27%;
-  height: 75%;
-  border-radius: 50% 50% 0 0;
-  background: linear-gradient(130deg, #9dc9bb, #c5dfce);
-}
-.photo-label {
-  position: absolute; right: 9px; bottom: 8px;
-  padding: 4px 7px;
-  background: rgba(255,255,255,.85);
-  color: #6796a7;
-  font: italic 11px Georgia, serif;
-}
-
-.murmur-section { min-height: 0; flex: 1 1 auto; }
-.section-heading {
-  display: flex; align-items: center; gap: 7px;
-  margin-bottom: 8px;
-}
-.section-heading h2, .updates-title h2 {
-  margin: 0; color: var(--blue-ink);
-  font: 700 13px Georgia, "Yu Mincho", serif;
-  letter-spacing: .08em;
-}
-.heading-mark { color: #83bfd2; font-size: 16px; }
-.heading-rule { height: 1px; flex: 1; background: var(--line); }
-
-.tumblr-feed {
-  display: flex;
-  align-items: baseline;
-  gap: 8px;
-  padding: 9px 11px 7px;
-  margin-bottom: 7px;
-  border-left: 2px solid var(--baby-blue);
-  background: rgba(234,247,251,.72);
-
-  color: inherit;
-  text-decoration: none;
-  white-space: nowrap;
+  position: relative;
   overflow: hidden;
-  transition: background .2s ease;
 }
-
-.tumblr-feed:hover {
-  background: rgba(217,240,247,.8);
-}
-
-.tumblr-feed .feed-meta {
-  flex: 0 0 auto;
-  color: #9bb4bd;
-  font: 8px/1.4 "Trebuchet MS", sans-serif;
-  letter-spacing: .08em;
-}
-
-.tumblr-feed-text {
+.profile-photo-image {
   display: block;
-  min-width: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-
-  color: #647b83;
-  font: 11px/1.65 Georgia, "Yu Mincho", serif;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.feed-meta span { padding: 0 4px; color: #78b4c8; }
-.second-feed { background: rgba(255,255,255,.8); }
-
-.quick-links {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 6px;
-  margin-top: auto;
-}
-.quick-link {
-  display: flex; flex-direction: column; align-items: center; justify-content: center;
-  gap: 5px; min-height: 55px; padding: 6px 2px;
-  color: var(--blue-ink); text-decoration: none;
-  border: 1px solid #d9edf3; border-radius: 5px;
-  background: #f5fbfd;
-  font-size: 8px; font-weight: 700; letter-spacing: .08em;
-  transition: transform .18s ease, background .18s ease, border-color .18s ease;
-}
-.quick-link:hover { transform: translateY(-3px); background: #e8f6fa; border-color: #a9d9e8; }
-.quick-icon { color: #68abc2; font-size: 19px; line-height: 1; }
-.left-footer { padding-top: 7px; border-top: 1px solid #e7f2f5; font-size: 8px; }
-
-
-.page-right {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  grid-template-rows: auto auto auto minmax(0, 1fr) auto;
-  gap: 12px 20px;
-  padding: 27px 34px 21px 37px;
-}
-
-/* ノート本体の角丸は維持 */
-.page-left {
-  border-radius: 9px 0 0 9px;
-}
-
-.page-right {
-  border-radius: 0 13px 13px 0;
-}
-
-
-.right-topline { flex: 0 0 auto; }
-.weather-label { color: #80b7c9; }
-
+/* ★左ページ：更新情報★ */
 .updates {
   flex: 0 0 24%;
   min-height: 135px;
@@ -280,46 +239,124 @@ body.notebook-page {
 }
 .update-list i { color: #8cc6d7; font-style: normal; text-align: right; }
 
-.feature-photo {
-  position: relative;
-  overflow: hidden;
-  flex: 1 1 auto;
-  min-height: 0;
-  margin: 0;
-  border: 8px solid #fff;
-  outline: 1px solid #dceef4;
-  box-shadow: 0 5px 18px rgba(67,119,139,.13);
-  background: #dff3f9;
+/* LEFT PAGE */
+.page-left {
+  display: grid;
+  grid-template-rows: auto 220px auto minmax(0, 1fr) auto;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 12px;
+  padding-right: 25px;
 }
-
-.feature-photo img {
+.profile-area {
+  position: relative;
+  grid-row: 2;
+  min-width: 0;
+  height: 220px;
+  margin: 0;
+}
+.profile-photo {
   position: absolute;
-  inset: 0;
+  top: 8px;
+  right: 0;
+  width: 92%;
+  height: 200px;
+  min-height: 0;
+  padding: 0px;
+  border: 7px solid #fff;
+  outline: 1px solid #dceef4;
+  background: #d9f0f7;
+  box-shadow: 0 4px 13px rgba(67,119,139,.12);
+  transform: rotate(2deg);
+  overflow: hidden;
+}
+.profile-photo-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.profile-photo-image {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.feature-photo figcaption {
-  position: absolute;
-  left: 15px;
-  right: 15px;
-  bottom: 12px;
-  z-index: 1;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #fff;
-  text-shadow: 0 1px 4px rgba(49,94,107,.55);
-  font: italic 13px Georgia, serif;
+
+.updates {
+  grid-row: 3;
+  flex: none;
+  min-height: 145px;
+  margin: 0;
 }
 
-.feature-photo figcaption span:last-child {
-  font: 8px "Trebuchet MS", sans-serif;
-  letter-spacing: .15em;
+/* ★左ページ：Spotifyプレーヤー★ */
+.playlist {
+  grid-row: 4;
+  min-width: 0;
+  align-self: end;
+  margin: 0;
+  padding-top: 8px;
 }
 
+.playlist-title {
+  margin: 0 0 8px;
+  color: var(--blue-ink);
+  font: 700 15px Georgia, "Yu Mincho", serif;
+}
+
+.spotify-frame {
+  width: 100%;
+  overflow: hidden;
+  border: 0px solid #c7eaf2;
+  border-radius: 8px;
+  background: #eaf7fb;
+  box-shadow: 0 0px 0 #d4eef4;
+}
+
+.spotify-frame iframe {
+  display: block;
+  width: 100%;
+  border: 0;
+}
+
+
+
+
+
+
+
+
+/* ★右ページ：Tumblr FEED★ */
+.section-heading {
+  display: flex; align-items: center; gap: 7px;
+  margin-bottom: 8px;
+}
+.section-heading h2, .updates-title h2 {
+  margin: 0; color: var(--blue-ink);
+  font: 700 13px Georgia, "Yu Mincho", serif;
+  letter-spacing: .08em;
+}
+.heading-mark { color: #83bfd2; font-size: 16px; }
+.heading-rule { height: 1px; flex: 1; background: var(--line); }
+
+/* ★右ページ：★ */
+.page-right {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-rows: auto auto auto minmax(0, 1fr) auto;
+  gap: 12px 20px;
+  padding: 27px 34px 21px 37px;
+  border-radius: 0 13px 13px 0;
+}
+
+/* ★右ページ：ヘッダー＆フッター★ */
+.right-topline { flex: 0 0 auto; }
+.weather-label { color: #80b7c9; } /* ヘッダー右★ */
+
+
+
+
+/* ★インデックスタブ★ */
 .index-tab {
   display: flex; flex-direction: column; justify-content: center; align-items: center;
   gap: 4px; height: 83px; padding: 6px 3px 6px 7px;
@@ -332,22 +369,23 @@ body.notebook-page {
   font-size: 9px; font-weight: 700; letter-spacing: .12em;
   transition: width .18s ease, transform .18s ease;
 }
-.index-tab:hover { width: 47px; transform: translateX(5px); }
-.index-tab span { font-size: 8px; opacity: .7; }
-.tab-diary { background: #d9f0f7; }
-.tab-faves { background: #fff; }
-.tab-gallery { background: #c5e7f1; }
-.tab-about { background: #eaf7fb; }
 .index-tabs {
   position: absolute;
-  top: 13%;
+  top: 5%;
   right: -34px;
   display: flex;
   flex-direction: column;
   gap: 7px;
   width: 39px;
 }
+.index-tab:hover { width: 47px; transform: translateX(5px); }
+.index-tab span { font-size: 8px; opacity: .7; }
+.tab-diary { background: #d9f0f7; }
+.tab-faves { background: #fff; }
+.tab-gallery { background: #c5e7f1; }
+.tab-about { background: #eaf7fb; }
 
+/* ★スマホ表示★ */
 @media (max-width: 760px) {
   body.notebook-page { display: block; padding: 18px 14px 28px; }
   .notebook-wrap { width: 100%; height: auto; min-height: 0; }
@@ -388,211 +426,12 @@ body.notebook-page {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
 }
 
-
-/* =========================================================
-   カスタム
-   ========================================================= */
-
-/* TOP左上のアイコン */
-.page-kicker {
-  position: relative;
-}
-
-.tiny-star {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translate(-35%, -65%);
-  width: 36px;
-  height: 36px;
-  z-index: 2;
-}
-
-.tiny-star img {
-  width: 150%;
-  height: 150%;
-  object-fit: contain;
-  display: block;
-}
-
-.page-kicker > span:nth-child(2) {
-  margin-left: 30px;
-}
-
-/* 右ページのランダム写真 */
-.feature-photo img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.profile-photo {
-  position: relative;
-  overflow: hidden;
-}
-
-/* 左ページのTumblrFEED */
-.profile-photo-link {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.profile-photo-image {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* リンク色 */
-body.notebook-page a {
-  color: #5b9eb8;
-  text-decoration: none;
-  transition: color .2s ease;
-}
-
-body.notebook-page a:hover {
-  color: #397b96;
-  text-decoration: underline;
-}
-
-body.notebook-page a:visited {
-  color: #5b9eb8;
-}
-
-page-kicker a: {
-  background-color: #e6f8ff; 
-}
-
-
-
-
 /* =========================================================
    IOLITE / NEW CONTENT LAYOUT
    外側のノート・左右比率・中央の綴じ目・INDEX TABSは
    既存デザインを維持し、ページ内コンテンツのみ再配置
    ========================================================= */
 
-/* LEFT PAGE */
-.page-left {
-  display: grid;
-  grid-template-rows: auto 220px auto minmax(0, 1fr) auto;
-  grid-template-columns: minmax(0, 1fr);
-  gap: 12px;
-  padding-right: 25px;
-}
-
-.page-kicker {
-  grid-row: 1;
-}
-
-.profile-area {
-  position: relative;
-  grid-row: 2;
-  min-width: 0;
-  height: 220px;
-  margin: 0;
-}
-
-.profile-photo {
-  position: absolute;
-  top: 8px;
-  right: 0;
-  width: 92%;
-  height: 200px;
-  min-height: 0;
-  padding: 0px;
-  border: 7px solid #fff;
-  outline: 1px solid #dceef4;
-  background: #d9f0f7;
-  box-shadow: 0 4px 13px rgba(67,119,139,.12);
-  transform: rotate(2deg);
-  overflow: hidden;
-}
-
-.profile-photo-link {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.profile-photo-image {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.site-logo {
-  position: absolute;
-  z-index: 3;
-  top: -28px;
-  left: -22px;
-  margin: 0;
-  transform: rotate(-9deg);
-  font-family: "Holiday", cursive;
-  font-size: clamp(62px, 7vw, 90px);
-  font-weight: normal;
-  line-height: 1;
-  letter-spacing: -4px;
-  pointer-events: none;
-}
-
-.site-logo a {
-  color: #82dce9;
-  text-decoration: none;
-  text-shadow: 2px 3px 0 #fff;
-}
-
-.site-logo a:hover {
-  color: #82dce9;
-  text-decoration: none;
-}
-
-.updates {
-  grid-row: 3;
-  flex: none;
-  min-height: 145px;
-  margin: 0;
-}
-
-.playlist {
-  grid-row: 4;
-  min-width: 0;
-  align-self: end;
-  margin: 0;
-  padding-top: 8px;
-}
-
-.playlist-title {
-  margin: 0 0 8px;
-  color: var(--blue-ink);
-  font: 700 15px Georgia, "Yu Mincho", serif;
-}
-
-.spotify-frame {
-  width: 100%;
-  overflow: hidden;
-  border: 0px solid #c7eaf2;
-  border-radius: 8px;
-  background: #eaf7fb;
-  box-shadow: 0 0px 0 #d4eef4;
-}
-
-.spotify-frame iframe {
-  display: block;
-  width: 100%;
-  border: 0;
-}
-
-.left-footer {
-  grid-row: 5;
-  align-self: end;
-  padding-top: 7px;
-  border-top: 1px solid #e7f2f5;
-}
 
 
 /* RIGHT PAGE */
@@ -640,35 +479,6 @@ page-kicker a: {
   box-sizing: border-box;
 }
 
-.tumblr-bottom-row {
-  display: grid;
-  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
-  gap: 20px;
-  align-items: start;
-  margin-top: 12px;
-}
-
-.tumblr-post-image {
-  display: block;
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  overflow: hidden;
-  border-radius: 12px;
-  background: #eaf7fb;
-}
-
-.tumblr-post-image img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform .25s ease;
-}
-
-.tumblr-post-image:hover img {
-  transform: scale(1.05);
-}
-
 .tumblr-post-date {
   display: inline-block;
   margin-top: 5px;
@@ -676,7 +486,6 @@ page-kicker a: {
   font: 8px "Trebuchet MS", sans-serif;
   text-decoration: none;
 }
-
 .tumblr-post-date:hover {
   text-decoration: underline;
 }
@@ -690,7 +499,48 @@ page-kicker a: {
   font: 10px/1.45 Georgia, "Yu Mincho", serif;
   overflow-wrap: anywhere;
 }
+.tumblr-post-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
 
+/* 【右】Tumblr画像 */
+.tumblr-bottom-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  gap: 20px;
+  align-items: start;
+  margin-top: 12px;
+}
+
+.tumblr-post-images {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+.tumblr-post-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #eaf7fb;
+}
+.tumblr-post-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform .25s ease;
+}
+
+.tumblr-post-image:hover img {
+  transform: scale(1.05);
+}
+
+/* 【右】メモ欄 */
 .todo-note {
   grid-column: 2;
   min-width: 0;
@@ -754,6 +604,7 @@ page-kicker a: {
   font-size: 42px;
 }
 
+/* 【右】カメラ */
 .camera-area {
   position: relative;
   grid-column: 1;
@@ -811,6 +662,7 @@ page-kicker a: {
   width: 58px;
 }
 
+/* 【右】ゲーム */
 .game-area {
   position: relative;
   grid-column: 2;
@@ -850,6 +702,7 @@ page-kicker a: {
   object-fit: contain;
 }
 
+/* 【右】バナーボタン */
 .banner-links {
   grid-column: 1;
   grid-row: 4;
@@ -888,6 +741,10 @@ page-kicker a: {
   grid-row: 4;
   align-self: end;
   pointer-events: none;
+  position: absolute;
+  left: 37px;
+  right: 34px;
+  bottom: 21px;
 }
 
 /* バナーとフッターが同じ行に重ならないように */
@@ -895,14 +752,10 @@ page-kicker a: {
   grid-template-rows: auto auto minmax(0, 1fr) auto;
 }
 
-.right-footer {
-  position: absolute;
-  left: 37px;
-  right: 34px;
-  bottom: 21px;
-}
 
-/* 小さな装飾 */
+
+
+/* 装飾 */
 .scrap-sticker {
   position: absolute;
   z-index: 4;
@@ -929,7 +782,8 @@ page-kicker a: {
 }
 
 
-/* MOBILE: notebook shell rules remain the existing ones */
+/* MOBILE */
+
 @media (max-width: 760px) {
   .page-left {
     display: flex;
@@ -1016,43 +870,5 @@ page-kicker a: {
   .tumblr-post-text { font-size: 9px; }
   .site-logo { font-size: 64px; }
   .camera-bear { width: 68px; }
-}
-
-
-
-
-
-/* Tumblr FEED: text + image layout */
-
-.tumblr-post-texts {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.tumblr-post-images {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 8px;
-}
-
-.tumblr-post-image {
-  display: block;
-  overflow: hidden;
-  border-radius: 10px;
-  aspect-ratio: 1 / 1;
-}
-
-.tumblr-post-image img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-/* ノートの外側にはみ出す装飾を表示 */
-.notebook {
-  overflow: visible;
 }
 
