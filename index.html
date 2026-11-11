@@ -145,17 +145,6 @@ layout: notebook
      -->
   </main>
 
-  <!-- Random photo -->
-  <script>
-    const randomImages = [
-      "{{ '/assets/images/random/photo01.jpg' | relative_url }}",
-      "{{ '/assets/images/random/photo02.jpg' | relative_url }}",
-      "{{ '/assets/images/random/photo03.jpg' | relative_url }}"
-    ];
-    const randomIndex = Math.floor(Math.random() * randomImages.length);
-    document.getElementById("random-feature-image").src = randomImages[randomIndex];
-  </script>
-
   <!-- Today's date -->
   <script>
     const today = new Intl.DateTimeFormat("en-US", {
