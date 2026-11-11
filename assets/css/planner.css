@@ -611,7 +611,7 @@ page-kicker a: {
   grid-row: 3;
   align-self: end;
   min-height: 0;
-  min-width: 245px;
+  min-width: 100px;
   margin-top: 5px;
 }
 
@@ -641,25 +641,6 @@ page-kicker a: {
   height: 100%;
   object-fit: contain;
   pointer-events: none;
-}
-
-.camera-deco {
-  position: absolute;
-  z-index: 3;
-  object-fit: contain;
-  pointer-events: none;
-}
-
-.camera-bear {
-  left: -18px;
-  bottom: 5px;
-  width: 88px;
-}
-
-.camera-star {
-  right: -8px;
-  bottom: 18px;
-  width: 58px;
 }
 
 /* 【右】ゲーム */
