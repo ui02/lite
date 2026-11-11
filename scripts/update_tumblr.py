@@ -84,9 +84,13 @@ def main():
         # 各投稿の写真を取得
         post_image = get_image(url) if url else None
 
+        # 50文字を超える場合は末尾に…
+        if len(text) > 50:
+            text = text[:49].rstrip() + "…"
+
         posts.append({
             "date": date_text,
-            "text": text[:40],
+            "text": text,
             "url": url,
             "image_url": post_image
         })
