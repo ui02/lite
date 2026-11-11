@@ -716,9 +716,9 @@ body.notebook-page a:visited {
   position: absolute;
   z-index: 1;
   top: 28%;
-  left: 18%;
-  width: 35%;
-  height: 38%;
+  left: 15%;
+  width: 60%;
+  height: 60%;
   object-fit: cover;
 }
 
