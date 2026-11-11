@@ -653,7 +653,7 @@ page-kicker a: {
   height: 480px;
   pointer-events: none;
   z-index: 20;
-  margin: 0 -52.5px -67.5px 0;
+  margin: 0 -52.5px -75px 0;
 }
 
 .game-object {
