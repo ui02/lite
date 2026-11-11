@@ -540,7 +540,7 @@ body.notebook-page a:visited {
 
 .tumblr-post + .tumblr-post {
   margin-top: 7px;
-  padding-top: 7px;
+  padding-top: 0px;
   border-top: 1px dashed #dcecf1;
 }
 
