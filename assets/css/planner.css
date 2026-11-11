@@ -547,9 +547,10 @@ body.notebook-page a:visited {
 .tumblr-post-date {
   display: inline-block;
   margin-top: 5px;
-  color: #91aab2;
-  font: 8px "Caveat", "Zen Maru Gothic", sans-serif;
   text-decoration: none;
+  color: #65a4b9;
+  font: 700 9px "Caveat", "Zen Maru Gothic", sans-serif;
+  letter-spacing: .08em;
 }
 
 .tumblr-post-date:hover {
