@@ -1,6 +1,6 @@
 ---
 title: "Diary"
-permalink: /diary/
+permalink: /diary-old/
 layout: home
 author_profile: true
 entries_layout: grid
