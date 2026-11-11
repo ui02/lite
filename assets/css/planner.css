@@ -380,7 +380,6 @@ body.notebook-page a:visited {
   .page-right {
     padding-bottom: 55px;
   }
-
   .banner-links {
     align-self: end;
     margin-bottom: 5px;
@@ -577,24 +576,25 @@ body.notebook-page a:visited {
   min-width: 0;
   width: 100%;
   margin-top: -10px;
-  padding: 22px 18px;
-
-  background: rgba(237,243,247,.92);
-  clip-path: polygon(4% 5%, 96% 0, 100% 14%, 97% 84%, 88% 100%, 12% 95%, 0 83%, 2% 17%);
-
-  transform: rotate(3deg);
-  transform-origin: center top;
+  padding: 18px 18px 16px;
 
   position: relative;
   z-index: 2;
+
+  background: rgba(237,243,247,.92);
+  transform: rotate(2deg);
+  transform-origin: center top;
 }
 
+/* TODOの見出し */
 .todo-note h2 {
   margin: 0 0 10px;
-  color: #2874d4;
-  font: 16px "Trebuchet MS", sans-serif;
+  color: var(--blue-ink);
+  font: 700 13px Georgia, "Yu Mincho", serif;
+  letter-spacing: .08em;
 }
 
+/* TODOのリスト */
 .todo-note ul {
   margin: 0;
   padding: 0 0 0 4px;
@@ -602,14 +602,18 @@ body.notebook-page a:visited {
 }
 
 .todo-note li {
-  margin: 4px 0;
-  color: #2367bd;
-  font: 15px/1.35 "Trebuchet MS", sans-serif;
+  margin: 6px 0;
+  color: #667f88;
+  font: 11px/1.5 Georgia, "Yu Mincho", serif;
 }
+
+/* TODOに貼る写真 */
 .todo-photo {
   position: absolute;
   top: -35px;
   right: 20px;
+  z-index: 3;
+
   width: 85px;
   height: 65px;
   object-fit: cover;
@@ -618,32 +622,27 @@ body.notebook-page a:visited {
   background: #fff;
   border: 1px solid #dceef4;
   box-shadow: 0 3px 8px rgba(67,119,139,.15);
-
   transform: rotate(7deg);
-  z-index: 3;
 }
 
-
+/* TODOのテープ（現在は非表示） */
 .todo-tape {
+  display: none;
+}
+
+/* TODOの上部装飾テープ */
+.todo-note::before {
+  content: "";
   position: absolute;
-  z-index: 2;
-  width: 62px;
-  height: 17px;
-  background: rgba(142,177,242,.72);
-}
-
-.todo-tape-left {
   top: -5px;
-  left: -13px;
-  transform: rotate(-43deg);
+  left: 22px;
+  width: 55px;
+  height: 10px;
+  background: rgba(187,226,241,.72);
+  transform: rotate(-2deg);
 }
 
-.todo-tape-right {
-  right: -13px;
-  bottom: 1px;
-  transform: rotate(-43deg);
-}
-
+/* TODOの花飾り */
 .todo-flower {
   position: absolute;
   left: -12px;
@@ -651,6 +650,7 @@ body.notebook-page a:visited {
   color: #8eaefa;
   font-size: 42px;
 }
+
 
 /* 【右】カメラ */
 .camera-area {
@@ -815,36 +815,9 @@ body.notebook-page a:visited {
    ========================================================= */
 
 .tumblr-section,
-.todo-note {
-  position: relative;
-  padding: 14px 17px 11px;
-  border: 1px solid #dceef4;
-
-  background:
-    linear-gradient(
-      110deg,
-      rgba(245, 251, 253, 0.82),
-      rgba(255, 255, 255, 0.72) 75%
-    ),
-    url("../images/planner/background/bg01.jpg");
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
 
 /* マスキングテープ */
 .tumblr-section::before,
-.todo-note::before {
-  content: "";
-  position: absolute;
-  top: -5px;
-  left: 22px;
-  width: 55px;
-  height: 10px;
-  background: rgba(187,226,241,.72);
-  transform: rotate(-2deg);
-}
 
 /* Tumblr FEED */
 .tumblr-section {
@@ -861,34 +834,6 @@ body.notebook-page a:visited {
   border-top: 1px dashed #dcecf1;
 }
 
-/* TODOメモ */
-.todo-note {
-  clip-path: none;
-  transform: rotate(2deg);
-  transform-origin: center top;
-  margin-top: 24px;
-  padding: 18px 18px 16px;
-}
-
-/* TODOの見出し */
-.todo-note h2 {
-  margin: 0 0 10px;
-  color: var(--blue-ink);
-  font: 700 13px Georgia, "Yu Mincho", serif;
-  letter-spacing: .08em;
-}
-
-/* TODOのリスト */
-.todo-note li {
-  margin: 6px 0;
-  color: #667f88;
-  font: 11px/1.5 Georgia, "Yu Mincho", serif;
-}
-
-/* 既存のテープ装飾は共通テープに統一 */
-.todo-tape {
-  display: none;
-}
 
 
 
