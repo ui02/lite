@@ -294,3 +294,28 @@ body.diary-post-page footer.page__meta .page__taxonomy-item:hover {
 body.diary-post-page .page__share {
   display: none;
 }
+
+/* メタ情報を一列に並べる */
+body.diary-post-page footer.page__meta {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+/* 各項目の幅を内容に合わせる */
+body.diary-post-page footer.page__meta p.page__taxonomy,
+body.diary-post-page footer.page__meta p.page__date {
+  display: inline-flex;
+  flex: 0 0 auto;
+  width: auto;
+  max-width: 100%;
+  margin: 0;
+}
+
+/* タグ・カテゴリーの中身も横並び */
+body.diary-post-page footer.page__meta span[itemprop="keywords"] {
+  display: inline-flex;
+  width: auto;
+}
