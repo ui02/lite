@@ -1,0 +1,247 @@
+/* =========================================================
+   16. 画面が低い場合（PC）
+   ========================================================= */
+
+@media (max-height: 650px) and (min-width: 761px) {
+  body.notebook-page {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .notebook-wrap {
+    height: calc(100vh - 24px);
+    min-height: 0;
+  }
+
+  .page {
+    padding-top: 17px;
+    padding-bottom: 14px;
+  }
+
+  .page-left {
+    gap: 10px;
+  }
+
+  .profile-photo {
+    min-height: 115px;
+  }
+
+  .page-right {
+    gap: 11px;
+    padding-top: 19px;
+    padding-bottom: 55px;
+  }
+
+  .updates {
+    min-height: 118px;
+    padding-top: 10px;
+  }
+
+  .update-list li {
+    padding: 4px 0;
+  }
+}
+
+
+/* =========================================================
+   17. スマホ表示
+   ========================================================= */
+
+@media (max-width: 760px) {
+  body.notebook-page {
+    display: block;
+    padding: 18px 14px 28px;
+  }
+
+  .notebook-wrap {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+  }
+
+  .notebook {
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+  }
+
+  .page {
+    padding: 22px 20px;
+  }
+
+  /* 左ページ */
+  .page-left {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-right: 0;
+    border-bottom: 1px solid #d7eaf0;
+  }
+
+  .page-left::after {
+    display: none;
+  }
+
+  .profile-area {
+    height: 210px;
+    flex: 0 0 210px;
+  }
+
+  .profile-photo {
+    height: 185px;
+  }
+
+  .site-logo {
+    top: -35px;
+    left: -20px;
+    font-size: 80px;
+  }
+
+  .updates {
+    flex-basis: auto;
+    min-height: 165px;
+  }
+
+  .playlist {
+    margin-top: 10px;
+  }
+
+  /* 右ページ */
+  .page-right {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto auto auto minmax(210px, auto) auto;
+    gap: 18px;
+    min-height: 620px;
+    padding: 22px 20px 55px;
+  }
+
+  .right-topline,
+  .tumblr-section,
+  .camera-area,
+  .game-area,
+  .banner-links {
+    grid-column: 1;
+  }
+
+  .right-topline {
+    grid-row: 1;
+  }
+
+  .tumblr-section {
+    grid-row: 2;
+  }
+
+  /* Tumblr画像とTODOを縦並びにする */
+  .tumblr-bottom-row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+  }
+
+  .todo-wrap {
+    grid-column: 1;
+    margin-top: 20px;
+  }
+
+  .todo-note {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .todo-decoration {
+    top: -30px;
+    right: 0;
+    width: 100px;
+  }
+
+  .camera-area {
+    grid-row: 4;
+    min-height: 220px;
+  }
+
+  .game-area {
+    grid-row: 5;
+    width: 210px;
+    height: 275px;
+    margin: -10px -15px 0 0;
+  }
+
+  .banner-links {
+    grid-row: 6;
+    justify-content: center;
+  }
+
+  .right-footer {
+    right: 20px;
+    bottom: 18px;
+    left: 20px;
+  }
+
+  .sticker-star {
+    width: 48px;
+  }
+
+  /* スマホではINDEXタブを横並びにする */
+  .index-tabs {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  .index-tab {
+    flex: 1;
+    width: auto;
+    height: 42px;
+    padding: 4px;
+    flex-direction: row;
+    writing-mode: horizontal-tb;
+    border: 1px solid rgba(105, 164, 185, .35);
+    border-radius: 5px;
+  }
+
+  .index-tab:hover {
+    width: auto;
+    transform: translateY(-2px);
+  }
+}
+
+
+/* =========================================================
+   18. 小さめスマホ
+   ========================================================= */
+
+@media (max-width: 420px) {
+  .tumblr-posts {
+    gap: 6px;
+  }
+
+  .tumblr-post-text {
+    font-size: 9px;
+  }
+
+  .site-logo {
+    font-size: 64px;
+  }
+
+  .camera-bear {
+    width: 68px;
+  }
+}
+
+
+/* =========================================================
+   19. アニメーションを減らす設定
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+  }
+}
+

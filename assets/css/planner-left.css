@@ -1,0 +1,266 @@
+/* =========================================================
+   3. 左ページ全体
+   ========================================================= */
+
+.page-left {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto 220px auto minmax(0, 1fr) auto;
+  gap: 12px;
+  padding-right: 25px;
+  border-right: 1px solid #d7eaf0;
+  box-shadow: inset -7px 0 12px -13px #548da3;
+  border-radius: 9px 0 0 9px;
+}
+
+.page-left::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -4px;
+  width: 7px;
+  height: 0%;
+  background: linear-gradient(90deg, rgba(76, 126, 146, .12), transparent);
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   4. 左ページ：サイトロゴ
+   ========================================================= */
+
+.site-logo {
+  position: absolute;
+  z-index: 3;
+  top: -28px;
+  left: -30px;
+  margin: 0;
+  transform: rotate(-9deg);
+  font-family: "Holiday", cursive;
+  font-size: clamp(62px, 7vw, 90px);
+  font-weight: normal;
+  line-height: 1;
+  letter-spacing: -4px;
+  pointer-events: none;
+}
+
+.site-logo a {
+  color: #82e3f3;
+  text-decoration: none;
+  text-shadow: 2px 3px 0 #fff;
+}
+
+.site-logo a:hover {
+  color: #82dce9;
+  text-decoration: none;
+}
+
+
+/* =========================================================
+   5. 左ページ：プロフィール写真
+   ========================================================= */
+
+.profile-area {
+  position: relative;
+  grid-row: 2;
+  min-width: 0;
+  height: 220px;
+  margin: 0;
+}
+
+.profile-photo {
+  position: absolute;
+  top: 8px;
+  right: 0;
+  width: 92%;
+  height: 200px;
+  min-height: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 7px solid #fff;
+  outline: 1px solid #dceef4;
+  background: #d9f0f7;
+  box-shadow: 0 4px 13px rgba(67, 119, 139, .12);
+  transform: rotate(2deg);
+}
+
+.profile-photo-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.profile-photo-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* =========================================================
+   6. 左ページ：UPDATE欄
+   ========================================================= */
+
+.updates {
+  grid-row: 3;
+  min-height: 145px;
+  margin: 0;
+  padding: 14px 17px 11px;
+  border: 1px solid #dceef4;
+  background:
+    linear-gradient(
+      110deg,
+      rgba(245, 251, 253, .82),
+      rgba(255, 255, 255, .72) 75%
+    ),
+    url("../images/planner/background/bg01.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.updates::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 22px;
+  width: 55px;
+  height: 10px;
+  background: rgba(187, 226, 241, .72);
+  transform: rotate(-2deg);
+}
+
+.updates-title {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.updates-icon {
+  color: #78b9cd;
+  font-size: 17px;
+}
+
+.updates-title h2 {
+  font-size: 17px;
+  letter-spacing: .16em;
+}
+
+.updates-subtitle {
+  color: #9cb7c0;
+  font: italic 11px "Caveat", "Zen Maru Gothic", sans-serif;
+}
+
+.update-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.update-list li {
+  display: grid;
+  grid-template-columns: 48px 1fr 16px;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+  border-top: 1px dashed #dcecf1;
+  color: #667f88;
+  font: 11px/1.35 "Caveat", "Zen Maru Gothic", sans-serif;
+}
+
+.update-list time {
+  color: #65a4b9;
+  font: 700 9px "Caveat", "Zen Maru Gothic", sans-serif;
+  letter-spacing: .08em;
+}
+
+.update-list i {
+  color: #8cc6d7;
+  font-style: normal;
+  text-align: right;
+}
+
+
+/* =========================================================
+   7. 左ページ：Spotifyプレーヤー・アイコン
+   ========================================================= */
+
+.playlist {
+  grid-row: 4;
+  min-width: 0;
+  align-self: end;
+  margin: 0;
+  padding-top: 8px;
+}
+
+.playlist-title {
+  margin: 0;
+  color: var(--blue-ink);
+  font: 700 15px "Pecita", serif;
+}
+
+.playlist-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Spotify上部のアイコン */
+.playlist-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.playlist-icons a {
+  display: block;
+  width: 36px;
+  height: 36px;
+  transition: transform .2s ease;
+}
+
+.playlist-icons a:hover {
+  transform: translateY(-3px);
+}
+
+.playlist-icons img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Spotify本体 */
+.spotify-frame {
+  width: 100%;
+  overflow: hidden;
+  border: 0;
+  border-radius: 8px;
+  background: #eaf7fb;
+  box-shadow: 0 0 0 #d4eef4;
+}
+
+.spotify-frame iframe {
+  display: block;
+  width: 100%;
+  border: 0;
+}
+
+.youtube-player {
+  width: 320px;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.youtube-player iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
