@@ -337,3 +337,45 @@ body.diary-post-page footer.page__meta span[itemprop="keywords"] {
   display: inline-flex;
   width: auto;
 }
+
+/* =========================================================
+   DIARY POST / PREVIOUS & NEXT
+   ========================================================= */
+
+/* ナビゲーション全体 */
+body.diary-post-page .pagination {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 28px 0 10px;
+  padding: 0;
+  border: 0;
+}
+
+/* Previous / Next リンク */
+body.diary-post-page .pagination .pagination--pager {
+  flex: 0 1 auto;
+  min-width: 0;
+  margin: 0;
+  padding: 7px 13px;
+  color: #8299a0;
+  background: #fff;
+  border: 1px solid #dce8eb;
+  border-radius: 20px;
+  box-shadow: none;
+  font-size: 11px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+/* ホバー */
+body.diary-post-page .pagination .pagination--pager:hover {
+  color: #65a4b9;
+  background: #f5fafb;
+  border-color: #c9e0e7;
+}
+
+/* 次の記事がない場合 */
+body.diary-post-page .pagination .pagination--pager.disabled {
+  visibility: hidden;
+}
