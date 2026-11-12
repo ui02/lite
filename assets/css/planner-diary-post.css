@@ -9,3 +9,57 @@
   margin: 0 auto;
   box-sizing: border-box;
 }
+
+/* 記事ページのタイトルエリア */
+article.page.h-entry:has(.diary-post) .page__inner-wrap > header {
+  margin-bottom: 28px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #dcecf1;
+}
+
+/* タイトル：紙のラベル風 */
+article.page.h-entry:has(.diary-post) h1.page__title {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 18px;
+  padding: 14px 18px;
+  background: #fff;
+  border: 1px solid #dcecf1;
+  border-radius: 4px;
+  box-shadow: 2px 3px 0 rgba(180, 210, 220, .12);
+}
+
+/* タイトル上のマスキングテープ */
+article.page.h-entry:has(.diary-post) h1.page__title::before {
+  content: "";
+  position: absolute;
+  top: -9px;
+  left: 22px;
+  width: 62px;
+  height: 17px;
+  background: rgba(226, 218, 178, .65);
+  transform: rotate(-4deg);
+  pointer-events: none;
+}
+
+/* タイトルリンク */
+article.page.h-entry:has(.diary-post) h1.page__title a {
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+}
+
+/* 日付ラベル */
+article.page.h-entry:has(.diary-post) .page__meta {
+  display: inline-block;
+  margin: 0;
+  padding: 7px 12px;
+  color: #7196a2;
+  background: #f5fafb;
+  border: 1px dashed #c9e0e7;
+  border-radius: 3px;
+  font-size: 12px;
+  letter-spacing: .04em;
+}
