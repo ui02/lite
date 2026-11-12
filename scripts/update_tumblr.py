@@ -47,9 +47,17 @@ def clean_text(value):
 def get_image(post_url):
     try:
         page = fetch(post_url).decode("utf-8", errors="replace")
+
+        print(f"Checking image: {post_url}")
+        print(f"og:image found: {'og:image' in page}")
+
         parser = ImageParser()
         parser.feed(page)
+
+        print(f"Image URL: {parser.image}")
+
         return parser.image
+
     except Exception as error:
         print(f"Image fetch failed: {post_url} ({error})")
         return None
