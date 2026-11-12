@@ -63,3 +63,52 @@ article.page.h-entry:has(.diary-post) .page__meta {
   font-size: 12px;
   letter-spacing: .04em;
 }
+
+
+/* =========================================================
+   DIARY POST / TAG LABELS
+   ========================================================= */
+
+/* タグエリア */
+article.page.h-entry:has(.diary-post) .page__taxonomy {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 28px 0 0;
+  padding: 14px 0 0;
+  border-top: 1px dashed #dcecf1;
+  font-size: 11px;
+}
+
+/* Tags の見出し */
+article.page.h-entry:has(.diary-post) .page__taxonomy strong {
+  color: #8aa8b1;
+  font-weight: 600;
+}
+
+/* タグ一覧 */
+article.page.h-entry:has(.diary-post) .page__taxonomy span[itemprop="keywords"] {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+/* タグの紙ラベル */
+article.page.h-entry:has(.diary-post) .page__taxonomy-item {
+  display: inline-block;
+  padding: 4px 10px;
+  color: #7196a2;
+  background: #f5fafb;
+  border: 1px solid #dcecf1;
+  border-radius: 3px;
+  font-size: 11px;
+  text-decoration: none;
+  transition: background .2s ease, color .2s ease;
+}
+
+/* ホバー */
+article.page.h-entry:has(.diary-post) .page__taxonomy-item:hover {
+  color: #568da0;
+  background: #eaf5f8;
+}
