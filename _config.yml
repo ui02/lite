@@ -100,7 +100,7 @@ defaults:
       share: true
       related: true
       show_date: true
-      classes: wide
+      classes: wide diary-post-page
   # _pages
   - scope:
       path: "_pages"
