@@ -204,3 +204,25 @@ body.diary-post-page .page__inner-wrap {
   width: 100%;
   box-sizing: border-box;
 }
+
+/* =========================================================
+   DIARY POST / TITLE & DATE ALIGNMENT
+   ========================================================= */
+
+/* タイトル・日付のエリア */
+body.diary-post-page .page__inner-wrap > header {
+  text-align: center;
+}
+
+/* タイトル */
+body.diary-post-page h1.page__title {
+  display: inline-block;
+  text-align: center;
+}
+
+/* 日付 */
+body.diary-post-page .page__meta {
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+}
