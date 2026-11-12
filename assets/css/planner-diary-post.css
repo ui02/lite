@@ -112,3 +112,58 @@ article.page.h-entry:has(.diary-post) .page__taxonomy-item:hover {
   color: #568da0;
   background: #eaf5f8;
 }
+
+
+/* =========================================================
+   DIARY POST / ARTICLE BODY
+   ========================================================= */
+
+/* 本文全体 */
+.diary-post {
+  color: #65777d;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: .025em;
+}
+
+/* 段落 */
+.diary-post p {
+  margin: 0 0 1.8em;
+}
+
+/* リンク */
+.diary-post a {
+  color: #65a4b9;
+  text-decoration-color: #c9e0e7;
+  text-underline-offset: 3px;
+}
+
+/* =========================================================
+   DIARY POST / IMAGE GALLERY
+   ========================================================= */
+
+/* 写真のまとまり */
+.diary-post .image-gallery {
+  margin: 2em auto;
+  padding: 10px;
+  box-sizing: border-box;
+  background: #fff;
+  border: 1px solid #e5edf0;
+  border-radius: 3px;
+  box-shadow: 2px 3px 8px rgba(120, 150, 160, .08);
+}
+
+/* 写真 */
+.diary-post .image-gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 1px;
+}
+
+/* 写真リンク */
+.diary-post .image-gallery a {
+  display: block;
+  line-height: 0;
+}
