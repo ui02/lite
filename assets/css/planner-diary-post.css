@@ -1,0 +1,11 @@
+/* =========================================================
+   IOLITE / DIARY POST
+   Individual article pages
+   ========================================================= */
+
+.diary-post {
+  width: 100%;
+  max-width: 780px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
