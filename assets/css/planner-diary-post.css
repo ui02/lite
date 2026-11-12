@@ -52,7 +52,7 @@ article.page.h-entry:has(.diary-post) h1.page__title a {
 }
 
 /* 日付ラベル */
-article.page.h-entry:has(.diary-post) .page__meta {
+article.page.h-entry:has(.diary-post) header .page__meta
   display: inline-block;
   margin: 0;
   padding: 7px 12px;
@@ -296,13 +296,31 @@ body.diary-post-page .page__share {
 }
 
 /* メタ情報を一列に並べる */
-body.diary-post-page footer.page__meta {
+body.diary-post-page article.page footer.page__meta {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: flex-start;
   gap: 8px;
 }
+
+/* 各項目の幅・余白をリセット */
+body.diary-post-page article.page footer.page__meta p {
+  display: inline-flex;
+  flex: 0 0 auto;
+  float: none;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+/* タグ・カテゴリー */
+body.diary-post-page article.page footer.page__meta span[itemprop="keywords"] {
+  display: inline-flex;
+  width: auto;
+}
+
 
 /* 各項目の幅を内容に合わせる */
 body.diary-post-page footer.page__meta p.page__taxonomy,
