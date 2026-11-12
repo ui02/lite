@@ -398,33 +398,3 @@ body.diary-post-page .pagination .pagination--pager {
   flex: 0 1 220px;
   text-align: center;
 }
-/* =========================================================
-   DIARY POST / HEADER TAXONOMY
-   ========================================================= */
-
-/* タイトル下のタグ・カテゴリー */
-body.diary-post-page article.page header .page__taxonomy {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 6px;
-  margin: 12px 0 0;
-  padding: 0;
-  border: 0;
-}
-
-/* タグ・カテゴリーの見出しは非表示 */
-body.diary-post-page article.page header .page__taxonomy strong {
-  display: none;
-}
-
-/* 投稿日は非表示 */
-body.diary-post-page article.page header .page__meta {
-  display: none;
-}
-
-/* フッター側のタグ・カテゴリー・投稿日を非表示 */
-body.diary-post-page article.page footer.page__meta {
-  display: none;
-}
