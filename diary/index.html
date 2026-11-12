@@ -7,14 +7,39 @@ title: DIARY
   <span class="date-label">MY DIARY</span>
 </div>
 
-<section class="tumblr-section">
+<section class="diary-section">
   <div class="section-heading">
     <span class="heading-mark">✧</span>
-    <h2>DIARY</h2>
+    <h2>RECENT ENTRIES</h2>
     <span class="heading-rule"></span>
   </div>
 
-  <p>My little diary.</p>
+  <div class="diary-entry-list">
+    {% assign diary_posts = site.posts | where_exp: "post", "post.published != false" | sort: "date" | reverse %}
+
+    {% for post in diary_posts limit: 5 %}
+      <a class="diary-entry" href="{{ post.url | relative_url }}">
+
+        {% if post.header.teaser %}
+          <img
+            class="diary-entry-thumb"
+            src="{{ post.header.teaser | relative_url }}"
+            alt=""
+            loading="lazy">
+        {% endif %}
+
+        <div class="diary-entry-info">
+          <span class="diary-entry-date">
+            {{ post.date | date: "%m.%d / %Y" }}
+          </span>
+          <span class="diary-entry-title">
+            {{ post.title }}
+          </span>
+        </div>
+
+      </a>
+    {% endfor %}
+  </div>
 </section>
 
 <div class="right-footer">
