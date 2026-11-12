@@ -379,3 +379,22 @@ body.diary-post-page .pagination .pagination--pager:hover {
 body.diary-post-page .pagination .pagination--pager.disabled {
   visibility: hidden;
 }
+/* =========================================================
+   DIARY POST / FOOTER ALIGNMENT
+   ========================================================= */
+
+/* タグ・カテゴリー・投稿日を中央に */
+body.diary-post-page article.page footer.page__meta {
+  justify-content: center;
+}
+
+/* Previous / Next ナビゲーションを中央に */
+body.diary-post-page .pagination {
+  justify-content: center;
+}
+
+/* Previous / Next ボタンの幅 */
+body.diary-post-page .pagination .pagination--pager {
+  flex: 0 1 220px;
+  text-align: center;
+}
