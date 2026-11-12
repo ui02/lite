@@ -167,3 +167,40 @@ article.page.h-entry:has(.diary-post) .page__taxonomy-item:hover {
   display: block;
   line-height: 0;
 }
+
+/* =========================================================
+   DIARY POST / THEME HEADER & SIDEBAR
+   ========================================================= */
+
+/* サイトヘッダーを非表示 */
+body.diary-post-page .masthead {
+  display: none;
+}
+
+/* プロフィールサイドバーを非表示 */
+body.diary-post-page .sidebar {
+  display: none;
+}
+
+/* 記事エリアを中央に配置 */
+body.diary-post-page #main {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 40px 24px;
+  box-sizing: border-box;
+}
+
+/* 記事本体 */
+body.diary-post-page article.page {
+  float: none;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* 記事内側 */
+body.diary-post-page .page__inner-wrap {
+  width: 100%;
+  box-sizing: border-box;
+}
