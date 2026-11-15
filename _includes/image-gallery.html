@@ -1,0 +1,17 @@
+{% assign base_folder = include.base | default: "/assets/images/posts" %}
+{% assign image_folder = base_folder | append: include.folder %}
+{% assign images = include.images | split: "," %}
+
+<figure class="image-gallery {{ include.layout }}" style="width: {{ include.width | default: '100%' }};">
+  {% for image in images %}
+    {% assign filename = image | strip %}
+    {% assign image_url = image_folder | append: "/" | append: filename | relative_url %}
+    <a href="{{ image_url }}">
+      <img src="{{ image_url }}" alt="">
+    </a>
+  {% endfor %}
+
+  {% if include.caption %}
+    <figcaption>{{ include.caption }}</figcaption>
+  {% endif %}
+</figure>
