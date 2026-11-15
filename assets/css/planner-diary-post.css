@@ -272,3 +272,15 @@ body.diary-post-page .diary-post-footer-bottom {
     font-size: 10px;
   }
 }
+
+/* =========================================================
+   NOTEBOOK PAGE OVERRIDE
+   個別記事ページは右ページを1カラムにする
+   ========================================================= */
+
+body.diary-post-page .page-right {
+  display: block;
+  grid-template-columns: none;
+  grid-template-rows: none;
+  gap: 0;
+}
