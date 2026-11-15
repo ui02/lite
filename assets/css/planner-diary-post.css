@@ -19,24 +19,6 @@ body.diary-post-page .diary-post-page {
   max-width: 780px;
   margin: 0 auto;
   padding: 0;
-  box-sizing: border-box;
-
-  color: var(--ink);
-  background:
-    repeating-linear-gradient(
-      to bottom,
-      transparent 0,
-      transparent 31px,
-      rgba(187, 226, 241, .20) 32px,
-      transparent 33px
-    ),
-    var(--paper);
-
-  border: 0px solid rgba(91, 158, 184, .28);
-  border-radius: 9px;
-  box-shadow:
-    0 8px 24px var(--shadow),
-    0 3px 8px rgba(67, 119, 139, .08);
 }
 
 /* =========================================================
