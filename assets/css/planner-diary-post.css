@@ -1,0 +1,439 @@
+/* =========================================================
+   IOLITE / DIARY POST
+   Individual article pages
+   ========================================================= */
+
+
+/* =========================================================
+   0. COMMON FONT & COLOR
+   共通フォント・BabyBlueカラー
+   ========================================================= */
+
+@font-face {
+  font-family: "Pecita";
+  src: url("../fonts/Pecita.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Holiday";
+  src: url("../fonts/Holiday.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --baby-blue: #bbe2f1;
+  --blue-deep: #5b9eb8;
+  --blue-ink: #397b96;
+  --blue-pale: #eaf7fb;
+  --paper: #fff;
+  --ink: #526a73;
+  --muted: #91aab2;
+  --line: #dceef4;
+  --shadow: rgba(67, 119, 139, .16);
+}
+
+/* =========================================================
+   PAGE BACKGROUND
+   ========================================================= */
+
+body.diary-post-page {
+  background-image: url("../images/background/53.gif");
+  background-size: auto;
+  background-position: top left;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+/* =========================================================
+   1. PAGE LAYOUT
+   ノート風のページ全体
+   ========================================================= */
+
+/* サイトヘッダーを非表示 */
+body.diary-post-page .masthead {
+  display: none;
+}
+
+/* プロフィールサイドバーを非表示 */
+body.diary-post-page .sidebar {
+  display: none;
+}
+
+/* ページ全体 */
+body.diary-post-page #main {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 40px 24px;
+  box-sizing: border-box;
+}
+
+/* 白いノート用紙 */
+body.diary-post-page article.page {
+  display: block;
+  float: none;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 38px 26px;
+  box-sizing: border-box;
+
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      transparent 0,
+      transparent 31px,
+      rgba(187, 226, 241, .20) 32px,
+      transparent 33px
+    ),
+    #fff;
+
+  border: 1px solid rgba(91, 158, 184, .28);
+  border-radius: 9px;
+  box-shadow:
+    0 22px 55px var(--shadow),
+    0 3px 8px rgba(67, 119, 139, .08);
+}
+
+/* 記事内側 */
+body.diary-post-page .page__inner-wrap {
+  display: block;
+  float: none;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* 本文エリア */
+body.diary-post-page .diary-post {
+  width: 100%;
+  max-width: 780px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   2. ARTICLE HEADER
+   タイトル・日付・タグ・カテゴリー
+   ========================================================= */
+
+/* タイトルエリア */
+body.diary-post-page article.page.h-entry .page__inner-wrap > header {
+  margin-bottom: 28px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid var(--line);
+  text-align: center;
+}
+
+/* タイトル */
+body.diary-post-page h1.page__title {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 18px;
+  padding: 14px 18px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  box-shadow: 2px 3px 0 rgba(180, 210, 220, .12);
+  text-align: center;
+}
+
+/* タイトル上のマスキングテープ */
+body.diary-post-page h1.page__title::before {
+  content: "";
+  position: absolute;
+  top: -9px;
+  left: 22px;
+  width: 62px;
+  height: 17px;
+  background: rgba(226, 218, 178, .65);
+  transform: rotate(-4deg);
+  pointer-events: none;
+}
+
+/* タイトルリンク */
+body.diary-post-page h1.page__title a {
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+}
+
+/* 日付・タグ・カテゴリー全体 */
+body.diary-post-page article.page .diary-post-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+}
+
+/* 各項目の配置 */
+body.diary-post-page article.page .diary-post-info p {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  width: auto;
+  float: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Tags / Categories の見出しを非表示 */
+body.diary-post-page .diary-post-info .page__taxonomy strong {
+  display: none;
+}
+
+/* タグ・カテゴリーの一覧 */
+body.diary-post-page .diary-post-info span[itemprop="keywords"] {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* タグ・カテゴリーのラベル */
+body.diary-post-page .diary-post-info .page__taxonomy-item {
+  display: inline-block;
+  margin: 0;
+  padding: 5px 11px;
+  color: var(--blue-deep);
+  background: var(--blue-pale);
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-decoration: none;
+  transition: background .2s ease, color .2s ease;
+}
+
+/* 投稿日のラベル */
+body.diary-post-page article.page .diary-post-info p.page__meta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 6px 22px;
+  color: var(--muted);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* タグ・カテゴリーのホバー */
+body.diary-post-page .diary-post-info .page__taxonomy-item:hover {
+  color: var(--blue-ink);
+  background: var(--blue-pale);
+  border-color: var(--baby-blue);
+}
+
+
+/* =========================================================
+   3. ARTICLE BODY
+   本文
+   ========================================================= */
+
+/* 本文全体 */
+body.diary-post-page .diary-post {
+  color: var(--ink);
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: .025em;
+}
+
+/* 段落 */
+body.diary-post-page .diary-post p {
+  margin: 0 0 1.8em;
+}
+
+/* 本文リンク */
+body.diary-post-page .diary-post a {
+  color: var(--blue-deep);
+  text-decoration-color: var(--baby-blue);
+  text-underline-offset: 3px;
+}
+
+
+/* =========================================================
+   4. IMAGE GALLERY
+   写真・画像ギャラリー
+   ========================================================= */
+
+/* 写真のまとまり */
+body.diary-post-page .diary-post .image-gallery {
+  margin: 2em auto;
+  padding: 10px;
+  box-sizing: border-box;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  box-shadow: 2px 3px 8px rgba(120, 150, 160, .08);
+}
+
+/* 写真 */
+body.diary-post-page .diary-post .image-gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 1px;
+}
+
+/* 写真リンク */
+body.diary-post-page .diary-post .image-gallery a {
+  display: block;
+  line-height: 0;
+}
+
+
+/* =========================================================
+   5. PREVIOUS & NEXT
+   前後の記事へのナビゲーション
+   ========================================================= */
+
+/* ナビゲーション全体 */
+body.diary-post-page .pagination {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 28px 0 10px;
+  padding: 0;
+  border: 0;
+}
+
+/* Previous / Next ボタン */
+body.diary-post-page .pagination .pagination--pager {
+  flex: 0 1 220px;
+  min-width: 0;
+  margin: 0;
+  padding: 7px 13px;
+  color: var(--muted);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  box-shadow: none;
+  font-size: 11px;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* ホバー */
+body.diary-post-page .pagination .pagination--pager:hover {
+  color: var(--blue-deep);
+  background: var(--blue-pale);
+  border-color: var(--baby-blue);
+}
+
+/* 次の記事がない場合 */
+body.diary-post-page .pagination .pagination--pager.disabled {
+  visibility: hidden;
+}
+
+
+/* =========================================================
+   6. FOOTER
+   オリジナルのノート風フッター
+   ========================================================= */
+
+/* SNSシェアボタンを非表示 */
+body.diary-post-page .page__share {
+  display: none;
+}
+
+/* Minimal Mistakes 標準フッターを非表示 */
+body.diary-post-page .page__footer {
+  display: none;
+}
+
+/* オリジナルフッター */
+body.diary-post-page .diary-post-footer {
+  display: block;
+  position: relative;
+  float: none;
+  clear: both;
+
+  width: 100%;
+  max-width: 780px;
+  min-width: 0;
+  margin: 32px auto 0;
+  padding: 12px 4px 4px;
+  box-sizing: border-box;
+
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  background: transparent;
+
+  font-family: "Caveat", "Zen Maru Gothic", sans-serif;
+  font-size: 11px;
+  letter-spacing: .08em;
+}
+
+/* 上段：コピーライトとページ番号 */
+body.diary-post-page .diary-post-footer-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 12px;
+}
+
+body.diary-post-page .diary-post-footer-top span {
+  display: inline-block;
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+body.diary-post-page .diary-post-footer-top span:last-child {
+  color: var(--blue-deep);
+  font-weight: 700;
+}
+
+/* 下段：Powered by */
+body.diary-post-page .diary-post-footer-bottom {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+  text-align: right;
+  font-size: 10px;
+  letter-spacing: .04em;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 600px) {
+  body.diary-post-page #main {
+    padding: 20px 12px;
+  }
+
+  body.diary-post-page article.page {
+    padding: 24px 17px 20px;
+  }
+
+  body.diary-post-page .pagination {
+    gap: 8px;
+  }
+
+  body.diary-post-page .pagination .pagination--pager {
+    flex-basis: 50%;
+    padding: 7px 8px;
+    font-size: 10px;
+  }
+}
