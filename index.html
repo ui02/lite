@@ -1,0 +1,152 @@
+---
+layout: notebook
+---
+
+  {% assign tumblr = site.data.tumblr %}
+
+
+        <div class="right-topline">
+          <time class="date-label" id="today-date"></time>
+          <!-- <span class="weather-label">☀ A GOOD DAY TO BE HERE</span> -->
+        </div>
+
+<!-- Tumblr: latest 3 posts + each post image -->
+<section class="tumblr-section">
+  <div class="section-heading">
+    <span class="heading-mark">
+      <img src="{{ '/assets/images/icon/cat01.png' | relative_url }}" alt="">
+    </span>
+    <h2>little thoughts</h2>
+    <span class="heading-rule"></span>
+  </div>
+
+  <!-- 本文3件 -->
+  <div class="tumblr-posts">
+    {% for post in tumblr.posts limit: 3 %}
+      <article class="tumblr-post">
+        <a class="tumblr-post-date"
+           href="{{ post.url }}"
+           target="_blank"
+           rel="noopener noreferrer">{{ post.date }}</a>
+        <div class="tumblr-post-text">{{ post.text | escape }}</div>
+      </article>
+    {% endfor %}
+  </div>
+
+  <!-- 画像3枚 + TODOメモ -->
+  <div class="tumblr-bottom-row">
+
+    <div class="tumblr-post-images">
+      {% for post in tumblr.posts limit: 3 %}
+        {% if post.image_url %}
+          <a class="tumblr-post-image"
+             href="{{ post.url }}"
+             target="_blank"
+             rel="noopener noreferrer">
+            <img src="{{ post.image_url }}" alt="" loading="lazy">
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <!-- TODO memo + decoration -->
+      <!-- TODO decoration -->
+    
+  </div>
+</section>
+
+        <!-- Camera with a photo in its screen -->
+        <section class="camera-area">
+<!-- 
+          <div class="camera-object">
+            <img class="camera-screen"
+                 src="{{ '/assets/images/screens/camera-photo.jpg' | relative_url }}"
+                 alt="">
+            <img class="camera-frame"
+                 src="{{ '/assets/images/objects/camera-frame.png' | relative_url }}"
+                 alt="">
+          </div>
+ -->
+    <!-- TODO memo + decoration -->
+    <div class="todo-wrap2">
+      <section class="todo-note">
+        <span class="todo-tape todo-tape-left"></span>
+        <span class="todo-tape todo-tape-right"></span>
+        <div class="todo-content">
+          <h2>I'm working on...</h2>
+          <ul>
+            <li>・ちまちまサイトづくり</li>
+            <li>・</li>
+            <li>・</li>
+          </ul>
+        </div>
+        <span class="todo-flower"></span>
+      </section>
+
+      <!-- TODO decoration -->
+      <img class="todo-decoration"
+           src="{{ '/assets/images/objects/102L.png' | relative_url }}"
+           alt="">
+    </div>
+        </section>
+
+        <!-- Handheld console with a photo in its screen -->
+        <section class="game-area">
+          <div class="game-object">
+            <img class="game-screen"
+                 src="{{ '/assets/images/screens/game-photo.jpg' | relative_url }}"
+                 alt="">
+            <img class="game-frame"
+                 src="{{ '/assets/images/objects/game-frame.png' | relative_url }}"
+                 alt="">
+          </div>
+        </section>
+
+        <!-- Banner links
+        <nav class="banner-links" aria-label="Banner links">
+          <a href="{{ '/planner/diary/' | relative_url }}">banner</a>
+          <a href="{{ '/planner/favorites/' | relative_url }}">banner</a>
+          <a href="{{ '/planner/gallery/' | relative_url }}">banner</a>
+        </nav>
+         -->
+
+        <div class="right-footer">
+          <span></span>
+          <span> 02 / 02</span>
+        </div>
+
+        <!-- Decorative stickers
+        <span class="scrap-sticker sticker-heart">♥</span>
+        <span class="scrap-sticker sticker-flower">✿</span> -->
+
+
+    <!-- ORIGINAL INDEX TABS -->
+    <nav class="index-tabs" aria-label="Notebook index">
+      <a class="index-tab tab-diary" href="{{ '/diary/' | relative_url }}">
+        DIARY <span>01</span>
+      </a>
+    <!-- 
+      <a class="index-tab tab-faves" href="{{ '/planner/favorites/' | relative_url }}">
+        FAVES <span>02</span>
+      </a>
+      <a class="index-tab tab-gallery" href="{{ '/planner/gallery/' | relative_url }}">
+        GALLERY <span>03</span>
+      </a>
+      <a class="index-tab tab-about" href="{{ '/planner/about/' | relative_url }}">
+        ABOUT <span>04</span>
+      </a>
+     -->
+    </nav>
+
+
+
+  <!-- Today's date -->
+  <script>
+    const today = new Intl.DateTimeFormat("en-US", {
+      timeZone: "Asia/Tokyo",
+      weekday: "long",
+      month: "long",
+      day: "2-digit"
+    }).format(new Date());
+    document.getElementById("today-date").textContent = today.toUpperCase();
+  </script>
