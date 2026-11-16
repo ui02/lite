@@ -275,8 +275,10 @@ body.diary-post-page .page-right {
 
 /* 記事ページでは画面中央固定を解除 */
 body.diary-post-page {
-  display: block;
+  display: grid;
+  place-items: start center;
   min-height: 100vh;
+  padding-top: 50px;
 }
 
 /* ノート全体の高さ制限を解除 */
