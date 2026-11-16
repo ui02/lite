@@ -18,7 +18,8 @@
 
   <!-- COMMON NAVIGATION -->
   <div class="left-bottom">
-
+  {% unless page.url == '/' %}
+    
     <!-- ARCHIVE -->
     <nav class="left-navigation archive-navigation" aria-label="Archive">
       <h2>ARCHIVE</h2>
@@ -49,6 +50,8 @@
       </ul>
     </nav>
 
+    {% endunless %}
+    
     <!-- INDEX ONLY -->
     {% if page.url == '/' %}
 
