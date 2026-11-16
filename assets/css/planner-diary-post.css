@@ -321,3 +321,12 @@ body.diary-post-page .notebook {
     overflow: visible;
   }
 }
+
+/* ページ中央の影を記事の高さに合わせる */
+body.diary-post-page .page-left {
+  box-shadow: none;
+}
+
+body.diary-post-page .page-right {
+  box-shadow: inset 7px 0 12px -13px #548da3;
+}
