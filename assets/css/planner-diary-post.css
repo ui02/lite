@@ -322,14 +322,17 @@ body.diary-post-page .notebook {
   }
 }
 
+
 /* ページ中央の影と境界線を記事の高さに合わせる */
 body.diary-post-page .page-left {
+  border-right: none;
   box-shadow: none;
-  border-right: 1px solid #d7eaf0;
 }
 
 body.diary-post-page .page-right {
+  border-left: 1px solid #d7eaf0;
   box-shadow:
     inset 7px 0 12px -13px #548da3;
 }
+
 
