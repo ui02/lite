@@ -266,3 +266,56 @@ body.diary-post-page .page-right {
   grid-template-rows: none;
   gap: 0;
 }
+
+
+/* =========================================================
+   NOTEBOOK PAGE
+   個別記事：記事の長さに合わせてノートを伸ばす
+   ========================================================= */
+
+/* 記事ページでは画面中央固定を解除 */
+body.diary-post-page {
+  display: block;
+  min-height: 100vh;
+}
+
+/* ノート全体の高さ制限を解除 */
+body.diary-post-page .notebook-wrap {
+  height: auto;
+  min-height: 0;
+  margin: 0 auto;
+}
+
+/* ノートもコンテンツに合わせて伸ばす */
+body.diary-post-page .notebook {
+  height: auto;
+  min-height: 0;
+  align-items: start;
+}
+
+/* =========================================================
+   LEFT PAGE
+   PCでは左ページを画面内に固定
+   ========================================================= */
+
+@media (min-width: 768px) {
+  body.diary-post-page .page-left {
+    position: sticky;
+    top: 22px;
+    align-self: start;
+    height: calc(100vh - 44px);
+    max-height: calc(100vh - 44px);
+    overflow-y: auto;
+  }
+}
+
+/* スマホでは固定を解除 */
+@media (max-width: 767px) {
+  body.diary-post-page .page-left {
+    position: relative;
+    top: auto;
+    height: auto;
+    max-height: none;
+    overflow: visible;
+  }
+}
