@@ -264,3 +264,99 @@
   display: block;
 }
 
+
+/* ========================================
+   LEFT PAGE: NAVIGATION & SHARED LAYOUT
+======================================== */
+
+/* 左ページの基本レイアウト */
+.page-left {
+  grid-template-rows: auto 220px minmax(0, 1fr) auto;
+}
+
+/* ナビゲーション・INDEX専用コンテンツの共通エリア */
+.left-bottom {
+  grid-row: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 4px;
+}
+
+/* ARCHIVE / CATEGORY / TAGS */
+.left-navigation {
+  margin: 0;
+  padding: 10px 14px;
+  border: 1px solid #dceef4;
+  background: rgba(255, 255, 255, 0.55);
+}
+
+.left-navigation h2 {
+  margin: 0 0 8px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: #548da3;
+}
+
+.left-navigation ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.left-navigation li {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.left-navigation a {
+  color: #526d78;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.left-navigation a:hover {
+  color: #82cddd;
+  text-decoration: underline;
+}
+
+/* UPDATE / Spotify：共通エリア内で配置 */
+.left-bottom .updates {
+  grid-row: auto;
+  flex: 0 0 auto;
+}
+
+.left-bottom .playlist {
+  grid-row: auto;
+  align-self: stretch;
+  margin-top: 0;
+}
+
+/* 左ページのフッター */
+.left-footer {
+  grid-row: 4;
+}
+
+/* スマートフォンでは自然に縦へ伸ばす */
+@media (max-width: 760px) {
+  .left-bottom {
+    grid-row: auto;
+    min-height: auto;
+    overflow: visible;
+    padding-right: 0;
+    flex: 0 0 auto;
+  }
+
+  .left-footer {
+    grid-row: auto;
+  }
+}
