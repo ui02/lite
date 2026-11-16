@@ -278,7 +278,7 @@ body.diary-post-page {
   display: grid;
   place-items: start center;
   min-height: 100vh;
-  padding-top: 50px;
+  padding-top: 25px;
 }
 
 /* ノート全体の高さ制限を解除 */
