@@ -336,3 +336,8 @@ body.diary-post-page .page-right {
 }
 
 
+/* 個別記事ページ：タブ位置をノート上端に固定 */
+body.diary-post-page .index-tabs {
+  top: 38px;
+}
+
