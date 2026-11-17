@@ -21,7 +21,12 @@ header:
 備忘録としていろいろ綴るけど、それは大したことじゃないので  
 最後の方の動画だけ見てもらえばOKです！！！  
 
-{% include figure popup=true image_path="/assets/images/posts/2026-06-15-sw8-the-invert/IMG_20260605_135327.jpg" %}
+{% include image-gallery.html
+  folder="/2026-06-15-sw8-the-invert"
+  layout=""
+  width="55%"
+  images="IMG_20260605_135327.jpg"
+%}
 
 ## 交通手段
 帰りの電車を心配して途中で帰るのは嫌だったので、走りなれない道は若干不安があったけど車で行くことに。  
