@@ -1,4 +1,5 @@
 ---
+layout: diary-post
 title: "Breakfast and Tiramisu"
 date: 2026-10-11
 published: true
@@ -7,8 +8,6 @@ categories:
   - DIARY
 tags:
   - Daily life
-sidebar:
-  nav: "posts"
 header:
   teaser: /assets/images/posts/2026-10-11-breakfast-and-tiramisu/thumb.jpg
 ---

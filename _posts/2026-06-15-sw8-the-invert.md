@@ -1,14 +1,13 @@
 ---
+layout: diary-post
 title: "SW8: The Trilogy I - THE INVERT"
 date: 2026-06-15
 published: true
 excerpt: ""
 categories:
-  - Blog
+  - DIARY
 tags:
   - SHINee
-sidebar:
-  nav: "posts"
 header:
   teaser: /assets/images/posts/2026-06-15-sw8-the-invert/thumb.jpg
 ---

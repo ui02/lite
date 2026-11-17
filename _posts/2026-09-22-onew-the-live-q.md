@@ -1,14 +1,13 @@
 ---
+layout: diary-post
 title: "[ONEW THE LIVE : Q] IN JAPAN"
 date: 2026-09-22
 published: true
 excerpt: "【レポ】◸ 2026 ONEW CONCERT [ONEW THE LIVE : Q] IN JAPAN ◿"
 categories:
-  - Blog
+  - DIARY
 tags:
   - SHINee
-sidebar:
-  nav: "posts"
 header:
   teaser: /assets/images/posts/2026-09-22-onew-the-live-q/thumb.jpg
 ---

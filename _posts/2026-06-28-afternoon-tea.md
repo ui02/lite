@@ -1,14 +1,13 @@
 ---
+layout: diary-post
 title: "初ヌン"
 date: 2026-06-28
 published: true
 excerpt: ""
 categories:
-  - Blog
+  - DIARY
 tags:
   - Daily life
-sidebar:
-  nav: "posts"
 header:
   teaser: /assets/images/posts/2026-06-28-afternoon-tea/thumb.jpg
 ---

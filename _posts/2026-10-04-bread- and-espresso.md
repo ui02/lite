@@ -1,14 +1,13 @@
 ---
+layout: diary-post
 title: "BREAD, ESPRESSO & CCMA"
 date: 2026-10-04
 published: true
 excerpt: "ようやく「パンとエスプレッソと」と千葉市美術館に行ってきた話。"
 categories:
-  - Blog
+  - DIARY
 tags:
   - Daily life
-sidebar:
-  nav: "posts"
 header:
   teaser: /assets/images/posts/2026-10-04-bread- and-espresso/thumb.jpg
 ---
