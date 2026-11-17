@@ -5,12 +5,11 @@ date: 2025-08-10
 published: true
 excerpt: ""
 categories:
-  - DIARY
+  - REPORT
 tags:
   - SHINee
-
 header:
-  teaser: /assets/images/posts/2025/2025-08-10-mean-on-sight/thumb.jpg
+  teaser: /assets/images/posts/2025-08-10-mean-on-sight/thumb.jpg
 ---
 ## MINHO PHOTO EXIBITION 「MEAN:on sight」 ＠メンズパルコ渋谷
 
