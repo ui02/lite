@@ -2,6 +2,7 @@
 layout: diary-post
 title: "A Little Test Post"
 date: 2026-11-15 12:00:00 +0900
+published: false
 categories:
   - diary
 tags:
