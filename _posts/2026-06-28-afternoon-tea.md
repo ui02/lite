@@ -21,7 +21,11 @@ header:
 私たちの隣で男性３人組がアフヌンしているのを見て、  
 私たちも次回はやりたいねってことで。  
 
-{% include figure popup=true image_path="/assets/images/posts/2026-06-28-afternoon-tea/IMG_20260620_140928.jpg" %}
+{% include image-gallery.html
+  folder="/2026-06-28-afternoon-tea"
+  layout=""
+  images="IMG_20260620_140928.jpg"
+%}
 
 毎月内容が変わるみたいなんだけど、  
 ６月は抹茶で、個人的はムースとテリーヌが特に美味しかった！  
@@ -31,6 +35,9 @@ header:
 
 2時間あっという間だった。。。また行きたいな～  
 
-{% include figure popup=true image_path="/assets/images/posts/2026-06-28-afternoon-tea/IMG_20260620_140934.jpg" %}
-
+{% include image-gallery.html
+  folder="/2026-06-28-afternoon-tea"
+  layout=""
+  images="IMG_20260620_140934.jpg"
+%}
 
