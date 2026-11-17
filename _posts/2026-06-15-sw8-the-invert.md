@@ -5,7 +5,7 @@ date: 2026-06-15
 published: true
 excerpt: ""
 categories:
-  - DIARY
+  - REPORT
 tags:
   - SHINee
 header:
