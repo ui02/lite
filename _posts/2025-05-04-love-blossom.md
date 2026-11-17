@@ -5,11 +5,11 @@ date: 2025-05-04
 published: true
 excerpt: ""
 categories:
-  - DIARY
+  - REPORT
 tags:
   - SHINee
 header:
-  teaser: /assets/images/posts/2025/2025-05-04-love-blossom/thumb.jpg
+  teaser: /assets/images/posts/2025-05-04-love-blossom/thumb.jpg
 ---
 ## TAEMIN POP-UP STORE「Love Blossom」with GGUNG DAENG ＠TOWER RECORDS 渋谷
 
