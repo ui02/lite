@@ -1,0 +1,52 @@
+---
+layout: notebook
+title: 2026 ARCHIVE
+---
+
+<div class="right-topline">
+  <span class="date-label">2026 ARCHIVE</span>
+</div>
+
+<section class="diary-section">
+  <div class="section-heading">
+    <span class="heading-mark">✧</span>
+    <h2>2026 ENTRIES</h2>
+    <span class="heading-rule"></span>
+  </div>
+
+  <div class="diary-entry-list">
+    {% assign archive_posts = site.posts | sort: "date" | reverse %}
+
+    {% for post in archive_posts %}
+      {% assign post_year = post.date | date: "%Y" %}
+
+      {% if post_year == "2026" and post.published != false %}
+        <a class="diary-entry" href="{{ post.url | relative_url }}">
+
+          {% if post.header.teaser %}
+            <img
+              class="diary-entry-thumb"
+              src="{{ post.header.teaser | relative_url }}"
+              alt=""
+              loading="lazy">
+          {% endif %}
+
+          <div class="diary-entry-info">
+            <span class="diary-entry-date">
+              {{ post.date | date: "%m.%d / %Y" }}
+            </span>
+            <span class="diary-entry-title">
+              {{ post.title }}
+            </span>
+          </div>
+
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+<div class="right-footer">
+  <span></span>
+  <span>2026 ARCHIVE</span>
+</div>
