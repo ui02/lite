@@ -4,7 +4,7 @@ date: 2026-10-11
 published: true
 excerpt: "珈琲屋さんのモーニングとティラミスの話。"
 categories:
-  - Blog
+  - DIARY
 tags:
   - Daily life
 sidebar:
