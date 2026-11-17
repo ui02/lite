@@ -9,11 +9,11 @@ categories:
 tags:
   - Daily life
 header:
-  teaser: /assets/images/posts/2026-10-04-bread- and-espresso/thumb.jpg
+  teaser: /assets/images/posts/2026-10-04-bread-and-espresso/thumb.jpg
 ---
 
 {% include image-gallery.html
-  folder="/2026-10-04-bread- and-espresso"
+  folder="/2026-10-04-bread-and-espresso"
   layout=""
   images="19-20261003_110652.jpg"
 %}
@@ -23,7 +23,7 @@ header:
 千葉公園ってほとんど来たことなかったけど、こんな素敵なところだったんだね…。天気は良いし適度に涼しくて最高の散歩日和だった🌞  
 
 {% include image-gallery.html
-  folder="/2026-10-04-bread- and-espresso"
+  folder="/2026-10-04-bread-and-espresso"
   layout="half"
   images="14-DSCF0566.jpg,15-DSCF0564.jpg"
 %}
@@ -37,12 +37,12 @@ header:
 モーニングのピーナツクリームとかフレンチトーストも気になったな。あとティータイムはティラミスパフェとかもあるみたいで、、またすぐ行きたい…。   
 
 {% include image-gallery.html
-  folder="/2026-10-04-bread- and-espresso"
+  folder="/2026-10-04-bread-and-espresso"
   layout=""
   images="17-DSCF0562.jpg"
 %}
 {% include image-gallery.html
-  folder="/2026-10-04-bread- and-espresso"
+  folder="/2026-10-04-bread-and-espresso"
   layout="half"
   images="18-DSCF0561.jpg,16-DSCF0563.jpg"
 %}
@@ -50,12 +50,12 @@ header:
 お店はもともと茶室のようなところで、畳の部屋にテーブルと椅子が置いてあって。照明がとくに可愛かった。  
 
 {% include image-gallery.html
-  folder="/2026-10-04-bread- and-espresso"
+  folder="/2026-10-04-bread-and-espresso"
   layout=""
   images="21-DSCF0559.jpg"
 %}
 {% include image-gallery.html
-  folder="/2026-10-04-bread- and-espresso"
+  folder="/2026-10-04-bread-and-espresso"
   layout=""
   images="20-DSCF0560.jpg"
 %}
@@ -63,12 +63,12 @@ header:
 そこからツリーハウスを見たり素敵な物件を見たりしながら、千葉神社を通りつつ千葉市美術館へ。  
 
 {% include image-gallery.html
-  folder="/2026-10-04-bread- and-espresso"
+  folder="/2026-10-04-bread-and-espresso"
   layout="half"
   images="12-DSCF0569.jpg,13-DSCF0568.jpg"
 %}
 {% include image-gallery.html
-  folder="/2026-10-04-bread- and-espresso"
+  folder="/2026-10-04-bread-and-espresso"
   layout=""
   images="11-DSCF0570.jpg"
 %}
@@ -76,7 +76,7 @@ header:
 イベントとかあまり気にせず行ったんだけど、千葉開府900年の特別展をやってて、千葉氏が信仰してきた妙見にちなんで月星にまつわる近世から現代のアートまでが展示されてた！  
 
 {% include image-gallery.html
-  folder="/2026-10-04-bread- and-espresso"
+  folder="/2026-10-04-bread-and-espresso"
   layout=""
   images="2-20261003_141739.jpg"
 %}
@@ -84,17 +84,17 @@ header:
 ところどころ写真OKだったんだけど、この壁画と美術館入り口付近のホールに展示されてた彫刻作品だけ撮ってきた。なんかこの彫刻たち、クセになりそう……とくにキメラちゃん。  
 
 {% include image-gallery.html
-  folder="/2026-10-04-bread- and-espresso"
+  folder="/2026-10-04-bread-and-espresso"
   layout="half"
   images="10-DSCF0571.jpg,9-DSCF0572.jpg"
 %}
 {% include image-gallery.html
-  folder="/2026-10-04-bread- and-espresso"
+  folder="/2026-10-04-bread-and-espresso"
   layout="third"
   images="8-DSCF0573.jpg,7-DSCF0575.jpg,5-DSCF0577.jpg"
 %}
 {% include image-gallery.html
-  folder="/2026-10-04-bread- and-espresso"
+  folder="/2026-10-04-bread-and-espresso"
   layout="half"
   images="1-20261003_151931.jpg,3-DSCF0579.jpg"
   caption="目が血走りアニマルズ。私のお気に入りは下の2体。"
