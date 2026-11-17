@@ -9,7 +9,7 @@ categories:
 tags:
   - Daily life
 header:
-  teaser: /assets/images/posts/2025/2025-05-01-golden-week/thumb.jpg
+  teaser: /assets/images/posts/2025-05-01-golden-week/thumb.jpg
 ---
 
 今年のGWは短い連休だった分、しっかり出かけてしっかり遊んだ。  
