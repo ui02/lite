@@ -1,0 +1,51 @@
+---
+layout: notebook
+title: REPORT
+permalink: /category/report/
+---
+
+<div class="right-topline">
+  <span class="date-label">REPORT</span>
+</div>
+
+<section class="diary-section">
+  <div class="section-heading">
+    <span class="heading-mark">✧</span>
+    <h2>REPORT ENTRIES</h2>
+    <span class="heading-rule"></span>
+  </div>
+
+  <div class="diary-entry-list">
+    {% assign archive_posts = site.posts | sort: "date" | reverse %}
+
+    {% for post in archive_posts %}
+      {% if post.published != false and post.categories contains "REPORT" %}
+        <a class="diary-entry" href="{{ post.url | relative_url }}">
+
+          {% if post.header.teaser %}
+            <img
+              class="diary-entry-thumb"
+              src="{{ post.header.teaser | relative_url }}"
+              alt=""
+              loading="lazy">
+          {% endif %}
+
+          <div class="diary-entry-info">
+            <span class="diary-entry-date">
+              {{ post.date | date: "%m.%d / %Y" }}
+            </span>
+            <span class="diary-entry-title">
+              {{ post.title }}
+            </span>
+          </div>
+
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+<div class="right-footer">
+  <span></span>
+  <span>REPORT</span>
+</div>
