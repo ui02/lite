@@ -98,13 +98,12 @@
 }
 
 .tumblr-post-text {
-  display: -webkit-box;
+  display: block;
   overflow: hidden;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   color: #647b83;
   font: 10px/1.45 "Caveat", "Zen Maru Gothic", sans-serif;
-  overflow-wrap: anywhere;
 }
 
 
