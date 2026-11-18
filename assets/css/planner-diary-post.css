@@ -341,3 +341,30 @@ body.diary-post-page .index-tabs {
   top: 38px;
 }
 
+
+
+/* 複数画像のレイアウト */
+body.diary-post-page .diary-post-content .image-gallery.third {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+body.diary-post-page .diary-post-content .image-gallery.half {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+/* 画像リンクの幅をグリッドに合わせる */
+body.diary-post-page .diary-post-content .image-gallery.third a,
+body.diary-post-page .diary-post-content .image-gallery.half a {
+  min-width: 0;
+}
+
+/* スマホでは3列を2列に */
+@media (max-width: 600px) {
+  body.diary-post-page .diary-post-content .image-gallery.third {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
