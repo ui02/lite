@@ -8,10 +8,9 @@
     {% assign image_url = image_folder | append: "/" | append: filename | relative_url %}
     <a href="{{ image_url }}">
       <img src="{{ image_url }}" alt="">
+      {% if forloop.last and include.caption %}
+        <span class="image-gallery-caption">{{ include.caption }}</span>
+      {% endif %}
     </a>
   {% endfor %}
-
-  {% if include.caption %}
-    <figcaption>{{ include.caption }}</figcaption>
-  {% endif %}
 </figure>
