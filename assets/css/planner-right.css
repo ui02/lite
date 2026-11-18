@@ -309,9 +309,9 @@
   grid-row: 3 / 5;
   align-self: end;
   justify-self: end;
-  width: min(150%, 367.5px);
-  height: 480px;
-  margin: 0 -52.5px -100px 0;
+  width: min(120%, 294px);
+  height: 384px;
+  margin: 0 -42px -80px 0;
   pointer-events: auto;
 }
 
