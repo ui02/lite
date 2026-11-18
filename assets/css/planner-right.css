@@ -205,7 +205,7 @@
   position: absolute;
   z-index: 20;
   top: -70px;
-  right: -50px;
+  right: -100px;
   width: 240px;
   height: auto;
   pointer-events: none;
