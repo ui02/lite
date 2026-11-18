@@ -24,7 +24,7 @@ header:
 {% include image-gallery.html
   folder="/2026-06-15-sw8-the-invert"
   layout=""
-  width="55%"
+  width=""
   images="IMG_20260605_135327.jpg"
 %}
 
@@ -44,27 +44,9 @@ header:
 
 {% include image-gallery.html
   folder="/2026-06-15-sw8-the-invert"
-  layout=""
-  width="43%"
-  images="Screenshot.jpg"
-%}{: .align-left}
-{% include image-gallery.html
-  folder="/2026-06-15-sw8-the-invert"
-  layout=""
-  width="55%"
-  images="IMG_20260605_122246.jpg"
-%}
-{% include image-gallery.html
-  folder="/2026-06-15-sw8-the-invert"
-  layout=""
-  width="55%"
-  images="IMG_20260605_122327.jpg"
-%}
-{% include image-gallery.html
-  folder="/2026-06-15-sw8-the-invert"
-  layout=""
-  width="55%"
-  images="IMG_20260605_122344.jpg"
+  layout="masonry"
+  width=""
+  images="Screenshot.jpg,IMG_20260605_122246.jpg,IMG_20260605_122327.jpg,IMG_20260605_122344.jpg"
 %}
 
 グッズ購入後はレストランでご飯食べた！ちゃんと美味しくてコーヒーたっぷりなのうれしかった！何よりも、ずっとSHINeeのMV流れてて最高の空間だった～。  
