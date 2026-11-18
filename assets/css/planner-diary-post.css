@@ -527,3 +527,29 @@ body.diary-post-page .diary-post-content .image-gallery.masonry a:nth-child(n+4)
     right: 12px;
   }
 }
+
+/* 複数画像：写真ごとに個別の枠を付ける */
+body.diary-post-page .diary-post-content .image-gallery.half,
+body.diary-post-page .diary-post-content .image-gallery.third {
+  padding: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+/* 個々の写真をカード状にする */
+body.diary-post-page .diary-post-content .image-gallery.half a,
+body.diary-post-page .diary-post-content .image-gallery.third a {
+  box-sizing: border-box;
+  padding: 10px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  box-shadow: 2px 3px 8px rgba(120, 150, 160, .08);
+}
+
+/* キャプションは写真の枠の外側に配置 */
+body.diary-post-page .diary-post-content .image-gallery.half figcaption,
+body.diary-post-page .diary-post-content .image-gallery.third figcaption {
+  grid-column: 1 / -1;
+}
