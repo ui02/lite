@@ -20,7 +20,7 @@ header:
 
 {% include image-gallery.html
   folder="/2025-05-01-golden-week"
-  layout=""
+  layout="half"
   images="IMG_20250429_123652.jpg,IMG_20250429_213841.jpg,IMG_20250506_114011.jpg,IMG_20250506_113722.jpg,IMG_20250426_135912.jpg,IMG_20250506_123827.jpg"
 %}
 
