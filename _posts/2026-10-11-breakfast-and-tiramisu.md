@@ -31,5 +31,6 @@ header:
 {% include image-gallery.html
   folder="/2026-10-11-breakfast-and-tiramisu"
   layout=""
+  width="50%"
   images="17-20261007_165227.jpg"
 %}
