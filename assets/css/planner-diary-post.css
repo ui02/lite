@@ -342,6 +342,9 @@ body.diary-post-page .index-tabs {
 }
 
 
+/* =========================================================
+   記事内の画像表示
+   ========================================================= */
 
 /* 複数画像のレイアウト */
 body.diary-post-page .diary-post-content .image-gallery.third {
