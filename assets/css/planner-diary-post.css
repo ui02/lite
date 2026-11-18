@@ -550,9 +550,12 @@ body.diary-post-page .diary-post-content .image-gallery.masonry a {
   box-shadow: 2px 3px 8px rgba(120, 150, 160, .08);
 }
 
-/* キャプションは写真の枠の外側に配置 */
-body.diary-post-page .diary-post-content .image-gallery.half figcaption,
-body.diary-post-page .diary-post-content .image-gallery.third figcaption,
-body.diary-post-page .diary-post-content .image-gallery.masonry figcaption {
-  grid-column: 1 / -1;
+/* 写真ごとの枠内にキャプションを表示 */
+body.diary-post-page .diary-post-content .image-gallery .image-gallery-caption {
+  display: block;
+  padding-top: 8px;
+  color: var(--text-color);
+  font-size: 0.85em;
+  line-height: 1.6;
+  text-align: center;
 }
