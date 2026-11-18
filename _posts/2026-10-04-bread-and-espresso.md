@@ -91,7 +91,7 @@ header:
 {% include image-gallery.html
   folder="/2026-10-04-bread-and-espresso"
   layout="masonry"
-  images="8-DSCF0573.jpg,7-DSCF0575.jpg,5-DSCF0577.jpg"
+  images="5-DSCF0577.jpg,8-DSCF0573.jpg,7-DSCF0575.jpg"
 %}
 {% include image-gallery.html
   folder="/2026-10-04-bread-and-espresso"
