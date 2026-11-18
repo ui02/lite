@@ -29,8 +29,13 @@ GW、テミンの愛猫クン＆デンのポップアップがあったので行
 
 {% include image-gallery.html
   folder="/2025-05-04-love-blossom"
+  layout=""
+  images="IMG_20250504_141654.jpg"
+%}
+{% include image-gallery.html
+  folder="/2025-05-04-love-blossom"
   layout="half"
-  images="IMG_20250504_141654.jpg,IMG_20250504_141907.jpg,IMG_20250504_142408.jpg,IMG_20250504_142428.jpg,IMG_20250504_142433.jpg"
+  images="IMG_20250504_141907.jpg,IMG_20250504_142408.jpg,IMG_20250504_142428.jpg,IMG_20250504_142433.jpg"
 %}
 
 セーブしつつ、いろいろ買ったあと… 久々に新大久保に行ってミナリサムギョプサルを食べた。  
