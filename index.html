@@ -48,52 +48,56 @@ layout: notebook
         {% endif %}
       {% endfor %}
     </div>
-
-    <!-- TODO memo + decoration -->
-      <!-- TODO decoration -->
     
   </div>
 </section>
 
-        <!-- Camera with a photo in its screen -->
-        <section class="camera-area">
-            <a class="camera-object"
-              href="https://yurilom.tumblr.com/"
-              target="_blank"
-              aria-label="view（PHOTO GALLERY）">
-            <img class="camera-screen"
-                 src="{{ '/assets/images/screens/camera-photo.jpg' | relative_url }}"
-                 alt="">
-            <img class="camera-frame"
-                 src="{{ '/assets/images/objects/camera-frame.png' | relative_url }}"
-                 alt="">
-          </a>
-        </section>
 
-    <!-- TODO memo + decoration -->
-    <div class="todo-wrap2">
-      <section class="todo-note">
-        <span class="todo-tape todo-tape-left"></span>
-        <span class="todo-tape todo-tape-right"></span>
-        <div class="todo-content">
-          <h2>I'm working on...</h2>
-          <ul>
-            <li>・ちまちまサイトづくり</li>
-            <li>・絶賛退職トラブル見舞われ中</li>
-            <li>・「Timberborn」プレイ中</li>
-          </ul>
-        </div>
-        <span class="todo-flower"></span>
-      </section>
+<!-- Left column: TODO memo + camera -->
+<div class="left-feature-column">
 
-      <!-- TODO decoration -->
-      <img class="todo-decoration"
-           src="{{ '/assets/images/objects/102L.png' | relative_url }}"
+  <!-- TODO memo + decoration -->
+  <div class="todo-wrap2">
+    <section class="todo-note">
+      <span class="todo-tape todo-tape-left"></span>
+      <span class="todo-tape todo-tape-right"></span>
+
+      <div class="todo-content">
+        <h2>I'm working on...</h2>
+        <ul>
+          <li>・ちまちまサイトづくり</li>
+          <li>・絶賛退職トラブル見舞われ中</li>
+          <li>・「Timberborn」プレイ中</li>
+        </ul>
+      </div>
+
+      <span class="todo-flower"></span>
+    </section>
+
+    <img class="todo-decoration"
+         src="{{ '/assets/images/objects/102L.png' | relative_url }}"
+         alt="">
+  </div>
+
+  <!-- Camera: PHOTO GALLERY link -->
+  <section class="camera-area">
+    <a class="camera-object"
+       href="https://yurilom.tumblr.com/"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="view（PHOTO GALLERY）">
+      <img class="camera-screen"
+           src="{{ '/assets/images/screens/camera-photo.jpg' | relative_url }}"
            alt="">
-    </div>
-        </section>
+      <img class="camera-frame"
+           src="{{ '/assets/images/objects/camera-frame.png' | relative_url }}"
+           alt="">
+    </a>
+  </section>
 
-<!-- Handheld console with a photo in its screen -->
+</div>
+
+<!-- Right column: GAME screenshots link -->
 <section class="game-area">
   <a class="game-object"
      href="https://ylpyz.tumblr.com/"
