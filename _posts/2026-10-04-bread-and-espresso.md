@@ -38,8 +38,13 @@ header:
 
 {% include image-gallery.html
   folder="/2026-10-04-bread-and-espresso"
-  layout="masonry"
-  images="17-DSCF0562.jpg,18-DSCF0561.jpg,16-DSCF0563.jpg"
+  layout=""
+  images="17-DSCF0562.jpg"
+%}
+{% include image-gallery.html
+  folder="/2026-10-04-bread-and-espresso"
+  layout="half"
+  images="18-DSCF0561.jpg,16-DSCF0563.jpg"
 %}
 
 お店はもともと茶室のようなところで、畳の部屋にテーブルと椅子が置いてあって。照明がとくに可愛かった。  
@@ -85,7 +90,7 @@ header:
 %}
 {% include image-gallery.html
   folder="/2026-10-04-bread-and-espresso"
-  layout="third"
+  layout="masonry"
   images="8-DSCF0573.jpg,7-DSCF0575.jpg,5-DSCF0577.jpg"
 %}
 {% include image-gallery.html
