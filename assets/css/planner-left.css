@@ -111,8 +111,8 @@
   background:
     linear-gradient(
       110deg,
-      rgba(245, 251, 253, .82),
-      rgba(255, 255, 255, .72) 75%
+      rgba(245, 251, 253, .85),
+      rgba(255, 255, 255, .75) 75%
     ),
     url("../images/background/bg01.jpg");
   background-size: cover;
