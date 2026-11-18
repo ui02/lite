@@ -67,9 +67,11 @@
 }
 
 .tumblr-post {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
   width: 100%;
   min-width: 0;
-  box-sizing: border-box;
 }
 
 .tumblr-post + .tumblr-post {
@@ -79,12 +81,9 @@
 }
 
 .tumblr-post-date {
-  display: inline-block;
-  margin-top: 5px;
-  color: #65a4b9;
-  font: 700 9px "Caveat", "Zen Maru Gothic", sans-serif;
-  letter-spacing: .08em;
-  text-decoration: none;
+  flex: 0 0 85px;
+  margin-top: 0;
+  white-space: nowrap;
 }
 
 .tumblr-post-date:hover {
@@ -98,14 +97,15 @@
 }
 
 .tumblr-post-text {
-  display: block;
+  flex: 1;
+  min-width: 0;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   color: #647b83;
   font: 10px/1.45 "Caveat", "Zen Maru Gothic", sans-serif;
+  overflow-wrap: normal;
 }
-
 
 /* =========================================================
    10. 右ページ：Tumblr画像
