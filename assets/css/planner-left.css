@@ -281,8 +281,7 @@
   flex-direction: column;
   gap: 12px;
   min-height: 0;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: visible;
   padding-right: 4px;
 }
 
