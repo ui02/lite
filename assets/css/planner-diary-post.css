@@ -559,22 +559,3 @@ body.diary-post-page .diary-post-content .image-gallery .image-gallery-caption {
   line-height: 1.6;
   text-align: center;
 }
-
-/* half・third：写真の表示サイズを統一 */
-body.diary-post-page .diary-post-content .image-gallery.half a,
-body.diary-post-page .diary-post-content .image-gallery.third a {
-  width: 100%;
-  height: 220px;
-  overflow: hidden;
-  display: block;
-}
-
-body.diary-post-page .diary-post-content .image-gallery.half a img,
-body.diary-post-page .diary-post-content .image-gallery.third a img {
-  display: block;
-  width: 100%;
-  height: 220px;
-  max-width: none;
-  object-fit: cover;
-  object-position: center;
-}
