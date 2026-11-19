@@ -89,18 +89,23 @@ header:
 
 ## 帰路
 大阪からさんふらわ号に乗船。  
+{% include image-gallery.html
+  folder="/2018-12-08-sekigahara"
+  layout=""
+  images="828837954942386176_18.jpg"
+  caption=""
+%}
 
 船内ではWi-Fiが繋がらなかったので、ゆっくり読書したり、関ヶ原の写真眺めて思い出に浸ってた☺️  
-お風呂入って夜９時前には就寝。６時前には起きたけど悪天候で朝焼けも見れず残念！  
-寝不足続きだったからか、ツーリスト部屋でもよく眠れた〜。  
+お風呂入って夜９時前には就寝。６時前には起きたけど悪天候で朝焼けも見れず残念！    
 
 朝７時頃、別府に到着。約12時間の船旅でした〜。  
 
 {% include image-gallery.html
   folder="/2018-12-08-sekigahara"
   layout="half"
-  images="828837954942386176_18.jpg,828837954942386176_19.jpg"
-  caption=""
+  images="828837954942386176_19.jpg"
+  caption="寝不足続きだったからか、ツーリスト部屋でもよく眠れた"
 %}
 
 そこからキャリーケース持ったままバスに乗り込み、みょうばん温泉へ。  
@@ -111,6 +116,12 @@ header:
 {% include image-gallery.html
   folder="/2018-12-08-sekigahara"
   layout="half"
-  images="828837954942386176_20.jpg,828837954942386176_21.jpg"
+  images="828837954942386176_20.jpg"
+  caption=""
+%}
+{% include image-gallery.html
+  folder="/2018-12-08-sekigahara"
+  layout=""
+  images="828837954942386176_21.jpg"
   caption=""
 %}
