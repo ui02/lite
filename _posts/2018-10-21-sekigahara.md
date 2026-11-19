@@ -29,7 +29,7 @@ header:
 %}
 {% include image-gallery.html
   folder="/2018-10-21-sekigahara"
-  layout="third"
+  layout=""
   images="828837090589556736_5.jpg"
   width="50%"
   caption="リハから部活みたいで楽しかった🥺"
