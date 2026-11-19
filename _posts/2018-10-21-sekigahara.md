@@ -1,7 +1,8 @@
 ---
 layout: diary-post
 title: "関ケ原合戦祭り 2018"
-date: 2026-10-17
+date: 2018-10-21
+lastmod: 2026-11-19
 published: true
 categories:
   - TRAVELOG
@@ -10,13 +11,14 @@ tags:
 header:
   teaser: /assets/images/posts/2018-10-21-sekigahara/thumb.jpg
 ---
+関ケ原合戦祭り、井伊の赤備えとして絵巻参加してきた～！！  
 {% include image-gallery.html
   folder="/2018-10-21-sekigahara"
   layout=""
   images="828837090589556736_0.jpg"
 %}
 
-関ケ原合戦祭り、井伊の赤備えとして絵巻参加してきた～！！  
+## 前日リハ
 
 朝、ゆみあさんと米原で合流。荷物を預けてから大谷吉継の首塚へご挨拶に行き（東軍なのにw）、駅前のおしゃれカフェ、隣町パーラーで朝ごはん！仕事の事とかこれからの事とか、たっぷり語って。初めての絵巻参戦に、わくわくそわそわしながら関ケ原へ。  
 
@@ -32,6 +34,8 @@ header:
   layout="third"
   images="828837090589556736_3.jpg,828837090589556736_4.jpg,828837090589556736_5.jpg"
 %}
+
+## 合戦当日
 
 いざ出陣！！ 素敵な写真撮ってもらえて嬉しい😊  
 
@@ -51,7 +55,7 @@ header:
 {% include image-gallery.html
   folder="/2018-10-21-sekigahara"
   layout=""
-  images="9-DSCF0600.jpg"
+  images="828837090589556736_10.jpg"
   caption="島左近陣地！撮っちゃうよね。"
 %}
 
@@ -59,14 +63,11 @@ header:
 
 貴重な体験でした～～。めちゃくちゃ楽しかった～～！　　
 
-
-##戦を終えて
-
+## 戦を終えて
 {% include image-gallery.html
   folder="/2018-10-21-sekigahara"
   layout=""
   images="828837090589556736_11.jpg"
-  caption="島左近陣地！撮っちゃうよね。"
 %}
 
 あっという間の２日間で、ゆみあさんとセンチメンタルになってた…。  
