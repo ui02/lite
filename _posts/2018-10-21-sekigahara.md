@@ -52,18 +52,18 @@ header:
 {% include image-gallery.html
   folder="/2018-10-21-sekigahara"
   layout="half"
-  images="4-IMG_20181021_093819.jpg,3-IMG_20181021_093852.jpg"
+  images="3-IMG_20181021_093852.jpg,4-IMG_20181021_093819.jpg"
   caption="甲冑が隊ごとに並べられていてかっこよかった"
 %}
 {% include image-gallery.html
   folder="/2018-10-21-sekigahara"
   layout="third"
   images="828837090589556736_6.jpg,828837090589556736_7.jpg,828837090589556736_8.jpg"
-  caption="素敵な写真撮ってもらえて嬉しい😊"
+  caption="撮ってくださった方ありがとうございました"
 %}
 
-甲冑着て練り歩いたり、パフォーマンスしたり。（省きすぎ。<small>気になる方はYouTubeに動画あったので探してください。私は探さないでください</small>） 
-途中のバス移動、絵面がおもしろかった🤣(外から撮った写真ないだろうか…)  
+甲冑着て練り歩いたり、パフォーマンスしたり。（省きすぎ。<span style="font-size: 50%;">気になる方はYouTubeに動画あったので探してください。私は探さないでください</span>）  
+途中のバス移動は絵面がおもしろかった🤣(外から撮った写真ないだろうか…)  
 
 {% include image-gallery.html
   folder="/2018-10-21-sekigahara"
