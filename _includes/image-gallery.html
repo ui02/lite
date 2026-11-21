@@ -1,5 +1,6 @@
-{% assign base_folder = include.base | default: "/assets/images/posts" %}
-{% assign image_folder = base_folder | append: include.folder %}
+{% assign base_folder = include.base | default: "/assets/images" %}
+{% assign notebook = page.collection | default: "posts" %}
+{% assign image_folder = base_folder | append: "/" | append: notebook | append: include.folder %}
 {% assign images = include.images | split: "," %}
 
 <figure class="image-gallery {{ include.layout }}" style="width: {{ include.width | default: '100%' }};">
