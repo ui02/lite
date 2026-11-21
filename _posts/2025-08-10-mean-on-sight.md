@@ -2,7 +2,7 @@
 layout: diary-post
 title: "MEAN:on sight"
 date: 2025-08-10
-lastmod:2026-11-17
+lastmod: 2026-11-17
 published: true
 excerpt: ""
 categories:
