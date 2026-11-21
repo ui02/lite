@@ -10,7 +10,7 @@ categories:
 tags:
   - Daily life
 header:
-  teaser: /assets/images/posts/2026-06-28-afternoon-tea/thumb.jpg
+  teaser: /assets/images/diary/2026-06-28-afternoon-tea/thumb.jpg
 ---
 
 先週末、友達と初アフターヌーンティーしてきた～！  
