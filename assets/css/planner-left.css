@@ -114,7 +114,7 @@
       rgba(245, 251, 253, .85),
       rgba(255, 255, 255, .75) 75%
     ),
-    url("../images/background/bg01.jpg");
+    url("../images/bg01.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
