@@ -65,6 +65,9 @@
   font: 700 10px "Caveat", "Zen Maru Gothic", sans-serif;
   letter-spacing: .08em;
 }
+.updated-date {
+  font-weight: 400;
+}
 
 /* 記事タイトル */
 .diary-entry-title {
