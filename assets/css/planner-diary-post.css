@@ -559,3 +559,13 @@ body.diary-post-page .diary-post-content .image-gallery .image-gallery-caption {
   line-height: 1.6;
   text-align: center;
 }
+
+/* 日付横並び*/
+.diary-post-dates {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px 16px;
+  color: #65a4b9;
+  font-size: 11px;
+  letter-spacing: .06em;
+}
