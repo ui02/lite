@@ -21,7 +21,7 @@
   {% unless page.url == '/' %}
 
     <nav class="left-navigation">
-      <h2>◎DAILY LIFE</h2>
+      <h2>◎<a href="{{ '/category/diary/' | relative_url }}">DIARY</a></h2>
       <ul>
         <li><a href="{{ '/archive/2026/' | relative_url }}">2026</a></li>
         <li><a href="{{ '/archive/2025/' | relative_url }}">2025</a></li>
@@ -31,13 +31,14 @@
       
     </nav>
     <nav class="left-navigation">
-      <h2>◎REPORT</h2>
+      <h2>◎<a href="{{ '/category/stanlog/' | relative_url }}">STAN LOG</a></h2>
       <ul>
-        <li><a href="{{ '/category/report/' | relative_url }}">STAN LOG</a>
-        (<a href="{{ '/tag/shinee/' | relative_url }}">SHINee</a> / <a href="{{ '/tag/txt/' | relative_url }}">TXT</a>)</li>
+        <li><a href="{{ '/tag/shinee/' | relative_url }}">SHINee</a></li>
+        <li><a href="{{ '/tag/txt/' | relative_url }}">TXT</a></li>
       </ul>
       <ul>
-        <li><a href="{{ '/category/travelog/' | relative_url }}">TRAVELOG</a></li>
+      <h2>◎<a href="{{ '/category/travelog/' | relative_url }}">TRAVELOG</a></h2>
+        <li></li>
       </ul>
     </nav>
     
