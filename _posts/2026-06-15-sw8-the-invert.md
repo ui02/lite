@@ -2,6 +2,7 @@
 layout: diary-post
 title: "SW8: The Trilogy I - THE INVERT"
 date: 2026-06-15
+lastmod:2026-11-18
 published: true
 excerpt: ""
 categories:
