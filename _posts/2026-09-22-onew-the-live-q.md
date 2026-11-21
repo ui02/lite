@@ -2,6 +2,7 @@
 layout: diary-post
 title: "[ONEW THE LIVE : Q] IN JAPAN"
 date: 2026-09-22
+lastmod:2026-11-17
 published: true
 excerpt: "◸ 2026 ONEW CONCERT [ONEW THE LIVE : Q] IN JAPAN ◿"
 categories:
