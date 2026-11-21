@@ -2,7 +2,7 @@
 layout: diary-post
 title: "初ヌン"
 date: 2026-06-28
-lastmod:2026-11-17
+lastmod: 2026-11-17
 published: true
 excerpt: ""
 categories:
