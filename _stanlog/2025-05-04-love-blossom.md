@@ -6,11 +6,11 @@ lastmod: 2026-11-18
 published: true
 excerpt: ""
 categories:
-  - REPORT
+  - STANLOG
 tags:
   - SHINee
 header:
-  teaser: /assets/images/posts/2025-05-04-love-blossom/thumb.jpg
+  teaser: /assets/images/stanlog/2025-05-04-love-blossom/thumb.jpg
 ---
 ## TAEMIN POP-UP STORE「Love Blossom」with GGUNG DAENG ＠TOWER RECORDS 渋谷
 
