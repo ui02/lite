@@ -10,7 +10,7 @@ categories:
 tags:
   - Daily life
 header:
-  teaser: /assets/images/posts/2026-10-04-bread-and-espresso/thumb.jpg
+  teaser: /assets/images/diary/2026-10-04-bread-and-espresso/thumb.jpg
 ---
 
 {% include image-gallery.html
