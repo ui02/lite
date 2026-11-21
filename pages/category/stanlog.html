@@ -4,14 +4,10 @@ title: REPORT
 permalink: /category/report/
 ---
 
-<div class="right-topline">
-  <span class="date-label">REPORT</span>
-</div>
-
 <section class="diary-section">
   <div class="section-heading">
     <span class="heading-mark">✧</span>
-    <h2>REPORT ENTRIES</h2>
+    <h2>STAN LOG ENTRIES</h2>
     <span class="heading-rule"></span>
   </div>
 
@@ -32,7 +28,7 @@ permalink: /category/report/
 
           <div class="diary-entry-info">
             <span class="diary-entry-date">
-              {{ post.date | date: "%m.%d / %Y" }}
+              <span class="diary-entry-date">{{ post.date | date: "%Y.%m.%d" }}{% if post.lastmod %} <span class="updated-date">(updated: {{ post.lastmod | date: "%Y.%m.%d" }})</span>{% endif %}</span>
             </span>
             <span class="diary-entry-title">
               {{ post.title }}
@@ -47,5 +43,5 @@ permalink: /category/report/
 
 <div class="right-footer">
   <span></span>
-  <span>REPORT</span>
+  <span>STAN LOG</span>
 </div>
