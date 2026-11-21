@@ -9,7 +9,7 @@ categories:
 tags:
   - event
 header:
-  teaser: /assets/images/posts/2018-12-08-sekigahara/thumb.jpg
+  teaser: /assets/images/travelog/2018-12-08-sekigahara/thumb.jpg
 ---
 
 ## 忘年会
