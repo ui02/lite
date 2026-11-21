@@ -2,7 +2,7 @@
 layout: diary-post
 title: "BREAD, ESPRESSO & CCMA"
 date: 2026-10-04
-lastmod:2026-11-18
+lastmod: 2026-11-18
 published: true
 excerpt: "ようやく「パンとエスプレッソと」と千葉市美術館に行ってきた話。"
 categories:
