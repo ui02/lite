@@ -36,11 +36,7 @@ title: DIARY
         <div class="diary-entry-info">
 
           <span class="diary-entry-date">
-            DATE: {{ post.date | date: "%m.%d / %Y" }}
-          </span>
-
-          <span class="diary-entry-lastmod">
-            LASTMOD: {{ post.lastmod | date: "%m.%d / %Y" }}
+            DATE: {{ post.date | date: "%Y.%m.%d" }} (LASTMOD: {{ post.lastmod | date: "%Y.%m.%d" }})
           </span>
 
           <span class="diary-entry-title">
