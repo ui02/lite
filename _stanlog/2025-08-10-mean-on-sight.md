@@ -6,11 +6,11 @@ lastmod: 2026-11-17
 published: true
 excerpt: ""
 categories:
-  - STAN LOG
+  - STANLOG
 tags:
   - SHINee
 header:
-  teaser: /assets/images/posts/2025-08-10-mean-on-sight/thumb.jpg
+  teaser: /assets/images/stanlog/2025-08-10-mean-on-sight/thumb.jpg
 ---
 ## MINHO PHOTO EXIBITION 「MEAN:on sight」 ＠メンズパルコ渋谷
 
