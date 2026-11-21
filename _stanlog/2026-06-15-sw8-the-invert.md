@@ -6,11 +6,11 @@ lastmod: 2026-11-18
 published: true
 excerpt: ""
 categories:
-  - STAN LOG
+  - STANLOG
 tags:
   - SHINee
 header:
-  teaser: /assets/images/posts/2026-06-15-sw8-the-invert/thumb.jpg
+  teaser: /assets/images/stanlog/2026-06-15-sw8-the-invert/thumb.jpg
 ---
 ## The Trilogy I - 2026 SHINee WORLD VIII : [THE INVERT]＠ベルーナドーム
 
