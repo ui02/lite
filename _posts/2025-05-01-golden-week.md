@@ -2,6 +2,7 @@
 layout: diary-post
 title: "しっかり遊んだGW"
 date: 2025-05-01
+lastmod:2026-11-18
 published: true
 excerpt: ""
 categories:
