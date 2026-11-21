@@ -22,7 +22,7 @@ title: DIARY
       | reverse
     %}
 
-    {% for post in diary_posts limit: 7 %}
+    {% for post in diary_posts limit: 6 %}
       <a class="diary-entry" href="{{ post.url | relative_url }}">
 
         {% if post.header.teaser %}
