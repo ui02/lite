@@ -175,7 +175,7 @@ body.notebook-page a:visited {
 .updates-title h2 {
   margin: 0;
   color: var(--blue-ink);
-  font: 700 13px "Holiday", serif; /* Pecita */
+  font: 700 13px "Pecita", serif; /* Pecita */
   letter-spacing: .08em;
 }
 
