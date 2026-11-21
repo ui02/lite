@@ -12,7 +12,7 @@ permalink: /travelog/
   </div>
 
   <div class="diary-entry-list">
-    {% assign travel_posts = site.posts
+    {% assign travel_posts = site.travelog
       | where_exp: "post", "post.published != false"
       | where_exp: "post", "post.categories contains 'TRAVELOG'"
       | sort: "lastmod"
