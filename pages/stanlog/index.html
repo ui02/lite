@@ -12,7 +12,7 @@ permalink: /stanlog/
   </div>
 
   <div class="diary-entry-list">
-    {% assign stan_posts = site.posts
+    {% assign stan_posts = site.stanlog
       | where_exp: "post", "post.published != false"
       | where_exp: "post", "post.categories contains 'STANLOG'"
       | sort: "lastmod"
