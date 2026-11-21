@@ -13,7 +13,10 @@ permalink: /:categories/:year/:month/:day/:title/
 collections:
   diary:
     output: true
+    permalink: /diary/:name/
   stanlog:
     output: true
+    permalink: /stanlog/:name/
   travelog:
     output: true
+    permalink: /travelog/:name/
