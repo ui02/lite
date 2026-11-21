@@ -141,11 +141,11 @@
 
 .updates-icon {
   color: #78b9cd;
-  font-size: 17px;
+  font-size: 11px;
 }
 
 .updates-title h2 {
-  font-size: 17px;
+  font-size: 13px;
   letter-spacing: .16em;
 }
 
@@ -199,7 +199,7 @@
 .playlist-title {
   margin: 0;
   color: var(--blue-ink);
-  font: 700 15px "Holiday", serif; /* Pecita */
+  font: 700 13px "Holiday", serif; /* Pecita */
 }
 
 .playlist-heading {
