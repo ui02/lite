@@ -9,7 +9,7 @@ categories:
 tags:
   - event
 header:
-  teaser: /assets/images/posts/2018-10-21-sekigahara/thumb.jpg
+  teaser: /assets/images/travelog/2018-10-21-sekigahara/thumb.jpg
 ---
 関ケ原合戦祭り、井伊の赤備えとして絵巻参加してきた～！！ の備忘録。
 {% include image-gallery.html
