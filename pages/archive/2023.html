@@ -29,7 +29,7 @@ permalink: /archive/2023/
           {% endif %}
 
           <div class="diary-entry-info">
-            <span class="diary-entry-date">{{ post.date | date: "%Y.%m.%d" }} / updated: <span class="updated-date">{{ post.lastmod | date: "%Y.%m.%d" }}</span></span>
+            <span class="diary-entry-date">{{ post.date | date: "%Y.%m.%d" }}{% if post.lastmod %} <span class="updated-date">(updated: {{ post.lastmod | date: "%Y.%m.%d" }})</span>{% endif %}</span>
             <span class="diary-entry-title">
               {{ post.title }}
             </span>
