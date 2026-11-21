@@ -6,11 +6,11 @@ lastmod: 2026-11-17
 published: true
 excerpt: "◸ 2026 ONEW CONCERT [ONEW THE LIVE : Q] IN JAPAN ◿"
 categories:
-  - STAN LOG
+  - STANLOG
 tags:
   - SHINee
 header:
-  teaser: /assets/images/posts/2026-09-22-onew-the-live-q/thumb.jpg
+  teaser: /assets/images/stanlog/2026-09-22-onew-the-live-q/thumb.jpg
 ---
 
 {% include image-gallery.html
