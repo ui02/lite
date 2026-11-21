@@ -15,9 +15,14 @@ title: DIARY
   </div>
 
   <div class="diary-entry-list">
-    {% assign diary_posts = site.posts | where_exp: "post", "post.published != false" | sort: "date" | reverse %}
 
-    {% for post in diary_posts limit: 5 %}
+    {% assign diary_posts = site.posts
+      | where_exp: "post", "post.published != false"
+      | sort: "lastmod"
+      | reverse
+    %}
+
+    {% for post in diary_posts limit: 7 %}
       <a class="diary-entry" href="{{ post.url | relative_url }}">
 
         {% if post.header.teaser %}
@@ -29,16 +34,24 @@ title: DIARY
         {% endif %}
 
         <div class="diary-entry-info">
+
           <span class="diary-entry-date">
-            {{ post.date | date: "%m.%d / %Y" }}
+            DATE: {{ post.date | date: "%m.%d / %Y" }}
           </span>
+
+          <span class="diary-entry-lastmod">
+            LASTMOD: {{ post.lastmod | date: "%m.%d / %Y" }}
+          </span>
+
           <span class="diary-entry-title">
             {{ post.title }}
           </span>
+
         </div>
 
       </a>
     {% endfor %}
+
   </div>
 </section>
 
