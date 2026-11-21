@@ -2,6 +2,7 @@
 layout: diary-post
 title: "Love Blossom"
 date: 2025-05-04
+lastmod:2026-11-18
 published: true
 excerpt: ""
 categories:
