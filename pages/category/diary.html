@@ -4,10 +4,6 @@ title: DIARY
 permalink: /category/diary/
 ---
 
-<div class="right-topline">
-  <span class="date-label">DIARY</span>
-</div>
-
 <section class="diary-section">
   <div class="section-heading">
     <span class="heading-mark">✧</span>
@@ -32,7 +28,7 @@ permalink: /category/diary/
 
           <div class="diary-entry-info">
             <span class="diary-entry-date">
-              {{ post.date | date: "%m.%d / %Y" }}
+              <span class="diary-entry-date">{{ post.date | date: "%Y.%m.%d" }}{% if post.lastmod %} <span class="updated-date">(updated: {{ post.lastmod | date: "%Y.%m.%d" }})</span>{% endif %}</span>
             </span>
             <span class="diary-entry-title">
               {{ post.title }}
