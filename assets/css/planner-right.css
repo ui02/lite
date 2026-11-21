@@ -230,7 +230,7 @@
 .todo-note h2 {
   margin: 0 0 10px;
   color: var(--blue-ink);
-  font: 700 13px "Pecita", serif;
+  font: 700 13px "Holiday", serif; /* Pecita */
   letter-spacing: .08em;
 }
 
