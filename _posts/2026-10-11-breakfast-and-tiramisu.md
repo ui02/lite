@@ -2,7 +2,7 @@
 layout: diary-post
 title: "Breakfast and Tiramisu"
 date: 2026-10-11
-lastmod:2026-11-18
+lastmod: 2026-11-18
 published: true
 excerpt: "珈琲屋さんのモーニングとティラミスの話。"
 categories:
