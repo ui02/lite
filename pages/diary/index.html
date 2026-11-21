@@ -12,12 +12,12 @@ permalink: /diary/
   </div>
 
   <div class="diary-entry-list">
-    {% assign diary_posts = site.posts
-      | where_exp: "post", "post.published != false"
-      | where_exp: "post", "post.categories contains 'DIARY'"
-      | sort: "lastmod"
-      | reverse
-    %}
+{% raw %}{% assign diary_posts = site.diary
+  | where_exp: "post", "post.published != false"
+  | where_exp: "post", "post.categories contains 'DIARY'"
+  | sort: "lastmod"
+  | reverse
+%}{% endraw %}
 
     {% for post in diary_posts limit: 6 %}
       <a class="diary-entry" href="{{ post.url | relative_url }}">
