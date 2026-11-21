@@ -4,10 +4,6 @@ title: 2023 ARCHIVE
 permalink: /archive/2023/
 ---
 
-<div class="right-topline">
-  <span class="date-label">2023 ARCHIVE</span>
-</div>
-
 <section class="diary-section">
   <div class="section-heading">
     <span class="heading-mark">✧</span>
@@ -34,7 +30,7 @@ permalink: /archive/2023/
 
           <div class="diary-entry-info">
             <span class="diary-entry-date">
-              {{ post.date | date: "%m.%d / %Y" }}
+              {{ post.date | date: "%Y.%m.%d" }} / updated: {{ page.lastmod | date: "%Y.%m.%d" }}
             </span>
             <span class="diary-entry-title">
               {{ post.title }}
