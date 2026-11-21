@@ -26,6 +26,7 @@ header:
   folder="/2026-06-28-afternoon-tea"
   layout=""
   images="IMG_20260620_140928.jpg"
+  width="50%"
 %}
 
 毎月内容が変わるみたいなんだけど、  
