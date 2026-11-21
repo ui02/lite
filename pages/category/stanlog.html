@@ -15,7 +15,7 @@ permalink: /category/report/
     {% assign archive_posts = site.posts | sort: "date" | reverse %}
 
     {% for post in archive_posts %}
-      {% if post.published != false and post.categories contains "REPORT" %}
+      {% if post.published != false and post.categories contains "STAN LOG" %}
         <a class="diary-entry" href="{{ post.url | relative_url }}">
 
           {% if post.header.teaser %}
