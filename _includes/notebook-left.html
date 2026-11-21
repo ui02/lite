@@ -20,7 +20,7 @@
   <div class="left-bottom">
     
     <!-- DIARY ONLY -->
-    {% if page.url == '/diary/' %}
+    {% if page.url contains '/diary/' %}
     <nav class="left-navigation">
       <h2>◎ARCHIVES</h2>
       <ul>
@@ -33,7 +33,7 @@
     {% endif %}
     
     <!-- STANLOG ONLY -->
-    {% if page.url == '/stanlog/' %}
+    {% if page.url contains '/stanlog/' %}
     <nav class="left-navigation">
       <h2>◎TAGS</h2>
       <ul>
@@ -44,7 +44,7 @@
     {% endif %}
     
     <!-- TRAVELOG ONLY -->
-    {% if page.url == '/travelog/' %}
+    {% if page.url contains '/travelog/' %}
     <nav class="left-navigation">
       <h2>◎ARCHIVES</h2>
       <ul>
