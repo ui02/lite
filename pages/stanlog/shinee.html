@@ -12,7 +12,7 @@ permalink: /stanlog/shinee/
   </div>
 
   <div class="diary-entry-list">
-    {% assign archive_posts = site.posts | sort: "date" | reverse %}
+    {% assign archive_posts = site.stanlog | sort: "date" | reverse %}
 
     {% for post in archive_posts %}
       {% if post.published != false and post.tags contains "SHINee" %}
