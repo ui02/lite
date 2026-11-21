@@ -6,7 +6,7 @@ lastmod: 2026-11-18
 published: true
 excerpt: ""
 categories:
-  - REPORT
+  - STAN LOG
 tags:
   - SHINee
 header:
