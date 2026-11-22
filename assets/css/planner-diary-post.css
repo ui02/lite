@@ -3,7 +3,11 @@
    Individual article pages
    ========================================================= */
 
-/* BabyBlue colors */
+
+/* =========================================================
+   1. 基本設定
+   ========================================================= */
+
 body.diary-post-page .diary-post-page {
   --baby-blue: #bbe2f1;
   --blue-deep: #5b9eb8;
@@ -21,8 +25,9 @@ body.diary-post-page .diary-post-page {
   padding: 0;
 }
 
+
 /* =========================================================
-   ARTICLE HEADER
+   2. ARTICLE HEADER
    ========================================================= */
 
 body.diary-post-page .diary-post-header {
@@ -46,7 +51,7 @@ body.diary-post-page .diary-post-title {
   border-radius: 4px;
   box-shadow: 2px 3px 0 rgba(180, 210, 220, .12);
 
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   line-height: 1.5;
 }
 
@@ -63,7 +68,11 @@ body.diary-post-page .diary-post-title::before {
   pointer-events: none;
 }
 
-/* Date, categories and tags */
+
+/* =========================================================
+   3. DATE / CATEGORY / TAG
+   ========================================================= */
+
 body.diary-post-page .diary-post-meta {
   display: flex;
   flex-wrap: wrap;
@@ -71,7 +80,7 @@ body.diary-post-page .diary-post-meta {
   justify-content: center;
   gap: 8px;
   color: var(--muted);
-  font-size: 11px;
+  font-size: 12px;
 }
 
 body.diary-post-page .diary-post-meta time {
@@ -98,18 +107,20 @@ body.diary-post-page .diary-post-tags span {
   background: var(--blue-pale);
   border: 1px solid var(--line);
   border-radius: 3px;
+  font-size: 12px;
   line-height: 1.5;
 }
 
+
 /* =========================================================
-   ARTICLE BODY
+   4. ARTICLE BODY
    ========================================================= */
 
 body.diary-post-page .diary-post-content {
   width: 100%;
   color: var(--ink);
   font-family: "Zen Maru Gothic", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 2;
   letter-spacing: .025em;
   overflow-wrap: break-word;
@@ -125,7 +136,12 @@ body.diary-post-page .diary-post-content a {
   text-underline-offset: 3px;
 }
 
-/* Images */
+
+/* =========================================================
+   5. IMAGES / GALLERY
+   ========================================================= */
+
+/* Common image settings */
 body.diary-post-page .diary-post-content img {
   max-width: 100%;
   height: auto;
@@ -133,14 +149,64 @@ body.diary-post-page .diary-post-content img {
 
 body.diary-post-page .diary-post-content .image-gallery {
   margin: 2em auto;
-  padding: 10px;
   box-sizing: border-box;
+  border-radius: 3px;
+}
+
+/* Single image gallery */
+body.diary-post-page .diary-post-content .image-gallery:not(.half):not(.third):not(.masonry) {
+  padding: 10px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  box-shadow: 2px 3px 8px rgba(120, 150, 160, .08);
+}
+
+/* Grid galleries */
+body.diary-post-page .diary-post-content .image-gallery.half,
+body.diary-post-page .diary-post-content .image-gallery.third,
+body.diary-post-page .diary-post-content .image-gallery.masonry {
+  display: grid;
+  padding: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  gap: 8px;
+}
+
+body.diary-post-page .diary-post-content .image-gallery.half {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+body.diary-post-page .diary-post-content .image-gallery.third {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+body.diary-post-page .diary-post-content .image-gallery.masonry {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(2, auto);
+  align-items: stretch;
+}
+
+/* Gallery links */
+body.diary-post-page .diary-post-content .image-gallery a {
+  display: block;
+  min-width: 0;
+  line-height: 0;
+}
+
+/* Individual photo cards */
+body.diary-post-page .diary-post-content .image-gallery.half a,
+body.diary-post-page .diary-post-content .image-gallery.third a,
+body.diary-post-page .diary-post-content .image-gallery.masonry a {
+  box-sizing: border-box;
+  padding: 10px;
   background: var(--paper);
   border: 1px solid var(--line);
   border-radius: 3px;
   box-shadow: 2px 3px 8px rgba(120, 150, 160, .08);
 }
 
+/* Gallery images */
 body.diary-post-page .diary-post-content .image-gallery img {
   display: block;
   width: 100%;
@@ -148,13 +214,46 @@ body.diary-post-page .diary-post-content .image-gallery img {
   border-radius: 1px;
 }
 
-body.diary-post-page .diary-post-content .image-gallery a {
-  display: block;
-  line-height: 0;
+/* Masonry layout */
+body.diary-post-page .diary-post-content .image-gallery.masonry a:first-child {
+  grid-column: 1;
+  grid-row: 1 / 3;
 }
 
+body.diary-post-page .diary-post-content .image-gallery.masonry a:nth-child(2) {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+body.diary-post-page .diary-post-content .image-gallery.masonry a:nth-child(3) {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+/* Do not crop photos */
+body.diary-post-page .diary-post-content .image-gallery.masonry img {
+  object-fit: contain;
+}
+
+/* Fourth and later photos */
+body.diary-post-page .diary-post-content .image-gallery.masonry a:nth-child(n+4) {
+  grid-column: auto;
+  grid-row: auto;
+}
+
+/* Gallery caption */
+body.diary-post-page .diary-post-content .image-gallery .image-gallery-caption {
+  display: block;
+  padding-top: 8px;
+  color: var(--ink);
+  font-size: .9em;
+  line-height: 1.6;
+  text-align: center;
+}
+
+
 /* =========================================================
-   PREVIOUS & NEXT
+   6. PREVIOUS & NEXT
    ========================================================= */
 
 body.diary-post-page .diary-post-navigation {
@@ -168,14 +267,14 @@ body.diary-post-page .diary-post-navigation {
 body.diary-post-page .diary-post-navigation a {
   flex: 0 1 220px;
   min-width: 0;
-  padding: 7px 13px;
+  padding: 8px 13px;
 
   color: var(--muted);
   background: var(--paper);
   border: 1px solid var(--line);
   border-radius: 20px;
 
-  font-size: 11px;
+  font-size: 12px;
   text-align: center;
   text-decoration: none;
 
@@ -188,8 +287,9 @@ body.diary-post-page .diary-post-navigation a:hover {
   border-color: var(--baby-blue);
 }
 
+
 /* =========================================================
-   FOOTER
+   7. FOOTER
    ========================================================= */
 
 body.diary-post-page .diary-post-footer {
@@ -204,7 +304,7 @@ body.diary-post-page .diary-post-footer {
   background: transparent;
 
   font-family: "Caveat", "Zen Maru Gothic", sans-serif;
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: .08em;
 }
 
@@ -227,53 +327,17 @@ body.diary-post-page .diary-post-footer-top span:last-child {
 body.diary-post-page .diary-post-footer-bottom {
   margin-top: 5px;
   text-align: right;
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: .04em;
 }
 
-/* =========================================================
-   RESPONSIVE
-   ========================================================= */
-
-@media (max-width: 600px) {
-  body.diary-post-page .diary-post-page {
-    padding: 20px 16px;
-  }
-
-  body.diary-post-page .diary-post-title {
-    font-size: 1.25rem;
-  }
-
-  body.diary-post-page .diary-post-navigation {
-    gap: 8px;
-  }
-
-  body.diary-post-page .diary-post-navigation a {
-    flex-basis: 50%;
-    padding: 7px 8px;
-    font-size: 10px;
-  }
-}
 
 /* =========================================================
-   NOTEBOOK PAGE OVERRIDE
-   個別記事ページは右ページを1カラムにする
-   ========================================================= */
-
-body.diary-post-page .page-right {
-  display: block;
-  grid-template-columns: none;
-  grid-template-rows: none;
-  gap: 0;
-}
-
-
-/* =========================================================
-   NOTEBOOK PAGE
+   8. NOTEBOOK PAGE
    個別記事：記事の長さに合わせてノートを伸ばす
    ========================================================= */
 
-/* 記事ページでは画面中央固定を解除 */
+/* Disable vertical centering */
 body.diary-post-page {
   display: grid;
   place-items: start center;
@@ -281,22 +345,44 @@ body.diary-post-page {
   padding-top: 34px;
 }
 
-/* ノート全体の高さ制限を解除 */
+/* Remove notebook height restrictions */
 body.diary-post-page .notebook-wrap {
   height: auto;
   min-height: 0;
   margin: 0 auto;
 }
 
-/* ノートもコンテンツに合わせて伸ばす */
 body.diary-post-page .notebook {
   height: auto;
   min-height: 0;
   align-items: start;
 }
 
+/* Right page: single column */
+body.diary-post-page .page-right {
+  display: block;
+  grid-template-columns: none;
+  grid-template-rows: none;
+  gap: 0;
+
+  border-left: 1px solid #d7eaf0;
+  box-shadow: inset 7px 0 12px -13px #548da3;
+}
+
+/* Left page: no center shadow or border */
+body.diary-post-page .page-left {
+  border-right: none;
+  box-shadow: none;
+}
+
+/* Individual article tab position */
+body.diary-post-page .index-tabs {
+  top: 38px;
+}
+
+
 /* =========================================================
-   LEFT PAGE
+   9. LEFT PAGE STICKY
    PCでは左ページを画面内に固定
    ========================================================= */
 
@@ -311,116 +397,10 @@ body.diary-post-page .notebook {
   }
 }
 
-/* スマホでは固定を解除 */
-@media (max-width: 767px) {
-  body.diary-post-page .page-left {
-    position: relative;
-    top: auto;
-    height: auto;
-    max-height: none;
-    overflow: visible;
-  }
-}
-
-
-/* ページ中央の影と境界線を記事の高さに合わせる */
-body.diary-post-page .page-left {
-  border-right: none;
-  box-shadow: none;
-}
-
-body.diary-post-page .page-right {
-  border-left: 1px solid #d7eaf0;
-  box-shadow:
-    inset 7px 0 12px -13px #548da3;
-}
-
-
-/* 個別記事ページ：タブ位置をノート上端に固定 */
-body.diary-post-page .index-tabs {
-  top: 38px;
-}
-
 
 /* =========================================================
-   記事内の画像表示
+   10. IMAGE LIGHTBOX
    ========================================================= */
-
-/* 複数画像のレイアウト */
-body.diary-post-page .diary-post-content .image-gallery.third {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 8px;
-}
-
-body.diary-post-page .diary-post-content .image-gallery.half {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 8px;
-}
-
-/* 画像リンクの幅をグリッドに合わせる */
-body.diary-post-page .diary-post-content .image-gallery.third a,
-body.diary-post-page .diary-post-content .image-gallery.half a {
-  min-width: 0;
-}
-
-/* スマホでは3列を2列に */
-@media (max-width: 600px) {
-  body.diary-post-page .diary-post-content .image-gallery.third {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-/* Masonry風：左に1枚、右に2枚 */
-body.diary-post-page .diary-post-content .image-gallery.masonry {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  grid-template-rows: repeat(2, auto);
-  gap: 8px;
-  align-items: stretch;
-}
-
-/* 1枚目：左側の2段分 */
-body.diary-post-page .diary-post-content .image-gallery.masonry a:first-child {
-  grid-column: 1;
-  grid-row: 1 / 3;
-}
-
-/* 2枚目：右上 */
-body.diary-post-page .diary-post-content .image-gallery.masonry a:nth-child(2) {
-  grid-column: 2;
-  grid-row: 1;
-}
-
-/* 3枚目：右下 */
-body.diary-post-page .diary-post-content .image-gallery.masonry a:nth-child(3) {
-  grid-column: 2;
-  grid-row: 2;
-}
-
-/* 写真はトリミングせず表示 */
-body.diary-post-page .diary-post-content .image-gallery.masonry img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-
-/* 4枚目以降は通常の幅で下に並べる */
-body.diary-post-page .diary-post-content .image-gallery.masonry a:nth-child(n+4) {
-  grid-column: auto;
-  grid-row: auto;
-}
-
-@media (max-width: 600px) {
-  body.diary-post-page .diary-post-content .image-gallery.masonry {
-    gap: 5px;
-  }
-}
-
-/* ==========================
-   Image Lightbox
-========================== */
 
 .image-lightbox {
   position: fixed;
@@ -433,13 +413,13 @@ body.diary-post-page .diary-post-content .image-gallery.masonry a:nth-child(n+4)
   padding: 50px 70px;
   box-sizing: border-box;
   border: none;
-  background: rgba(20, 20, 24, 0.94);
+  background: rgba(20, 20, 24, .94);
   color: #fff;
   overflow: hidden;
 }
 
 .image-lightbox::backdrop {
-  background: rgba(20, 20, 24, 0.94);
+  background: rgba(20, 20, 24, .94);
 }
 
 .image-lightbox[open] {
@@ -457,7 +437,7 @@ body.diary-post-page .diary-post-content .image-gallery.masonry a:nth-child(n+4)
   object-fit: contain;
 }
 
-/* 閉じるボタン */
+/* Close button */
 .lightbox-close {
   position: absolute;
   top: 15px;
@@ -469,19 +449,19 @@ body.diary-post-page .diary-post-content .image-gallery.masonry a:nth-child(n+4)
   cursor: pointer;
 }
 
-/* 前後の移動ボタン */
+/* Previous / Next buttons */
 .lightbox-nav {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  border: none;
-  background: rgba(255, 255, 255, 0.12);
-  color: #fff;
-  font-size: 38px;
   width: 48px;
   height: 64px;
-  cursor: pointer;
+  border: none;
   border-radius: 4px;
+  background: rgba(255, 255, 255, .12);
+  color: #fff;
+  font-size: 38px;
+  cursor: pointer;
 }
 
 .lightbox-prev {
@@ -492,7 +472,7 @@ body.diary-post-page .diary-post-content .image-gallery.masonry a:nth-child(n+4)
   right: 12px;
 }
 
-/* 画像枚数 */
+/* Image counter */
 .lightbox-counter {
   position: absolute;
   bottom: 15px;
@@ -502,8 +482,74 @@ body.diary-post-page .diary-post-content .image-gallery.masonry a:nth-child(n+4)
   font-size: 13px;
 }
 
-/* スマホ */
+
+/* =========================================================
+   11. ARTICLE DATES
+   ========================================================= */
+
+.diary-post-dates {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px 16px;
+  color: #65a4b9;
+  font-size: 12px;
+  letter-spacing: .06em;
+}
+
+
+/* =========================================================
+   12. RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 767px) {
+  /* Release left page sticky positioning */
+  body.diary-post-page .page-left {
+    position: relative;
+    top: auto;
+    height: auto;
+    max-height: none;
+    overflow: visible;
+  }
+}
+
 @media (max-width: 600px) {
+  /* Notebook spacing */
+  body.diary-post-page {
+    padding-top: 20px;
+  }
+
+  /* Article title */
+  body.diary-post-page .diary-post-title {
+    font-size: 1.35rem;
+  }
+
+  /* Article body */
+  body.diary-post-page .diary-post-content {
+    font-size: 15px;
+  }
+
+  /* Three-column gallery becomes two columns */
+  body.diary-post-page .diary-post-content .image-gallery.third {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* Masonry spacing */
+  body.diary-post-page .diary-post-content .image-gallery.masonry {
+    gap: 5px;
+  }
+
+  /* Previous / Next */
+  body.diary-post-page .diary-post-navigation {
+    gap: 8px;
+  }
+
+  body.diary-post-page .diary-post-navigation a {
+    flex-basis: 50%;
+    padding: 7px 8px;
+    font-size: 11px;
+  }
+
+  /* Lightbox */
   .image-lightbox {
     padding: 45px 42px;
   }
@@ -526,46 +572,4 @@ body.diary-post-page .diary-post-content .image-gallery.masonry a:nth-child(n+4)
     top: 8px;
     right: 12px;
   }
-}
-
-/* 複数画像：写真ごとに個別の枠を付ける */
-body.diary-post-page .diary-post-content .image-gallery.half,
-body.diary-post-page .diary-post-content .image-gallery.third,
-body.diary-post-page .diary-post-content .image-gallery.masonry {
-  padding: 0;
-  background: transparent;
-  border: none;
-  box-shadow: none;
-}
-
-/* 個々の写真をカード状にする */
-body.diary-post-page .diary-post-content .image-gallery.half a,
-body.diary-post-page .diary-post-content .image-gallery.third a,
-body.diary-post-page .diary-post-content .image-gallery.masonry a {
-  box-sizing: border-box;
-  padding: 10px;
-  background: var(--paper);
-  border: 1px solid var(--line);
-  border-radius: 3px;
-  box-shadow: 2px 3px 8px rgba(120, 150, 160, .08);
-}
-
-/* 写真ごとの枠内にキャプションを表示 */
-body.diary-post-page .diary-post-content .image-gallery .image-gallery-caption {
-  display: block;
-  padding-top: 8px;
-  color: var(--text-color);
-  font-size: 0.85em;
-  line-height: 1.6;
-  text-align: center;
-}
-
-/* 日付横並び*/
-.diary-post-dates {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px 16px;
-  color: #65a4b9;
-  font-size: 11px;
-  letter-spacing: .06em;
 }
