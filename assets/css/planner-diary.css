@@ -2,6 +2,10 @@
    IOLITE / DIARY
    ========================================================= */
 
+/* =========================================================
+   1. DIARY PAGE
+   ========================================================= */
+
 /* DIARYページ全体 */
 .page-right:has(.diary-section) {
   display: flex;
@@ -20,6 +24,11 @@
 .diary-section .section-heading {
   margin-bottom: 14px;
 }
+
+
+/* =========================================================
+   2. ENTRY LIST
+   ========================================================= */
 
 /* 記事一覧 */
 .diary-entry-list {
@@ -55,28 +64,50 @@
 .diary-entry-info {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 6px;
   min-width: 0;
 }
 
 /* 日付 */
 .diary-entry-date {
   color: #65a4b9;
-  font: 700 10px "Caveat", "Zen Maru Gothic", sans-serif;
+  font: 700 12px "Caveat", "Zen Maru Gothic", sans-serif;
   letter-spacing: .08em;
 }
-.updated-date {
+
+.diary-entry-date .updated-date {
   font-weight: 400;
 }
 
 /* 記事タイトル */
 .diary-entry-title {
   color: #647b83;
-  font: 12px/1.5 "Zen Maru Gothic", sans-serif;
+  font: 14px/1.6 "Zen Maru Gothic", sans-serif;
   overflow-wrap: anywhere;
 }
 
 /* ホバー */
 .diary-entry:hover .diary-entry-title {
   color: #65a4b9;
+}
+
+
+/* =========================================================
+   3. RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 600px) {
+  .diary-entry {
+    gap: 11px;
+  }
+
+  .diary-entry-thumb {
+    flex-basis: 68px;
+    width: 68px;
+    height: 68px;
+  }
+
+  .diary-entry-title {
+    font-size: 13px;
+  }
 }
