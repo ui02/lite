@@ -1,16 +1,22 @@
 /* =========================================================
-   3. 左ページ全体
+   IOLITE / LEFT PAGE
+   ========================================================= */
+
+
+/* =========================================================
+   1. LEFT PAGE LAYOUT
    ========================================================= */
 
 .page-left {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
-  grid-template-rows: auto 220px auto minmax(0, 1fr) auto;
+  grid-template-rows: auto 220px minmax(0, 1fr) auto;
   gap: 12px;
+
   padding-right: 25px;
   border-right: 1px solid #d7eaf0;
-  box-shadow: inset -7px 0 12px -13px #548da3;
   border-radius: 9px 0 0 9px;
+  box-shadow: inset -7px 0 12px -13px #548da3;
 }
 
 .page-left::after {
@@ -20,13 +26,17 @@
   right: -4px;
   width: 7px;
   height: 0%;
-  background: linear-gradient(90deg, rgba(76, 126, 146, .12), transparent);
+  background: linear-gradient(
+    90deg,
+    rgba(76, 126, 146, .12),
+    transparent
+  );
   pointer-events: none;
 }
 
 
 /* =========================================================
-   4. 左ページ：サイトロゴ
+   2. SITE LOGO
    ========================================================= */
 
 .site-logo {
@@ -35,12 +45,15 @@
   top: -28px;
   left: -30px;
   margin: 0;
+
   transform: rotate(-9deg);
+
   font-family: "Holiday", cursive;
   font-size: clamp(62px, 7vw, 90px);
   font-weight: normal;
   line-height: 1;
   letter-spacing: -4px;
+
   pointer-events: none;
 }
 
@@ -57,7 +70,7 @@
 
 
 /* =========================================================
-   5. 左ページ：プロフィール写真
+   3. PROFILE PHOTO
    ========================================================= */
 
 .profile-area {
@@ -72,15 +85,19 @@
   position: absolute;
   top: 8px;
   right: 0;
+
   width: 92%;
   height: 200px;
   min-height: 0;
+
   padding: 0;
   overflow: hidden;
+
   border: 7px solid #fff;
   outline: 1px solid #dceef4;
   background: #d9f0f7;
   box-shadow: 0 4px 13px rgba(67, 119, 139, .12);
+
   transform: rotate(2deg);
 }
 
@@ -99,15 +116,47 @@
 
 
 /* =========================================================
-   6. 左ページ：UPDATE欄
+   4. LEFT BOTTOM AREA
+   ナビゲーション・UPDATE・Spotify
+   ========================================================= */
+
+.left-bottom {
+  grid-row: 3;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  min-height: 0;
+  overflow: visible;
+  padding-right: 4px;
+}
+
+/* UPDATE / Spotify：共通エリア内で配置 */
+.left-bottom .updates {
+  grid-row: auto;
+  flex: 0 0 auto;
+}
+
+.left-bottom .playlist {
+  grid-row: auto;
+  align-self: stretch;
+  margin-top: 0;
+}
+
+
+/* =========================================================
+   5. UPDATE
    ========================================================= */
 
 .updates {
-  grid-row: 3;
+  position: relative;
   min-height: 145px;
   margin: 0;
   padding: 14px 17px 5px;
+
   border: 1px solid #dceef4;
+
   background:
     linear-gradient(
       110deg,
@@ -115,10 +164,10 @@
       rgba(255, 255, 255, .75) 75%
     ),
     url("../images/bg01.jpg");
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  position: relative;
 }
 
 .updates::before {
@@ -128,6 +177,7 @@
   left: 22px;
   width: 55px;
   height: 10px;
+
   background: rgba(187, 226, 241, .72);
   transform: rotate(-2deg);
 }
@@ -141,39 +191,42 @@
 
 .updates-icon {
   color: #78b9cd;
-  font-size: 11px;
+  font-size: 13px;
 }
 
 .updates-title h2 {
-  font-size: 13px;
+  margin: 0;
+  font-size: 15px;
   letter-spacing: .16em;
 }
 
 .updates-subtitle {
   color: #9cb7c0;
-  font: italic 11px "Caveat", "Zen Maru Gothic", sans-serif;
+  font: italic 12px "Caveat", "Zen Maru Gothic", sans-serif;
 }
 
 .update-list {
-  list-style: none;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .update-list li {
   display: grid;
-  grid-template-columns: 48px 1fr 16px;
+  grid-template-columns: 52px minmax(0, 1fr) 16px;
   align-items: center;
   gap: 8px;
-  padding: 6px 0;
+
+  padding: 7px 0;
   border-top: 1px dashed #dcecf1;
+
   color: #667f88;
-  font: 11px/1.35 "Caveat", "Zen Maru Gothic", sans-serif;
+  font: 12px/1.5 "Caveat", "Zen Maru Gothic", sans-serif;
 }
 
 .update-list time {
   color: #65a4b9;
-  font: 700 9px "Caveat", "Zen Maru Gothic", sans-serif;
+  font: 700 11px "Caveat", "Zen Maru Gothic", sans-serif;
   letter-spacing: .08em;
 }
 
@@ -185,7 +238,58 @@
 
 
 /* =========================================================
-   7. 左ページ：Spotifyプレーヤー・アイコン
+   6. LEFT NAVIGATION
+   ARCHIVE / CATEGORY / TAGS
+   ========================================================= */
+
+.left-navigation {
+  margin: 0;
+  padding: 10px 14px;
+
+  border: 1px solid #dceef4;
+  background: rgba(255, 255, 255, .55);
+}
+
+.left-navigation h2 {
+  margin: 0 0 8px;
+
+  color: #548da3;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: .16em;
+}
+
+.left-navigation ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.left-navigation li {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.left-navigation a {
+  color: #526d78;
+  text-decoration: none;
+  transition: color .2s ease;
+}
+
+.left-navigation a:hover {
+  color: #82cddd;
+  text-decoration: underline;
+}
+
+
+/* =========================================================
+   7. SPOTIFY / PLAYLIST
    ========================================================= */
 
 .playlist {
@@ -199,7 +303,7 @@
 .playlist-title {
   margin: 0;
   color: var(--blue-ink);
-  font: 700 13px "Pecita", serif; /* Pecita */
+  font: 700 15px "Pecita", serif;
 }
 
 .playlist-heading {
@@ -239,6 +343,7 @@
 .spotify-frame {
   width: 100%;
   overflow: hidden;
+
   border: 0;
   border-radius: 8px;
   background: #eaf7fb;
@@ -251,6 +356,7 @@
   border: 0;
 }
 
+/* YouTubeプレーヤー */
 .youtube-player {
   width: 320px;
   max-width: 100%;
@@ -258,94 +364,26 @@
 }
 
 .youtube-player iframe {
+  display: block;
   width: 100%;
   height: 100%;
   border: 0;
-  display: block;
 }
 
 
-/* ========================================
-   LEFT PAGE: NAVIGATION & SHARED LAYOUT
-======================================== */
+/* =========================================================
+   8. LEFT FOOTER
+   ========================================================= */
 
-/* 左ページの基本レイアウト */
-.page-left {
-  grid-template-rows: auto 220px minmax(0, 1fr) auto;
-}
-
-/* ナビゲーション・INDEX専用コンテンツの共通エリア */
-.left-bottom {
-  grid-row: 3;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  min-height: 0;
-  overflow: visible;
-  padding-right: 4px;
-}
-
-/* ARCHIVE / CATEGORY / TAGS */
-.left-navigation {
-  margin: 0;
-  padding: 10px 14px;
-  border: 1px solid #dceef4;
-  background: rgba(255, 255, 255, 0.55);
-}
-
-.left-navigation h2 {
-  margin: 0 0 8px;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.16em;
-  color: #548da3;
-}
-
-.left-navigation ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px 16px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.left-navigation li {
-  margin: 0;
-  padding: 0;
-  font-size: 13px;
-  line-height: 1.6;
-}
-
-.left-navigation a {
-  color: #526d78;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-.left-navigation a:hover {
-  color: #82cddd;
-  text-decoration: underline;
-}
-
-/* UPDATE / Spotify：共通エリア内で配置 */
-.left-bottom .updates {
-  grid-row: auto;
-  flex: 0 0 auto;
-}
-
-.left-bottom .playlist {
-  grid-row: auto;
-  align-self: stretch;
-  margin-top: 0;
-}
-
-/* 左ページのフッター */
 .left-footer {
   grid-row: 4;
 }
 
-/* スマートフォンでは自然に縦へ伸ばす */
+
+/* =========================================================
+   9. RESPONSIVE
+   ========================================================= */
+
 @media (max-width: 760px) {
   .left-bottom {
     grid-row: auto;
