@@ -189,16 +189,6 @@
   pointer-events: none;
 }
 
-/* 共通見出し */
-.left-panel-title {
-  margin: 0;
-
-  color: #548da3;
-  font-size: 15px;
-  font-weight: 600;
-  letter-spacing: .16em;
-}
-
 
 /* =========================================================
    6. UPDATE
