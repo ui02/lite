@@ -2,10 +2,6 @@
    IOLITE / Recent Entries一覧
    ========================================================= */
 
-/* =========================================================
-   1. 全体・見出し
-   ========================================================= */
-
 /* 全体 */
 .page-right:has(.diary-section) {
   display: flex;
@@ -17,18 +13,13 @@
 .diary-section {
   width: 100%;
   min-width: 0;
-  margin-top: 2px;
+  margin-top: 10px;
 }
 
 /* Recent Entries の見出し */
 .diary-section .section-heading {
   margin-bottom: 10px;
 }
-
-
-/* =========================================================
-   2. ENTRY LIST
-   ========================================================= */
 
 /* 記事一覧 */
 .diary-entry-list {
@@ -53,9 +44,9 @@
 /* サムネイル */
 .diary-entry-thumb {
   display: block;
-  flex: 0 0 80px;
-  width: 80px;
-  height: 80px;
+  flex: 0 0 85px;
+  width: 85px;
+  height: 85px;
   object-fit: cover;
   border-radius: 8px;
 }
@@ -93,7 +84,7 @@
 
 
 /* =========================================================
-   3. RESPONSIVE
+   RESPONSIVE
    ========================================================= */
 
 @media (max-width: 600px) {
