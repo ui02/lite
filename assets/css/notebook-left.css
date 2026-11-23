@@ -152,7 +152,7 @@
 
 /* 共通タイトル */
 .updates-title h2,
-.left-panel-title,
+.left-nav-title,
 .playlist-title {
   margin: 0;
   color: var(--blue-ink);
@@ -270,7 +270,7 @@
    ARCHIVE / CATEGORY / TAGS
    ========================================================= */
 
-.left-navigation ul {
+.left-nav ul {
   display: flex;
   flex-wrap: wrap;
   gap: 6px 16px;
@@ -280,20 +280,20 @@
   list-style: none;
 }
 
-.left-navigation li {
+.left-nav li {
   margin: 0;
   padding: 0;
   font-size: 14px;
   line-height: 1.6;
 }
 
-.left-navigation a {
+.left-nav a {
   color: #526d78;
   text-decoration: none;
   transition: color .2s ease;
 }
 
-.left-navigation a:hover {
+.left-nav a:hover {
   color: #82cddd;
   text-decoration: underline;
 }
