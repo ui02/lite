@@ -151,7 +151,7 @@
    ========================================================= */
 
 /* タイトル */
-.updates-title h2,
+.updates-title,
 .left-nav-title,
 .playlist-title {
   margin: 0;
@@ -163,7 +163,8 @@
 }
 
 .updates-subtitle,
-.left-nav-subtitle {
+.left-nav-subtitle,
+.playlist-subtitle {
   color: #9cb7c0;
   font: italic 12px "Zen Maru Gothic", sans-serif;
 }
@@ -175,8 +176,9 @@
   font-size: 13px;
 }
 
-.updates-title,
-.left-nav-heading {
+.updates-heading,
+.left-nav-heading,
+.playlist-heading {
   display: flex;
   align-items: baseline;
   gap: 8px;
