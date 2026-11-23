@@ -6,7 +6,6 @@
     <span class="page-number"></span>
   </div>
 
-  <!-- Random photo + site title -->
   <div class="random-photo-area">
     <div class="random-photo">
       <img id="random-feature-image" src="" alt="A little moment" class="random-photo-image">
@@ -16,15 +15,14 @@
     </h1>
   </div>
 
-  <!-- COMMON NAVIGATION -->
   <div class="left-bottom">
 
     <!-- DIARY ONLY -->
     {% if page.url contains '/diary/' %}
-    <nav class="left-navigation left-panel">
-      <div class="left-panel-heading">
+    <nav class="left-nav left-panel">
+      <div class="left-nav-heading">
         <div class="left-nav-icon">⋆˙⟡</div>
-        <h2 class="left-panel-title">ARCHIVES</h2>
+        <h2 class="left-nav-title">ARCHIVES</h2>
       </div>
       <ul>
         <li><a href="{{ '/diary/2026/' | relative_url }}">2026</a></li>
@@ -37,10 +35,10 @@
 
     <!-- STANLOG ONLY -->
     {% if page.url contains '/stanlog/' %}
-    <nav class="left-navigation left-panel">
-      <div class="left-panel-heading">
+    <nav class="left-nav left-panel">
+      <div class="left-nav-heading">
         <div class="left-nav-icon">⋆˙⟡</div>
-        <h2 class="left-panel-title">TAGS</h2>
+        <h2 class="left-nav-title">TAGS</h2>
       </div>
       <ul>
         <li><a href="{{ '/stanlog/shinee/' | relative_url }}">#SHINee</a></li>
@@ -51,8 +49,8 @@
 
     <!-- TRAVELOG ONLY -->
     {% if page.url contains '/travelog/' %}
-    <nav class="left-navigation left-panel">
-      <div class="left-nav-head">
+    <nav class="left-nav left-panel">
+      <div class="left-nav-heading">
         <span class="left-nav-icon">⋆˙⟡</span>
         <h2 class="left-nav-title">ARCHIVES</h2>
       </div>
