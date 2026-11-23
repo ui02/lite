@@ -156,10 +156,10 @@
 .playlist-title {
   margin: 0;
   color: var(--blue-ink);
-  font-family: "Holiday", serif;
-  font-weight: 400;
-  /* letter-spacing: .08em; */
-  font-size: 20px;
+  font-family: "Pecita", serif;
+  font-weight: 700;
+  letter-spacing: .08em;
+  font-size: 17px;
 }
 
 .left-nav-icon,
@@ -246,12 +246,14 @@
   border-top: 1px dashed #dcecf1;
 
   color: #667f88;
-  font: 12px/1.5 "Zen Maru Gothic", sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
 }
 
 .update-list time {
   color: #65a4b9;
-  font: 700 11px "Zen Maru Gothic", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
   letter-spacing: .08em;
 }
 
