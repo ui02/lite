@@ -169,6 +169,14 @@
   font-size: 13px;
 }
 
+.updates-title,
+.left-nav-head {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
 /* 共通パネルの外観 */
 .left-panel {
   position: relative;
@@ -216,13 +224,6 @@
 .updates {
   min-height: 145px;
   padding-bottom: 5px;
-}
-
-.updates-title {
-  display: flex;
-  align-items: baseline;
-  gap: 8px;
-  margin-bottom: 8px;
 }
 
 .updates-subtitle {
