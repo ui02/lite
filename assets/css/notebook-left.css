@@ -170,7 +170,7 @@
 }
 
 .updates-title,
-.left-nav-head {
+.left-nav-heading {
   display: flex;
   align-items: baseline;
   gap: 8px;
