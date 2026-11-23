@@ -228,10 +228,7 @@
 
 /* TODOの見出し */
 .todo-note h2 {
-  margin: 0 0 10px;
-  color: var(--blue-ink);
-  font: 700 13px "Pecita", serif; /* Pecita */
-  letter-spacing: .08em;
+  margin-bottom: 10px;
 }
 
 /* TODOのリスト */
