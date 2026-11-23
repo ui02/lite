@@ -145,14 +145,13 @@
 }
 
 
-
 /* =========================================================
-   5. LEFT PAGE / COMMON PANEL DESIGN
+   5. LEFT PAGE / COMMON PANEL
    UPDATE / LEFT NAVIGATION
    ========================================================= */
 
-.left-navigation,
-.updates {
+/* 共通パネルの外観 */
+.left-panel {
   position: relative;
   margin: 0;
   padding: 14px 17px;
@@ -177,8 +176,7 @@
 }
 
 /* 共通マスキングテープ */
-.left-navigation::before,
-.updates::before {
+.left-panel::before {
   content: "";
   position: absolute;
   top: -5px;
@@ -192,9 +190,9 @@
 }
 
 /* 共通見出し */
-.left-navigation h2,
-.updates-title h2 {
+.left-panel-title {
   margin: 0;
+
   color: #548da3;
   font-size: 15px;
   font-weight: 600;
@@ -264,14 +262,6 @@
    7. LEFT NAVIGATION
    ARCHIVE / CATEGORY / TAGS
    ========================================================= */
-
-.left-navigation {
-  padding: 14px 17px;
-}
-
-.left-navigation h2 {
-  margin-bottom: 8px;
-}
 
 .left-navigation ul {
   display: flex;
@@ -360,7 +350,7 @@
 
 
 /* =========================================================
-   8. LEFT FOOTER
+   9. LEFT FOOTER
    ========================================================= */
 
 .left-footer {
@@ -369,7 +359,7 @@
 
 
 /* =========================================================
-   9. RESPONSIVE
+   10. RESPONSIVE
    ========================================================= */
 
 @media (max-width: 760px) {
