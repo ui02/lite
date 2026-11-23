@@ -84,7 +84,7 @@
   flex: 0 0 85px;
   margin-top: 0;
   color: #65a4b9;
-  font: 700 9px "Caveat", "Zen Maru Gothic", sans-serif;
+  font: 700 9px "Zen Maru Gothic", sans-serif;
   letter-spacing: .08em;
   text-decoration: none;
   white-space: nowrap;
@@ -107,7 +107,7 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   color: #647b83;
-  font: 10px/1.45 "Caveat", "Zen Maru Gothic", sans-serif;
+  font: 10px/1.45 "Zen Maru Gothic", sans-serif;
   overflow-wrap: normal;
 }
 
@@ -244,7 +244,7 @@
 .todo-note li {
   margin: 6px 0;
   color: #667f88;
-  font: 11px/1.5 "Caveat", "Zen Maru Gothic", sans-serif;
+  font: 11px/1.5 "Zen Maru Gothic", sans-serif;
 }
 
 /* 個別テープ装飾 */
@@ -374,7 +374,7 @@
   border-radius: 20px;
   background: linear-gradient(#c6f5fc, #83dce9);
   color: #315e6d;
-  font: 12px "Caveat", "Zen Maru Gothic", sans-serif;
+  font: 12px "Zen Maru Gothic", sans-serif;
   text-decoration: none;
   box-shadow: 0 2px 3px rgba(70, 130, 150, .2);
 }
