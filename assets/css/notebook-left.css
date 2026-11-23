@@ -189,20 +189,23 @@
   pointer-events: none;
 }
 
-
+/* 共通タイトル */
 .updates-title h2,
-.left-panel-title {
+.left-panel-title,
+.playlist-title {
   margin: 0;
-  color: red;
-  font-family: "Holiday", serif;
+  color: var(--blue-ink);
+  font-family: "Holiday, serif;
   font-weight: 700;
   letter-spacing: .08em;
+  font-size: 16px;
 }
 
-/* 標準サイズ */
-.updates-title h2,
-.left-panel-title {
-  font-size: 16px;
+.left-nav-icon,
+.updates-icon,
+.playlist-icon {
+  color: #78b9cd;
+  font-size: 13px;
 }
 
 /* =========================================================
@@ -219,11 +222,6 @@
   align-items: baseline;
   gap: 8px;
   margin-bottom: 8px;
-}
-
-.updates-icon {
-  color: #78b9cd;
-  font-size: 13px;
 }
 
 .updates-subtitle {
@@ -307,12 +305,6 @@
   align-self: end;
   margin: 0;
   padding-top: 8px;
-}
-
-.playlist-title {
-  margin: 0;
-  color: var(--blue-ink);
-  font: 700 15px "Pecita", serif;
 }
 
 .playlist-heading {
