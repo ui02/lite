@@ -84,7 +84,7 @@
   flex: 0 0 85px;
   margin-top: 0;
   color: #65a4b9;
-  font: 700 9px "Zen Maru Gothic", sans-serif;
+  font: 700 11px "Zen Maru Gothic", sans-serif;
   letter-spacing: .08em;
   text-decoration: none;
   white-space: nowrap;
@@ -107,7 +107,7 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   color: #647b83;
-  font: 10px/1.45 "Zen Maru Gothic", sans-serif;
+  font: 13px/1.6 "Zen Maru Gothic", sans-serif;
   overflow-wrap: normal;
 }
 
