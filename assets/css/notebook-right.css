@@ -153,10 +153,10 @@
 
 
 /* =========================================================
-   11. 右ページ：TODOメモ・カメラ（左列）
+   11. 右ページ：メモ・カメラ（左列）
    ========================================================= */
 
-/* TODOとカメラを縦に並べる親要素 */
+/* メモとカメラを縦に並べる親要素 */
 .left-feature-column {
   display: flex;
   flex-direction: column;
@@ -169,8 +169,8 @@
   padding-top: 12px;
 }
 
-/* TODO画像とメモをまとめる親要素 */
-.todo-wrap2 {
+/* 画像とメモをまとめる親要素 */
+.memo-wrap2 {
   position: relative;
   z-index: 2;
   width: 90%;
@@ -179,8 +179,8 @@
   margin: 0 auto;
 }
 
-/* TODOメモ */
-.todo-note {
+/* メモ */
+.memo {
   position: relative;
   z-index: 2;
   width: 100%;
@@ -203,8 +203,8 @@
   transform-origin: center top;
 }
 
-/* TODOの上に重ねる画像 */
-.todo-decoration {
+/* メモの上に重ねる画像 */
+.memo-decoration {
   position: absolute;
   z-index: 20;
   top: -70px;
@@ -214,8 +214,8 @@
   pointer-events: none;
 }
 
-/* TODOの上部マスキングテープ */
-.todo-note::before {
+/* メモの上部マスキングテープ */
+.memo::before {
   content: "";
   position: absolute;
   top: -5px;
@@ -226,31 +226,31 @@
   transform: rotate(-2deg);
 }
 
-/* TODOの見出し */
-.todo-note h2 {
+/* メモの見出し */
+.memo h2 {
   margin-bottom: 10px;
 }
 
-/* TODOのリスト */
-.todo-note ul {
+/* メモのリスト */
+.memo ul {
   margin: 0;
   padding: 0 0 0 4px;
   list-style: none;
 }
 
-.todo-note li {
+.memo li {
   margin: 6px 0;
   color: #667f88;
   font: 11px/1.5 "Zen Maru Gothic", sans-serif;
 }
 
 /* 個別テープ装飾 */
-.todo-tape {
+.memo-tape {
   display: none;
 }
 
-/* TODOの花飾り */
-.todo-flower {
+/* メモの花飾り */
+.memo-flower {
   position: absolute;
   left: -12px;
   bottom: -18px;
