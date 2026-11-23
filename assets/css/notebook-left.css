@@ -146,11 +146,11 @@
 
 
 /* =========================================================
-   5. LEFT PANEL
+   5. LEFT PANEL 共通デザイン
    UPDATE / LEFT NAVIGATION
    ========================================================= */
 
-/* 共通タイトル */
+/* タイトル */
 .updates-title h2,
 .left-nav-title,
 .playlist-title {
@@ -162,8 +162,14 @@
   font-size: 17px;
 }
 
-.left-nav-icon,
+.updates-subtitle,
+.left-nav-subtitle {
+  color: #9cb7c0;
+  font: italic 12px "Zen Maru Gothic", sans-serif;
+}
+
 .updates-icon,
+.left-nav-icon,
 .playlist-icon {
   color: #78b9cd;
   font-size: 13px;
@@ -177,7 +183,7 @@
   margin-bottom: 8px;
 }
 
-/* 共通パネルの外観 */
+/* パネルの外観 */
 .left-panel {
   position: relative;
   margin: 0;
@@ -202,7 +208,7 @@
   font-size: 12px;
 }
 
-/* 共通マスキングテープ */
+/* マスキングテープ */
 .left-panel::before {
   content: "";
   position: absolute;
@@ -263,7 +269,6 @@
   font-style: normal;
   text-align: right;
 }
-
 
 /* =========================================================
    7. LEFT NAVIGATION
