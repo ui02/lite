@@ -125,11 +125,11 @@
 
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 5px;
 
   min-height: 0;
   overflow: visible;
-  padding-right: 4px;
+  padding-right: 0px;
 }
 
 /* UPDATE / PLAYLIST：共通エリア内で配置 */
@@ -316,13 +316,6 @@
   align-self: end;
   margin: 0;
   padding-top: 8px;
-}
-
-.playlist-heading {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 12px;
 }
 
 /* Spotify */
