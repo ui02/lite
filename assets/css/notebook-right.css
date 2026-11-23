@@ -229,6 +229,12 @@
 /* メモの見出し */
 .memo h2 {
   margin-bottom: 10px;
+  margin: 0;
+  color: var(--blue-ink);
+  font-family: "Pecita", serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: .08em;
 }
 
 /* メモのリスト */
@@ -241,7 +247,7 @@
 .memo li {
   margin: 6px 0;
   color: #667f88;
-  font: 11px/1.5 "Zen Maru Gothic", sans-serif;
+  font: 13px/1.6 "Zen Maru Gothic", sans-serif;
 }
 
 /* 個別テープ装飾 */
