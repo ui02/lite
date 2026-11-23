@@ -1,28 +1,28 @@
 /* =========================================================
-   IOLITE / DIARY
+   IOLITE / Recent Entries一覧
    ========================================================= */
 
 /* =========================================================
-   1. DIARY PAGE
+   1. 全体・見出し
    ========================================================= */
 
-/* DIARYページ全体 */
+/* 全体 */
 .page-right:has(.diary-section) {
   display: flex;
   flex-direction: column;
   gap: 0;
 }
 
-/* DIARY見出しエリア */
+/* 見出しエリア */
 .diary-section {
   width: 100%;
   min-width: 0;
-  margin-top: 12px;
+  margin-top: 2px;
 }
 
 /* Recent Entries の見出し */
 .diary-section .section-heading {
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 }
 
 
@@ -53,9 +53,9 @@
 /* サムネイル */
 .diary-entry-thumb {
   display: block;
-  flex: 0 0 76px;
-  width: 76px;
-  height: 76px;
+  flex: 0 0 80px;
+  width: 80px;
+  height: 80px;
   object-fit: cover;
   border-radius: 8px;
 }
@@ -71,7 +71,7 @@
 /* 日付 */
 .diary-entry-date {
   color: #65a4b9;
-  font: 700 12px "Zen Maru Gothic", sans-serif;
+  font: 700 13px "Zen Maru Gothic", sans-serif;
   letter-spacing: .08em;
 }
 
@@ -82,7 +82,7 @@
 /* 記事タイトル */
 .diary-entry-title {
   color: #647b83;
-  font: 14px/1.6 "Zen Maru Gothic", sans-serif;
+  font: 15px/1.6 "Zen Maru Gothic", sans-serif;
   overflow-wrap: anywhere;
 }
 
