@@ -113,7 +113,7 @@ body.notebook-page a:visited {
 .section-heading h2,
 .updates-title h2,
 .left-panel-title,
-.todo-note h2 {
+.memo h2 {
   margin: 0;
   color: var(--blue-ink);
   font-family: "Pecita", serif;
@@ -128,8 +128,8 @@ body.notebook-page a:visited {
   font-size: 16px;
 }
 
-/* TODOのみ小さめ */
-.todo-note h2 {
+/* memoのみ小さめ */
+.memo h2 {
   font-size: 13px;
 }
 
