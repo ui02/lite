@@ -4,17 +4,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ page.title | default: "iolite." }}</title>
-  <link rel="stylesheet" href="{{ '/assets/css/planner.css' | relative_url }}">
+
+  {% include notebook/fonts.html %}
+
+  <link rel="stylesheet" href="{{ '/assets/css/notebook.css' | relative_url }}">
 </head>
+
 <body class="notebook-page{% if page.layout == 'diary-post' %} diary-post-page{% endif %}">
 
 <main class="notebook-wrap">
 
-  {% include index-tabs.html %}
+  {% include notebook/index-tabs.html %}
 
   <div class="notebook" aria-label="My little notebook">
 
-    {% include notebook-left.html %}
+    {% include notebook/left-page.html %}
 
     <section class="page page-right">
       {{ content }}
@@ -22,20 +26,17 @@
 
   </div>
 
-<!-- ライトボックス -->
-<dialog id="image-lightbox" class="image-lightbox">
-  <button type="button" id="lightbox-close" class="lightbox-close" aria-label="閉じる">×</button>
-
-  <button type="button" id="lightbox-prev" class="lightbox-nav lightbox-prev" aria-label="前の画像">‹</button>
-
-  <img id="lightbox-image" src="" alt="">
-
-  <button type="button" id="lightbox-next" class="lightbox-nav lightbox-next" aria-label="次の画像">›</button>
-
-  <div id="lightbox-counter" class="lightbox-counter"></div>
-</dialog>
+  <!-- ライトボックス -->
+  <dialog id="image-lightbox" class="image-lightbox">
+    <button type="button" id="lightbox-close" class="lightbox-close" aria-label="閉じる">×</button>
+    <button type="button" id="lightbox-prev" class="lightbox-nav lightbox-prev" aria-label="前の画像">‹</button>
+    <img id="lightbox-image" src="" alt="">
+    <button type="button" id="lightbox-next" class="lightbox-nav lightbox-next" aria-label="次の画像">›</button>
+    <div id="lightbox-counter" class="lightbox-counter"></div>
+  </dialog>
 
 </main>
+
 <script src="{{ '/assets/js/image-lightbox.js' | relative_url }}"></script>
 </body>
 </html>
