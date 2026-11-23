@@ -145,39 +145,19 @@
 }
 
 
+
 /* =========================================================
    5. LEFT PAGE / COMMON PANEL DESIGN
+   UPDATE / LEFT NAVIGATION
    ========================================================= */
 
 .left-navigation,
 .updates {
+  position: relative;
   margin: 0;
   padding: 14px 17px;
 
   border: 1px solid #dceef4;
-  background: rgba(255, 255, 255, .65);
-}
-
-/* 共通見出し */
-.left-navigation h2,
-.updates-title h2 {
-  margin: 0 0 8px;
-
-  color: #548da3;
-  font-size: 15px;
-  font-weight: 600;
-  letter-spacing: .16em;
-}
-
-
-/* =========================================================
-   6. UPDATE
-   ========================================================= */
-
-.updates {
-  position: relative;
-  min-height: 145px;
-  padding-bottom: 5px;
 
   background:
     linear-gradient(
@@ -190,8 +170,14 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  color: #667f88;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-size: 12px;
 }
 
+/* 共通マスキングテープ */
+.left-navigation::before,
 .updates::before {
   content: "";
   position: absolute;
@@ -202,6 +188,27 @@
 
   background: rgba(187, 226, 241, .72);
   transform: rotate(-2deg);
+  pointer-events: none;
+}
+
+/* 共通見出し */
+.left-navigation h2,
+.updates-title h2 {
+  margin: 0;
+  color: #548da3;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: .16em;
+}
+
+
+/* =========================================================
+   6. UPDATE
+   ========================================================= */
+
+.updates {
+  min-height: 145px;
+  padding-bottom: 5px;
 }
 
 .updates-title {
@@ -214,10 +221,6 @@
 .updates-icon {
   color: #78b9cd;
   font-size: 13px;
-}
-
-.updates-title h2 {
-  margin: 0;
 }
 
 .updates-subtitle {
@@ -263,7 +266,7 @@
    ========================================================= */
 
 .left-navigation {
-  padding: 10px 14px;
+  padding: 14px 17px;
 }
 
 .left-navigation h2 {
