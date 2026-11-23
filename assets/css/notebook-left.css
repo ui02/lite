@@ -132,7 +132,7 @@
   padding-right: 4px;
 }
 
-/* UPDATE / Spotify：共通エリア内で配置 */
+/* UPDATE / PLAYLIST：共通エリア内で配置 */
 .left-bottom .updates {
   grid-row: auto;
   flex: 0 0 auto;
@@ -146,7 +146,7 @@
 
 
 /* =========================================================
-   5. LEFT PAGE / COMMON PANEL
+   5. LEFT PANEL
    UPDATE / LEFT NAVIGATION
    ========================================================= */
 
@@ -189,6 +189,21 @@
   pointer-events: none;
 }
 
+
+.updates-title h2,
+.left-panel-title {
+  margin: 0;
+  color: red;
+  font-family: "Holiday", serif;
+  font-weight: 700;
+  letter-spacing: .08em;
+}
+
+/* 標準サイズ */
+.updates-title h2,
+.left-panel-title {
+  font-size: 16px;
+}
 
 /* =========================================================
    6. UPDATE
