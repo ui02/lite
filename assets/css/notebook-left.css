@@ -152,12 +152,11 @@
 
 /* 共通タイトル */
 .updates-title h2,
-.left-panel-title h2,
-.playlist-title h2 {
-  display: flex;
+.left-panel-title,
+.playlist-title {
   margin: 0;
   color: red;
-  font-family: "Holiday, serif;
+  font-family: "Holiday", serif;
   font-weight: 700;
   letter-spacing: .08em;
   font-size: 16px;
