@@ -81,7 +81,7 @@
   margin: 0;
 }
 
-.random--photo {
+.random-photo {
   position: absolute;
   top: 8px;
   right: 0;
@@ -117,7 +117,7 @@
 
 /* =========================================================
    4. LEFT BOTTOM AREA
-   ナビゲーション・UPDATE・Spotify
+   ナビゲーション・UPDATE・PLAYLIST
    ========================================================= */
 
 .left-bottom {
@@ -213,7 +213,7 @@
 
 .update-list li {
   display: grid;
-  grid-template-columns: 52px minmax(0, 1fr) 16px;
+  grid-template-columns: 52px minmax(0, 1fr); <!-- 52px minmax(0, 1fr) 16px -->
   align-items: center;
   gap: 8px;
 
