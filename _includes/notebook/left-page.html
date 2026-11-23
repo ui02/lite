@@ -23,6 +23,7 @@
       <div class="left-nav-heading">
         <div class="left-nav-icon">⋆˙⟡</div>
         <h2 class="left-nav-title">ARCHIVES</h2>
+        <span class="left-nav-subtitle"></span>
       </div>
       <ul>
         <li><a href="{{ '/diary/2026/' | relative_url }}">2026</a></li>
@@ -39,6 +40,7 @@
       <div class="left-nav-heading">
         <div class="left-nav-icon">⋆˙⟡</div>
         <h2 class="left-nav-title">TAGS</h2>
+        <span class="left-nav-subtitle"></span>
       </div>
       <ul>
         <li><a href="{{ '/stanlog/shinee/' | relative_url }}">#SHINee</a></li>
@@ -53,6 +55,7 @@
       <div class="left-nav-heading">
         <span class="left-nav-icon">⋆˙⟡</span>
         <h2 class="left-nav-title">ARCHIVES</h2>
+        <span class="left-nav-subtitle"></span>
       </div>
       <ul>
         <li></li>
@@ -60,21 +63,12 @@
     </nav>
     {% endif %}
 
-    <!-- UPDATE
-    <section class="updates left-panel">
-      <div class="updates-title">
-        <span class="updates-icon">⋆˙⟡</span>
-        <h2 class="left-panel-title">UPDATES</h2>
-        <span class="updates-subtitle"></span>
-      </div>
-     -->  
-
     <!-- INDEX ONLY -->
     {% if page.url == '/' %}
-    <nav class="left-nav left-panel">
-      <div class="left-nav-heading">
-        <span class="left-nav-icon">⋆˙⟡</span>
-        <h2 class="left-nav-title">UPDATES</h2>
+    <section class="updates left-panel">
+      <div class="updates-heading">
+        <span class="updates-icon">⋆˙⟡</span>
+        <h2 class="updates-title">UPDATES</h2>
         <span class="updates-subtitle">更新履歴</span>
       </div>
       
@@ -100,9 +94,11 @@
     </nav>
 
       <!-- Spotify playlist -->
-      <div class="playlist">
+      <section class="playlist">
         <div class="playlist-heading">
+          <span class="playlist-icon">⋆˙⟡</span>
           <h2 class="playlist-title">♫ Play list</h2>
+          <span class="playlist-subtitle">更新履歴</span>
         </div>
         <div class="spotify-frame">
           <iframe
