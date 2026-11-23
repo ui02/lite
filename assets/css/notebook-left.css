@@ -155,9 +155,9 @@
 .left-panel-title,
 .playlist-title {
   margin: 0;
-  color: red;
+  color: var(--blue-ink);
   font-family: "Holiday", serif;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: .08em;
   font-size: 16px;
 }
