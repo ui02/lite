@@ -60,14 +60,24 @@
     </nav>
     {% endif %}
 
-    <!-- UPDATE -->
+    <!-- UPDATE
     <section class="updates left-panel">
       <div class="updates-title">
         <span class="updates-icon">⋆˙⟡</span>
         <h2 class="left-panel-title">UPDATES</h2>
         <span class="updates-subtitle"></span>
       </div>
+     -->  
 
+    <!-- INDEX ONLY -->
+    {% if page.url == '/' %}
+    <nav class="left-nav left-panel">
+      <div class="left-nav-heading">
+        <span class="left-nav-icon">⋆˙⟡</span>
+        <h2 class="left-nav-title">UPDATES</h2>
+        <span class="updates-subtitle">更新履歴</span>
+      </div>
+      
       <ul class="update-list">
         <li>
           <time datetime="">11.20~21</time>
@@ -88,9 +98,6 @@
         </li>
       </ul>
     </section>
-
-    <!-- INDEX ONLY -->
-    {% if page.url == '/' %}
 
       <!-- Spotify playlist -->
       <div class="playlist">
