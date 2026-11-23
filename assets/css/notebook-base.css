@@ -111,8 +111,6 @@ body.notebook-page a:visited {
    ========================================================= */
 
 .section-heading h2,
-.updates-title h2,
-.left-panel-title,
 .memo h2 {
   margin: 0;
   color: var(--blue-ink);
@@ -122,9 +120,7 @@ body.notebook-page a:visited {
 }
 
 /* 標準サイズ */
-.section-heading h2,
-.updates-title h2,
-.left-panel-title {
+.section-heading h2 {
   font-size: 16px;
 }
 
