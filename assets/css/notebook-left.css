@@ -202,7 +202,7 @@
 
 .updates-subtitle {
   color: #9cb7c0;
-  font: italic 12px "Caveat", "Zen Maru Gothic", sans-serif;
+  font: italic 12px "Zen Maru Gothic", sans-serif;
 }
 
 .update-list {
@@ -221,12 +221,12 @@
   border-top: 1px dashed #dcecf1;
 
   color: #667f88;
-  font: 12px/1.5 "Caveat", "Zen Maru Gothic", sans-serif;
+  font: 12px/1.5 "Zen Maru Gothic", sans-serif;
 }
 
 .update-list time {
   color: #65a4b9;
-  font: 700 11px "Caveat", "Zen Maru Gothic", sans-serif;
+  font: 700 11px "Zen Maru Gothic", sans-serif;
   letter-spacing: .08em;
 }
 
