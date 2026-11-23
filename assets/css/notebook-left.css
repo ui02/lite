@@ -70,10 +70,10 @@
 
 
 /* =========================================================
-   3. PROFILE PHOTO
+   3. RANDOM PHOTO
    ========================================================= */
 
-.profile-area {
+.random-photo-area {
   position: relative;
   grid-row: 2;
   min-width: 0;
@@ -81,7 +81,7 @@
   margin: 0;
 }
 
-.profile-photo {
+.random--photo {
   position: absolute;
   top: 8px;
   right: 0;
@@ -101,13 +101,13 @@
   transform: rotate(2deg);
 }
 
-.profile-photo-link {
+.random-photo-link {
   display: block;
   width: 100%;
   height: 100%;
 }
 
-.profile-photo-image {
+.random-photo-image {
   display: block;
   width: 100%;
   height: 100%;
