@@ -116,14 +116,17 @@
    ========================================================= */
 
 .tumblr-bottom-row {
-  display: grid;
+  display: block;
+  width: 100%;
   margin-top: 12px;
 }
 
 .tumblr-post-images {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 8px;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-auto-flow: row;
+  width: 100%;
+  gap: 5px;
 }
 
 .tumblr-post-image {
