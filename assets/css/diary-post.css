@@ -287,6 +287,15 @@ body.diary-post-page .diary-post-navigation a:hover {
   border-color: var(--baby-blue);
 }
 
+.back-to-top {
+  display: block;
+  width: fit-content;
+  margin: 30px auto 10px;
+  color: var(--blue-ink);
+  font-size: 11px;
+  text-decoration: none;
+  letter-spacing: .1em;
+}
 
 /* =========================================================
    7. FOOTER
