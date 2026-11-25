@@ -120,7 +120,7 @@ body.diary-post-page .diary-post-content {
   width: 100%;
   color: var(--ink);
   font-family: "Zen Maru Gothic", sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 2;
   letter-spacing: .025em;
   overflow-wrap: break-word;
@@ -274,7 +274,7 @@ body.diary-post-page .diary-post-navigation a {
   border: 1px solid var(--line);
   border-radius: 20px;
 
-  font-size: 12px;
+  font-size: 13px;
   text-align: center;
   text-decoration: none;
 
@@ -303,8 +303,7 @@ body.diary-post-page .diary-post-footer {
   color: var(--muted);
   background: transparent;
 
-  font-family: "Caveat", "Zen Maru Gothic", sans-serif;
-  font-size: 12px;
+  font-size: 13px;
   letter-spacing: .08em;
 }
 
