@@ -141,7 +141,7 @@ body.notebook-page a:visited {
   align-items: center;
   justify-content: space-between;
   color: var(--muted);
-  font-size: 9px;
+  font-size: 10px;
   letter-spacing: .16em;
   font-weight: 400;
 }
