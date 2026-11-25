@@ -12,12 +12,17 @@ permalink: /stanlog/2025/
   </div>
 
   <div class="diary-entry-list">
-    {% assign archive_posts = site.diary | sort: "date" | reverse %}
+    {% assign archive_posts = site.stanlog
+      | where_exp: "post", "post.published != false"
+      | where_exp: "post", "post.categories contains 'STANLOG'"
+      | sort: "date"
+      | reverse
+    %}
 
     {% for post in archive_posts %}
       {% assign post_year = post.date | date: "%Y" %}
 
-      {% if post_year == "2025" and post.published != false and post.categories contains "STANLOG" %}
+      {% if post_year == "2025" %}
         <a class="diary-entry" href="{{ post.url | relative_url }}">
 
           {% if post.header.teaser %}
@@ -29,7 +34,10 @@ permalink: /stanlog/2025/
           {% endif %}
 
           <div class="diary-entry-info">
-            <span class="diary-entry-date">{{ post.date | date: "%Y.%m.%d" }}{% if post.lastmod %} <span class="updated-date">(updated: {{ post.lastmod | date: "%Y.%m.%d" }})</span>{% endif %}</span>
+            <span class="diary-entry-date">
+              {{ post.date | date: "%Y.%m.%d" }}{% if post.lastmod %} <span class="updated-date">(updated: {{ post.lastmod | date: "%Y.%m.%d" }})</span>{% endif %}
+            </span>
+
             <span class="diary-entry-title">
               {{ post.title }}
             </span>
