@@ -456,14 +456,13 @@
 }
 
 .index-tabs {
-  position: fixed;
+  position: absolute;
   top: 5%;
-  right: 20px;
+  right: -34px;
   display: flex;
   flex-direction: column;
   gap: 7px;
   width: 39px;
-  z-index: 1000;
 }
 
 .index-tab:hover {
