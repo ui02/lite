@@ -68,7 +68,7 @@ def main():
     rss = fetch(RSS_URL)
     root = ET.fromstring(rss)
 
-    items = root.findall("./channel/item")[:3]
+    items = root.findall("./channel/item")[:5]
 
     posts = []
     image_url = None
