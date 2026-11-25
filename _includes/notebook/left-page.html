@@ -28,14 +28,23 @@
       <ul>
         <li><a href="{{ '/diary/2026/' | relative_url }}">2026</a></li>
         <li><a href="{{ '/diary/2025/' | relative_url }}">2025</a></li>
-        <li><a href="{{ '/diary/2024/' | relative_url }}">2024</a></li>
-        <li><a href="{{ '/diary/2023/' | relative_url }}">2023</a></li>
       </ul>
     </nav>
     {% endif %}
 
     <!-- STANLOG ONLY -->
     {% if page.url contains '/stanlog/' %}
+    <nav class="left-nav left-panel">
+      <div class="left-nav-heading">
+        <div class="left-nav-icon">⋆˙⟡</div>
+        <h2 class="left-nav-title">ARCHIVES</h2>
+        <span class="left-nav-subtitle"></span>
+      </div>
+      <ul>
+        <li><a href="{{ '/stanlog/2026/' | relative_url }}">2026</a></li>
+        <li><a href="{{ '/stanlog/2025/' | relative_url }}">2025</a></li>
+      </ul>
+    </nav>
     <nav class="left-nav left-panel">
       <div class="left-nav-heading">
         <div class="left-nav-icon">⋆˙⟡</div>
