@@ -143,7 +143,7 @@ body.notebook-page a:visited {
   color: var(--muted);
   font-size: 10px;
   letter-spacing: .16em;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 /* 左ページのヘッダー */
@@ -170,7 +170,6 @@ body.notebook-page a:visited {
   align-self: end;
   padding-top: 7px;
   border-top: 1px solid #e7f2f5;
-  font-size: 10px;
 }
 
 /* 右ページのヘッダー */
