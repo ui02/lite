@@ -1,0 +1,47 @@
+---
+layout: notebook
+title: 2025 ARCHIVE
+permalink: /stanlog/2025/
+---
+
+<section class="diary-section">
+  <div class="section-heading">
+    <span class="heading-mark">✧</span>
+    <h2>2025 ENTRIES</h2>
+    <span class="heading-rule"></span>
+  </div>
+
+  <div class="diary-entry-list">
+    {% assign archive_posts = site.diary | sort: "date" | reverse %}
+
+    {% for post in archive_posts %}
+      {% assign post_year = post.date | date: "%Y" %}
+
+      {% if post_year == "2025" and post.published != false and post.categories contains "STANLOG" %}
+        <a class="diary-entry" href="{{ post.url | relative_url }}">
+
+          {% if post.header.teaser %}
+            <img
+              class="diary-entry-thumb"
+              src="{{ post.header.teaser | relative_url }}"
+              alt=""
+              loading="lazy">
+          {% endif %}
+
+          <div class="diary-entry-info">
+            <span class="diary-entry-date">{{ post.date | date: "%Y.%m.%d" }}{% if post.lastmod %} <span class="updated-date">(updated: {{ post.lastmod | date: "%Y.%m.%d" }})</span>{% endif %}</span>
+            <span class="diary-entry-title">
+              {{ post.title }}
+            </span>
+          </div>
+
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+<div class="right-footer">
+  <span></span>
+  <span>2025 ARCHIVE / STANLOG</span>
+</div>
