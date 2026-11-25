@@ -63,35 +63,25 @@
     </nav>
     {% endif %}
 
-    <!-- INDEX ONLY -->
-    {% if page.url == '/' %}
-    <section class="updates left-panel">
-      <div class="updates-heading">
-        <span class="updates-icon">⋆˙⟡</span>
-        <h2 class="updates-title">UPDATES</h2>
-        <span class="updates-subtitle">更新履歴</span>
-      </div>
-      
-      <ul class="update-list">
-        <li>
-          <time datetime="">11.20~21</time>
-          <span>DIARYページのカテゴリと左メニュー修正、過去記事アップ</span>
-        </li>
-        <li>
-          <time datetime="">11.19</time>
-          <span>記事ページ内ライトボックス導入～</span>
-        </li>
-        <li>
-          <time datetime="">11.17</time>
-          <span>DIARYページの左メニューとアーカイブページ作成。</span>
-        </li>
-        <li>
-          <time datetime="2026-11-08">11.08</time>
-          <span>Giving this little corner a fresh new look.
-          TumblrFEEDを設置（ラグいし動き安定しない）</span>
-        </li>
-      </ul>
-    </section>
+<!-- INDEX ONLY -->
+{% if page.url == '/' %}
+<section class="updates left-panel">
+  <div class="updates-heading">
+    <span class="updates-icon">⋆˙⟡</span>
+    <h2 class="updates-title">UPDATES</h2>
+    <span class="updates-subtitle">更新履歴</span>
+  </div>
+
+  <ul class="update-list">
+    {% for update in site.data.updates limit:5 %}
+      <li>
+        <time>{{ update.date }}</time>
+        <span>{{ update.text }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
 
       <!-- Spotify playlist -->
       <section class="playlist">
