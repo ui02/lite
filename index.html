@@ -10,7 +10,7 @@ layout: notebook
           <!-- <span class="weather-label">☀ A GOOD DAY TO BE HERE</span> -->
         </div>
 
-<!-- Tumblr: latest 3 posts + each post image -->
+<!-- Tumblr: latest 5 posts + each post image -->
 <section class="tumblr-section">
   <div class="section-heading">
     <span class="heading-mark">
@@ -20,9 +20,9 @@ layout: notebook
     <span class="heading-rule"></span>
   </div>
 
-  <!-- 本文3件 -->
+  <!-- 本文 -->
   <div class="tumblr-posts">
-    {% for post in tumblr.posts limit: 3 %}
+    {% for post in tumblr.posts limit: 5 %}
       <article class="tumblr-post">
         <a class="tumblr-post-date"
            href="{{ post.url }}"
@@ -33,11 +33,11 @@ layout: notebook
     {% endfor %}
   </div>
 
-  <!-- 画像3枚 + メモ -->
+  <!-- 画像 -->
   <div class="tumblr-bottom-row">
 
     <div class="tumblr-post-images">
-      {% for post in tumblr.posts limit: 3 %}
+      {% for post in tumblr.posts limit: 5 %}
         {% if post.image_url %}
           <a class="tumblr-post-image"
              href="{{ post.url }}"
