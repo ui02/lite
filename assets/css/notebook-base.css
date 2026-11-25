@@ -141,9 +141,9 @@ body.notebook-page a:visited {
   align-items: center;
   justify-content: space-between;
   color: var(--muted);
-  font-size: 10px;
+  font-size: 9px;
   letter-spacing: .16em;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 /* 左ページのヘッダー */
