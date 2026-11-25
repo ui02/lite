@@ -14,30 +14,16 @@ permalink: /stanlog/2026/
   <div class="diary-entry-list">
     {% assign archive_posts = site.diary | sort: "date" | reverse %}
 
-    {% for post in archive_posts %}
-      {% assign post_year = post.date | date: "%Y" %}
-
-      {% if post_year == "2026" and post.published != false and post.categories contains "STANLOG" %}
-        <a class="diary-entry" href="{{ post.url | relative_url }}">
-
-          {% if post.header.teaser %}
-            <img
-              class="diary-entry-thumb"
-              src="{{ post.header.teaser | relative_url }}"
-              alt=""
-              loading="lazy">
-          {% endif %}
-
-          <div class="diary-entry-info">
-            <span class="diary-entry-date">{{ post.date | date: "%Y.%m.%d" }}{% if post.lastmod %} <span class="updated-date">(updated: {{ post.lastmod | date: "%Y.%m.%d" }})</span>{% endif %}</span>
-            <span class="diary-entry-title">
-              {{ post.title }}
-            </span>
-          </div>
-
-        </a>
-      {% endif %}
-    {% endfor %}
+{% for post in archive_posts %}
+  <p>
+    {{ post.title }} /
+    {{ post.date | date: "%Y.%m.%d" }} /
+    {{ post.categories | join: ", " }}
+  </p>
+{% else %}
+  <p>記事が読み込まれていません。</p>
+{% endfor %}
+    
   </div>
 </section>
 
