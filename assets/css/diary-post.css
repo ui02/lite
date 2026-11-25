@@ -253,7 +253,7 @@ body.diary-post-page .diary-post-content .image-gallery .image-gallery-caption {
 
 
 /* =========================================================
-   6. PREVIOUS & NEXT
+   6. PREVIOUS & NEXT & BACK TO TOP
    ========================================================= */
 
 body.diary-post-page .diary-post-navigation {
@@ -295,6 +295,9 @@ body.diary-post-page .diary-post-navigation a:hover {
   font-size: 11px;
   text-decoration: none;
   letter-spacing: .1em;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 8px 13px;
 }
 
 /* =========================================================
