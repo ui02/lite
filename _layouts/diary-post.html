@@ -75,6 +75,7 @@ body_class: diary-post-page
 
 </article>
 
+<!-- Toutube -->
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   const content = document.querySelector(".diary-post-content");
@@ -105,5 +106,56 @@ document.addEventListener("DOMContentLoaded", function () {
     wrapper.appendChild(iframe);
     paragraph.replaceWith(wrapper);
   });
+});
+</script>
+
+<!-- Map -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  document.querySelectorAll(".osm-map").forEach(function (element) {
+
+    const points = JSON.parse(element.dataset.points);
+
+    if (!points || points.length === 0) return;
+
+    const map = L.map(element);
+
+    // OpenStreetMapの地図を表示
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 19,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+
+    // ピンを追加
+    const markers = [];
+
+    points.forEach(function (point) {
+      const marker = L.marker([point.lat, point.lng]).addTo(map);
+
+      if (point.name) {
+        marker.bindPopup(
+          document.createTextNode(point.name)
+        );
+      }
+
+      markers.push(marker);
+    });
+
+    // 複数ピンが全部見える範囲に調整
+    if (markers.length === 1) {
+      map.setView(
+        [points[0].lat, points[0].lng],
+        15
+      );
+    } else {
+      const bounds = L.featureGroup(markers).getBounds();
+      map.fitBounds(bounds, { padding: [30, 30] });
+    }
+
+  });
+
 });
 </script>
