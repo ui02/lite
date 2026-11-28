@@ -148,11 +148,11 @@ KEYの体験型展示会「Mr. Freak’s Lab : Sweet Escape」＠原宿ADOROに�
   images="830250908357181440_2.jpg,830250908357181440_3.jpg,830250908357181440_4.jpg"
 %}
 
-月間優秀賞総なめｗ  
 {% include image-gallery.html
   folder="/2024-07-30-sweet-escape"
   layout=""
   images="830250908357181440_5.jpg"
+  caption="月間優秀賞総なめのエリート社員"
 %}
 {% include image-gallery.html
   folder="/2024-07-30-sweet-escape"
