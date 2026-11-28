@@ -13,6 +13,12 @@ header:
   teaser: /assets/images/diary/2025-05-01-golden-week/thumb.jpg
 ---
 
+{% include image-gallery.html
+  folder="/2025-05-01-golden-week"
+  layout=""
+  images="828562267890171904_0.jpg"
+%}
+
 今年のGWは短い連休だった分、しっかり出かけてしっかり遊んだ。  
 
 友達と喋ったり遊んだり 推しのポップアップ行ったり  
