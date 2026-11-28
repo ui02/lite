@@ -59,7 +59,7 @@ body.diary-post-page .diary-post-page {
   margin: 0;
 }
 
-/* YouTube responsive embed */
+/* YouTube */
 .diary-post-content .youtube-container {
   position: relative;
   width: 100%;
@@ -76,7 +76,7 @@ body.diary-post-page .diary-post-page {
   border: 0;
 }
 
-/* OpenStreetMap */
+/* MAP */
 .diary-post-content .osm-map {
   width: 100%;
   height: 400px;
@@ -90,6 +90,18 @@ body.diary-post-page .diary-post-page {
   }
 }
 
+/* 脚注 */
+.diary-post-content .footnotes {
+  margin-top: 3em;
+  padding-top: 1em;
+  border-top: 1px solid #d8e5e7;
+  font-size: 0.85em;
+  color: #71858a;
+}
+
+.diary-post-content sup {
+  font-size: 0.75em;
+}
 /* =========================================================
    2. ARTICLE HEADER
    ========================================================= */
