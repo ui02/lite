@@ -143,6 +143,7 @@ https://youtu.be/ZYHBKvNUmk0
 %}
 
 私はキーボードとマウスを置けるサイズのマウスパッドを購入☺  
+それ以外のポスカやステッカーは展示会の参加でもらったものたち。
 
 {% include image-gallery.html
   folder="/2024-07-30-sweet-escape"
