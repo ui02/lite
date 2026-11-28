@@ -1,0 +1,104 @@
+---
+layout: diary-post
+title: "滋賀旅行：1日目（琵琶湖テラス、唐崎神社）"
+date: 2018-10-18
+lastmod: 2026-11-28
+published: true
+categories:
+  - TRAVELOG
+tags:
+  - travel
+header:
+  teaser: /assets/images/travelog/2018-10-18-shiga/thumb.jpg
+---
+{% include image-gallery.html
+  folder="/2018-10-18-shiga"
+  layout=""
+  images="IMG_20181018_144951.jpg"
+%}
+
+滋賀観光の備忘録。  
+
+旅の目的は、観光と「煉獄に笑う」のスタンプラリー、そして関ケ原合戦祭りへの参加☺  
+
+夜9時前に大分発の深夜バスに乗り、朝9時前に京都着。 
+
+## 琵琶湖テラス
+
+滋賀県にちゃんと行ったことなく、もしかしたら初上陸だったかもしれない。  
+
+琵琶湖も見たことがないので、ここには絶対に行かなくてはということで琵琶湖テラスへ。  
+
+大きいのは分かっていても、実際に見るとその大きさに改めて驚く。  
+
+{% include image-gallery.html
+  folder="/2018-10-18-shiga"
+  layout="half"
+  images="IMG_20181018_111756.jpg,IMG_20181018_112613.jpg,IMG_20181018_124034.jpg,IMG_20181018_124611.jpg"
+%}
+{% include image-gallery.html
+  folder="/2018-10-18-shiga"
+  layout=""
+  images="IMG_20181018_125125.jpg"
+%}
+
+## 唐崎神社
+
+大津駅前でレンタカーを借り、本日のメイン唐崎神社へ。  
+（と言いつつ、着いたのは16時近く。他にもぶらぶらしていたけど写真ないしうろ覚えなので省略…）  
+
+{% include image-gallery.html
+  folder="/2018-10-18-shiga"
+  layout=""
+  images="IMG_20181018_155309.jpg"
+%}
+{% include image-gallery.html
+  folder="/2018-10-18-shiga"
+  layout="half"
+  images="IMG_20181018_155841.jpg,IMG_20181018_155937.jpg,IMG_20181018_160034.jpg,IMG_20181018_160511.jpg,IMG_20181018_160646.jpg,IMG_20181018_160658.jpg"
+%}
+{% include image-gallery.html
+  folder="/2018-10-18-shiga"
+  layout=""
+  images="IMG_20181018_160106.jpg"
+%}
+{% include image-gallery.html
+  folder="/2018-10-18-shiga"
+  layout=""
+  images="IMG_20181018_160745.jpg"
+  width="50%"
+%}
+{% include image-gallery.html
+  folder="/2018-10-18-shiga"
+  layout="half"
+  images="IMG_20181018_160923.jpg,IMG_20181018_160910.jpg"
+  caption="残念ながらお団子にはありつけなかった…"
+%}
+
+## 初日〆  
+
+夜ごはんは、1972年創業というレトロな洋食喫茶「スイス」へ。  
+
+お店の外観が草に覆われていて、夜は見逃しそうだった。
+遅い時間に行ったけど、結構若いお客さんでにぎわってた。  
+
+{% include image-gallery.html
+  folder="/2018-10-18-shiga"
+  layout="masonry"
+  images="IMG_20181018_214013.jpg,IMG_20181018_213819.jpg,IMG_20181018_212302.jpg"
+  caption="温泉は必須"
+%}
+
+オムライス400円、ハンバーグステーキ500円というびっくり価格。  
+こういう注文は普段しないんだけど、するしかないでしょ、オムライスにハンバーグ。  
+とても美味しかった！  
+
+{% include image-gallery.html
+  folder="/2018-10-18-shiga"
+  layout="masonry"
+  images="IMG_20181018_205157.jpg,IMG_20181018_174245.jpg"
+  caption="温泉は必須"
+%}
+
+泊まりは彦根駅前のビジホだったので、外で温泉も探して入った。  
+満足の初日でした！
