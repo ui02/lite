@@ -35,7 +35,7 @@ KEYの体験型展示会「Mr. Freak’s Lab : Sweet Escape」＠原宿ADOROに�
 
 ## Gasoline  
 
-<iframe width="100%" height="auto" src="https://www.youtube-nocookie.com/embed/2pm32-ZonSA?si=c3rIlIwc7puoGQ8u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+https://youtu.be/2pm32-ZonSA?si=9r4BDSXMrRbtnimX
 
 最上階からスタートで、このフロアはGasolineの世界観を表現した怪しげなラボになってた。  
 おびえるボクシリちゃん、かわいそかわいい。  
