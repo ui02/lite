@@ -21,9 +21,10 @@ header:
 %}
 KEYの体験型展示会「Mr. Freak’s Lab : Sweet Escape」＠原宿ADOROに行ってきた。  
 
-「Mr. Freak's Lab : Sweet Escape」は、観覧客が研究所のインターンとなってデザート工場に隠された秘密を暴くストーリーテリングを盛り込んだ体験型展示会です。「BAD LOVE」、「Gasoline」、「Killer」のレトロトリロジー(3部作)と「Good & Great」までの衣装、アートワーク、ジャケットイメージ、MV小物、デジタルコンテンツを通して参加するインタラクティブミッション、特別なイベント、アーケードゲームゾーン、フォトブース、展示コンセプトにふさわしい様々なデザートとグッズなどを楽しめます。  
+>「Mr. Freak's Lab : Sweet Escape」は、観覧客が研究所のインターンとなってデザート工場に隠された秘密を暴くストーリーテリングを盛り込んだ体験型展示会です。「BAD LOVE」、「Gasoline」、「Killer」のレトロトリロジー(3部作)と「Good & Great」までの衣装、アートワーク、ジャケットイメージ、MV小物、デジタルコンテンツを通して参加するインタラクティブミッション、特別なイベント、アーケードゲームゾーン、フォトブース、展示コンセプトにふさわしい様々なデザートとグッズなどを楽しめます。  
 
-コンセプトも面白かったし、衣装展示やミニゲームもあって想像以上に楽しめた！！こういう展示会好きなのでまたやってほしいな。  
+コンセプトも面白かったし、衣装展示やミニゲームもあって想像以上に楽しめた！！  
+こういう展示会好きなのでまたやってほしいな。  
 
 {% include image-gallery.html
   folder="/2024-07-30-sweet-escape"
@@ -33,7 +34,8 @@ KEYの体験型展示会「Mr. Freak’s Lab : Sweet Escape」＠原宿ADOROに�
 %}
 
 ## Gasoline  
-<iframe width="auto" height="auto" src="https://www.youtube-nocookie.com/embed/2pm32-ZonSA?si=c3rIlIwc7puoGQ8u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="100%" height="auto" src="https://www.youtube-nocookie.com/embed/2pm32-ZonSA?si=c3rIlIwc7puoGQ8u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 最上階からスタートで、このフロアはGasolineの世界観を表現した怪しげなラボになってた。  
 おびえるボクシリちゃん、かわいそかわいい。  
@@ -41,39 +43,34 @@ KEYの体験型展示会「Mr. Freak’s Lab : Sweet Escape」＠原宿ADOROに�
 {% include image-gallery.html
   folder="/2024-07-30-sweet-escape"
   layout="masonry"
-  images="830247294443143168_6.jpg,830247294443143168_5.jpg,830247294443143168_7.jpg,830247294443143168_8.jpg,830247294443143168_9.jpg,830247294443143168_10.jpg"
+  images="830247294443143168_6.jpg,830247294443143168_5.jpg,830247294443143168_7.jpg"
+%}
+{% include image-gallery.html
+  folder="/2024-07-30-sweet-escape"
+  layout="masonry"
+  images="830247294443143168_8.jpg,830247294443143168_9.jpg,830247294443143168_10.jpg"
 %}
 
 ## Killer  
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/dUd_9R_qJSg?si=VkmdP4tcQe5r-veO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-{% include image-gallery.html
-  folder="/2024-07-30-sweet-escape"
-  layout=""
-  width="50%"
-  images="830248199082131456_0.jpg"
-%}
+<iframe width="100%" height="auto" src="https://www.youtube-nocookie.com/embed/dUd_9R_qJSg?si=VkmdP4tcQe5r-veO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ここのフロアはミニゲームがあったり、KEYくんと一緒に写真撮れる機械があった！  
 {% include image-gallery.html
   folder="/2024-07-30-sweet-escape"
   layout="half"
-  images="830248199082131456_2.jpg,830248199082131456_4.jpg"
-%}
-{% include image-gallery.html
-  folder="/2024-07-30-sweet-escape"
-  layout="half"
-  images="830248199082131456_3.jpg,830248199082131456_5.jpg"
+  images="830248199082131456_0.jpg,830248199082131456_6.jpg,830248199082131456_2.jpg,830248199082131456_4.jpg,830248199082131456_3.jpg,830248199082131456_5.jpg"
 %}
 {% include image-gallery.html
   folder="/2024-07-30-sweet-escape"
   layout=""
-  images="830248199082131456_6.jpg,830248199082131456_7.jpg"
-  height="auto"
-  width="100%"
+  images="830248199082131456_7.jpg"
+  width="50%"
 %}
 
-## BAD LOVE
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/v4tqVGD41XU?si=3RyOXdQSYvapYJ88" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+## BAD LOVE  
+
+<iframe width="100%" height="auto" src="https://www.youtube-nocookie.com/embed/v4tqVGD41XU?si=3RyOXdQSYvapYJ88" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 このフロアの写真、もう少しあったはずなので見つけたら追記する！  
 {% include image-gallery.html
@@ -93,12 +90,7 @@ KEYの体験型展示会「Mr. Freak’s Lab : Sweet Escape」＠原宿ADOROに�
   height="300px"
 %}
 
-## Good&Great
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ZYHBKvNUmk0?si=LydmP1OEhFPKWj2U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-大好きなGood&Greatのフロア！  
-
-残業続きの日々、この曲に何度救われたことか・・笑  
-歌詞の翻訳ONにして聴いてみてほしい～  
+## Good&Great  
 
 {% include image-gallery.html
   folder="/2024-07-30-sweet-escape"
@@ -106,8 +98,12 @@ KEYの体験型展示会「Mr. Freak’s Lab : Sweet Escape」＠原宿ADOROに�
   width="50%"
   images="830250645796896768_0.jpg"
 %}
+大好きなGood&Greatのフロア！  
 
-このフロアのミッションが「マネージャーと一緒に写真を撮る」なので、こちらの方と自撮りをして、撮った写真をスタッフに見せます・・笑  
+残業続きの日々、この曲に何度救われたことか・・笑  
+歌詞の翻訳ONにして聴いてみてほしい～  
+<iframe width="100%" height="auto" src="https://www.youtube-nocookie.com/embed/ZYHBKvNUmk0?si=LydmP1OEhFPKWj2U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+ 
 {% include image-gallery.html
   folder="/2024-07-30-sweet-escape"
   layout=""
@@ -117,6 +113,7 @@ KEYの体験型展示会「Mr. Freak’s Lab : Sweet Escape」＠原宿ADOROに�
   folder="/2024-07-30-sweet-escape"
   layout="half"
   images="830250645796896768_3.jpg,830250645796896768_4.jpg"
+  caption="このフロアのミッションが「マネージャーと一緒に写真を撮る」なので、こちらの方とツーショ撮ってそれをスタッフに見せるという・・笑 "
 %}
 {% include image-gallery.html
   folder="/2024-07-30-sweet-escape"
@@ -136,7 +133,10 @@ KEYの体験型展示会「Mr. Freak’s Lab : Sweet Escape」＠原宿ADOROに�
 
 ## お土産コーナー  
 最後、1階はお土産コーナー。  
-展示会用でしか買えないグッズたくさん。フード類もあったり。私はキーボードとマウスを置けるサイズのマウスパッドを購入☺  
+展示会用でしか買えないグッズたくさん。フード類もあったり。  
+
+私はキーボードとマウスを置けるサイズのマウスパッドを購入☺  
+
 {% include image-gallery.html
   folder="/2024-07-30-sweet-escape"
   layout="half"
