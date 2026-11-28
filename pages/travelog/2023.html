@@ -13,7 +13,7 @@ permalink: /travelog/2023/
 
   <div class="diary-entry-list">
     {% assign archive_posts = site.travelog
-      | where_exp: "post", "post.published != false"
+      | where_exp: "post", "post.published != false"## 初日〆  
       | where_exp: "post", "post.categories contains 'TRAVELOG'"
       | sort: "date"
       | reverse
@@ -22,7 +22,7 @@ permalink: /travelog/2023/
     {% for post in archive_posts %}
       {% assign post_year = post.date | date: "%Y" %}
 
-      {% if post_year == "2025" %}
+      {% if post_year == "2023" %}
         <a class="diary-entry" href="{{ post.url | relative_url }}">
 
           {% if post.header.teaser %}
