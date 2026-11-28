@@ -49,13 +49,8 @@ header:
 
 {% include image-gallery.html
   folder="/2018-10-18-shiga"
-  layout=""
-  images="IMG_20181018_155309.jpg"
-%}
-{% include image-gallery.html
-  folder="/2018-10-18-shiga"
   layout="half"
-  images="IMG_20181018_155841.jpg,IMG_20181018_155937.jpg,IMG_20181018_160034.jpg,IMG_20181018_160511.jpg,IMG_20181018_160646.jpg,IMG_20181018_160658.jpg"
+  images="IMG_20181018_154345.jpg,IMG_20181018_155309.jpg,IMG_20181018_155841.jpg,IMG_20181018_155937.jpg,IMG_20181018_160034.jpg,IMG_20181018_160511.jpg,IMG_20181018_160646.jpg,IMG_20181018_160658.jpg"
 %}
 {% include image-gallery.html
   folder="/2018-10-18-shiga"
