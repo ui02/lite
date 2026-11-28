@@ -25,6 +25,22 @@ body.diary-post-page .diary-post-page {
   padding: 0;
 }
 
+/* 見出し装飾 */
+.diary-post-content h2 {
+  display: inline;
+  background: linear-gradient(
+    transparent 55%,
+    #b9f4f5 55%
+  );
+  padding: 0 4px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.diary-post-content h3 {
+  border-left: 3px solid #8de8ef;
+  padding-left: 10px;
+}
 
 /* =========================================================
    2. ARTICLE HEADER
