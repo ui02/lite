@@ -74,3 +74,36 @@ body_class: diary-post-page
   </footer>
 
 </article>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const content = document.querySelector(".diary-post-content");
+  if (!content) return;
+
+  const urlPattern = /^https?:\/\/(?:www\.)?youtube\.com\/watch\?v=([\w-]+)|^https?:\/\/youtu\.be\/([\w-]+)/;
+
+  content.querySelectorAll("p").forEach(function (paragraph) {
+    const url = paragraph.textContent.trim();
+    const match = url.match(urlPattern);
+
+    // URLだけが書かれた段落を対象にする
+    if (!match || paragraph.children.length > 0) return;
+
+    const videoId = match[1] || match[2];
+
+    const wrapper = document.createElement("div");
+    wrapper.className = "youtube-container";
+
+    const iframe = document.createElement("iframe");
+    iframe.src = "https://www.youtube-nocookie.com/embed/" + videoId;
+    iframe.title = "YouTube video player";
+    iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+    iframe.referrerPolicy = "strict-origin-when-cross-origin";
+    iframe.allowFullscreen = true;
+    iframe.loading = "lazy";
+
+    wrapper.appendChild(iframe);
+    paragraph.replaceWith(wrapper);
+  });
+});
+</script>
