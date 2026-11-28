@@ -102,6 +102,16 @@ body.diary-post-page .diary-post-page {
 .diary-post-content sup {
   font-size: 0.75em;
 }
+
+/* 脚注番号 */
+.diary-post-content .footnote {
+  text-decoration: none;
+}
+
+.diary-post-content .footnote::before {
+  content: "※";
+}
+
 /* =========================================================
    2. ARTICLE HEADER
    ========================================================= */
